@@ -1,0 +1,4 @@
+<map id="al::SoundSource" name="al::SoundSource">
+<area shape="rect" id="node2" href="$classal_1_1_audio_scene_object.html" title="Base class for an object (listener or source) in an audio scene. " alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node3" href="$classal_1_1_dist_atten.html" title="al::DistAtten\&lt; double \&gt;" alt="" coords="190,5,367,32"/>
+</map>

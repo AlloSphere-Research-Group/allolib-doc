@@ -1,0 +1,6 @@
+<map id="Filters" name="Filters">
+<area shape="rect" id="node2" href="$group___envelopes.html" title="Envelopes" alt="" coords="219,5,308,32"/>
+<area shape="rect" id="node3" href="$group___delays.html" title="Delays" alt="" coords="230,56,297,83"/>
+<area shape="rect" id="node4" href="$group___analysis.html" title="Analysis" alt="" coords="225,107,302,133"/>
+<area shape="rect" id="node5" href="$group___effects.html" title="Effects" alt="" coords="230,157,297,184"/>
+</map>

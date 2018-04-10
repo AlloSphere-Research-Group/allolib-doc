@@ -1,0 +1,8 @@
+<map id="gam::DFT" name="gam::DFT">
+<area shape="rect" id="node2" href="$classgam_1_1_d_f_t_base.html" title="gam::DFTBase\&lt; float \&gt;" alt="" coords="311,199,486,225"/>
+<area shape="rect" id="node3" href="$classgam_1_1_domain_observer.html" title="Domain observer. " alt="" coords="63,5,232,32"/>
+<area shape="rect" id="node4" href="$classgam_1_1_node2.html" title="gam::Node2\&lt; DomainObserver \&gt;" alt="" coords="27,109,268,136"/>
+<area shape="rect" id="node5" href="$classgam_1_1_domain.html" title="Domain subject. " alt="" coords="494,109,604,136"/>
+<area shape="rect" id="node6" href="$classgam_1_1_complex.html" title="gam::Complex\&lt; float \&gt;" alt="" coords="293,109,469,136"/>
+<area shape="rect" id="node7" href="$classgam_1_1_r_f_f_t.html" title="gam::RFFT\&lt; float \&gt;" alt="" coords="652,199,801,225"/>
+</map>

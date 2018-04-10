@@ -1,0 +1,5 @@
+<map id="gam::Filter2&lt; Tv, Tp, Td &gt;" name="gam::Filter2&lt; Tv, Tp, Td &gt;">
+<area shape="rect" id="node3" href="$classgam_1_1_all_pass2.html" title="Second&#45;order all&#45;pass filter. " alt="" coords="5,169,153,211"/>
+<area shape="rect" id="node4" href="$classgam_1_1_notch.html" title="Two&#45;zero notch. " alt="" coords="177,169,333,211"/>
+<area shape="rect" id="node5" href="$classgam_1_1_reson.html" title="Two&#45;pole resonator. " alt="" coords="358,169,515,211"/>
+</map>

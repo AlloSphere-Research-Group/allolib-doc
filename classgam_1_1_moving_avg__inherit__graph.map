@@ -1,0 +1,7 @@
+<map id="gam::MovingAvg&lt; Tv &gt;" name="gam::MovingAvg&lt; Tv &gt;">
+<area shape="rect" id="node2" href="$structgam_1_1_delay_n.html" title="gam::DelayN\&lt; Tv \&gt;" alt="" coords="24,363,177,389"/>
+<area shape="rect" id="node3" href="$classgam_1_1_ring.html" title="gam::Ring\&lt; Tv, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="23,273,179,315"/>
+<area shape="rect" id="node4" href="$classgam_1_1_array.html" title="gam::Array\&lt; Tv, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="19,184,182,225"/>
+<area shape="rect" id="node5" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Tv,\l SizeArray, gam::Allocator\l\&lt; Tv \&gt; \&gt;" alt="" coords="5,80,196,136"/>
+<area shape="rect" id="node6" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; Tv \&gt;" alt="" coords="19,5,182,32"/>
+</map>

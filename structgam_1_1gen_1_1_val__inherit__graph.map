@@ -1,0 +1,16 @@
+<map id="gam::gen::Val&lt; T &gt;" name="gam::gen::Val&lt; T &gt;">
+<area shape="rect" id="node3" href="$structgam_1_1gen_1_1_impulse.html" title="gam::gen::Impulse\&lt; T \&gt;" alt="" coords="431,5,612,32"/>
+<area shape="rect" id="node4" href="$structgam_1_1gen_1_1_nyquist.html" title="Generates a Nyquist signal, i.e., &#45;1, 1, &#45;1, 1, … " alt="" coords="432,56,611,83"/>
+<area shape="rect" id="node5" href="$structgam_1_1gen_1_1_r_add.html" title="Recursive add generator that generates lines. " alt="" coords="440,107,603,133"/>
+<area shape="rect" id="node8" href="$structgam_1_1gen_1_1_r_add1.html" title="Recursive add 1 generator (iota function) " alt="" coords="436,157,607,184"/>
+<area shape="rect" id="node9" href="$structgam_1_1gen_1_1_r_add_n.html" title="Recursive add integer generator. " alt="" coords="435,208,607,235"/>
+<area shape="rect" id="node10" href="$structgam_1_1gen_1_1_r_cos.html" title="Cosine generator based on recursive formula x0 = c x1 &#45; x2. " alt="" coords="441,259,602,285"/>
+<area shape="rect" id="node11" href="$structgam_1_1gen_1_1_recip.html" title="Reciprocal sequence generator. " alt="" coords="439,309,603,336"/>
+<area shape="rect" id="node12" href="$structgam_1_1gen_1_1_r_mul.html" title="Recursive multiply generator. " alt="" coords="441,360,602,387"/>
+<area shape="rect" id="node13" href="$structgam_1_1gen_1_1_r_mul_add.html" title="Recursive multiply&#45;add generator. " alt="" coords="428,411,615,437"/>
+<area shape="rect" id="node14" href="$structgam_1_1gen_1_1_r_sin.html" title="Sinusoidal generator based on recursive formula x0 = c x1 &#45; x2. " alt="" coords="442,461,601,488"/>
+<area shape="rect" id="node15" href="$structgam_1_1gen_1_1_r_sin2.html" title="gam::gen::RSin2\&lt; T \&gt;" alt="" coords="438,512,605,539"/>
+<area shape="rect" id="node2" href="$structgam_1_1gen_1_1_default.html" title="Generates the default value of its associated type. " alt="" coords="5,259,183,285"/>
+<area shape="rect" id="node6" href="$structgam_1_1gen_1_1_r_add_wrap.html" title="Recursive addition wrapped in interval [min, max) " alt="" coords="663,81,857,108"/>
+<area shape="rect" id="node7" href="$structgam_1_1gen_1_1_sin.html" title="Sinusoid sequence generator. " alt="" coords="685,132,835,159"/>
+</map>

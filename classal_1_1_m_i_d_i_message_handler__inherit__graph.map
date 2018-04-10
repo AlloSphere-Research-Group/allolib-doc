@@ -1,0 +1,4 @@
+<map id="al::MIDIMessageHandler" name="al::MIDIMessageHandler">
+<area shape="rect" id="node2" href="$classal_1_1_parameter_m_i_d_i.html" title="The ParameterMIDI class connects Parameter objects to MIDI messages. " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" href="$classal_1_1_preset_m_i_d_i.html" title="The PresetMIDI class connects PresetHandler objects to MIDI messages. " alt="" coords="168,80,280,107"/>
+</map>

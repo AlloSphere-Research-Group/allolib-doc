@@ -1,0 +1,8 @@
+<map id="al::NavInputControl" name="al::NavInputControl">
+<area shape="rect" id="node2" href="$classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="5,380,188,407"/>
+<area shape="rect" id="node3" href="$classal_1_1_nav.html" title="al::Nav" alt="" coords="212,380,280,407"/>
+<area shape="rect" id="node4" href="$classal_1_1_pose.html" title="A local coordinate frame. " alt="" coords="253,223,327,250"/>
+<area shape="rect" id="node5" href="$classal_1_1_vec.html" title="al::Vec\&lt; 3, double \&gt;" alt="" coords="91,81,246,108"/>
+<area shape="rect" id="node6" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, double \&gt;" alt="" coords="70,5,267,32"/>
+<area shape="rect" id="node7" href="$classal_1_1_quat.html" title="al::Quat\&lt; double \&gt;" alt="" coords="270,81,417,108"/>
+</map>

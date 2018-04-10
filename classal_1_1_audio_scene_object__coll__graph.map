@@ -1,0 +1,9 @@
+<map id="al::AudioSceneObject" name="al::AudioSceneObject">
+<area shape="rect" id="node2" href="$classal_1_1_pose.html" title="A local coordinate frame. " alt="" coords="242,311,315,338"/>
+<area shape="rect" id="node3" href="$classal_1_1_vec.html" title="al::Vec\&lt; 3, double \&gt;" alt="" coords="27,215,181,241"/>
+<area shape="rect" id="node4" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, double \&gt;" alt="" coords="5,139,203,165"/>
+<area shape="rect" id="node5" href="$classal_1_1_quat.html" title="al::Quat\&lt; double \&gt;" alt="" coords="205,215,352,241"/>
+<area shape="rect" id="node6" href="$classal_1_1_shift_buffer.html" title="al::ShiftBuffer\&lt; 4,\l al::Vec \&gt;" alt="" coords="347,304,485,345"/>
+<area shape="rect" id="node7" href="$classal_1_1_vec.html" title="Fixed&#45;size n&#45;vector. " alt="" coords="377,215,498,241"/>
+<area shape="rect" id="node8" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="357,139,518,165"/>
+</map>

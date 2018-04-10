@@ -1,0 +1,8 @@
+<map id="al::Window" name="al::Window">
+<area shape="rect" id="node2" href="$classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="347,9,450,36"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="355,60,442,87"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="27,53,166,94"/>
+<area shape="rect" id="node6" href="$classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="5,119,188,145"/>
+<area shape="rect" id="node7" href="$classal_1_1_mouse.html" title="al::Mouse" alt="" coords="357,177,441,204"/>
+<area shape="rect" id="node9" href="$structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="335,295,463,321"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="al::osc::MessageConsumer" name="al::osc::MessageConsumer">
+<area shape="rect" id="node2" href="$classal_1_1_composition.html" title="al::Composition" alt="" coords="5,80,129,107"/>
+<area shape="rect" id="node3" href="$classal_1_1_preset_mapper.html" title="The PresetMapper class allows archiving and recalling preset maps. " alt="" coords="154,80,285,107"/>
+<area shape="rect" id="node4" href="$classal_1_1_preset_sequencer.html" title="The PresetSequencer class allows triggering presets from a PresetHandler over time. " alt="" coords="309,80,460,107"/>
+<area shape="rect" id="node5" href="$classal_1_1_sequence_recorder.html" title="The SequenceRecorder class records preset changes in a &quot;.sequence&quot; file. " alt="" coords="485,80,647,107"/>
+</map>

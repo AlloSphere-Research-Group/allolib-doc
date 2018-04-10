@@ -1,0 +1,76 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; Complex\l\&lt; Tv \&gt; \&gt;" alt="" coords="5,20,196,61"/>
+<area shape="rect" id="node2" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Complex\l\&lt; Tv \&gt;, SizeArrayPow2,\l gam::Allocator\&lt; Complex\l\&lt; Tv \&gt; \&gt; \&gt;" alt="" coords="249,5,448,76"/>
+<area shape="rect" id="node3" href="$classgam_1_1_array_pow2.html" title="gam::ArrayPow2\&lt; Complex\l\&lt; Tv \&gt; \&gt;" alt="" coords="501,29,704,71"/>
+<area shape="rect" id="node4" href="$classgam_1_1_delay.html" title="gam::Delay\&lt; Complex\l\&lt; Tv \&gt;, Si, Td \&gt;" alt="" coords="772,47,943,88"/>
+<area shape="rect" id="node5" href="$classgam_1_1_echo_c_sine.html" title="Echo with damped complex sinusoidal response. " alt="" coords="1033,47,1196,88"/>
+<area shape="rect" id="node6" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; SineD\l\&lt; Tv, Domain1 \&gt; \&gt;" alt="" coords="15,115,186,156"/>
+<area shape="rect" id="node7" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; SineD\l\&lt; Tv, Domain1 \&gt;, SizeArray,\l gam::Allocator\&lt; SineD\&lt; Tv,\l Domain1 \&gt; \&gt; \&gt;" alt="" coords="244,100,453,171"/>
+<area shape="rect" id="node8" href="$classgam_1_1_array.html" title="gam::Array\&lt; SineD\&lt;\l Tv, Domain1 \&gt; \&gt;" alt="" coords="523,115,682,156"/>
+<area shape="rect" id="node9" href="$classgam_1_1_sine_ds.html" title="Multiple SineDs. " alt="" coords="770,122,945,149"/>
+<area shape="rect" id="node10" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; SineR\l\&lt; Tv, Domain1 \&gt; \&gt;" alt="" coords="16,209,185,251"/>
+<area shape="rect" id="node11" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; SineR\l\&lt; Tv, Domain1 \&gt;, SizeArray,\l gam::Allocator\&lt; SineR\&lt; Tv,\l Domain1 \&gt; \&gt; \&gt;" alt="" coords="244,195,453,265"/>
+<area shape="rect" id="node12" href="$classgam_1_1_array.html" title="gam::Array\&lt; SineR\&lt;\l Tv, Domain1 \&gt; \&gt;" alt="" coords="524,195,681,236"/>
+<area shape="rect" id="node13" href="$classgam_1_1_sine_rs.html" title="Multiple SineRs. " alt="" coords="771,173,944,199"/>
+<area shape="rect" id="node14" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; Tv \&gt;" alt="" coords="19,1809,182,1835"/>
+<area shape="rect" id="node15" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Tv,\l SizeArray, gam::Allocator\l\&lt; Tv \&gt; \&gt;" alt="" coords="253,1837,444,1893"/>
+<area shape="rect" id="node20" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Tv,\l SizeArrayPow2, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="268,1751,429,1807"/>
+<area shape="rect" id="node16" href="$classgam_1_1_array.html" title="gam::Array\&lt; Tv, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="521,1856,684,1897"/>
+<area shape="rect" id="node17" href="$classgam_1_1_ring.html" title="gam::Ring\&lt; Tv, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="779,1863,935,1904"/>
+<area shape="rect" id="node18" href="$structgam_1_1_delay_n.html" title="gam::DelayN\&lt; Tv \&gt;" alt="" coords="1038,1899,1191,1926"/>
+<area shape="rect" id="node19" href="$classgam_1_1_moving_avg.html" title="Moving average filter. " alt="" coords="1269,1899,1445,1926"/>
+<area shape="rect" id="node21" href="$classgam_1_1_array_pow2.html" title="gam::ArrayPow2\&lt; Tv \&gt;" alt="" coords="515,1742,690,1769"/>
+<area shape="rect" id="node22" href="$classgam_1_1_delay.html" title="gam::Delay\&lt; Tv, Si,\l gam::Domain1 \&gt;" alt="" coords="781,1768,933,1809"/>
+<area shape="rect" id="node25" href="$classgam_1_1_delay.html" title="Variable length delay line. " alt="" coords="781,1703,933,1744"/>
+<area shape="rect" id="node29" href="$classgam_1_1_osc.html" title="Tabulated function oscillator. " alt="" coords="1033,1339,1196,1380"/>
+<area shape="rect" id="node23" href="$classgam_1_1_comb.html" title="gam::Comb\&lt; Tv, Si,\l float, gam::Domain1 \&gt;" alt="" coords="1027,1833,1202,1875"/>
+<area shape="rect" id="node24" href="$classgam_1_1_echo.html" title="gam::Echo\&lt; Tv, Si,\l LoopFilter, gam::Domain1 \&gt;" alt="" coords="1011,1768,1219,1809"/>
+<area shape="rect" id="node26" href="$classgam_1_1_comb.html" title="Variable length delay&#45;line with feedback and/or feedforward. " alt="" coords="1039,1703,1191,1744"/>
+<area shape="rect" id="node27" href="$classgam_1_1_echo.html" title="Recursive echo with loop filter. " alt="" coords="1042,1572,1187,1613"/>
+<area shape="rect" id="node28" href="$classgam_1_1_multitap.html" title="Variable delay&#45;line with multiple read taps. " alt="" coords="1041,1637,1188,1679"/>
+<area shape="rect" id="node30" href="$structgam_1_1gen_1_1_default.html" title="gam::gen::Default\&lt; Tv \&gt;" alt="" coords="8,1393,193,1419"/>
+<area shape="rect" id="node31" href="$structgam_1_1gen_1_1_val.html" title="gam::gen::Val\&lt; Tv \&gt;" alt="" coords="270,1393,427,1419"/>
+<area shape="rect" id="node32" href="$structgam_1_1gen_1_1_r_sin2.html" title="gam::gen::RSin2\&lt; Tv \&gt;" alt="" coords="515,1367,690,1394"/>
+<area shape="rect" id="node35" href="$structgam_1_1gen_1_1_r_sin.html" title="gam::gen::RSin\&lt; Tv \&gt;" alt="" coords="519,1418,686,1445"/>
+<area shape="rect" id="node33" href="$classgam_1_1_sine_d.html" title="Damped sine oscillator based on an efficient recursion equation. " alt="" coords="774,1317,941,1343"/>
+<area shape="rect" id="node34" href="$classgam_1_1_sine_d.html" title="gam::SineD\&lt; Tv, Domain1 \&gt;" alt="" coords="752,1418,963,1445"/>
+<area shape="rect" id="node36" href="$classgam_1_1_sine_r.html" title="Sine oscillator based on an efficient recursion equation. " alt="" coords="774,1367,941,1394"/>
+<area shape="rect" id="node37" href="$classgam_1_1_sine_r.html" title="gam::SineR\&lt; Tv, Domain1 \&gt;" alt="" coords="753,1469,962,1495"/>
+<area shape="rect" id="node38" href="$classgam_1_1_domain1.html" title="Domain with normalized sampling frequency and interval. " alt="" coords="543,1527,662,1554"/>
+<area shape="rect" id="node39" href="$classgam_1_1_all_pass1.html" title="gam::AllPass1\&lt; T, gam\l::real, gam::Domain1 \&gt;" alt="" coords="770,1585,945,1627"/>
+<area shape="rect" id="node40" href="$classgam_1_1_all_pass1.html" title="gam::AllPass1\&lt; Tv,\l Tp, gam::Domain1 \&gt;" alt="" coords="777,1520,938,1561"/>
+<area shape="rect" id="node42" href="$classgam_1_1_env.html" title="gam::Env\&lt; 2, Tv, Tp,\l Td \&gt;" alt="" coords="778,720,937,761"/>
+<area shape="rect" id="node44" href="$classgam_1_1_env.html" title="gam::Env\&lt; 3, Tv, Tp,\l Td \&gt;" alt="" coords="778,785,937,827"/>
+<area shape="rect" id="node46" href="$classgam_1_1_accum.html" title="Fixed&#45;point phase accumulator. " alt="" coords="771,851,944,878"/>
+<area shape="rect" id="node51" href="$classgam_1_1_accum_phase.html" title="Floating&#45;point phase accumulator with output in [&#45;A, A) " alt="" coords="769,903,946,944"/>
+<area shape="rect" id="node58" href="$classgam_1_1_all_pass1.html" title="First&#45;order all&#45;pass filter. " alt="" coords="783,968,931,1009"/>
+<area shape="rect" id="node59" href="$classgam_1_1_biquad.html" title="2&#45;pole/2&#45;zero IIR filter " alt="" coords="776,1033,939,1075"/>
+<area shape="rect" id="node60" href="$classgam_1_1_block_d_c.html" title="DC frequency blocker. " alt="" coords="771,1099,944,1140"/>
+<area shape="rect" id="node62" href="$classgam_1_1_chirplet.html" title="Swept sinusoid with Gaussian envelope. " alt="" coords="767,1165,947,1191"/>
+<area shape="rect" id="node63" href="$classgam_1_1_c_sine.html" title="Complex sinusoid oscillator. " alt="" coords="774,1215,941,1242"/>
+<area shape="rect" id="node64" href="$classgam_1_1_decay.html" title="Exponentially decaying curve. " alt="" coords="776,1266,939,1293"/>
+<area shape="rect" id="node65" href="$classgam_1_1_env.html" title="Envelope with a fixed number of exponential segments and a sustain point. " alt="" coords="777,224,937,265"/>
+<area shape="rect" id="node66" href="$classgam_1_1_env_follow.html" title="Envelope follower. " alt="" coords="777,289,937,331"/>
+<area shape="rect" id="node67" href="$classgam_1_1_filter2.html" title="Abstract base class for 2&#45;pole or 2&#45;zero filter. " alt="" coords="778,355,937,396"/>
+<area shape="rect" id="node71" href="$classgam_1_1_gate.html" title="Binary gate controlled by threshold comparison. " alt="" coords="781,421,933,447"/>
+<area shape="rect" id="node72" href="$classgam_1_1_one_pole.html" title="One&#45;pole filter. " alt="" coords="771,472,943,513"/>
+<area shape="rect" id="node73" href="$classgam_1_1_reverb_m_s.html" title="Schroeder reverberator. " alt="" coords="778,537,937,579"/>
+<area shape="rect" id="node74" href="$classgam_1_1_seg.html" title="Interpolation envelope segment. " alt="" coords="776,603,939,644"/>
+<area shape="rect" id="node75" href="$classgam_1_1_seg_exp.html" title="Exponential envelope segment for smoothing out value changes. " alt="" coords="773,669,942,695"/>
+<area shape="rect" id="node43" href="$classgam_1_1_a_d.html" title="AD (Attack, Decay) envelope. " alt="" coords="1029,630,1201,657"/>
+<area shape="rect" id="node45" href="$classgam_1_1_a_d_s_r.html" title="ADSR (Attack, Decay, Sustain, Release) envelope. " alt="" coords="1020,681,1209,707"/>
+<area shape="rect" id="node47" href="$classgam_1_1_d_w_o.html" title="Differenced wave oscillator. " alt="" coords="1033,849,1196,875"/>
+<area shape="rect" id="node48" href="$classgam_1_1_l_f_o.html" title="Low&#45;frequency oscillator. " alt="" coords="1038,899,1191,926"/>
+<area shape="rect" id="node49" href="$classgam_1_1_sweep.html" title="Linear sweep in interval [0,1) " alt="" coords="1029,731,1201,758"/>
+<area shape="rect" id="node50" href="$classgam_1_1_upsample.html" title="Upsamples and interpolates a signal. " alt="" coords="1029,783,1200,824"/>
+<area shape="rect" id="node52" href="$classgam_1_1_buzz.html" title="Sum of cosine waves. " alt="" coords="1035,1051,1195,1078"/>
+<area shape="rect" id="node56" href="$classgam_1_1_d_s_f.html" title="Discrete summation formula (DSF) oscillator. " alt="" coords="1037,950,1192,977"/>
+<area shape="rect" id="node57" href="$classgam_1_1_sine.html" title="Computed sine wave oscillator. " alt="" coords="1036,1001,1193,1027"/>
+<area shape="rect" id="node53" href="$structgam_1_1_impulse.html" title="Band&#45;limited impulse train. " alt="" coords="1267,1051,1448,1078"/>
+<area shape="rect" id="node54" href="$structgam_1_1_saw.html" title="Band&#45;limited saw wave. " alt="" coords="1505,1026,1661,1053"/>
+<area shape="rect" id="node55" href="$structgam_1_1_square.html" title="Band&#45;limited square wave. " alt="" coords="1496,1077,1671,1103"/>
+<area shape="rect" id="node61" href="$classgam_1_1_block_nyq.html" title="Nyquist frequency blocker. " alt="" coords="1037,1103,1193,1144"/>
+<area shape="rect" id="node68" href="$classgam_1_1_all_pass2.html" title="Second&#45;order all&#45;pass filter. " alt="" coords="1041,289,1189,331"/>
+<area shape="rect" id="node69" href="$classgam_1_1_notch.html" title="Two&#45;zero notch. " alt="" coords="1037,355,1193,396"/>
+<area shape="rect" id="node70" href="$classgam_1_1_reson.html" title="Two&#45;pole resonator. " alt="" coords="1036,420,1193,461"/>
+</map>

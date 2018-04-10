@@ -1,0 +1,12 @@
+<map id="gam::Chorus&lt; T &gt;" name="gam::Chorus&lt; T &gt;">
+<area shape="rect" id="node2" href="$classgam_1_1_c_sine.html" title="gam::CSine\&lt; double \&gt;" alt="" coords="794,49,965,76"/>
+<area shape="rect" id="node3" href="$classgam_1_1_domain_observer.html" title="Domain observer. " alt="" coords="487,108,656,135"/>
+<area shape="rect" id="node4" href="$classgam_1_1_node2.html" title="gam::Node2\&lt; DomainObserver \&gt;" alt="" coords="759,108,1000,135"/>
+<area shape="rect" id="node7" href="$classgam_1_1_delay.html" title="gam::Delay\&lt; T, gam\l::ipl::Cubic, DomainObserver \&gt;" alt="" coords="768,169,991,210"/>
+<area shape="rect" id="node5" href="$classgam_1_1_complex.html" title="gam::Complex\&lt; double \&gt;" alt="" coords="476,5,667,32"/>
+<area shape="rect" id="node6" href="$classgam_1_1_comb.html" title="gam::Comb\&lt; T, gam::\lipl::Cubic \&gt;" alt="" coords="1049,126,1215,167"/>
+<area shape="rect" id="node8" href="$classgam_1_1_array_pow2.html" title="gam::ArrayPow2\&lt; T \&gt;" alt="" coords="488,209,655,236"/>
+<area shape="rect" id="node9" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; T,\l SizeArrayPow2, gam\l::Allocator\&lt; T \&gt; \&gt;" alt="" coords="267,195,427,251"/>
+<area shape="rect" id="node10" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; T \&gt;" alt="" coords="6,159,161,185"/>
+<area shape="rect" id="node11" href="$structgam_1_1_size_array_pow2.html" title="Size functor for ArrayPow2. " alt="" coords="5,209,161,236"/>
+</map>

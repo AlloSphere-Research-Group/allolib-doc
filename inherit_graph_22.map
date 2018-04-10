@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classal_1_1_audio_scene_object.html" title="Base class for an object (listener or source) in an audio scene. " alt="" coords="14,5,174,32"/>
+<area shape="rect" id="node2" href="$classal_1_1_listener.html" title="al::Listener" alt="" coords="247,5,341,32"/>
+<area shape="rect" id="node3" href="$classal_1_1_sound_source.html" title="al::SoundSource" alt="" coords="231,56,357,83"/>
+<area shape="rect" id="node4" href="$classal_1_1_dist_atten.html" title="al::DistAtten\&lt; double \&gt;" alt="" coords="5,56,183,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="gam::Multitap&lt; Tv, Si, Td &gt;" name="gam::Multitap&lt; Tv, Si, Td &gt;">
+<area shape="rect" id="node2" href="$classgam_1_1_delay.html" title="Variable length delay line. " alt="" coords="200,276,352,317"/>
+<area shape="rect" id="node3" href="$classgam_1_1_array_pow2.html" title="gam::ArrayPow2\&lt; Tv \&gt;" alt="" coords="91,200,266,227"/>
+<area shape="rect" id="node4" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Tv,\l SizeArrayPow2, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="98,95,259,151"/>
+<area shape="rect" id="node5" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; Tv \&gt;" alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node6" href="$structgam_1_1_size_array_pow2.html" title="Size functor for ArrayPow2. " alt="" coords="193,5,349,32"/>
+</map>

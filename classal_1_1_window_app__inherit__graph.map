@@ -1,0 +1,6 @@
+<map id="al::WindowApp" name="al::WindowApp">
+<area shape="rect" id="node5" href="$classal_1_1_app.html" title="al::App" alt="" coords="182,155,249,181"/>
+<area shape="rect" id="node2" href="$classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node3" href="$classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="124,5,307,32"/>
+<area shape="rect" id="node4" href="$classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="331,5,396,32"/>
+</map>

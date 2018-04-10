@@ -1,0 +1,11 @@
+<map id="al::WindowApp" name="al::WindowApp">
+<area shape="rect" id="node2" href="$classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="781,218,876,245"/>
+<area shape="rect" id="node3" href="$classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="347,122,450,149"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="355,355,442,382"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="27,348,166,389"/>
+<area shape="rect" id="node7" href="$classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="5,71,188,98"/>
+<area shape="rect" id="node12" href="$structal_1_1_window_app_1_1_standard_window_app_key_controls.html" title="al::WindowApp::StandardWindow\lAppKeyControls" alt="" coords="520,5,757,47"/>
+<area shape="rect" id="node8" href="$classal_1_1_mouse.html" title="al::Mouse" alt="" coords="357,406,441,433"/>
+<area shape="rect" id="node10" href="$structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="335,305,463,331"/>
+<area shape="rect" id="node11" href="$classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="796,269,861,295"/>
+</map>

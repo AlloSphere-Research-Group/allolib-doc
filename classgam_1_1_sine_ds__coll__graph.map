@@ -1,0 +1,11 @@
+<map id="gam::SineDs&lt; Tv, Td &gt;" name="gam::SineDs&lt; Tv, Td &gt;">
+<area shape="rect" id="node2" href="$classgam_1_1_array.html" title="gam::Array\&lt; SineD\&lt;\l Tv, Domain1 \&gt; \&gt;" alt="" coords="1245,64,1404,105"/>
+<area shape="rect" id="node3" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; SineD\l\&lt; Tv, Domain1 \&gt;, SizeArray,\l gam::Allocator\&lt; SineD\&lt; Tv,\l Domain1 \&gt; \&gt; \&gt;" alt="" coords="987,49,1196,120"/>
+<area shape="rect" id="node4" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; SineD\l\&lt; Tv, Domain1 \&gt; \&gt;" alt="" coords="691,5,861,47"/>
+<area shape="rect" id="node5" href="$structgam_1_1_size_array.html" title="Size functor for Array. " alt="" coords="715,71,837,98"/>
+<area shape="rect" id="node6" href="$classgam_1_1_sine_d.html" title="gam::SineD\&lt; Tv, Domain1 \&gt;" alt="" coords="671,122,881,149"/>
+<area shape="rect" id="node7" href="$structgam_1_1gen_1_1_r_sin2.html" title="gam::gen::RSin2\&lt; Tv \&gt;" alt="" coords="447,87,621,114"/>
+<area shape="rect" id="node8" href="$structgam_1_1gen_1_1_val.html" title="gam::gen::Val\&lt; Tv \&gt;" alt="" coords="240,87,397,114"/>
+<area shape="rect" id="node9" href="$structgam_1_1gen_1_1_default.html" title="gam::gen::Default\&lt; Tv \&gt;" alt="" coords="5,87,191,114"/>
+<area shape="rect" id="node10" href="$classgam_1_1_domain1.html" title="Domain with normalized sampling frequency and interval. " alt="" coords="475,138,593,165"/>
+</map>
