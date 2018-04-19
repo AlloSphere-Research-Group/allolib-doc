@@ -34,7 +34,6 @@ var searchData=
   ['gpuobject',['GPUObject',['../classal_1_1_g_p_u_object.html',1,'al']]],
   ['graphics',['Graphics',['../classal_1_1_graphics.html',1,'al']]],
   ['gudermannian',['gudermannian',['../namespaceal.html#ad7d2d0cae8ef1a818a68519510c8988c',1,'al']]],
-  ['gamma_20_2d_20generic_20synthesis_20library',['Gamma - Generic synthesis library',['../index.html',1,'']]],
   ['ipl',['ipl',['../namespacegam_1_1ipl.html',1,'gam']]],
   ['mem',['mem',['../namespacegam_1_1mem.html',1,'gam']]],
   ['rnd',['rnd',['../namespacegam_1_1rnd.html',1,'gam']]],
