@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structgam_1_1_scheduler_audio_i_o_data.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('structgam_1_1_scheduler_audio_i_o_data
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="structgam_1_1_scheduler_audio_i_o_data.html">SchedulerAudioIOData</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -194,14 +171,7 @@ template&lt;class TAudioIOData &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_scheduler_8h_source.html#l00564">564</a> of file <a class="el" href="_scheduler_8h_source.html">Scheduler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                                                                 {</div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#a0fb2c47601047f675b72d98140892096">userData</a>(&amp;externalIO);</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#adbefab3de6879fec080374c9e4f0efd2">buffersIn</a> = externalIO.inBuffer();</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#afa975a4b902cce850a705960dea04bdd">buffersOut</a> = externalIO.outBuffer();</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#ab29208a5eb1cb2752e2abe1833355d92">framesPerSecond</a> = externalIO.framesPerSecond();</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#ae784eaecdd6bcb06d5c01c44706030c4">framesPerBuffer</a> = externalIO.framesPerBuffer();</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#ada89b1d6f8e5ef0e474faf57614d44c3">channelsIn</a> = externalIO.channelsIn();</div><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#a9734c8d3a3c1950253401b39d77dadc5">channelsOut</a> = externalIO.channelsOut();</div><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;}</div><div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_ada89b1d6f8e5ef0e474faf57614d44c3"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#ada89b1d6f8e5ef0e474faf57614d44c3">gam::SchedulerAudioIOData::channelsIn</a></div><div class="ttdeci">unsigned channelsIn</div><div class="ttdoc">Number of input channels. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00206">Scheduler.h:206</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_afa975a4b902cce850a705960dea04bdd"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#afa975a4b902cce850a705960dea04bdd">gam::SchedulerAudioIOData::buffersOut</a></div><div class="ttdeci">float * buffersOut</div><div class="ttdoc">Non-interleaved output buffers. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00203">Scheduler.h:203</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_adbefab3de6879fec080374c9e4f0efd2"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#adbefab3de6879fec080374c9e4f0efd2">gam::SchedulerAudioIOData::buffersIn</a></div><div class="ttdeci">const float * buffersIn</div><div class="ttdoc">Non-interleaved input buffers. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00202">Scheduler.h:202</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_a9734c8d3a3c1950253401b39d77dadc5"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#a9734c8d3a3c1950253401b39d77dadc5">gam::SchedulerAudioIOData::channelsOut</a></div><div class="ttdeci">unsigned channelsOut</div><div class="ttdoc">Number of output channels. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00207">Scheduler.h:207</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_ab29208a5eb1cb2752e2abe1833355d92"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#ab29208a5eb1cb2752e2abe1833355d92">gam::SchedulerAudioIOData::framesPerSecond</a></div><div class="ttdeci">double framesPerSecond</div><div class="ttdoc">Frames per second (frame rate) </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00204">Scheduler.h:204</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_a0fb2c47601047f675b72d98140892096"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#a0fb2c47601047f675b72d98140892096">gam::SchedulerAudioIOData::userData</a></div><div class="ttdeci">void * userData() const</div><div class="ttdoc">Get user data. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00219">Scheduler.h:219</a></div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_ae784eaecdd6bcb06d5c01c44706030c4"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#ae784eaecdd6bcb06d5c01c44706030c4">gam::SchedulerAudioIOData::framesPerBuffer</a></div><div class="ttdeci">unsigned framesPerBuffer</div><div class="ttdoc">Frames per buffer (block size) </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00205">Scheduler.h:205</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ade037cf9882edb517840e4d0c36aae05"></a>
@@ -230,23 +200,18 @@ template&lt;class TAudioIOData &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_scheduler_8h_source.html#l00575">575</a> of file <a class="el" href="_scheduler_8h_source.html">Scheduler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                                                    {</div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordflow">if</span>(!mUserData <span class="comment">/*|| !audioIODataType&lt;TAudioIOData&gt;(false)*/</span>){</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        gam::err(</div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;            <span class="stringliteral">&quot;member &#39;userData&#39; is NULL. Did you make a matching call to mapAudioIOData?&quot;</span>,</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;            <span class="stringliteral">&quot;gam::SchedulerAudioIOData::unmapAudioIOData()&quot;</span></div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        );</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    }</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(typeID&lt;TAudioIOData&gt;() != mUserDataTypeID){</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        gam::err(</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            <span class="stringliteral">&quot;Type mismatch between member &#39;userData&#39; and template parameter.&quot;</span>,</div><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            <span class="stringliteral">&quot;gam::SchedulerAudioIOData::unmapAudioIOData()&quot;</span></div><div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        );</div><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    }</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    TAudioIOData&amp; res = *(TAudioIOData *)mUserData;</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    res.frame(<a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#a707af7a35a2550a60dae40056824807b">startFrame</a>);</div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;}</div><div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_a707af7a35a2550a60dae40056824807b"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#a707af7a35a2550a60dae40056824807b">gam::SchedulerAudioIOData::startFrame</a></div><div class="ttdeci">unsigned startFrame</div><div class="ttdoc">Start frame to begin processing. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00208">Scheduler.h:208</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_scheduler_8h_source.html">Scheduler.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="structgam_1_1_scheduler_audio_i_o_data.html">SchedulerAudioIOData</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:20 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

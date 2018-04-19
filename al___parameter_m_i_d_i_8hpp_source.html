@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___parameter_m_i_d_i_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___parameter_m_i_d_i_8hpp_source.htm
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><a class="el" href="dir_f46f8cc162ca9a04285f9f47921e1e84.html">ui</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_ParameterMIDI.hpp</div>  </div>
@@ -97,7 +74,7 @@ $(document).ready(function(){initNavTree('al___parameter_m_i_d_i_8hpp_source.htm
 <div class="ttc" id="classal_1_1_m_i_d_i_error_html"><div class="ttname"><a href="classal_1_1_m_i_d_i_error.html">al::MIDIError</a></div><div class="ttdef"><b>Definition:</b> <a href="al___m_i_d_i_8hpp_source.html#l00031">al_MIDI.hpp:31</a></div></div>
 <div class="ttc" id="classal_1_1_parameter_wrapper_html_ad871ba9828093b7757f630a79d6e4556"><div class="ttname"><a href="classal_1_1_parameter_wrapper.html#ad871ba9828093b7757f630a79d6e4556">al::ParameterWrapper::max</a></div><div class="ttdeci">void max(ParameterType maxValue)</div><div class="ttdoc">set the maximum value for the parameter </div><div class="ttdef"><b>Definition:</b> <a href="al___parameter_8hpp_source.html#l00182">al_Parameter.hpp:182</a></div></div>
 <div class="ttc" id="classal_1_1_m_i_d_i_message_html_af0777545558af22d93ed3e0b2f5d7a09"><div class="ttname"><a href="classal_1_1_m_i_d_i_message.html#af0777545558af22d93ed3e0b2f5d7a09">al::MIDIMessage::channel</a></div><div class="ttdeci">unsigned char channel() const</div><div class="ttdoc">Get the channel number (0-15) </div><div class="ttdef"><b>Definition:</b> <a href="al___m_i_d_i_8hpp_source.html#l00137">al_MIDI.hpp:137</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_m_i_d_i_message_handler_html"><div class="ttname"><a href="classal_1_1_m_i_d_i_message_handler.html">al::MIDIMessageHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="al___m_i_d_i_8hpp_source.html#l00180">al_MIDI.hpp:180</a></div></div>
 <div class="ttc" id="classal_1_1_parameter_bool_html"><div class="ttname"><a href="classal_1_1_parameter_bool.html">al::ParameterBool</a></div><div class="ttdef"><b>Definition:</b> <a href="al___parameter_8hpp_source.html#l00368">al_Parameter.hpp:368</a></div></div>
 <div class="ttc" id="classal_1_1_parameter_html"><div class="ttname"><a href="classal_1_1_parameter.html">al::Parameter</a></div><div class="ttdoc">The Parameter class. </div><div class="ttdef"><b>Definition:</b> <a href="al___parameter_8hpp_source.html#l00306">al_Parameter.hpp:306</a></div></div>
@@ -116,15 +93,11 @@ $(document).ready(function(){initNavTree('al___parameter_m_i_d_i_8hpp_source.htm
 <div class="ttc" id="classal_1_1_m_i_d_i_message_html_ae61d6f1975cd78dc69eb4670f099bfee"><div class="ttname"><a href="classal_1_1_m_i_d_i_message.html#ae61d6f1975cd78dc69eb4670f099bfee">al::MIDIMessage::controlValue</a></div><div class="ttdeci">double controlValue(double mul=1./127.) const</div><div class="ttdoc">Get mapped controller value (type must be CONTROL_CHANGE) </div><div class="ttdef"><b>Definition:</b> <a href="al___m_i_d_i_8hpp_source.html#l00160">al_MIDI.hpp:160</a></div></div>
 <div class="ttc" id="classal_1_1_m_i_d_i_byte_html_afa1aa4cf6488c487240b0d097a4a8985"><div class="ttname"><a href="classal_1_1_m_i_d_i_byte.html#afa1aa4cf6488c487240b0d097a4a8985">al::MIDIByte::CONTROL_CHANGE</a></div><div class="ttdeci">static const unsigned char CONTROL_CHANGE</div><div class="ttdoc">Control change channel message type. </div><div class="ttdef"><b>Definition:</b> <a href="al___m_i_d_i_8hpp_source.html#l00057">al_MIDI.hpp:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><a class="el" href="dir_f46f8cc162ca9a04285f9f47921e1e84.html">ui</a></li><li class="navelem"><b>al_ParameterMIDI.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

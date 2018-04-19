@@ -1,3 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structal_1_1_hash_space_1_1_object.html" title="container for registered spatial elements " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" href="$classal_1_1_g_p_u_object.html" title="al::GPUObject" alt="" coords="5,132,117,159"/>
+<area shape="rect" id="node2" href="$classal_1_1_buffer_object.html" title="al::BufferObject" alt="" coords="165,5,288,32"/>
+<area shape="rect" id="node3" href="$classal_1_1_f_b_o.html" title="Frame buffer object. " alt="" coords="193,56,261,83"/>
+<area shape="rect" id="node4" href="$classal_1_1_r_b_o.html" title="Render buffer object. " alt="" coords="191,107,262,133"/>
+<area shape="rect" id="node5" href="$classal_1_1_shader_base.html" title="al::ShaderBase" alt="" coords="167,157,286,184"/>
+<area shape="rect" id="node8" href="$classal_1_1_texture.html" title="al::Texture" alt="" coords="181,208,272,235"/>
+<area shape="rect" id="node9" href="$classal_1_1_v_a_o.html" title="al::VAO" alt="" coords="192,259,261,285"/>
+<area shape="rect" id="node6" href="$classal_1_1_shader.html" title="Shader object. " alt="" coords="364,132,451,159"/>
+<area shape="rect" id="node7" href="$classal_1_1_shader_program.html" title="Shader program object. " alt="" coords="336,183,479,209"/>
+<area shape="rect" id="node10" href="$classal_1_1_easy_v_a_o.html" title="al::EasyVAO" alt="" coords="357,259,457,285"/>
 </map>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structal_1_1_frenet.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('structal_1_1_frenet.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="structal_1_1_frenet.html">Frenet</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,7 +76,7 @@ $(document).ready(function(){initNavTree('structal_1_1_frenet.html','');});
 <p><a class="el" href="structal_1_1_frenet.html" title="Frenet frame generator. ">Frenet</a> frame generator.  
  <a href="structal_1_1_frenet.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___curve_8hpp_source.html">al/util/al_Curve.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___curve_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Curve.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -219,8 +196,7 @@ template&lt;class Vec3 &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___curve_8hpp_source.html#l00083">83</a> of file <a class="el" href="al___curve_8hpp_source.html">al_Curve.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                    {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="structal_1_1_frenet.html#a8fbf17e7865da92b7edb9f73232031ac">init</a>(p2,p1);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div><div class="ttc" id="structal_1_1_frenet_html_a8fbf17e7865da92b7edb9f73232031ac"><div class="ttname"><a href="structal_1_1_frenet.html#a8fbf17e7865da92b7edb9f73232031ac">al::Frenet::init</a></div><div class="ttdeci">void init(const Vec3 &amp;p2, const Vec3 &amp;p1)</div><div class="ttdoc">(Re)initialize with previous two points </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00143">al_Curve.hpp:143</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -256,26 +232,18 @@ template&lt;bool NormalizeT, bool NormalizeN, bool NormalizeB, bool ComputeN, bo
 <p>For best results, avoid runs of 3 or more colinear points and 2 or more duplicate points. Colinear points result in ambiguous normal and binormal vectors. Duplicated points make the first derivative undefined. Both of these situations are guaranteed to wreak numerical havok. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___curve_8hpp_source.html#l00110">110</a> of file <a class="el" href="al___curve_8hpp_source.html">al_Curve.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                           {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    mdb = mdf;      <span class="comment">// bwd diff is previous fwd diff</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    mdf = p0 - mp1;    <span class="comment">// compute new fwd diff</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    mp1 = p0;      <span class="comment">// store previous</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Consecutive points equal? If so, use previous frame...</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//if(mdb == Vec3(0) || mdf == Vec3(0)) return;</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="structal_1_1_frenet.html#a1a243b2368e90d4a4baa84a0f70a0308">T</a> = mdb + mdf;    <span class="comment">// central diff</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;              <span class="comment">// (really half this, but we only need eigenvector)</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span>(NormalizeT) <a class="code" href="structal_1_1_frenet.html#a1a243b2368e90d4a4baa84a0f70a0308">T</a>.normalize();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Colinear? If so, use previous binormal and normal...</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">/*if(angle(mdf, mdb) &lt; 0.001){</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">      //printf(&quot;colinear\n&quot;);</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">      return;</span></div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">    }*/</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span>(ComputeB || ComputeN){</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="structal_1_1_frenet.html#a3dbc02f2ce13687f02da48de88ba52d2">B</a> = <a class="code" href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">cross</a>(mdb, mdf);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="comment">//B = cross(T, mdf - mdb); // formally, we use 2nd difference</span></div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span>(ComputeN){</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <a class="code" href="structal_1_1_frenet.html#a6423650c1a41d4870fc7fdcaa53af6a3">N</a> = <a class="code" href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">cross</a>(<a class="code" href="structal_1_1_frenet.html#a3dbc02f2ce13687f02da48de88ba52d2">B</a>, <a class="code" href="structal_1_1_frenet.html#a1a243b2368e90d4a4baa84a0f70a0308">T</a>);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordflow">if</span>(NormalizeN) <a class="code" href="structal_1_1_frenet.html#a6423650c1a41d4870fc7fdcaa53af6a3">N</a>.normalize();</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span>(NormalizeB) <a class="code" href="structal_1_1_frenet.html#a3dbc02f2ce13687f02da48de88ba52d2">B</a>.normalize();</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div><div class="ttc" id="structal_1_1_frenet_html_a1a243b2368e90d4a4baa84a0f70a0308"><div class="ttname"><a href="structal_1_1_frenet.html#a1a243b2368e90d4a4baa84a0f70a0308">al::Frenet::T</a></div><div class="ttdeci">Vec3 T</div><div class="ttdoc">Tangent vector of current frame. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00076">al_Curve.hpp:76</a></div></div>
-<div class="ttc" id="structal_1_1_frenet_html_a6423650c1a41d4870fc7fdcaa53af6a3"><div class="ttname"><a href="structal_1_1_frenet.html#a6423650c1a41d4870fc7fdcaa53af6a3">al::Frenet::N</a></div><div class="ttdeci">Vec3 N</div><div class="ttdoc">Normal vector of current frame. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00077">al_Curve.hpp:77</a></div></div>
-<div class="ttc" id="structal_1_1_frenet_html_a3dbc02f2ce13687f02da48de88ba52d2"><div class="ttname"><a href="structal_1_1_frenet.html#a3dbc02f2ce13687f02da48de88ba52d2">al::Frenet::B</a></div><div class="ttdeci">Vec3 B</div><div class="ttdoc">Binormal vector of current frame. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00078">al_Curve.hpp:78</a></div></div>
-<div class="ttc" id="namespaceal_html_ad14a4f234c06e599950cccc84adaab80"><div class="ttname"><a href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">al::cross</a></div><div class="ttdeci">void cross(Vec&lt; 3, T &gt; &amp;r, const Vec&lt; 3, T &gt; &amp;a, const Vec&lt; 3, T &gt; &amp;b)</div><div class="ttdoc">Sets r to cross product, a x b. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00486">al_Vec.hpp:486</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="al___curve_8hpp_source.html">al_Curve.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="structal_1_1_frenet.html">Frenet</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

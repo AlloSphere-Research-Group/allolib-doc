@@ -76,6 +76,8 @@ var searchData=
   ['sweep',['Sweep',['../classgam_1_1_sweep.html',1,'gam']]],
   ['switchable',['Switchable',['../structgam_1_1ipl_1_1_switchable.html',1,'gam::ipl']]],
   ['synthevent',['SynthEvent',['../structal_1_1_synth_event.html',1,'al']]],
+  ['synthgui',['SynthGUI',['../classal_1_1_synth_g_u_i.html',1,'al']]],
+  ['synthrecorder',['SynthRecorder',['../classal_1_1_synth_recorder.html',1,'al']]],
   ['synthsequencer',['SynthSequencer',['../classal_1_1_synth_sequencer.html',1,'al']]],
   ['synthsequencerevent',['SynthSequencerEvent',['../classal_1_1_synth_sequencer_event.html',1,'al']]],
   ['synthvoice',['SynthVoice',['../classal_1_1_synth_voice.html',1,'al']]]

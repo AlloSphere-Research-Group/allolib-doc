@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___preset_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___preset_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><a class="el" href="dir_f46f8cc162ca9a04285f9f47921e1e84.html">ui</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Preset.hpp</div>  </div>
@@ -95,7 +72,7 @@ $(document).ready(function(){initNavTree('al___preset_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_preset_handler_html_a9523969bf5482371e295abe866bafb3b"><div class="ttname"><a href="classal_1_1_preset_handler.html#a9523969bf5482371e295abe866bafb3b">al::PresetHandler::setInterpolatedPreset</a></div><div class="ttdeci">void setInterpolatedPreset(int index1, int index2, double factor)</div><div class="ttdoc">Set parameters to values interpolated between two presets. </div></div>
 <div class="ttc" id="classal_1_1_preset_handler_html_a4709bf7a38e14d33dd0c5511b31c036e"><div class="ttname"><a href="classal_1_1_preset_handler.html#a4709bf7a38e14d33dd0c5511b31c036e">al::PresetHandler::getRootPath</a></div><div class="ttdeci">std::string getRootPath()</div><div class="ttdoc">Base path without appending sub directory. </div></div>
 <div class="ttc" id="classal_1_1_preset_handler_html_a793c76f905c910036fdf227e1bd96107"><div class="ttname"><a href="classal_1_1_preset_handler.html#a793c76f905c910036fdf227e1bd96107">al::PresetHandler::useCallbacks</a></div><div class="ttdeci">void useCallbacks(bool use)</div><div class="ttdoc">useCallbacks determines whether to call the internal callbacks </div><div class="ttdef"><b>Definition:</b> <a href="al___preset_8hpp_source.html#l00212">al_Preset.hpp:212</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_parameter_html"><div class="ttname"><a href="classal_1_1_parameter.html">al::Parameter</a></div><div class="ttdoc">The Parameter class. </div><div class="ttdef"><b>Definition:</b> <a href="al___parameter_8hpp_source.html#l00306">al_Parameter.hpp:306</a></div></div>
 <div class="ttc" id="classal_1_1_preset_handler_html_a6abeeb351d73cdcab020f66501746b2b"><div class="ttname"><a href="classal_1_1_preset_handler.html#a6abeeb351d73cdcab020f66501746b2b">al::PresetHandler::getCurrentPath</a></div><div class="ttdeci">std::string getCurrentPath()</div><div class="ttdoc">Path including subdirectory if any. </div></div>
 <div class="ttc" id="classal_1_1_o_s_c_notifier_html"><div class="ttname"><a href="classal_1_1_o_s_c_notifier.html">al::OSCNotifier</a></div><div class="ttdef"><b>Definition:</b> <a href="al___parameter_8hpp_source.html#l00058">al_Parameter.hpp:58</a></div></div>
@@ -111,15 +88,11 @@ $(document).ready(function(){initNavTree('al___preset_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_preset_handler_html_abc181f16205b8d53e32a7dfe60235805"><div class="ttname"><a href="classal_1_1_preset_handler.html#abc181f16205b8d53e32a7dfe60235805">al::PresetHandler::PresetHandler</a></div><div class="ttdeci">PresetHandler(std::string rootDirectory=&quot;presets&quot;, bool verbose=false)</div><div class="ttdoc">PresetHandler contructor. </div></div>
 <div class="ttc" id="classal_1_1_preset_handler_html_a5a6aa88f1adbf9ba7344954e00c9c1c5"><div class="ttname"><a href="classal_1_1_preset_handler.html#a5a6aa88f1adbf9ba7344954e00c9c1c5">al::PresetHandler::registerPresetCallback</a></div><div class="ttdeci">void registerPresetCallback(std::function&lt; void(int index, void *sender, void *userData)&gt; cb, void *userData=nullptr)</div><div class="ttdoc">Register a callback to be notified when a preset is loaded. </div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><a class="el" href="dir_f46f8cc162ca9a04285f9f47921e1e84.html">ui</a></li><li class="navelem"><b>al_Preset.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:15 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

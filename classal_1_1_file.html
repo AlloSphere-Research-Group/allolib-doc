@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_file.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_file.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_file.html">File</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -101,18 +78,16 @@ $(document).ready(function(){initNavTree('classal_1_1_file.html','');});
 <p><a class="el" href="classal_1_1_file.html" title="File. ">File</a>.  
  <a href="classal_1_1_file.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___file_8hpp_source.html">al/core/io/al_File.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::File:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___file_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/io/al_File.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::File:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_file__coll__graph.png" border="0" usemap="#al_1_1_file_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_file_coll__map" id="al_1_1_file_coll__map">
 <area shape="rect" id="node2" title="STL class. " alt="" coords="31,96,118,123"/>
 <area shape="rect" id="node3" title="STL class. " alt="" coords="5,5,144,47"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -551,7 +526,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dir</b></td></tr>
 <p>Return last access time of file (or 0 on failure) as number of seconds since 00:00:00 January 1, 1970 UTC Return creation time of file (or 0 on failure) as number of seconds since 00:00:00 January 1, 1970 UTC Return size file (or 0 on failure) Return space used on disk of file (or 0 on failure) </p>
 
 <p class="definition">Definition at line <a class="el" href="al___file_8hpp_source.html#l00239">239</a> of file <a class="el" href="al___file_8hpp_source.html">al_File.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;{ <span class="keywordflow">return</span> mFP; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab1c963ce96e4fe969c990296954b744d"></a>
@@ -587,7 +562,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dir</b></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___file_8hpp_source.html#l00190">190</a> of file <a class="el" href="al___file_8hpp_source.html">al_File.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{ mMode=v; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa86afc7898e5b1ff403a6a317019fbf1"></a>
@@ -751,15 +726,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dir</b></td></tr>
 <li><a class="el" href="al___file_8hpp_source.html">al_File.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_file.html">File</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

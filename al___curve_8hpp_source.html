@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___curve_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___curve_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Curve.hpp</div>  </div>
@@ -95,7 +72,7 @@ $(document).ready(function(){initNavTree('al___curve_8hpp_source.html','');});
 <div class="ttc" id="structal_1_1_frenet_html"><div class="ttname"><a href="structal_1_1_frenet.html">al::Frenet</a></div><div class="ttdoc">Frenet frame generator. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00074">al_Curve.hpp:74</a></div></div>
 <div class="ttc" id="structal_1_1_frenet_html_a8fbf17e7865da92b7edb9f73232031ac"><div class="ttname"><a href="structal_1_1_frenet.html#a8fbf17e7865da92b7edb9f73232031ac">al::Frenet::init</a></div><div class="ttdeci">void init(const Vec3 &amp;p2, const Vec3 &amp;p1)</div><div class="ttdoc">(Re)initialize with previous two points </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00143">al_Curve.hpp:143</a></div></div>
 <div class="ttc" id="namespaceal_html_ad0f94f2139a42e1a8325d5ebea0fc6df"><div class="ttname"><a href="namespaceal.html#ad0f94f2139a42e1a8325d5ebea0fc6df">al::frenet</a></div><div class="ttdeci">void frenet(const V2 &amp;d1, V2 &amp;t, V2 &amp;n)</div><div class="ttdoc">Compute Frenet frame (tangent, normal) from 1st difference. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00166">al_Curve.hpp:166</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="structal_1_1_frenet_html_a6423650c1a41d4870fc7fdcaa53af6a3"><div class="ttname"><a href="structal_1_1_frenet.html#a6423650c1a41d4870fc7fdcaa53af6a3">al::Frenet::N</a></div><div class="ttdeci">Vec3 N</div><div class="ttdoc">Normal vector of current frame. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00077">al_Curve.hpp:77</a></div></div>
 <div class="ttc" id="structal_1_1_frenet_html_a45addcb0c7105176d0fa708a3aa179b4"><div class="ttname"><a href="structal_1_1_frenet.html#a45addcb0c7105176d0fa708a3aa179b4">al::Frenet::next</a></div><div class="ttdeci">void next(const Vec3 &amp;p0)</div><div class="ttdoc">Compute Frenet frame one point back from input point. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00110">al_Curve.hpp:110</a></div></div>
 <div class="ttc" id="structal_1_1_frenet_html_a5e1104f2ccfdfecea7a9d57c3c15c30d"><div class="ttname"><a href="structal_1_1_frenet.html#a5e1104f2ccfdfecea7a9d57c3c15c30d">al::Frenet::df</a></div><div class="ttdeci">const Vec3 &amp; df() const</div><div class="ttdoc">Get forward first difference. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00094">al_Curve.hpp:94</a></div></div>
@@ -106,15 +83,11 @@ $(document).ready(function(){initNavTree('al___curve_8hpp_source.html','');});
 <div class="ttc" id="structal_1_1_frenet_html_ad0533b333b49f1fa338f26bbad9126c3"><div class="ttname"><a href="structal_1_1_frenet.html#ad0533b333b49f1fa338f26bbad9126c3">al::Frenet::db</a></div><div class="ttdeci">const Vec3 &amp; db() const</div><div class="ttdoc">Get backward first difference. </div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00091">al_Curve.hpp:91</a></div></div>
 <div class="ttc" id="structal_1_1_frenet_html_ad8a24f9ce38fba87978f9146a898e7de"><div class="ttname"><a href="structal_1_1_frenet.html#ad8a24f9ce38fba87978f9146a898e7de">al::Frenet::Frenet</a></div><div class="ttdeci">Frenet(const Vec3 &amp;p2=Vec3(0,-0.01, 0), const Vec3 &amp;p1=Vec3(0, 0, 0))</div><div class="ttdef"><b>Definition:</b> <a href="al___curve_8hpp_source.html#l00083">al_Curve.hpp:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><b>al_Curve.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

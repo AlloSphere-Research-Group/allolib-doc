@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('_sync_8h_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('_sync_8h_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_c1d7773aa96358b670fd6539140ecaca.html">external</a></li><li class="navelem"><a class="el" href="dir_87929c6dead53f75f5e6493034d0dd4e.html">Gamma</a></li><li class="navelem"><a class="el" href="dir_175dd626ab0b0f75f1d624ddb0c3f97e.html">Gamma</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Sync.h</div>  </div>
@@ -92,15 +69,11 @@ $(document).ready(function(){initNavTree('_sync_8h_source.html','');});
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMMA_SYNC_H_INC</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMMA_SYNC_H_INC</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*  Gamma - Generic processing library</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    See COPYRIGHT file for authors and license information */</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Gamma/Domain.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegam.html">gam</a>{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">typedef</span> Domain Sync;            </div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> DomainObserver Synced;  </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> Domain1 Synced1;        </div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} <span class="comment">// gam::</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacegam_html"><div class="ttname"><a href="namespacegam.html">gam</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_8h_source.html#l00017">Access.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_c1d7773aa96358b670fd6539140ecaca.html">external</a></li><li class="navelem"><a class="el" href="dir_87929c6dead53f75f5e6493034d0dd4e.html">Gamma</a></li><li class="navelem"><a class="el" href="dir_175dd626ab0b0f75f1d624ddb0c3f97e.html">Gamma</a></li><li class="navelem"><b>Sync.h</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:15 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

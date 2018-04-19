@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___time_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___time_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_5ceb6323349e76cab580cb54c0ad9cd7.html">system</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Time.hpp</div>  </div>
@@ -103,7 +80,7 @@ $(document).ready(function(){initNavTree('al___time_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_clock_html"><div class="ttname"><a href="classal_1_1_clock.html">al::Clock</a></div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00175">al_Time.hpp:175</a></div></div>
 <div class="ttc" id="classal_1_1_delay_locked_loop_html_afb2327579f3566d374fdcc0e7d0332cb"><div class="ttname"><a href="classal_1_1_delay_locked_loop.html#afb2327579f3566d374fdcc0e7d0332cb">al::DelayLockedLoop::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Call this after an xrun: will reset the timing adjustments. </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00135">al_Time.hpp:135</a></div></div>
 <div class="ttc" id="classal_1_1_timer_html_a26552fef654ffc891ad21b0c3689ad9f"><div class="ttname"><a href="classal_1_1_timer.html#a26552fef654ffc891ad21b0c3689ad9f">al::Timer::elapsedSec</a></div><div class="ttdeci">al_sec elapsedSec() const</div><div class="ttdoc">Returns seconds between start() and stop() calls. </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00096">al_Time.hpp:96</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_timer_html_af382a5180fd87992f69b3251f7a4020c"><div class="ttname"><a href="classal_1_1_timer.html#af382a5180fd87992f69b3251f7a4020c">al::Timer::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Set stop time to current time. </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00102">al_Time.hpp:102</a></div></div>
 <div class="ttc" id="classal_1_1_delay_locked_loop_html"><div class="ttname"><a href="classal_1_1_delay_locked_loop.html">al::DelayLockedLoop</a></div><div class="ttdoc">Self-correcting timer. </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00122">al_Time.hpp:122</a></div></div>
 <div class="ttc" id="classal_1_1_timer_html_a340eb0ee5d0ea470031339d9e22d6564"><div class="ttname"><a href="classal_1_1_timer.html#a340eb0ee5d0ea470031339d9e22d6564">al::Timer::print</a></div><div class="ttdeci">void print() const</div><div class="ttdoc">Print current elapsed time. </div></div>
@@ -120,15 +97,11 @@ $(document).ready(function(){initNavTree('al___time_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_timer_html_adb4740791a5ffcffeaaea9cc955f5252"><div class="ttname"><a href="classal_1_1_timer.html#adb4740791a5ffcffeaaea9cc955f5252">al::Timer::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Set start time to current time. </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00099">al_Time.hpp:99</a></div></div>
 <div class="ttc" id="classal_1_1_delay_locked_loop_html_a7106b4578c6398041412ed7b4beb97f0"><div class="ttname"><a href="classal_1_1_delay_locked_loop.html#a7106b4578c6398041412ed7b4beb97f0">al::DelayLockedLoop::period_smoothed</a></div><div class="ttdeci">al_sec period_smoothed() const</div><div class="ttdoc">Get the current period estimation (smoothed) </div><div class="ttdef"><b>Definition:</b> <a href="al___time_8hpp_source.html#l00145">al_Time.hpp:145</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_5ceb6323349e76cab580cb54c0ad9cd7.html">system</a></li><li class="navelem"><b>al_Time.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:15 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

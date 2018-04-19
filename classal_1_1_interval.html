@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_interval.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_interval.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_interval.html">Interval</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -97,7 +74,7 @@ $(document).ready(function(){initNavTree('classal_1_1_interval.html','');});
 <p>A closed interval [min, max].  
  <a href="classal_1_1_interval.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___interval_8hpp_source.html">al/util/al_Interval.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___interval_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Interval.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -249,25 +226,18 @@ template&lt;class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___interval_8hpp_source.html#l00064">64</a> of file <a class="el" href="al___interval_8hpp_source.html">al_Interval.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  { <a class="code" href="classal_1_1_interval.html#a6f18e3bef95a16cf29cd05d5ce6becbd">endpoints</a>(<a class="code" href="classal_1_1_interval.html#a0bada73c18f1d2424769e300d81865da">min</a>,<a class="code" href="classal_1_1_interval.html#a4f6b2ffa0989219cb6976c22be3d1e98">max</a>); }</div><div class="ttc" id="classal_1_1_interval_html_a6f18e3bef95a16cf29cd05d5ce6becbd"><div class="ttname"><a href="classal_1_1_interval.html#a6f18e3bef95a16cf29cd05d5ce6becbd">al::Interval::endpoints</a></div><div class="ttdeci">Interval &amp; endpoints(const T &amp;min, const T &amp;max)</div><div class="ttdoc">Set the endpoints. </div><div class="ttdef"><b>Definition:</b> <a href="al___interval_8hpp_source.html#l00125">al_Interval.hpp:125</a></div></div>
-<div class="ttc" id="classal_1_1_interval_html_a4f6b2ffa0989219cb6976c22be3d1e98"><div class="ttname"><a href="classal_1_1_interval.html#a4f6b2ffa0989219cb6976c22be3d1e98">al::Interval::max</a></div><div class="ttdeci">const T &amp; max() const</div><div class="ttdoc">Get maximum endpoint. </div><div class="ttdef"><b>Definition:</b> <a href="al___interval_8hpp_source.html#l00075">al_Interval.hpp:75</a></div></div>
-<div class="ttc" id="classal_1_1_interval_html_a0bada73c18f1d2424769e300d81865da"><div class="ttname"><a href="classal_1_1_interval.html#a0bada73c18f1d2424769e300d81865da">al::Interval::min</a></div><div class="ttdeci">const T &amp; min() const</div><div class="ttdoc">Get minimum endpoint. </div><div class="ttdef"><b>Definition:</b> <a href="al___interval_8hpp_source.html#l00076">al_Interval.hpp:76</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___interval_8hpp_source.html">al_Interval.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_interval.html">Interval</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

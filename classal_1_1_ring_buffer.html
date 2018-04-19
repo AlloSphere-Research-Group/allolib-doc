@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_ring_buffer.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_ring_buffer.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_ring_buffer.html">RingBuffer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,21 +76,17 @@ $(document).ready(function(){initNavTree('classal_1_1_ring_buffer.html','');});
 <p>Ring buffer.  
  <a href="classal_1_1_ring_buffer.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___buffer_8hpp_source.html">al/core/types/al_Buffer.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::RingBuffer&lt; T, Alloc &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___buffer_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/types/al_Buffer.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::RingBuffer&lt; T, Alloc &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_ring_buffer__inherit__graph.png" border="0" usemap="#al_1_1_ring_buffer_3_01_t_00_01_alloc_01_4_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::RingBuffer&lt; T, Alloc &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::RingBuffer&lt; T, Alloc &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_ring_buffer__coll__graph.png" border="0" usemap="#al_1_1_ring_buffer_3_01_t_00_01_alloc_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -244,9 +217,7 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00202">202</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  :  mPos(<a class="code" href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">size</a>), mFill(0)</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classal_1_1_ring_buffer.html#ae205f05d902ef9139c257b95b54d89cf">resize</a>(<a class="code" href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">size</a>,v);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div><div class="ttc" id="classal_1_1_ring_buffer_html_ae205f05d902ef9139c257b95b54d89cf"><div class="ttname"><a href="classal_1_1_ring_buffer.html#ae205f05d902ef9139c257b95b54d89cf">al::RingBuffer::resize</a></div><div class="ttdeci">void resize(int n, const T &amp;v=T())</div><div class="ttdoc">Resize buffer. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00275">al_Buffer.hpp:275</a></div></div>
-<div class="ttc" id="classal_1_1_ring_buffer_html_ab000947b1fc46741063085c52ac4309c"><div class="ttname"><a href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">al::RingBuffer::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Get number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00210">al_Buffer.hpp:210</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -277,8 +248,7 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>reference to newest element </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00259">259</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{ <span class="keywordflow">return</span> mElems[<a class="code" href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">pos</a>()]; }</div><div class="ttc" id="classal_1_1_ring_buffer_html_a3b0b07e5be84ef611084003bc70ae4ba"><div class="ttname"><a href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">al::RingBuffer::pos</a></div><div class="ttdeci">int pos() const</div><div class="ttdoc">Get absolute index of most recently written element. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00213">al_Buffer.hpp:213</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="acb5fa1e029d242d0dcfb99ea5e940f2f"></a>
@@ -308,8 +278,7 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>reference to newest element (read-only) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00262">262</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{ <span class="keywordflow">return</span> mElems[<a class="code" href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">pos</a>()]; }</div><div class="ttc" id="classal_1_1_ring_buffer_html_a3b0b07e5be84ef611084003bc70ae4ba"><div class="ttname"><a href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">al::RingBuffer::pos</a></div><div class="ttdeci">int pos() const</div><div class="ttdoc">Get absolute index of most recently written element. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00213">al_Buffer.hpp:213</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3b8232a85729a4c6e1d42c2f967f76be"></a>
@@ -341,9 +310,7 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 <p>This method returns a reference to the next available element in the buffer. This is an alternative to calling <a class="el" href="classal_1_1_ring_buffer.html#a28403f3d869bafe2f21948ab8ea31d26" title="Write new element. ">write()</a> that does not require constructing a new object, but instead returns the oldest element in the buffer. The returned reference should be assumed to be in an unknown state, thus should be initialized properly. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00233">233</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;           {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span>(mFill &lt; <a class="code" href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">size</a>()) ++mFill;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ++mPos; <span class="keywordflow">if</span>(<a class="code" href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">pos</a>() == <a class="code" href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">size</a>()){ mPos=0; }</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> mElems[<a class="code" href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">pos</a>()];</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div><div class="ttc" id="classal_1_1_ring_buffer_html_ab000947b1fc46741063085c52ac4309c"><div class="ttname"><a href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">al::RingBuffer::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Get number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00210">al_Buffer.hpp:210</a></div></div>
-<div class="ttc" id="classal_1_1_ring_buffer_html_a3b0b07e5be84ef611084003bc70ae4ba"><div class="ttname"><a href="classal_1_1_ring_buffer.html#a3b0b07e5be84ef611084003bc70ae4ba">al::RingBuffer::pos</a></div><div class="ttdeci">int pos() const</div><div class="ttdoc">Get absolute index of most recently written element. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00213">al_Buffer.hpp:213</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a11016659db185251d6e9d7940721471d"></a>
@@ -392,9 +359,7 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00254">254</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                              {</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> mElems[wrapOnce(from-<a class="code" href="namespaceal.html#ac9c6c5e3a994225eac0d611d8c479eb2">dist</a>, <a class="code" href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">size</a>())];</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  }</div><div class="ttc" id="classal_1_1_ring_buffer_html_ab000947b1fc46741063085c52ac4309c"><div class="ttname"><a href="classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c">al::RingBuffer::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Get number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00210">al_Buffer.hpp:210</a></div></div>
-<div class="ttc" id="namespaceal_html_ac9c6c5e3a994225eac0d611d8c479eb2"><div class="ttname"><a href="namespaceal.html#ac9c6c5e3a994225eac0d611d8c479eb2">al::dist</a></div><div class="ttdeci">T dist(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, U &gt; &amp;b)</div><div class="ttdoc">Returns distance between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00577">al_Vec.hpp:577</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae205f05d902ef9139c257b95b54d89cf"></a>
@@ -443,22 +408,18 @@ template&lt;class T, class Alloc = std::allocator&lt;T&gt;&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___buffer_8hpp_source.html#l00275">275</a> of file <a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                    {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    mElems.resize(n,v);</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span>(mPos &gt;=n) mPos = n-1;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___buffer_8hpp_source.html">al_Buffer.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_ring_buffer.html">RingBuffer</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

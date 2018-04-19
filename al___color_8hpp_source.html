@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___color_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___color_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_6cc295a44006f69a4b1b59a80ed8ac0b.html">types</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Color.hpp</div>  </div>
@@ -151,7 +128,7 @@ $(document).ready(function(){initNavTree('al___color_8hpp_source.html','');});
 <div class="ttc" id="structal_1_1_h_s_v_html_ab2ac1f37ed9fb86d77169e98e1937436"><div class="ttname"><a href="structal_1_1_h_s_v.html#ab2ac1f37ed9fb86d77169e98e1937436">al::HSV::rotateHue</a></div><div class="ttdeci">HSV &amp; rotateHue(float dh)</div><div class="ttdoc">Rotate hue in interval [0, 1) </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00484">al_Color.hpp:484</a></div></div>
 <div class="ttc" id="structal_1_1_lab_html_a12ea265823270104f29adac1d9d81da3"><div class="ttname"><a href="structal_1_1_lab.html#a12ea265823270104f29adac1d9d81da3">al::Lab::Lab</a></div><div class="ttdeci">Lab(const T *Lab)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00746">al_Color.hpp:746</a></div></div>
 <div class="ttc" id="structal_1_1_colori_html"><div class="ttname"><a href="structal_1_1_colori.html">al::Colori</a></div><div class="ttdoc">Color represented by red, green, blue, and alpha components packed into 32-bit integer. </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00263">al_Color.hpp:263</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="structal_1_1_luv_html_a6e0e6cf845095f6da60b9e0e9f1a1883"><div class="ttname"><a href="structal_1_1_luv.html#a6e0e6cf845095f6da60b9e0e9f1a1883">al::Luv::operator[]</a></div><div class="ttdeci">const float &amp; operator[](int i) const</div><div class="ttdoc">Get color component at index with no bounds checking. </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00942">al_Color.hpp:942</a></div></div>
 <div class="ttc" id="structal_1_1_c_i_e_x_y_z_html_a40533200dffb8681b7db92ef505bed0b"><div class="ttname"><a href="structal_1_1_c_i_e_x_y_z.html#a40533200dffb8681b7db92ef505bed0b">al::CIEXYZ::CIEXYZ</a></div><div class="ttdeci">CIEXYZ(const T *xyz)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00671">al_Color.hpp:671</a></div></div>
 <div class="ttc" id="structal_1_1_r_g_b_html_ab4f6d3425e0fe309fc741e31253df380"><div class="ttname"><a href="structal_1_1_r_g_b.html#ab4f6d3425e0fe309fc741e31253df380">al::RGB::RGB</a></div><div class="ttdeci">RGB(const Color &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00530">al_Color.hpp:530</a></div></div>
@@ -255,15 +232,11 @@ $(document).ready(function(){initNavTree('al___color_8hpp_source.html','');});
 <div class="ttc" id="structal_1_1_h_c_luv_html_adcfd9d3c5201315b916245ce7197f322"><div class="ttname"><a href="structal_1_1_h_c_luv.html#adcfd9d3c5201315b916245ce7197f322">al::HCLuv::HCLuv</a></div><div class="ttdeci">HCLuv(const CIEXYZ &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l01013">al_Color.hpp:1013</a></div></div>
 <div class="ttc" id="structal_1_1_h_c_luv_html_a3aac693fb26d606f852552511f7f5fe8"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a3aac693fb26d606f852552511f7f5fe8">al::HCLuv::HCLuv</a></div><div class="ttdeci">HCLuv(const Color &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l01001">al_Color.hpp:1001</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_6cc295a44006f69a4b1b59a80ed8ac0b.html">types</a></li><li class="navelem"><b>al_Color.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

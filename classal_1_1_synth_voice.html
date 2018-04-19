@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_voice.html">SynthVoice</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,7 +76,7 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
 <p>The <a class="el" href="classal_1_1_synth_voice.html" title="The SynthVoice class. ">SynthVoice</a> class.  
  <a href="classal_1_1_synth_voice.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___synth_sequencer_8hpp_source.html">al/util/ui/al_SynthSequencer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___synth_sequencer_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/ui/al_SynthSequencer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,9 +84,12 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#a1cdad381efc4899151119fd88a7ee9af">active</a> ()</td></tr>
 <tr class="memdesc:a1cdad381efc4899151119fd88a7ee9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if voice is currently active. <br /></td></tr>
 <tr class="separator:a1cdad381efc4899151119fd88a7ee9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a71c95a42a73d04bc4fb324cb44e4d"><td class="memItemLeft" align="right" valign="top"><a id="a19a71c95a42a73d04bc4fb324cb44e4d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>setParamFields</b> (float *pFields, int numFields)</td></tr>
+<tr class="memitem:a19a71c95a42a73d04bc4fb324cb44e4d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#a19a71c95a42a73d04bc4fb324cb44e4d">setParamFields</a> (float *pFields, int numFields)</td></tr>
+<tr class="memdesc:a19a71c95a42a73d04bc4fb324cb44e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameter values.  <a href="#a19a71c95a42a73d04bc4fb324cb44e4d">More...</a><br /></td></tr>
 <tr class="separator:a19a71c95a42a73d04bc4fb324cb44e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8677623237dbfd3b0ab5bfd36c920568"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#a8677623237dbfd3b0ab5bfd36c920568">getParamFields</a> (float *pFields)</td></tr>
+<tr class="memdesc:a8677623237dbfd3b0ab5bfd36c920568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get this instance's parameter fields.  <a href="#a8677623237dbfd3b0ab5bfd36c920568">More...</a><br /></td></tr>
+<tr class="separator:a8677623237dbfd3b0ab5bfd36c920568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84da1fdd88100fe8b4c15f0f404282df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#a84da1fdd88100fe8b4c15f0f404282df">onProcess</a> (<a class="el" href="classal_1_1_audio_i_o_data.html">AudioIOData</a> &amp;io)</td></tr>
 <tr class="memdesc:a84da1fdd88100fe8b4c15f0f404282df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to define audio processing.  <a href="#a84da1fdd88100fe8b4c15f0f404282df">More...</a><br /></td></tr>
 <tr class="separator:a84da1fdd88100fe8b4c15f0f404282df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,9 +104,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#acabb52a7269c97251103b6ec825db5f6">onTriggerOff</a> ()</td></tr>
 <tr class="memdesc:acabb52a7269c97251103b6ec825db5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine what needs to be done when note/event ends Define this function to determine what needs to be done when note/event ends. e.g. trigger release in envelopes, etc. <br /></td></tr>
 <tr class="separator:acabb52a7269c97251103b6ec825db5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d7e9cad93e5d0341f6971ec2fabbdb"><td class="memItemLeft" align="right" valign="top"><a id="a74d7e9cad93e5d0341f6971ec2fabbdb"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (float *pFields)</td></tr>
-<tr class="separator:a74d7e9cad93e5d0341f6971ec2fabbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93e6643154a0f93975f5b56be8d628a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#aa93e6643154a0f93975f5b56be8d628a">triggerOn</a> (int offsetFrames=0)</td></tr>
 <tr class="separator:aa93e6643154a0f93975f5b56be8d628a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45552fb530bece54cfe43892c7b5a3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_voice.html#ad45552fb530bece54cfe43892c7b5a3e">triggerOff</a> (int offsetFrames=0)</td></tr>
@@ -188,8 +165,45 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
 <p>Mark this voice as done. </p>
 <p>This should be set within one of the render() functions when envelope or time is done and no more processing for the note is needed. The voice will be considered ready for retriggering by <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00184">184</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{mActive = <span class="keyword">false</span>; } <span class="comment">// Mark this voice as done.</span></div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00200">200</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8677623237dbfd3b0ab5bfd36c920568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8677623237dbfd3b0ab5bfd36c920568">&#9670;&nbsp;</a></span>getParamFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int al::SynthVoice::getParamFields </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>pFields</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get this instance's parameter fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFields</td><td>a pre-allocated array where the parameter fields will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of parameters written </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00114">114</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a649cec152742593b5b61b5b476548de7"></a>
@@ -226,8 +240,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
 <dl class="section return"><dt>Returns</dt><dd>offset frames</dd></dl>
 <p>Get the number of frames by which the start of this voice should be offset within a processing block. This value is decremented by framesPerBuffer once read. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00159">159</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                                  {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">int</span> frames = mOnOffsetFrames;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        mOnOffsetFrames -= framesPerBuffer;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (mOnOffsetFrames &lt; 0) {mOnOffsetFrames = 0.0;}</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> frames;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00175">175</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a84da1fdd88100fe8b4c15f0f404282df"></a>
@@ -262,8 +276,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00109">109</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00126">126</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="add7c2f32f2ffbc52b64090c5231e7521"></a>
@@ -292,8 +306,57 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
 <p>Override this function to determine what needs to be done when note/event starts. </p>
 <p>When a note starts, internal data within the algorithm usually needs to be reset, e.g. reset envelopes, oscillator phase, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00122">122</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00139">139</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a19a71c95a42a73d04bc4fb324cb44e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a71c95a42a73d04bc4fb324cb44e4d">&#9670;&nbsp;</a></span>setParamFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool al::SynthVoice::setParamFields </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>pFields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numFields</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set parameter values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFields</td><td>array containing the values </td></tr>
+    <tr><td class="paramname">numFields</td><td>number of fields to process </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if able to set the fields</dd></dl>
+<p>You will need to override this function if you want support for <a class="el" href="classal_1_1_synth_recorder.html">SynthRecorder</a> text sequences. </p>
+
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00105">105</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="ad45552fb530bece54cfe43892c7b5a3e"></a>
@@ -321,9 +384,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
 </div><div class="memdoc">
 <p>This function can be called to programatically trigger the release of a voice. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00143">143</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                          {</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        mOffOffsetFrames = offsetFrames; <span class="comment">// TODO implement offset frames for trigger off. Currently ignoring and turning off at start of buffer</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classal_1_1_synth_voice.html#acabb52a7269c97251103b6ec825db5f6">onTriggerOff</a>();</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div><div class="ttc" id="classal_1_1_synth_voice_html_acabb52a7269c97251103b6ec825db5f6"><div class="ttname"><a href="classal_1_1_synth_voice.html#acabb52a7269c97251103b6ec825db5f6">al::SynthVoice::onTriggerOff</a></div><div class="ttdeci">virtual void onTriggerOff()</div><div class="ttdoc">determine what needs to be done when note/event ends Define this function to determine what needs to ...</div><div class="ttdef"><b>Definition:</b> <a href="al___synth_sequencer_8hpp_source.html#l00129">al_SynthSequencer.hpp:129</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00159">159</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="aa93e6643154a0f93975f5b56be8d628a"></a>
@@ -351,24 +413,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PolySynth</b></td></
 </div><div class="memdoc">
 <p>This function can be called to programatically trigger a voice. It is used for example in <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a> to trigger a voice. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00135">135</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                         {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        mOnOffsetFrames = offsetFrames;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="classal_1_1_synth_voice.html#add7c2f32f2ffbc52b64090c5231e7521">onTriggerOn</a>();</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        mActive = <span class="keyword">true</span>;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div><div class="ttc" id="classal_1_1_synth_voice_html_add7c2f32f2ffbc52b64090c5231e7521"><div class="ttname"><a href="classal_1_1_synth_voice.html#add7c2f32f2ffbc52b64090c5231e7521">al::SynthVoice::onTriggerOn</a></div><div class="ttdeci">virtual void onTriggerOn()</div><div class="ttdoc">Override this function to determine what needs to be done when note/event starts. ...</div><div class="ttdef"><b>Definition:</b> <a href="al___synth_sequencer_8hpp_source.html#l00122">al_SynthSequencer.hpp:122</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00151">151</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_voice.html">SynthVoice</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

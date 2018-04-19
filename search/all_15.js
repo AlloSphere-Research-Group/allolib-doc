@@ -39,6 +39,7 @@ var searchData=
   ['user',['user',['../structal_1_1_c_thread_function.html#ac252d13aa2f799e67c319f326907df57',1,'al::CThreadFunction::user()'],['../classgam_1_1_audio_i_o_data.html#a2e2e858e74fc9ce279cc2e5abb216ac5',1,'gam::AudioIOData::user() const'],['../classgam_1_1_audio_i_o_data.html#a6758c980321380fb5b18853f7af27dd7',1,'gam::AudioIOData::user(void *v)'],['../classal_1_1_audio_i_o_data.html#a209fc05057bee488bf97ecdd22141dca',1,'al::AudioIOData::user() const'],['../classal_1_1_audio_i_o_data.html#a58e31521986b6f4fe996bd09605dab73',1,'al::AudioIOData::user(void *v)']]],
   ['userdata',['userData',['../structgam_1_1_scheduler_audio_i_o_data.html#a55d50118d55307f7f3dd48358a858666',1,'gam::SchedulerAudioIOData::userData(T *user)'],['../structgam_1_1_scheduler_audio_i_o_data.html#a0fb2c47601047f675b72d98140892096',1,'gam::SchedulerAudioIOData::userData() const']]],
   ['usert',['useRT',['../classal_1_1_clock.html#a55ec105acfc7b59bfe14a519b758af5e',1,'al::Clock']]],
+  ['usinginput',['usingInput',['../classal_1_1_synth_g_u_i.html#a1cb53e2e9f962d65851385473246b635',1,'al::SynthGUI']]],
   ['uu',['uu',['../classal_1_1_nav.html#af78cb58bcd60253c0b30e49c00afd571',1,'al::Nav::uu()'],['../classal_1_1_pose.html#a2a3ec6e534f08a9d39941b4d80508c6e',1,'al::Pose::uu()']]],
   ['ux',['ux',['../classal_1_1_pose.html#a2b728c79f0b27222e06f7d0776059731',1,'al::Pose']]],
   ['uy',['uy',['../classal_1_1_pose.html#afec012f43c5caac53aa62d1c938c8e0d',1,'al::Pose']]],

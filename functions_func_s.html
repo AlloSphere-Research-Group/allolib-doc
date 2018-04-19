@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -57,20 +44,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_s.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -287,6 +260,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classal_1_1_parameter_vec4.html#a0e600f40bb4830c6467b0df4831b1828">al::ParameterVec4</a>
 , <a class="el" href="classal_1_1_parameter_wrapper.html#a651b5d3531cf7b2273175911b4d27cd1">al::ParameterWrapper&lt; ParameterType &gt;</a>
 </li>
+<li>setParamFields()
+: <a class="el" href="classal_1_1_synth_voice.html#a19a71c95a42a73d04bc4fb324cb44e4d">al::SynthVoice</a>
+</li>
 <li>setProcessingCallback()
 : <a class="el" href="classal_1_1_parameter_wrapper.html#a7271bd18ca4e24f1601074ec631bf054">al::ParameterWrapper&lt; ParameterType &gt;</a>
 </li>
@@ -308,7 +284,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classal_1_1_matrix4.html#a6a0d3df8f114343d2c83023b7c062c90">al::Matrix4&lt; T &gt;</a>
 </li>
 <li>shift()
-: <a class="el" href="classal_1_1_keyboard.html#ab18114e279fd11dd676ae20f00ac2283">al::Keyboard</a>
+: <a class="el" href="classal_1_1_keyboard.html#a6157cd832cdbac2a2e34137646297442">al::Keyboard</a>
 </li>
 <li>ShiftBuffer()
 : <a class="el" href="classal_1_1_shift_buffer.html#ad91844a2a458ecacbdb58c1d1442da02">al::ShiftBuffer&lt; N, T &gt;</a>
@@ -407,7 +383,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classgam_1_1_one_pole.html#ad6f6c9416711273a8f11484869511a97">gam::OnePole&lt; Tv, Tp, Td &gt;</a>
 </li>
 <li>Socket()
-: <a class="el" href="classal_1_1_socket.html#aca2c8fda2fefe009b929b4b763658ae2">al::Socket</a>
+: <a class="el" href="classal_1_1_socket.html#abff2b0d053a50382aa6afd5cf1b6b5de">al::Socket</a>
 </li>
 <li>SocketClient()
 : <a class="el" href="classal_1_1_socket_client.html#a53880abaf2d8254977486b3e3b9df3c7">al::SocketClient</a>
@@ -465,7 +441,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>spu()
 : <a class="el" href="classgam_1_1_domain1.html#adda18252e3a60b97f91a5919637f24ed">gam::Domain1</a>
-, <a class="el" href="classgam_1_1_domain.html#adc9bf181c1b6e3ba2044da1c58972538">gam::Domain</a>
+, <a class="el" href="classgam_1_1_domain.html#a0471ac485929801933203198a36544bd">gam::Domain</a>
 , <a class="el" href="classgam_1_1_domain_observer.html#a7579ecc5d2958eb1c0abd134266ef1b3">gam::DomainObserver</a>
 </li>
 <li>sqr()
@@ -578,7 +554,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classgam_1_1_env.html#ad2d5dce16a8816859e58f36a7a9d19c9">gam::Env&lt; N, Tv, Tp, Td &gt;</a>
 </li>
 <li>sustainPoint()
-: <a class="el" href="classgam_1_1_env.html#a11d8bfb0ea8033ad7fa43eed71c78d3a">gam::Env&lt; N, Tv, Tp, Td &gt;</a>
+: <a class="el" href="classgam_1_1_env.html#a24f5e1cfe9847da0f7ba0dc32d9bbb2f">gam::Env&lt; N, Tv, Tp, Td &gt;</a>
 </li>
 <li>swap()
 : <a class="el" href="classgam_1_1_slice.html#a333b197cdbe0479da89938cb6ce2d21f">gam::Slice&lt; T &gt;</a>
@@ -588,14 +564,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:23 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1_a_d.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_a_d.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_a_d.html">AD</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,26 +77,22 @@ $(document).ready(function(){initNavTree('classgam_1_1_a_d.html','');});
  <a href="classgam_1_1_a_d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_envelope_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/Envelope.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::AD&lt; Tv, Tp, Td &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::AD&lt; Tv, Tp, Td &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_a_d__inherit__graph.png" border="0" usemap="#gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_inherit__map" id="gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_inherit__map">
 <area shape="rect" id="node2" href="classgam_1_1_env.html" title="gam::Env\&lt; 2, Tv, Tp,\l Td \&gt;" alt="" coords="12,80,171,121"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::AD&lt; Tv, Tp, Td &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::AD&lt; Tv, Tp, Td &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_a_d__coll__graph.png" border="0" usemap="#gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_coll__map" id="gam_1_1_a_d_3_01_tv_00_01_tp_00_01_td_01_4_coll__map">
 <area shape="rect" id="node2" href="classgam_1_1_env.html" title="gam::Env\&lt; 2, Tv, Tp,\l Td \&gt;" alt="" coords="12,109,171,151"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -442,11 +415,7 @@ template&lt;class Tv  = real, class Tp  = real, class Td  = DomainObserver&gt; <
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_envelope_8h_source.html#l00314">314</a> of file <a class="el" href="_envelope_8h_source.html">Envelope.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    {</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="classgam_1_1_a_d.html#a61de2d73f525d6c790e2772dd1b2bf03">attack</a>(att).decay(dec);</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        this-&gt;<a class="code" href="classgam_1_1_env.html#a0e679f9339394488a84418e124352979">levels</a>(0,<a class="code" href="classgam_1_1_a_d.html#aadeaac545e579bfc63240b402e7f269f">amp</a>,0);</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        this-&gt;<a class="code" href="classgam_1_1_env.html#ab636f11903c1202cc34d2a50a7c4dea4">curve</a>(crv);</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div><div class="ttc" id="classgam_1_1_a_d_html_a61de2d73f525d6c790e2772dd1b2bf03"><div class="ttname"><a href="classgam_1_1_a_d.html#a61de2d73f525d6c790e2772dd1b2bf03">gam::AD::attack</a></div><div class="ttdeci">Tp attack() const</div><div class="ttdoc">Get attack length. </div><div class="ttdef"><b>Definition:</b> <a href="_envelope_8h_source.html#l00332">Envelope.h:332</a></div></div>
-<div class="ttc" id="classgam_1_1_a_d_html_aadeaac545e579bfc63240b402e7f269f"><div class="ttname"><a href="classgam_1_1_a_d.html#aadeaac545e579bfc63240b402e7f269f">gam::AD::amp</a></div><div class="ttdeci">Tv amp() const</div><div class="ttdoc">Get amplitude. </div><div class="ttdef"><b>Definition:</b> <a href="_envelope_8h_source.html#l00338">Envelope.h:338</a></div></div>
-<div class="ttc" id="classgam_1_1_env_html_ab636f11903c1202cc34d2a50a7c4dea4"><div class="ttname"><a href="classgam_1_1_env.html#ab636f11903c1202cc34d2a50a7c4dea4">gam::Env&lt; 2, Tv, Tp, Td &gt;::curve</a></div><div class="ttdeci">Env &amp; curve(Tp v)</div><div class="ttdoc">Set curvature of all segments. </div><div class="ttdef"><b>Definition:</b> <a href="_envelope_8h_source.html#l00199">Envelope.h:199</a></div></div>
-<div class="ttc" id="classgam_1_1_env_html_a0e679f9339394488a84418e124352979"><div class="ttname"><a href="classgam_1_1_env.html#a0e679f9339394488a84418e124352979">gam::Env&lt; 2, Tv, Tp, Td &gt;::levels</a></div><div class="ttdeci">Tv * levels()</div><div class="ttdoc">Get break-point levels array. </div><div class="ttdef"><b>Definition:</b> <a href="_envelope_8h_source.html#l00257">Envelope.h:257</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -478,7 +447,7 @@ template&lt;class Tv  = real, class Tp  = real, class Td  = DomainObserver&gt; <
 <p>Note that when this is activated the last segment moves from the second to last level to the first level. Thus, the very last level is ignored. This is done to avoid clicking due to mismatched levels when the envelope wraps around. </p>
 
 <p class="definition">Definition at line <a class="el" href="_envelope_8h_source.html#l00139">139</a> of file <a class="el" href="_envelope_8h_source.html">Envelope.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{ mLoop=v; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad067c9157deee92fa3ef5911483bc503"></a>
@@ -525,23 +494,18 @@ template&lt;class Tv  = real, class Tp  = real, class Td  = DomainObserver&gt; <
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_envelope_8h_source.html#l00886">886</a> of file <a class="el" href="_envelope_8h_source.html">Envelope.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                                                                      {</div><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    mLengths[modSegment] = Tp(0);</div><div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    mLengths[modSegment] = length - <a class="code" href="classgam_1_1_env.html#a6e747fbdba8cacfaf617a8d18f926782">totalLength</a>();</div><div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;}</div><div class="ttc" id="classgam_1_1_env_html_a6e747fbdba8cacfaf617a8d18f926782"><div class="ttname"><a href="classgam_1_1_env.html#a6e747fbdba8cacfaf617a8d18f926782">gam::Env&lt; 2, Tv, Tp, Td &gt;::totalLength</a></div><div class="ttdeci">Tp totalLength() const</div><div class="ttdoc">Get total length of all envelope segments. </div><div class="ttdef"><b>Definition:</b> <a href="_envelope_8h_source.html#l00879">Envelope.h:879</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_envelope_8h_source.html">Envelope.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_a_d.html">AD</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_preset_server.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_preset_server.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_preset_server.html">PresetServer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -95,22 +72,18 @@ $(document).ready(function(){initNavTree('classal_1_1_preset_server.html','');})
 <div class="title">al::PresetServer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::PresetServer:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::PresetServer:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_preset_server__inherit__graph.png" border="0" usemap="#al_1_1_preset_server_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_preset_server_inherit__map" id="al_1_1_preset_server_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="5,5,172,32"/>
 <area shape="rect" id="node3" href="classal_1_1_o_s_c_notifier.html" title="al::OSCNotifier" alt="" coords="197,5,314,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::PresetServer:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::PresetServer:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_preset_server__coll__graph.png" border="0" usemap="#al_1_1_preset_server_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_preset_server_coll__map" id="al_1_1_preset_server_coll__map">
 <area shape="rect" id="node2" href="classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="5,364,172,391"/>
@@ -118,7 +91,7 @@ $(document).ready(function(){initNavTree('classal_1_1_preset_server.html','');})
 <area shape="rect" id="node5" href="classal_1_1osc_1_1_send.html" title="al::osc::Send" alt="" coords="203,171,307,197"/>
 <area shape="rect" id="node6" href="classal_1_1osc_1_1_packet.html" title="al::osc::Packet" alt="" coords="198,95,313,121"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -317,7 +290,7 @@ std::vector&lt; <a class="el" href="classal_1_1osc_1_1_send.html">osc::Send</a> 
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___parameter_8hpp_source.html#l00068">68</a> of file <a class="el" href="al___parameter_8hpp_source.html">al_Parameter.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                               {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        mListenerLock.lock();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        mOSCSenders.push_back(<span class="keyword">new</span> osc::Send(oscPort, IPaddress.c_str()));</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        mListenerLock.unlock();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//      std::cout &lt;&lt; &quot;Registered listener &quot; &lt;&lt; IPaddress &lt;&lt; &quot;:&quot; &lt;&lt; oscPort&lt;&lt; std::endl;</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6ca8bcafabad4ce12fd66cb0ff84c3d9"></a>
@@ -370,15 +343,11 @@ std::vector&lt; <a class="el" href="classal_1_1osc_1_1_send.html">osc::Send</a> 
 <li><a class="el" href="al___preset_8hpp_source.html">al_Preset.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_preset_server.html">PresetServer</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

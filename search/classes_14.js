@@ -8,7 +8,7 @@ var searchData=
   ['vaomesh',['VAOMesh',['../classal_1_1_v_a_o_mesh.html',1,'al']]],
   ['vaowrapper',['VAOWrapper',['../structal_1_1_v_a_o_mesh_1_1_v_a_o_wrapper.html',1,'al::VAOMesh']]],
   ['vbap',['Vbap',['../classal_1_1_vbap.html',1,'al']]],
-  ['vec',['Vec',['../classal_1_1_vec.html',1,'al::Vec&lt; N, T &gt;'],['../classgam_1_1_vec.html',1,'gam::Vec&lt; N, T &gt;']]],
+  ['vec',['Vec',['../classgam_1_1_vec.html',1,'gam::Vec&lt; N, T &gt;'],['../classal_1_1_vec.html',1,'al::Vec&lt; N, T &gt;']]],
   ['vec_3c_203_2c_20double_20_3e',['Vec&lt; 3, double &gt;',['../classal_1_1_vec.html',1,'al']]],
   ['vec_3c_203_2c_20float_20_3e',['Vec&lt; 3, float &gt;',['../classal_1_1_vec.html',1,'al']]],
   ['vec_3c_203_2c_20int_20_3e',['Vec&lt; 3, int &gt;',['../classal_1_1_vec.html',1,'al']]],

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structgam_1_1acc_1_1_none.html" title="gam::acc::None" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node1" href="$struct_allo_array.html" title="AlloArray" alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node2" href="$classal_1_1_array.html" title="al::Array" alt="" coords="136,5,213,32"/>
+<area shape="rect" id="node3" href="$classal_1_1_voxels.html" title="al::Voxels" alt="" coords="261,5,347,32"/>
 </map>

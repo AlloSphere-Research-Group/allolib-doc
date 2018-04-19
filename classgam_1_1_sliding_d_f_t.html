@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1_sliding_d_f_t.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_sliding_d_f_t.html','');}
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_sliding_d_f_t.html">SlidingDFT</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -101,23 +78,19 @@ $(document).ready(function(){initNavTree('classgam_1_1_sliding_d_f_t.html','');}
  <a href="classgam_1_1_sliding_d_f_t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_d_f_t_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/DFT.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::SlidingDFT&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::SlidingDFT&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_sliding_d_f_t__inherit__graph.png" border="0" usemap="#gam_1_1_sliding_d_f_t_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1_sliding_d_f_t_3_01_t_01_4_inherit__map" id="gam_1_1_sliding_d_f_t_3_01_t_01_4_inherit__map">
 <area shape="rect" id="node2" href="classgam_1_1_d_f_t_base.html" title="Base class for DFTs. " alt="" coords="49,155,203,181"/>
 <area shape="rect" id="node3" href="classgam_1_1_domain_observer.html" title="Domain observer. " alt="" coords="41,80,211,107"/>
 <area shape="rect" id="node4" href="classgam_1_1_node2.html" title="gam::Node2\&lt; DomainObserver \&gt;" alt="" coords="5,5,247,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::SlidingDFT&lt; T &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::SlidingDFT&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_sliding_d_f_t__coll__graph.png" border="0" usemap="#gam_1_1_sliding_d_f_t_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1_sliding_d_f_t_3_01_t_01_4_coll__map" id="gam_1_1_sliding_d_f_t_3_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="classgam_1_1_d_f_t_base.html" title="Base class for DFTs. " alt="" coords="261,228,416,255"/>
@@ -131,7 +104,7 @@ $(document).ready(function(){initNavTree('classgam_1_1_sliding_d_f_t.html','');}
 <area shape="rect" id="node11" href="classgam_1_1_allocator.html" title="gam::Allocator\&lt; T \&gt;" alt="" coords="532,109,687,136"/>
 <area shape="rect" id="node12" href="structgam_1_1_size_array.html" title="Size functor for Array. " alt="" coords="711,109,833,136"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -389,9 +362,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_d_f_t_8h_source.html#l00629">629</a> of file <a class="el" href="_d_f_t_8h_source.html">DFT.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    : DFTBase&lt;T&gt;(), mBinLo(0), mBinHi(0), mDelay(0)</div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;{</div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <a class="code" href="classgam_1_1_sliding_d_f_t.html#aa177c41d5db4a5ee036870ee938bd281">resize</a>(<a class="code" href="classgam_1_1_d_f_t_base.html#aaaff5baf9315a77863e679c979e44851">sizeDFT</a>, binLo, binHi);</div><div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;}</div><div class="ttc" id="classgam_1_1_sliding_d_f_t_html_aa177c41d5db4a5ee036870ee938bd281"><div class="ttname"><a href="classgam_1_1_sliding_d_f_t.html#aa177c41d5db4a5ee036870ee938bd281">gam::SlidingDFT::resize</a></div><div class="ttdeci">void resize(unsigned sizeDFT, unsigned binLo, unsigned binHi)</div><div class="ttdoc">Resize transform. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00636">DFT.h:636</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_aaaff5baf9315a77863e679c979e44851"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#aaaff5baf9315a77863e679c979e44851">gam::DFTBase::sizeDFT</a></div><div class="ttdeci">unsigned sizeDFT() const</div><div class="ttdoc">Get size of transform, in samples. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00523">DFT.h:523</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -441,10 +412,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_d_f_t_8h_source.html#l00547">547</a> of file <a class="el" href="_d_f_t_8h_source.html">DFT.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                                                               {</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    T * auxBuf = <a class="code" href="classgam_1_1_d_f_t_base.html#ae3e8f4afad710f18b953bcf12ddeff40">aux</a>(auxNum);</div><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0; k&lt;<a class="code" href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">numBins</a>(); ++k)</div><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <a class="code" href="classgam_1_1_d_f_t_base.html#ac386102d19b2154d1cc058618213fb9a">bin</a>(k)[binComp] = auxBuf[k];</div><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;}</div><div class="ttc" id="classgam_1_1_d_f_t_base_html_ae3e8f4afad710f18b953bcf12ddeff40"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#ae3e8f4afad710f18b953bcf12ddeff40">gam::DFTBase::aux</a></div><div class="ttdeci">T * aux(unsigned num)</div><div class="ttdoc">Get pointer to an auxiliary buffer. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00511">DFT.h:511</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_a56c880f56325342d8e32a062c277c0ab"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">gam::DFTBase::numBins</a></div><div class="ttdeci">unsigned numBins() const</div><div class="ttdoc">Get number of frequency bins. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00520">DFT.h:520</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_ac386102d19b2154d1cc058618213fb9a"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#ac386102d19b2154d1cc058618213fb9a">gam::DFTBase::bin</a></div><div class="ttdeci">Complex&lt; T &gt; &amp; bin(unsigned k)</div><div class="ttdoc">Get reference to bin value. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00096">DFT.h:96</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2679fe22be28db56b3aec78f1243f809"></a>
@@ -493,10 +461,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_d_f_t_8h_source.html#l00540">540</a> of file <a class="el" href="_d_f_t_8h_source.html">DFT.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                                               {</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    T * auxBuf = <a class="code" href="classgam_1_1_d_f_t_base.html#ae3e8f4afad710f18b953bcf12ddeff40">aux</a>(auxNum);</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0; k&lt;<a class="code" href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">numBins</a>(); ++k)</div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        auxBuf[k] = <a class="code" href="classgam_1_1_d_f_t_base.html#ac386102d19b2154d1cc058618213fb9a">bin</a>(k)[binComp];</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}</div><div class="ttc" id="classgam_1_1_d_f_t_base_html_ae3e8f4afad710f18b953bcf12ddeff40"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#ae3e8f4afad710f18b953bcf12ddeff40">gam::DFTBase::aux</a></div><div class="ttdeci">T * aux(unsigned num)</div><div class="ttdoc">Get pointer to an auxiliary buffer. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00511">DFT.h:511</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_a56c880f56325342d8e32a062c277c0ab"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">gam::DFTBase::numBins</a></div><div class="ttdeci">unsigned numBins() const</div><div class="ttdoc">Get number of frequency bins. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00520">DFT.h:520</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_ac386102d19b2154d1cc058618213fb9a"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#ac386102d19b2154d1cc058618213fb9a">gam::DFTBase::bin</a></div><div class="ttdeci">Complex&lt; T &gt; &amp; bin(unsigned k)</div><div class="ttdoc">Get reference to bin value. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00096">DFT.h:96</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af7b94c97e506b9db2f3edf0f0dac1503"></a>
@@ -558,10 +523,7 @@ template&lt;class T &gt; </div>
 <p>Each buffer allocated will maintain a size equal to the number of bins. Memory is guaranteed to be contiguous. This means if you need a complex-valued buffer, you can simply allocate two auxiliary buffers and use the address of the first one as the complex-valued buffer. </p>
 
 <p class="definition">Definition at line <a class="el" href="_d_f_t_8h_source.html#l00532">532</a> of file <a class="el" href="_d_f_t_8h_source.html">DFT.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                   {</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="namespacegam_1_1mem.html#ae7dac5695b0d6700d1f321ebb112b10b">mem::resize</a>(mAux, mNumAux * <a class="code" href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">numBins</a>(), num * <a class="code" href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">numBins</a>())){</div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        mNumAux = num;</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <a class="code" href="classgam_1_1_d_f_t_base.html#a3dd028cb9f836c26d87f54523158d73c">zeroAux</a>();</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    }</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_ae7dac5695b0d6700d1f321ebb112b10b"><div class="ttname"><a href="namespacegam_1_1mem.html#ae7dac5695b0d6700d1f321ebb112b10b">gam::mem::resize</a></div><div class="ttdeci">bool resize(T *&amp;arr, unsigned sizeNow, unsigned sizeNew)</div><div class="ttdoc">Resizes array. Returns true if resized, false otherwise. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00475">mem.h:475</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_a3dd028cb9f836c26d87f54523158d73c"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a3dd028cb9f836c26d87f54523158d73c">gam::DFTBase::zeroAux</a></div><div class="ttdeci">void zeroAux()</div><div class="ttdoc">Zeroes all auxiliary buffers. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00563">DFT.h:563</a></div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_a56c880f56325342d8e32a062c277c0ab"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a56c880f56325342d8e32a062c277c0ab">gam::DFTBase::numBins</a></div><div class="ttdeci">unsigned numBins() const</div><div class="ttdoc">Get number of frequency bins. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00520">DFT.h:520</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa8eb3d9849e175554c984b8477a235f8"></a>
@@ -596,25 +558,18 @@ template&lt;class T &gt; </div>
 <p>Reimplemented from <a class="el" href="classgam_1_1_domain_observer.html#a79ccf23e40837c29dd91595bec5b059a">gam::DomainObserver</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_d_f_t_8h_source.html#l00569">569</a> of file <a class="el" href="_d_f_t_8h_source.html">DFT.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                       {</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <a class="code" href="classgam_1_1_d_f_t_base.html#a8a598834899ed2f37a2acd82c588deb8">domainFreq</a>().<a class="code" href="classgam_1_1_domain.html#a4481769b9baa439e14b8b0c25d99af88">ups</a>(<a class="code" href="classgam_1_1_d_f_t_base.html#a6fb29cce94c51ba528067a1799f4eebe">binFreq</a>());</div><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;}</div><div class="ttc" id="classgam_1_1_d_f_t_base_html_a8a598834899ed2f37a2acd82c588deb8"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a8a598834899ed2f37a2acd82c588deb8">gam::DFTBase::domainFreq</a></div><div class="ttdeci">Domain &amp; domainFreq()</div><div class="ttdoc">Get frequency domain. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00526">DFT.h:526</a></div></div>
-<div class="ttc" id="classgam_1_1_domain_html_a4481769b9baa439e14b8b0c25d99af88"><div class="ttname"><a href="classgam_1_1_domain.html#a4481769b9baa439e14b8b0c25d99af88">gam::Domain::ups</a></div><div class="ttdeci">void ups(double v)</div><div class="ttdoc">Set units/sample and notify observers. </div></div>
-<div class="ttc" id="classgam_1_1_d_f_t_base_html_a6fb29cce94c51ba528067a1799f4eebe"><div class="ttname"><a href="classgam_1_1_d_f_t_base.html#a6fb29cce94c51ba528067a1799f4eebe">gam::DFTBase::binFreq</a></div><div class="ttdeci">double binFreq() const</div><div class="ttdoc">Get width of frequency bins. </div><div class="ttdef"><b>Definition:</b> <a href="_d_f_t_8h_source.html#l00514">DFT.h:514</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_d_f_t_8h_source.html">DFT.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_sliding_d_f_t.html">SlidingDFT</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:20 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_render_manager.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_render_manager.html','');}
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_render_manager.html">RenderManager</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,21 +73,17 @@ $(document).ready(function(){initNavTree('classal_1_1_render_manager.html','');}
 <div class="title">al::RenderManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::RenderManager:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::RenderManager:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_render_manager__inherit__graph.png" border="0" usemap="#al_1_1_render_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_render_manager_inherit__map" id="al_1_1_render_manager_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_graphics.html" title="al::Graphics" alt="" coords="27,80,126,107"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::RenderManager:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::RenderManager:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_render_manager__coll__graph.png" border="0" usemap="#al_1_1_render_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_render_manager_coll__map" id="al_1_1_render_manager_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_viewport_stack.html" title="al::ViewportStack" alt="" coords="700,5,836,32"/>
@@ -124,7 +97,7 @@ $(document).ready(function(){initNavTree('classal_1_1_render_manager.html','');}
 <area shape="rect" id="node12" title="STL class. " alt="" coords="206,165,293,192"/>
 <area shape="rect" id="node13" title="STL class. " alt="" coords="5,158,144,199"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -485,24 +458,18 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___render_manager_8hpp_source.html#l00154">154</a> of file <a class="el" href="al___render_manager_8hpp_source.html">al_RenderManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="classal_1_1_render_manager.html#a2fb48fab999fedd9cc42a678329a02e2">rotate</a>(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>, axis[0],axis[1],axis[2]);</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div><div class="ttc" id="classal_1_1_render_manager_html_a2fb48fab999fedd9cc42a678329a02e2"><div class="ttname"><a href="classal_1_1_render_manager.html#a2fb48fab999fedd9cc42a678329a02e2">al::RenderManager::rotate</a></div><div class="ttdeci">void rotate(float angle, float x=0., float y=0., float z=1.)</div></div>
-<div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___render_manager_8hpp_source.html">al_RenderManager.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_render_manager.html">RenderManager</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

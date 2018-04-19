@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classal_1_1_parameter_wrapper.html" title="al::ParameterWrapper\l\&lt; float \&gt;" alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node2" href="$classal_1_1_parameter.html" title="The Parameter class. " alt="" coords="216,13,325,39"/>
-<area shape="rect" id="node3" href="$classal_1_1_parameter_bool.html" title="al::ParameterBool" alt="" coords="373,13,512,39"/>
+<area shape="rect" id="node1" href="$classal_1_1_parameter_wrapper.html" title="al::ParameterWrapper\l\&lt; al::Vec3f \&gt;" alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$classal_1_1_parameter_vec3.html" title="al::ParameterVec3" alt="" coords="216,13,356,39"/>
 </map>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___font_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___font_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Font.hpp</div>  </div>
@@ -98,7 +75,7 @@ $(document).ready(function(){initNavTree('al___font_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_font_html_a7ffbd89ca6b4a71a2534b3e0654ceb70"><div class="ttname"><a href="classal_1_1_font.html#a7ffbd89ca6b4a71a2534b3e0654ceb70">al::Font::write</a></div><div class="ttdeci">void write(Mesh &amp;mesh, const std::string &amp;text)</div></div>
 <div class="ttc" id="classal_1_1_font_html_af6595139e9229251d4eec4338f71ea08"><div class="ttname"><a href="classal_1_1_font.html#af6595139e9229251d4eec4338f71ea08">al::Font::character</a></div><div class="ttdeci">const FontCharacter &amp; character(int idx) const</div><div class="ttdoc">Get metrics of a particular character (idx 0..255) </div><div class="ttdef"><b>Definition:</b> <a href="al___font_8hpp_source.html#l00092">al_Font.hpp:92</a></div></div>
 <div class="ttc" id="classal_1_1_graphics_html"><div class="ttname"><a href="classal_1_1_graphics.html">al::Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00055">al_Graphics.hpp:55</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_font_html"><div class="ttname"><a href="classal_1_1_font.html">al::Font</a></div><div class="ttdef"><b>Definition:</b> <a href="al___font_8hpp_source.html#l00060">al_Font.hpp:60</a></div></div>
 <div class="ttc" id="classal_1_1_font_html_af212eb0de5fcf63c194b6f0183c614e6"><div class="ttname"><a href="classal_1_1_font.html#af212eb0de5fcf63c194b6f0183c614e6">al::Font::load</a></div><div class="ttdeci">bool load(const std::string &amp;filename, int fontSize=10, bool antialias=true)</div><div class="ttdoc">Load font from file. </div></div>
 <div class="ttc" id="classal_1_1_font_html_a68430eb3b05181c8e49803446cec66e7"><div class="ttname"><a href="classal_1_1_font.html#a68430eb3b05181c8e49803446cec66e7">al::Font::render</a></div><div class="ttdeci">void render(Graphics &amp;g, const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="al___font_8hpp_source.html#l00175">al_Font.hpp:175</a></div></div>
@@ -107,15 +84,11 @@ $(document).ready(function(){initNavTree('al___font_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_font_html_a0f216a3ab1a50c68a0069bc851508961"><div class="ttname"><a href="classal_1_1_font.html#a0f216a3ab1a50c68a0069bc851508961">al::Font::descender</a></div><div class="ttdeci">float descender() const</div><div class="ttdoc">Returns the &quot;below-line&quot; height of the font, in pixels. </div></div>
 <div class="ttc" id="classal_1_1_mesh_html"><div class="ttname"><a href="classal_1_1_mesh.html">al::Mesh</a></div><div class="ttdoc">Stores buffers related to rendering graphical objects. </div><div class="ttdef"><b>Definition:</b> <a href="al___mesh_8hpp_source.html#l00064">al_Mesh.hpp:64</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><b>al_Font.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

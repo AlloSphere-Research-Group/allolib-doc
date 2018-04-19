@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___graphics_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___graphics_8hpp_source.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8287d74bb027deea89b54e36da9b0527.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Graphics.hpp</div>  </div>
@@ -112,7 +89,7 @@ $(document).ready(function(){initNavTree('al___graphics_8hpp_source.html','');})
 <div class="ttc" id="classal_1_1_graphics_html_a55a8dea47426df9a371677eab4c6ac07"><div class="ttname"><a href="classal_1_1_graphics.html#a55a8dea47426df9a371677eab4c6ac07">al::Graphics::blendModeTrans</a></div><div class="ttdeci">void blendModeTrans()</div><div class="ttdoc">Set blend mode to transparent (asymmetric) </div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00175">al_Graphics.hpp:175</a></div></div>
 <div class="ttc" id="structal_1_1_color_html_a72db392e921f06a2d9cf89125af92a1d"><div class="ttname"><a href="structal_1_1_color.html#a72db392e921f06a2d9cf89125af92a1d">al::Color::set</a></div><div class="ttdeci">Color &amp; set(const Color &amp;c, float al)</div><div class="ttdoc">Set RGB from another color and alpha from argument. </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00154">al_Color.hpp:154</a></div></div>
 <div class="ttc" id="classal_1_1_graphics_html"><div class="ttname"><a href="classal_1_1_graphics.html">al::Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00055">al_Graphics.hpp:55</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_graphics_html_a1915dc1fbbcd7a97b21514157298900c"><div class="ttname"><a href="classal_1_1_graphics.html#a1915dc1fbbcd7a97b21514157298900c">al::Graphics::blendAdd</a></div><div class="ttdeci">void blendAdd()</div><div class="ttdoc">Set states for additive blending. </div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00181">al_Graphics.hpp:181</a></div></div>
 <div class="ttc" id="classal_1_1_graphics_html_a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6"><div class="ttname"><a href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6">al::Graphics::DEPTH_TEST</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00082">al_Graphics.hpp:82</a></div></div>
 <div class="ttc" id="classal_1_1_graphics_html_a75c9c36738c93269d43ef7e6d518f0b6ac533c55274271636a70ba436455a3710"><div class="ttname"><a href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac533c55274271636a70ba436455a3710">al::Graphics::FRONT_AND_BACK</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00091">al_Graphics.hpp:91</a></div></div>
@@ -152,15 +129,11 @@ $(document).ready(function(){initNavTree('al___graphics_8hpp_source.html','');})
 <div class="ttc" id="classal_1_1_graphics_html_a75c9c36738c93269d43ef7e6d518f0b6ac391411833ff33267493980cdfd74ce1"><div class="ttname"><a href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac391411833ff33267493980cdfd74ce1">al::Graphics::FRONT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00089">al_Graphics.hpp:89</a></div></div>
 <div class="ttc" id="structal_1_1_color_html_a073b6245306b3c8ea2804e0d06b345a4"><div class="ttname"><a href="structal_1_1_color.html#a073b6245306b3c8ea2804e0d06b345a4">al::Color::a</a></div><div class="ttdeci">float a</div><div class="ttdoc">Alpha component in [0, 1]. </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00074">al_Color.hpp:74</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8287d74bb027deea89b54e36da9b0527.html">graphics</a></li><li class="navelem"><b>al_Graphics.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

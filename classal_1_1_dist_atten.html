@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_dist_atten.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_dist_atten.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_dist_atten.html">DistAtten</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,14 +73,12 @@ $(document).ready(function(){initNavTree('classal_1_1_dist_atten.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___dist_atten_8hpp_source.html">al/core/spatial/al_DistAtten.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::DistAtten&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___dist_atten_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/spatial/al_DistAtten.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::DistAtten&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_dist_atten__coll__graph.png" border="0" usemap="#al_1_1_dist_atten_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -236,26 +211,18 @@ template&lt;class T = float&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___dist_atten_8hpp_source.html#l00070">70</a> of file <a class="el" href="al___dist_atten_8hpp_source.html">al_DistAtten.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  :  mNear(<a class="code" href="classal_1_1_dist_atten.html#a8a2cd3ea22fbc4d8d0bb980e3d605567">nearClip</a>), mFar(<a class="code" href="classal_1_1_dist_atten.html#a3b96fff2aff3921609989a8b834ef8c4">farClip</a>), mFarBias(<a class="code" href="classal_1_1_dist_atten.html#acb2ae55897fec0c994425c60b6416c5e">farBias</a>), mLaw(<a class="code" href="classal_1_1_dist_atten.html#ac1e5e893f66df68ac8f4acc7d4534ceb">law</a>)</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {  setScale(); }</div><div class="ttc" id="classal_1_1_dist_atten_html_a3b96fff2aff3921609989a8b834ef8c4"><div class="ttname"><a href="classal_1_1_dist_atten.html#a3b96fff2aff3921609989a8b834ef8c4">al::DistAtten::farClip</a></div><div class="ttdeci">T farClip() const</div><div class="ttdoc">Get far clip distance. </div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00082">al_DistAtten.hpp:82</a></div></div>
-<div class="ttc" id="classal_1_1_dist_atten_html_a8a2cd3ea22fbc4d8d0bb980e3d605567"><div class="ttname"><a href="classal_1_1_dist_atten.html#a8a2cd3ea22fbc4d8d0bb980e3d605567">al::DistAtten::nearClip</a></div><div class="ttdeci">T nearClip() const</div><div class="ttdoc">Get near clip distance. </div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00079">al_DistAtten.hpp:79</a></div></div>
-<div class="ttc" id="classal_1_1_dist_atten_html_ac1e5e893f66df68ac8f4acc7d4534ceb"><div class="ttname"><a href="classal_1_1_dist_atten.html#ac1e5e893f66df68ac8f4acc7d4534ceb">al::DistAtten::law</a></div><div class="ttdeci">AttenuationLaw law() const</div><div class="ttdoc">Get attenuation law. </div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00088">al_DistAtten.hpp:88</a></div></div>
-<div class="ttc" id="classal_1_1_dist_atten_html_acb2ae55897fec0c994425c60b6416c5e"><div class="ttname"><a href="classal_1_1_dist_atten.html#acb2ae55897fec0c994425c60b6416c5e">al::DistAtten::farBias</a></div><div class="ttdeci">T farBias() const</div><div class="ttdoc">Get far bias. </div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00085">al_DistAtten.hpp:85</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___dist_atten_8hpp_source.html">al_DistAtten.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_dist_atten.html">DistAtten</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

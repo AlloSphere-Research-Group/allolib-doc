@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structal_1_1_twiddle_3_01double_01_4.html" title="al::Twiddle\&lt; double \&gt;" alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node1" href="$classal_1_1_thread.html" title="al::Thread" alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$classal_1_1_periodic_thread.html" title="Thread that calls a function periodically. " alt="" coords="140,5,279,32"/>
 </map>

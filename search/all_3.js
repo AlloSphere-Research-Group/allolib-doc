@@ -106,7 +106,7 @@ var searchData=
   ['copytostruct',['copyToStruct',['../class_c_s_v_reader.html#ac9318898b2dc0d2532ab7faa48e59f73',1,'CSVReader']]],
   ['cos',['cos',['../classgam_1_1_l_f_o.html#a5d23dac28835557763e64548e31b4676',1,'gam::LFO::cos()'],['../classal_1_1_complex.html#a82ddb2cdefd7e442080093b72e4aaa1d',1,'al::Complex::cos()']]],
   ['cosh',['cosh',['../classal_1_1_complex.html#a426b58bf50eea320f1e3bef94f54fa8a',1,'al::Complex']]],
-  ['cosine',['Cosine',['../structgam_1_1ipl_seq_1_1_cosine.html',1,'gam::iplSeq::Cosine&lt; T &gt;'],['../namespacegam_1_1tbl.html#a9d5bc5fc05c645bcd4c72b5987b08944',1,'gam::tbl::cosine()']]],
+  ['cosine',['Cosine',['../structgam_1_1ipl_seq_1_1_cosine.html',1,'gam::iplSeq::Cosine&lt; T &gt;'],['../tbl_8h.html#abfa71d3d59bc0bfc3ba88a629af04b23a772c3500c8f206e6acf3cebd5e31ea71',1,'gam::COSINE()'],['../namespacegam_1_1tbl.html#a9d5bc5fc05c645bcd4c72b5987b08944',1,'gam::tbl::cosine()']]],
   ['cosp3',['cosP3',['../namespacegam_1_1scl.html#a9092f0946e3f688eeca8c52e7486d64f',1,'gam::scl']]],
   ['cost8',['cosT8',['../namespacegam_1_1scl.html#a5012ce9e8da297b0950fed163abe7ab4',1,'gam::scl']]],
   ['cosu',['cosU',['../classgam_1_1_l_f_o.html#a3188460161129c18f1e6fb0f57f9c8e8',1,'gam::LFO']]],

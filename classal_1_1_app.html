@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_app.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,9 +57,13 @@ $(document).ready(function(){initNavTree('classal_1_1_app.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_app.html">App</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -99,11 +75,9 @@ $(document).ready(function(){initNavTree('classal_1_1_app.html','');});
 <div class="title">al::App Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::App:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::App:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_app__inherit__graph.png" border="0" usemap="#al_1_1_app_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_app_inherit__map" id="al_1_1_app_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_window_app.html" title="al::WindowApp" alt="" coords="156,80,275,107"/>
@@ -113,55 +87,39 @@ $(document).ready(function(){initNavTree('classal_1_1_app.html','');});
 <area shape="rect" id="node6" href="classal_1_1_audio_app.html" title="al::AudioApp" alt="" coords="299,80,403,107"/>
 <area shape="rect" id="node7" href="classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="428,80,595,107"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::App:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::App:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_app__coll__graph.png" border="0" usemap="#al_1_1_app_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_app_coll__map" id="al_1_1_app_coll__map">
-<area shape="rect" id="node37" href="classal_1_1_app_1_1_app_event_handler.html" title="al::App::AppEventHandler" alt="" coords="2059,765,2247,792"/>
-<area shape="rect" id="node2" href="classal_1_1_window_app.html" title="al::WindowApp" alt="" coords="1569,533,1688,560"/>
-<area shape="rect" id="node3" href="classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="1309,621,1404,648"/>
-<area shape="rect" id="node4" href="classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="851,571,954,597"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="249,280,335,307"/>
-<area shape="rect" id="node33" href="classal_1_1_shader_program.html" title="Shader program object. " alt="" coords="831,191,974,217"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="5,273,144,314"/>
-<area shape="rect" id="node8" href="classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="475,453,657,480"/>
-<area shape="rect" id="node13" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html" title="al::WindowApp::StandardWindow\lAppKeyControls" alt="" coords="1024,395,1261,437"/>
-<area shape="rect" id="node18" href="classal_1_1_nav_input_control.html" title="al::NavInputControl" alt="" coords="1555,861,1703,888"/>
-<area shape="rect" id="node9" href="classal_1_1_mouse.html" title="al::Mouse" alt="" coords="861,621,945,648"/>
-<area shape="rect" id="node11" href="structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="839,739,967,765"/>
-<area shape="rect" id="node12" href="classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="1324,533,1389,560"/>
-<area shape="rect" id="node14" href="classal_1_1_audio_app.html" title="al::AudioApp" alt="" coords="1577,811,1681,837"/>
-<area shape="rect" id="node15" href="classal_1_1_audio_i_o.html" title="al::AudioIO" alt="" coords="1310,864,1403,891"/>
-<area shape="rect" id="node16" href="classal_1_1_audio_i_o_data.html" title="al::AudioIOData" alt="" coords="841,895,965,921"/>
-<area shape="rect" id="node17" href="classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="1545,760,1712,787"/>
-<area shape="rect" id="node19" href="classal_1_1_nav.html" title="al::Nav" alt="" coords="1323,959,1391,985"/>
-<area shape="rect" id="node20" href="classal_1_1_pose.html" title="A local coordinate frame. " alt="" coords="866,959,939,985"/>
-<area shape="rect" id="node21" href="classal_1_1_vec.html" title="al::Vec\&lt; 3, double \&gt;" alt="" coords="489,1068,643,1095"/>
-<area shape="rect" id="node22" href="structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, double \&gt;" alt="" coords="193,1068,391,1095"/>
-<area shape="rect" id="node23" href="classal_1_1_quat.html" title="al::Quat\&lt; double \&gt;" alt="" coords="493,959,639,985"/>
-<area shape="rect" id="node24" href="classal_1_1_graphics.html" title="al::Graphics" alt="" coords="1579,273,1678,300"/>
-<area shape="rect" id="node25" href="classal_1_1_render_manager.html" title="al::RenderManager" alt="" coords="1285,185,1428,212"/>
-<area shape="rect" id="node26" href="classal_1_1_viewport_stack.html" title="al::ViewportStack" alt="" coords="835,241,971,268"/>
-<area shape="rect" id="node27" href="classal_1_1_easy_v_a_o.html" title="al::EasyVAO" alt="" coords="853,23,953,49"/>
-<area shape="rect" id="node28" href="classal_1_1_v_a_o.html" title="al::VAO" alt="" coords="531,60,601,87"/>
-<area shape="rect" id="node29" href="classal_1_1_g_p_u_object.html" title="al::GPUObject" alt="" coords="236,89,348,116"/>
-<area shape="rect" id="node34" href="classal_1_1_shader_base.html" title="al::ShaderBase" alt="" coords="507,117,625,144"/>
-<area shape="rect" id="node30" href="classal_1_1_matrix_stack.html" title="al::MatrixStack" alt="" coords="843,301,962,328"/>
-<area shape="rect" id="node32" href="classal_1_1_f_b_o_stack.html" title="al::FBOStack" alt="" coords="851,140,955,167"/>
-<area shape="rect" id="node36" href="classal_1_1_viewpoint.html" title="Viewpoint within a scene. " alt="" coords="1575,975,1682,1001"/>
-<area shape="rect" id="node38" href="structal_1_1_viewport.html" title="al::Viewport" alt="" coords="1579,1025,1679,1052"/>
+<area shape="rect" id="node2" href="classal_1_1_window_app.html" title="al::WindowApp" alt="" coords="1757,411,1876,437"/>
+<area shape="rect" id="node3" href="classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="1514,520,1609,547"/>
+<area shape="rect" id="node4" href="classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="1078,477,1181,504"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="206,204,293,231"/>
+<area shape="rect" id="node22" href="classal_1_1_shader_program.html" title="Shader program object. " alt="" coords="709,56,852,83"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="5,197,144,238"/>
+<area shape="rect" id="node8" href="classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="689,376,872,403"/>
+<area shape="rect" id="node25" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html" title="al::WindowApp::StandardWindow\lAppKeyControls" alt="" coords="1251,369,1488,410"/>
+<area shape="rect" id="node9" href="classal_1_1_mouse.html" title="al::Mouse" alt="" coords="1087,645,1171,672"/>
+<area shape="rect" id="node11" href="structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="1065,427,1193,453"/>
+<area shape="rect" id="node12" href="classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="1529,571,1594,597"/>
+<area shape="rect" id="node13" href="classal_1_1_graphics.html" title="al::Graphics" alt="" coords="1512,225,1611,252"/>
+<area shape="rect" id="node14" href="classal_1_1_render_manager.html" title="al::RenderManager" alt="" coords="1058,176,1201,203"/>
+<area shape="rect" id="node15" href="classal_1_1_viewport_stack.html" title="al::ViewportStack" alt="" coords="713,107,849,133"/>
+<area shape="rect" id="node16" href="classal_1_1_easy_v_a_o.html" title="al::EasyVAO" alt="" coords="731,5,831,32"/>
+<area shape="rect" id="node17" href="classal_1_1_v_a_o.html" title="al::VAO" alt="" coords="431,5,500,32"/>
+<area shape="rect" id="node18" href="classal_1_1_g_p_u_object.html" title="al::GPUObject" alt="" coords="193,32,305,59"/>
+<area shape="rect" id="node23" href="classal_1_1_shader_base.html" title="al::ShaderBase" alt="" coords="406,56,525,83"/>
+<area shape="rect" id="node19" href="classal_1_1_matrix_stack.html" title="al::MatrixStack" alt="" coords="721,176,840,203"/>
+<area shape="rect" id="node21" href="classal_1_1_f_b_o_stack.html" title="al::FBOStack" alt="" coords="729,295,833,321"/>
+<area shape="rect" id="node26" href="classal_1_1_audio_app.html" title="al::AudioApp" alt="" coords="1765,615,1869,641"/>
+<area shape="rect" id="node27" href="classal_1_1_audio_i_o.html" title="al::AudioIO" alt="" coords="1515,741,1608,768"/>
+<area shape="rect" id="node28" href="classal_1_1_audio_i_o_data.html" title="al::AudioIOData" alt="" coords="1067,769,1191,796"/>
+<area shape="rect" id="node29" href="classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="1733,665,1900,692"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_app_1_1_app_event_handler.html">AppEventHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:add8b356ea242f51782775790a0fc58b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3">DisplayMode</a> : unsigned int { <br />
@@ -230,45 +188,63 @@ const <a class="el" href="classal_1_1_pose.html">Pose</a> &amp;&#160;</td><td cl
 <tr class="memitem:a86d63765773d541b4699e9bbcc1e632b"><td class="memItemLeft" align="right" valign="top"><a id="a86d63765773d541b4699e9bbcc1e632b"></a>
 <a class="el" href="classal_1_1_graphics.html">Graphics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>graphics</b> ()</td></tr>
 <tr class="separator:a86d63765773d541b4699e9bbcc1e632b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ed1ac8149c2ed3220dfff3f453f1a1"><td class="memItemLeft" align="right" valign="top"><a id="ac1ed1ac8149c2ed3220dfff3f453f1a1"></a>
-<a class="el" href="structal_1_1_viewport.html">Viewport</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>viewport</b> ()</td></tr>
-<tr class="separator:ac1ed1ac8149c2ed3220dfff3f453f1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acb68b9e772bcffd9de19e47f02cedf"><td class="memItemLeft" align="right" valign="top"><a id="a8acb68b9e772bcffd9de19e47f02cedf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onInit</b> ()</td></tr>
-<tr class="separator:a8acb68b9e772bcffd9de19e47f02cedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1294b0e91a57b06ddb396ef654316a"><td class="memItemLeft" align="right" valign="top"><a id="a0d1294b0e91a57b06ddb396ef654316a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onAnimate</b> (double dt)</td></tr>
-<tr class="separator:a0d1294b0e91a57b06ddb396ef654316a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42f35fe662e8e817c262ab588a7e0524"><td class="memItemLeft" align="right" valign="top"><a id="a42f35fe662e8e817c262ab588a7e0524"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onExit</b> ()</td></tr>
-<tr class="separator:a42f35fe662e8e817c262ab588a7e0524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8b95c268e3823b5c0e8200dbaf8fa6"><td class="memItemLeft" align="right" valign="top"><a id="a4c8b95c268e3823b5c0e8200dbaf8fa6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnCreate</b> ()</td></tr>
-<tr class="separator:a4c8b95c268e3823b5c0e8200dbaf8fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27ece2afbd9cafbd2e13a6b36b038a5a"><td class="memItemLeft" align="right" valign="top"><a id="a27ece2afbd9cafbd2e13a6b36b038a5a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnAnimate</b> (double dt)</td></tr>
-<tr class="separator:a27ece2afbd9cafbd2e13a6b36b038a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e415eff5d9ddd9d402020535461cc3"><td class="memItemLeft" align="right" valign="top"><a id="ac2e415eff5d9ddd9d402020535461cc3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnDraw</b> ()</td></tr>
-<tr class="separator:ac2e415eff5d9ddd9d402020535461cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af149a62f024217be02e9668d5479b1c8"><td class="memItemLeft" align="right" valign="top"><a id="af149a62f024217be02e9668d5479b1c8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> (<a class="el" href="classal_1_1_graphics.html">Graphics</a> &amp;g)</td></tr>
-<tr class="separator:af149a62f024217be02e9668d5479b1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edeacf589c0f097a2638fb079dc0942"><td class="memItemLeft" align="right" valign="top"><a id="a1edeacf589c0f097a2638fb079dc0942"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postOnDraw</b> ()</td></tr>
-<tr class="separator:a1edeacf589c0f097a2638fb079dc0942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae701a6b54f1aa23e03300801f96ba471"><td class="memItemLeft" align="right" valign="top"><a id="ae701a6b54f1aa23e03300801f96ba471"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> () override</td></tr>
-<tr class="separator:ae701a6b54f1aa23e03300801f96ba471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cfb3b37415d9d547079151cf07a9d9b"><td class="memItemLeft" align="right" valign="top"><a id="a5cfb3b37415d9d547079151cf07a9d9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>open</b> () override</td></tr>
-<tr class="separator:a5cfb3b37415d9d547079151cf07a9d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88164b0ab86c82ceb547f95069f1102f"><td class="memItemLeft" align="right" valign="top"><a id="a88164b0ab86c82ceb547f95069f1102f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> () override</td></tr>
-<tr class="separator:a88164b0ab86c82ceb547f95069f1102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e02f21638b08a455e0009b0e4a525ae"><td class="memItemLeft" align="right" valign="top"><a id="a4e02f21638b08a455e0009b0e4a525ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> () override</td></tr>
 <tr class="separator:a4e02f21638b08a455e0009b0e4a525ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684df86211c99296dd70bf34a96011fd"><td class="memItemLeft" align="right" valign="top"><a id="a684df86211c99296dd70bf34a96011fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onInit</b> () override</td></tr>
+<tr class="separator:a684df86211c99296dd70bf34a96011fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a662334fcab184d41308319ed392ddd"><td class="memItemLeft" align="right" valign="top"><a id="a6a662334fcab184d41308319ed392ddd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreate</b> () override</td></tr>
+<tr class="separator:a6a662334fcab184d41308319ed392ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d5daf794d49436250f3fb4466b732c"><td class="memItemLeft" align="right" valign="top"><a id="a10d5daf794d49436250f3fb4466b732c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onAnimate</b> (double dt) override</td></tr>
+<tr class="separator:a10d5daf794d49436250f3fb4466b732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef4569e50099abc52c1f1ac926c32ba"><td class="memItemLeft" align="right" valign="top"><a id="abef4569e50099abc52c1f1ac926c32ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> (<a class="el" href="classal_1_1_graphics.html">Graphics</a> &amp;g) override</td></tr>
+<tr class="separator:abef4569e50099abc52c1f1ac926c32ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3401f51df2d4988b488b66f39e5b24f7"><td class="memItemLeft" align="right" valign="top"><a id="a3401f51df2d4988b488b66f39e5b24f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onExit</b> () override</td></tr>
+<tr class="separator:a3401f51df2d4988b488b66f39e5b24f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25745e4b2ef046cb4ffc0b50e0bd7152"><td class="memItemLeft" align="right" valign="top"><a id="a25745e4b2ef046cb4ffc0b50e0bd7152"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onKeyDown</b> (<a class="el" href="classal_1_1_keyboard.html">Keyboard</a> const &amp;k) override</td></tr>
+<tr class="separator:a25745e4b2ef046cb4ffc0b50e0bd7152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362f6b691bc16df570f33543270a2bd4"><td class="memItemLeft" align="right" valign="top"><a id="a362f6b691bc16df570f33543270a2bd4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onKeyUp</b> (<a class="el" href="classal_1_1_keyboard.html">Keyboard</a> const &amp;k) override</td></tr>
+<tr class="separator:a362f6b691bc16df570f33543270a2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4b4fab3b3875754cb1d0749813ecac"><td class="memItemLeft" align="right" valign="top"><a id="a9c4b4fab3b3875754cb1d0749813ecac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseDown</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m) override</td></tr>
+<tr class="separator:a9c4b4fab3b3875754cb1d0749813ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751c194d093cae45f0f530a3e9417f33"><td class="memItemLeft" align="right" valign="top"><a id="a751c194d093cae45f0f530a3e9417f33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseUp</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m) override</td></tr>
+<tr class="separator:a751c194d093cae45f0f530a3e9417f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad97e4e2649d426aa27a91f5cf17a293"><td class="memItemLeft" align="right" valign="top"><a id="aad97e4e2649d426aa27a91f5cf17a293"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseDrag</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m) override</td></tr>
+<tr class="separator:aad97e4e2649d426aa27a91f5cf17a293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3092a77fedb1aece61897fb975ffb001"><td class="memItemLeft" align="right" valign="top"><a id="a3092a77fedb1aece61897fb975ffb001"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseMove</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m) override</td></tr>
+<tr class="separator:a3092a77fedb1aece61897fb975ffb001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b04e24b673f74463d0fb2d978d766e8"><td class="memItemLeft" align="right" valign="top"><a id="a6b04e24b673f74463d0fb2d978d766e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onResize</b> (int w, int h) override</td></tr>
+<tr class="separator:a6b04e24b673f74463d0fb2d978d766e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c803f92d0a0e99c569c8cd50fa655b7"><td class="memItemLeft" align="right" valign="top"><a id="a6c803f92d0a0e99c569c8cd50fa655b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onVisibility</b> (bool v) override</td></tr>
+<tr class="separator:a6c803f92d0a0e99c569c8cd50fa655b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebfa5092a9c3c61171e49a595c11d1a"><td class="memItemLeft" align="right" valign="top"><a id="a8ebfa5092a9c3c61171e49a595c11d1a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnCreate</b> ()</td></tr>
+<tr class="separator:a8ebfa5092a9c3c61171e49a595c11d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28aaac7e6dfd51f9a1f5cbef5940eff5"><td class="memItemLeft" align="right" valign="top"><a id="a28aaac7e6dfd51f9a1f5cbef5940eff5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnAnimate</b> (double dt)</td></tr>
+<tr class="separator:a28aaac7e6dfd51f9a1f5cbef5940eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569df4b6e1a876681c8c5d4eb0abb134"><td class="memItemLeft" align="right" valign="top"><a id="a569df4b6e1a876681c8c5d4eb0abb134"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preOnDraw</b> ()</td></tr>
+<tr class="separator:a569df4b6e1a876681c8c5d4eb0abb134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ba34f7a7e5e970fd85e506ca60818d"><td class="memItemLeft" align="right" valign="top"><a id="a00ba34f7a7e5e970fd85e506ca60818d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postOnDraw</b> ()</td></tr>
+<tr class="separator:a00ba34f7a7e5e970fd85e506ca60818d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e7f242fdde621daf1388de919ac17b"><td class="memItemLeft" align="right" valign="top"><a id="a05e7f242fdde621daf1388de919ac17b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postOnExit</b> ()</td></tr>
+<tr class="separator:a05e7f242fdde621daf1388de919ac17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f49ad920a359886d560dad60212d453"><td class="memItemLeft" align="right" valign="top"><a id="a4f49ad920a359886d560dad60212d453"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_app.html#a4f49ad920a359886d560dad60212d453">onMessage</a> (<a class="el" href="classal_1_1osc_1_1_message.html">osc::Message</a> &amp;m) override</td></tr>
 <tr class="memdesc:a4f49ad920a359886d560dad60212d453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called for each message contained in packet. <br /></td></tr>
@@ -276,74 +252,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ae9fc745f59602c6d8b90f28073edc8e3"><td class="memItemLeft" align="right" valign="top"><a id="ae9fc745f59602c6d8b90f28073edc8e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>verbose</b> (bool b=true)</td></tr>
 <tr class="separator:ae9fc745f59602c6d8b90f28073edc8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9db36747c70a57d254552ac53455a83"><td class="memItemLeft" align="right" valign="top"><a id="ae9db36747c70a57d254552ac53455a83"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>closeApp</b> ()</td></tr>
-<tr class="separator:ae9db36747c70a57d254552ac53455a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0dc3ee596a6e04eb342fb1797e6a0be"><td class="memItemLeft" align="right" valign="top"><a id="af0dc3ee596a6e04eb342fb1797e6a0be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>quit</b> ()</td></tr>
 <tr class="separator:af0dc3ee596a6e04eb342fb1797e6a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51536aa1510d522be4af38075f0abb24"><td class="memItemLeft" align="right" valign="top"><a id="a51536aa1510d522be4af38075f0abb24"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldQuit</b> ()</td></tr>
 <tr class="separator:a51536aa1510d522be4af38075f0abb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af198c8c5c76478c3a2ab738a781b63c4"><td class="memItemLeft" align="right" valign="top"><a id="af198c8c5c76478c3a2ab738a781b63c4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreate</b> ()</td></tr>
-<tr class="separator:af198c8c5c76478c3a2ab738a781b63c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af021b5d8ed3d7249fe333dd3b364ac41"><td class="memItemLeft" align="right" valign="top"><a id="af021b5d8ed3d7249fe333dd3b364ac41"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onKeyDown</b> (<a class="el" href="classal_1_1_keyboard.html">Keyboard</a> const &amp;k)</td></tr>
-<tr class="separator:af021b5d8ed3d7249fe333dd3b364ac41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d546a2518bbfd274411fab4bec5c4d"><td class="memItemLeft" align="right" valign="top"><a id="a30d546a2518bbfd274411fab4bec5c4d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onKeyUp</b> (<a class="el" href="classal_1_1_keyboard.html">Keyboard</a> const &amp;k)</td></tr>
-<tr class="separator:a30d546a2518bbfd274411fab4bec5c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ee4fde099cee02ee381e280ff9c942b"><td class="memItemLeft" align="right" valign="top"><a id="a0ee4fde099cee02ee381e280ff9c942b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseDown</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m)</td></tr>
-<tr class="separator:a0ee4fde099cee02ee381e280ff9c942b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97a528a730397ef6a01b795c709f386"><td class="memItemLeft" align="right" valign="top"><a id="af97a528a730397ef6a01b795c709f386"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseUp</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m)</td></tr>
-<tr class="separator:af97a528a730397ef6a01b795c709f386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af770161462124f810992c81df04de4f9"><td class="memItemLeft" align="right" valign="top"><a id="af770161462124f810992c81df04de4f9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseDrag</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m)</td></tr>
-<tr class="separator:af770161462124f810992c81df04de4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eacf37463ed1b1705d75f8139d44924"><td class="memItemLeft" align="right" valign="top"><a id="a6eacf37463ed1b1705d75f8139d44924"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onMouseMove</b> (<a class="el" href="classal_1_1_mouse.html">Mouse</a> const &amp;m)</td></tr>
-<tr class="separator:a6eacf37463ed1b1705d75f8139d44924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f2aebc41e86411bbccc60036b9fb01"><td class="memItemLeft" align="right" valign="top"><a id="a81f2aebc41e86411bbccc60036b9fb01"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onResize</b> (int w, int h)</td></tr>
-<tr class="separator:a81f2aebc41e86411bbccc60036b9fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7a994c37213c5ed4676196a5a61219"><td class="memItemLeft" align="right" valign="top"><a id="a3b7a994c37213c5ed4676196a5a61219"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onVisibility</b> (bool v)</td></tr>
-<tr class="separator:a3b7a994c37213c5ed4676196a5a61219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812c6eee0fec084b353627f9e972b897"><td class="memItemLeft" align="right" valign="top"><a id="a812c6eee0fec084b353627f9e972b897"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a812c6eee0fec084b353627f9e972b897">keyDown</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) override</td></tr>
-<tr class="memdesc:a812c6eee0fec084b353627f9e972b897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is pressed. <br /></td></tr>
-<tr class="separator:a812c6eee0fec084b353627f9e972b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7342e1951ad669bcd115f9586822539a"><td class="memItemLeft" align="right" valign="top"><a id="a7342e1951ad669bcd115f9586822539a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a7342e1951ad669bcd115f9586822539a">keyUp</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) override</td></tr>
-<tr class="memdesc:a7342e1951ad669bcd115f9586822539a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is released. <br /></td></tr>
-<tr class="separator:a7342e1951ad669bcd115f9586822539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="memItemLeft" align="right" valign="top"><a id="ae6d9cec7bc2600ecd6d30cb666172c7f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ae6d9cec7bc2600ecd6d30cb666172c7f">mouseDown</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is pressed. <br /></td></tr>
-<tr class="separator:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606c44009cd97fc44b4226fa39098c01"><td class="memItemLeft" align="right" valign="top"><a id="a606c44009cd97fc44b4226fa39098c01"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a606c44009cd97fc44b4226fa39098c01">mouseDrag</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:a606c44009cd97fc44b4226fa39098c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves while a button is down. <br /></td></tr>
-<tr class="separator:a606c44009cd97fc44b4226fa39098c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226aa0cf596163b4634312099253af47"><td class="memItemLeft" align="right" valign="top"><a id="a226aa0cf596163b4634312099253af47"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a226aa0cf596163b4634312099253af47">mouseMove</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:a226aa0cf596163b4634312099253af47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves. <br /></td></tr>
-<tr class="separator:a226aa0cf596163b4634312099253af47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c166b035e5892bf55985d0cefafc62"><td class="memItemLeft" align="right" valign="top"><a id="ab9c166b035e5892bf55985d0cefafc62"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ab9c166b035e5892bf55985d0cefafc62">mouseUp</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:ab9c166b035e5892bf55985d0cefafc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is released. <br /></td></tr>
-<tr class="separator:ab9c166b035e5892bf55985d0cefafc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d8135953f7f46b7b66001129a748d7"><td class="memItemLeft" align="right" valign="top"><a id="ae3d8135953f7f46b7b66001129a748d7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ae3d8135953f7f46b7b66001129a748d7">resize</a> (int dw, int dh) override</td></tr>
-<tr class="memdesc:ae3d8135953f7f46b7b66001129a748d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever window dimensions change. <br /></td></tr>
-<tr class="separator:ae3d8135953f7f46b7b66001129a748d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6dbc0738d66ddcd73ded30c66efee56"><td class="memItemLeft" align="right" valign="top"><a id="ab6dbc0738d66ddcd73ded30c66efee56"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ab6dbc0738d66ddcd73ded30c66efee56">visibility</a> (bool v) override</td></tr>
-<tr class="memdesc:ab6dbc0738d66ddcd73ded30c66efee56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when window changes from hidden to shown and vice versa. <br /></td></tr>
-<tr class="separator:ab6dbc0738d66ddcd73ded30c66efee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539424edab1c2afea3837f1612e4d74"><td class="memItemLeft" align="right" valign="top"><a id="a5539424edab1c2afea3837f1612e4d74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a5539424edab1c2afea3837f1612e4d74">keyDown</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) final</td></tr>
+<tr class="memdesc:a5539424edab1c2afea3837f1612e4d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is pressed. <br /></td></tr>
+<tr class="separator:a5539424edab1c2afea3837f1612e4d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6bb56262f923bac6a450b9ac49045c"><td class="memItemLeft" align="right" valign="top"><a id="a1a6bb56262f923bac6a450b9ac49045c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1a6bb56262f923bac6a450b9ac49045c">keyUp</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) final</td></tr>
+<tr class="memdesc:a1a6bb56262f923bac6a450b9ac49045c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is released. <br /></td></tr>
+<tr class="separator:a1a6bb56262f923bac6a450b9ac49045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1668cd4edba7488fda97af73cb660f00"><td class="memItemLeft" align="right" valign="top"><a id="a1668cd4edba7488fda97af73cb660f00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1668cd4edba7488fda97af73cb660f00">mouseDown</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:a1668cd4edba7488fda97af73cb660f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is pressed. <br /></td></tr>
+<tr class="separator:a1668cd4edba7488fda97af73cb660f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b34aa1ea4d07e25573648413e642e0"><td class="memItemLeft" align="right" valign="top"><a id="af1b34aa1ea4d07e25573648413e642e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#af1b34aa1ea4d07e25573648413e642e0">mouseDrag</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:af1b34aa1ea4d07e25573648413e642e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves while a button is down. <br /></td></tr>
+<tr class="separator:af1b34aa1ea4d07e25573648413e642e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b12c98f8b91127cdda64f006fff71f8"><td class="memItemLeft" align="right" valign="top"><a id="a9b12c98f8b91127cdda64f006fff71f8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a9b12c98f8b91127cdda64f006fff71f8">mouseMove</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:a9b12c98f8b91127cdda64f006fff71f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves. <br /></td></tr>
+<tr class="separator:a9b12c98f8b91127cdda64f006fff71f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0945753495082b321fc7b09d452830b"><td class="memItemLeft" align="right" valign="top"><a id="af0945753495082b321fc7b09d452830b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#af0945753495082b321fc7b09d452830b">mouseUp</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:af0945753495082b321fc7b09d452830b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is released. <br /></td></tr>
+<tr class="separator:af0945753495082b321fc7b09d452830b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="memItemLeft" align="right" valign="top"><a id="a1606d2fe53ef18ccf32d8b0846d7d4ef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1606d2fe53ef18ccf32d8b0846d7d4ef">resize</a> (int dw, int dh) final</td></tr>
+<tr class="memdesc:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever window dimensions change. <br /></td></tr>
+<tr class="separator:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="memItemLeft" align="right" valign="top"><a id="a5f0b8524aa7d397de3d11eb77825b6e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a5f0b8524aa7d397de3d11eb77825b6e6">visibility</a> (bool v) final</td></tr>
+<tr class="memdesc:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when window changes from hidden to shown and vice versa. <br /></td></tr>
+<tr class="separator:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc11108a099d7de066e029a92b1e5e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window.html#a8fc11108a099d7de066e029a92b1e5e2">create</a> (bool is_verbose=false)</td></tr>
 <tr class="separator:a8fc11108a099d7de066e029a92b1e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee466974382bc35186708c58bfae4c5"><td class="memItemLeft" align="right" valign="top"><a id="aaee466974382bc35186708c58bfae4c5"></a>
@@ -583,27 +529,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a690284f29c38ff3fa551a94f3764002d"><td class="memItemLeft" align="right" valign="top"><a id="a690284f29c38ff3fa551a94f3764002d"></a>
-<a class="el" href="classal_1_1_graphics.html">Graphics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mGraphics</b></td></tr>
-<tr class="separator:a690284f29c38ff3fa551a94f3764002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4f732b277b5ec178f5c04941894b57"><td class="memItemLeft" align="right" valign="top"><a id="a5a4f732b277b5ec178f5c04941894b57"></a>
-<a class="el" href="classal_1_1_app_1_1_app_event_handler.html">AppEventHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>eventHandler</b> {this}</td></tr>
-<tr class="separator:a5a4f732b277b5ec178f5c04941894b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bd2023ea394dadc26d068dc30fb55e"><td class="memItemLeft" align="right" valign="top"><a id="a88bd2023ea394dadc26d068dc30fb55e"></a>
-<a class="el" href="classal_1_1_nav.html">Nav</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mNav</b></td></tr>
-<tr class="separator:a88bd2023ea394dadc26d068dc30fb55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434d84b21b5f4c44409438334d84d2b5"><td class="memItemLeft" align="right" valign="top"><a id="a434d84b21b5f4c44409438334d84d2b5"></a>
-<a class="el" href="classal_1_1_viewpoint.html">Viewpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mView</b> {mNav.transformed()}</td></tr>
-<tr class="separator:a434d84b21b5f4c44409438334d84d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ff07e3892c652dfd9245a3ea9b1a00"><td class="memItemLeft" align="right" valign="top"><a id="aa9ff07e3892c652dfd9245a3ea9b1a00"></a>
-<a class="el" href="classal_1_1_nav_input_control.html">NavInputControl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mNavControl</b> {mNav}</td></tr>
-<tr class="separator:aa9ff07e3892c652dfd9245a3ea9b1a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbd989204a3fc943d66d5b01e97f4d7"><td class="memItemLeft" align="right" valign="top"><a id="adfbd989204a3fc943d66d5b01e97f4d7"></a>
-<a class="el" href="structal_1_1_viewport.html">Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mViewport</b></td></tr>
-<tr class="separator:adfbd989204a3fc943d66d5b01e97f4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45bb0fbd19072057e206a9d2d8055a1"><td class="memItemLeft" align="right" valign="top"><a id="ab45bb0fbd19072057e206a9d2d8055a1"></a>
 <a class="el" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html">StandardWindowAppKeyControls</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stdControls</b></td></tr>
 <tr class="separator:ab45bb0fbd19072057e206a9d2d8055a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2051406d84fd0567984e2a7d5900b1ab"><td class="memItemLeft" align="right" valign="top"><a id="a2051406d84fd0567984e2a7d5900b1ab"></a>
+<a class="el" href="classal_1_1_graphics.html">Graphics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mGraphics</b></td></tr>
+<tr class="separator:a2051406d84fd0567984e2a7d5900b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841d9cc4f994eb5c83e39dfdc4be0d77"><td class="memItemLeft" align="right" valign="top"><a id="a841d9cc4f994eb5c83e39dfdc4be0d77"></a>
 std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mShouldQuitApp</b> {false}</td></tr>
 <tr class="separator:a841d9cc4f994eb5c83e39dfdc4be0d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -757,7 +688,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="al___app_8hpp_source.html#l00023">23</a> of file <a class="el" href="al___app_8hpp_source.html">al_App.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="al___app_8hpp_source.html#l00018">18</a> of file <a class="el" href="al___app_8hpp_source.html">al_App.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="add8b356ea242f51782775790a0fc58b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add8b356ea242f51782775790a0fc58b3">&#9670;&nbsp;</a></span>DisplayMode</h2>
@@ -802,16 +733,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___window_8hpp_source.html#l00223">223</a> of file <a class="el" href="al___window_8hpp_source.html">al_Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                   : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb">SINGLE_BUF</a>  = 1&lt;&lt;0,    </div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">DOUBLE_BUF</a>  = 1&lt;&lt;1,    </div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a">STEREO_BUF</a>  = 1&lt;&lt;2,    </div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0">ACCUM_BUF</a>  = 1&lt;&lt;3,    </div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">ALPHA_BUF</a>  = 1&lt;&lt;4,    </div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">DEPTH_BUF</a>  = 1&lt;&lt;5,    </div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0">STENCIL_BUF</a>  = 1&lt;&lt;6,    </div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c">MULTISAMPLE</a> = 1&lt;&lt;7,    </div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0">DEFAULT_BUF</a>  = <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">DOUBLE_BUF</a>|<a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">ALPHA_BUF</a>|<a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">DEPTH_BUF</a> </div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  };</div><div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c">al::Window::MULTISAMPLE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00231">al_Window.hpp:231</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0">al::Window::DEFAULT_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00232">al_Window.hpp:232</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">al::Window::ALPHA_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00228">al_Window.hpp:228</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb">al::Window::SINGLE_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00224">al_Window.hpp:224</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a">al::Window::STEREO_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00226">al_Window.hpp:226</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">al::Window::DOUBLE_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00225">al_Window.hpp:225</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0">al::Window::ACCUM_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00227">al_Window.hpp:227</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0">al::Window::STENCIL_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00230">al_Window.hpp:230</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">al::Window::DEPTH_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00229">al_Window.hpp:229</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -991,15 +913,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 <li><a class="el" href="al___app_8hpp_source.html">al_App.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_app.html">App</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

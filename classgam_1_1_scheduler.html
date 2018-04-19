@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1_scheduler.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_scheduler.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_scheduler.html">Scheduler</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -106,22 +83,18 @@ $(document).ready(function(){initNavTree('classgam_1_1_scheduler.html','');});
  <a href="classgam_1_1_scheduler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_scheduler_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/Scheduler.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::Scheduler:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::Scheduler:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_scheduler__inherit__graph.png" border="0" usemap="#gam_1_1_scheduler_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1_scheduler_inherit__map" id="gam_1_1_scheduler_inherit__map">
 <area shape="rect" id="node2" href="classgam_1_1_process_node.html" title="gam::ProcessNode" alt="" coords="41,80,184,107"/>
 <area shape="rect" id="node3" href="classgam_1_1_node3.html" title="gam::Node3\&lt; ProcessNode \&gt;" alt="" coords="5,5,220,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::Scheduler:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::Scheduler:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_scheduler__coll__graph.png" border="0" usemap="#gam_1_1_scheduler_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1_scheduler_coll__map" id="gam_1_1_scheduler_coll__map">
 <area shape="rect" id="node2" href="classgam_1_1_process_node.html" title="gam::ProcessNode" alt="" coords="5,66,148,92"/>
@@ -132,7 +105,7 @@ $(document).ready(function(){initNavTree('classgam_1_1_scheduler.html','');});
 <area shape="rect" id="node7" href="classgam_1_1_func.html" title="Deferrable function. " alt="" coords="33,270,121,296"/>
 <area shape="rect" id="node8" href="classgam_1_1_thread.html" title="gam::Thread" alt="" coords="790,320,894,347"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -460,7 +433,7 @@ template&lt;class TAudioIOData &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_scheduler_8h_source.html#l00595">595</a> of file <a class="el" href="_scheduler_8h_source.html">Scheduler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                                        {</div><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordflow">if</span>(!aio.user()){</div><div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        gam::err(</div><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            <span class="stringliteral">&quot;AudioIOData user data is NULL. Should be the address of the Scheduler.&quot;</span>,</div><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;            <span class="stringliteral">&quot;gam::Scheduler::audioCB()&quot;</span>);</div><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div><div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    Scheduler&amp; s = *(Scheduler*)aio.user();</div><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    s.update(aio);</div><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a74a906120f17eeadbf3bcdfee64a7bda"></a>
@@ -491,8 +464,7 @@ template&lt;class TAudioIOData &gt; </div>
 <p>Returns 0 when the next node equals the terminal node. </p>
 
 <p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00125">125</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                      {     </div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        T * n = <span class="keyword">self</span>();</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span>(n-&gt;child){</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            n = n-&gt;child;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> (n != terminal) ? n : 0;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">else</span>{</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classgam_1_1_node3.html#abf4538bdd61e7f96d688e82f292bc2cd">nextBreadth</a>(terminal);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="ttc" id="classgam_1_1_node3_html_abf4538bdd61e7f96d688e82f292bc2cd"><div class="ttname"><a href="classgam_1_1_node3.html#abf4538bdd61e7f96d688e82f292bc2cd">gam::Node3&lt; ProcessNode &gt;::nextBreadth</a></div><div class="ttdeci">ProcessNode * nextBreadth(const ProcessNode *const terminal)</div><div class="ttdoc">Returns next node using breadth-first traversal. </div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00142">Node.h:142</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af5f6461d90355fc5f6eb9e53a08dec86"></a>
@@ -605,10 +577,7 @@ template&lt;class TAudioIOData &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_scheduler_8h_source.html#l00481">481</a> of file <a class="el" href="_scheduler_8h_source.html">Scheduler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                                                                                {</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <a class="code" href="classgam_1_1_scheduler.html#a2e9a8d63b3e34ee659f87478564529e5">io</a>().<a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#ab3bc90e4c598c30e4459345bc55e7a9d">mapAudioIOData</a>(aio);</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <a class="code" href="classgam_1_1_scheduler.html#afa671f88cc97a99fc7b956976ce4a14e">recordNRT</a>(soundFilePath, durSec);</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    }</div><div class="ttc" id="classgam_1_1_scheduler_html_afa671f88cc97a99fc7b956976ce4a14e"><div class="ttname"><a href="classgam_1_1_scheduler.html#afa671f88cc97a99fc7b956976ce4a14e">gam::Scheduler::recordNRT</a></div><div class="ttdeci">void recordNRT(const char *soundFilePath, double durSec)</div><div class="ttdoc">Record output to sound file in non-real-time. </div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_ab3bc90e4c598c30e4459345bc55e7a9d"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#ab3bc90e4c598c30e4459345bc55e7a9d">gam::SchedulerAudioIOData::mapAudioIOData</a></div><div class="ttdeci">void mapAudioIOData(TAudioIOData &amp;externalIO)</div><div class="ttdoc">Map external to internal audio I/O data. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00564">Scheduler.h:564</a></div></div>
-<div class="ttc" id="classgam_1_1_scheduler_html_a2e9a8d63b3e34ee659f87478564529e5"><div class="ttname"><a href="classgam_1_1_scheduler.html#a2e9a8d63b3e34ee659f87478564529e5">gam::Scheduler::io</a></div><div class="ttdeci">const SchedulerAudioIOData &amp; io() const</div><div class="ttdoc">Get internal audio I/O data structure. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00380">Scheduler.h:380</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad822f51c887d8330d872742806996113"></a>
@@ -666,25 +635,18 @@ template&lt;class TAudioIOData &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_scheduler_8h_source.html#l00454">454</a> of file <a class="el" href="_scheduler_8h_source.html">Scheduler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                                         {</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <a class="code" href="classgam_1_1_scheduler.html#a2e9a8d63b3e34ee659f87478564529e5">io</a>().<a class="code" href="structgam_1_1_scheduler_audio_i_o_data.html#ab3bc90e4c598c30e4459345bc55e7a9d">mapAudioIOData</a>(externalIO);</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <a class="code" href="classgam_1_1_scheduler.html#ad822f51c887d8330d872742806996113">update</a>();</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div><div class="ttc" id="classgam_1_1_scheduler_html_ad822f51c887d8330d872742806996113"><div class="ttname"><a href="classgam_1_1_scheduler.html#ad822f51c887d8330d872742806996113">gam::Scheduler::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Execute all audio processes in execution tree. </div></div>
-<div class="ttc" id="structgam_1_1_scheduler_audio_i_o_data_html_ab3bc90e4c598c30e4459345bc55e7a9d"><div class="ttname"><a href="structgam_1_1_scheduler_audio_i_o_data.html#ab3bc90e4c598c30e4459345bc55e7a9d">gam::SchedulerAudioIOData::mapAudioIOData</a></div><div class="ttdeci">void mapAudioIOData(TAudioIOData &amp;externalIO)</div><div class="ttdoc">Map external to internal audio I/O data. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00564">Scheduler.h:564</a></div></div>
-<div class="ttc" id="classgam_1_1_scheduler_html_a2e9a8d63b3e34ee659f87478564529e5"><div class="ttname"><a href="classgam_1_1_scheduler.html#a2e9a8d63b3e34ee659f87478564529e5">gam::Scheduler::io</a></div><div class="ttdeci">const SchedulerAudioIOData &amp; io() const</div><div class="ttdoc">Get internal audio I/O data structure. </div><div class="ttdef"><b>Definition:</b> <a href="_scheduler_8h_source.html#l00380">Scheduler.h:380</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_scheduler_8h_source.html">Scheduler.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_scheduler.html">Scheduler</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:19 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

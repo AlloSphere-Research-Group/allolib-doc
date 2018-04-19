@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacegam_1_1scl.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('namespacegam_1_1scl.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1scl.html">scl</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -772,9 +749,8 @@ template&lt;class T &gt; </div>
 <p>Fast approximation to atan2. </p>
 <p>Author: Jim Shima, <a href="http://www.dspguru.com/comp.dsp/tricks/alg/fxdatan2.htm">http://www.dspguru.com/comp.dsp/tricks/alg/fxdatan2.htm</a>. |error| &lt; 0.01 rad </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00515">515</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                                       {</div><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    T r, <a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>;</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    T ay = scl::abs(y) + T(1e-10);      <span class="comment">// kludge to prevent 0/0 condition</span></div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keywordflow">if</span>(x &lt; T(0)){</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        r = (x + ay) / (ay - x);</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        angle = T(M_3PI_4);</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    }</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        r = (x - ay) / (x + ay);</div><div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        angle = T(M_PI_4);</div><div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div><div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    angle += (T(0.1963)*r*r - T(0.9817))*r;</div><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordflow">return</span> y &lt; T(0) ? -angle : angle;</div><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;}</div><div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00519">519</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="afe5e2be4708be3625a53d27519c7d1b2"></a>
@@ -804,8 +780,8 @@ template&lt;class T &gt; </div>
 <p>Returns power of two ceiling of value. </p>
 <p>This uses an algorithm devised by Sean Anderson, Sep. 2001. From "Bit Twiddling Hacks", <a href="http://graphics.stanford.edu/~seander/bithacks.html">http://graphics.stanford.edu/~seander/bithacks.html</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00537">537</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                                    {</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    v--;</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    v |= v &gt;&gt; 1;</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    v |= v &gt;&gt; 2;</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    v |= v &gt;&gt; 4;</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    v |= v &gt;&gt; 8;</div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    v |= v &gt;&gt; 16;</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordflow">return</span> ++v;</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00541">541</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="ac15c3426c61fccad3d088e37b1fed2ee"></a>
@@ -859,8 +835,8 @@ template&lt;class T &gt; </div>
 <p>Returns value clipped to [lo, hi] and signifies clipping behavior. </p>
 <p>clipFlag signifies if and where clipping occured. 0 means no clipping occured, -1 means clipping occured at the lower bound, and 1 means clipping at the upper bound. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00553">553</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                                                                {</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    clipFlag = 0;</div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;         <span class="keywordflow">if</span>(v &lt; lo){ clipFlag = -1; <span class="keywordflow">return</span> lo; }</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(v &gt; hi){ clipFlag =  1; <span class="keywordflow">return</span> hi; }</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00557">557</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a9092f0946e3f688eeca8c52e7486d64f"></a>
@@ -892,8 +868,8 @@ template&lt;class T &gt; </div>
 <p>Third order polynomial approximation to first half of cosine. </p>
 <p>'u' must be in the range [0, 0.5] which corresponds to the first half of the cosine. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00892">892</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                                     {</div><div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">return</span> T(1) - T(32) * n * n * (T(0.75) - n);</div><div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00896">896</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a5012ce9e8da297b0950fed163abe7ab4"></a>
@@ -925,8 +901,8 @@ template&lt;class T &gt; </div>
 <p>8th order Taylor series approximation to a cosine. </p>
 <p>'radians' must be in [-pi, pi]. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00835">835</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                                     {</div><div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <span class="keywordflow">if</span>(r &lt; T(M_PI_4) &amp;&amp; r &gt; T(-M_PI_4)){</div><div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordtype">float</span> rr = r*r;</div><div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">return</span> T(1) - rr * T(t81) * (T(t82) - rr * (T(t83) - rr * (T(t84) - rr)));</div><div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    }</div><div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(r &gt; T(0)){</div><div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        r -= T(M_PI_2);</div><div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        T rr = r*r;</div><div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">return</span> -r * (T(1) - T(t71) * rr * (T(t72) - rr * (T(t73) - rr)));</div><div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    }</div><div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        r += T(M_PI_2);</div><div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordtype">float</span> rr = r*r;</div><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        <span class="keywordflow">return</span> r * (T(1) - T(t71) * rr * (T(t72) - rr * (T(t73) - rr)));</div><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    }</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00839">839</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="adc9a079614c90cec56edc10269b92189"></a>
@@ -1015,9 +991,8 @@ fade weight1 weight2 <br />
 0.5 0.5 0.5 <br />
 0.75 0 1 </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00573">573</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                                      {</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordflow">if</span>(f &lt; 0.25){</div><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        w1 = f * 4;</div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        w2 = 0;</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    }</div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( (f &gt;= 0.25) &amp;&amp; (f &lt; 0.75) ){</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <a class="code" href="namespacegam_1_1scl.html#a0b60b924f9ad60ad8c64239c7e9d805b">fadeLin</a>(w1, w2, T(f * 2 - 0.5));</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    }</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        w1 = 0;</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        w2 = (1 - f) * 4;</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    }</div><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_a0b60b924f9ad60ad8c64239c7e9d805b"><div class="ttname"><a href="namespacegam_1_1scl.html#a0b60b924f9ad60ad8c64239c7e9d805b">gam::scl::fadeLin</a></div><div class="ttdeci">void fadeLin(T &amp;weight1, T &amp;weight2, T fade)</div><div class="ttdoc">Returns weights for linear fade. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00570">scl.h:570</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00577">577</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a142d086aaf30aa06b1ced84d5bbaf814"></a>
@@ -1051,8 +1026,8 @@ template&lt;class T &gt; </div>
 <p>Return Fejer weighting factor for kth harmonic in a Fourier series of length n. </p>
 <p>The function is a line from (0,1) to (n,0). This is used for reducing the Gibbs effect from a Fourier series summation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00142">142</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{ <span class="keywordflow">return</span> (n-k)/n; }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00146">146</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a12634f12c8148dd556f0800f113a6ccb"></a>
@@ -1100,9 +1075,8 @@ template&lt;class T &gt; </div>
 <p>Returns value folded into [lo, hi]. </p>
 <p>For out-of-range values, the boundaries act like mirrors reflecting the value into the range. For an even number of periods out of the range this is identical to a <a class="el" href="namespacegam_1_1scl.html#a573358a72e36be1d3c32cead13a1b8e4" title="Returns value wrapped in [lo, hi). ">wrap()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00591">591</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                                                {</div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordtype">long</span> t;</div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a12634f12c8148dd556f0800f113a6ccb">fold</a>(v,t,hi,lo);</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_a12634f12c8148dd556f0800f113a6ccb"><div class="ttname"><a href="namespacegam_1_1scl.html#a12634f12c8148dd556f0800f113a6ccb">gam::scl::fold</a></div><div class="ttdeci">T fold(T value, T hi=T(1), T lo=T(0))</div><div class="ttdoc">Returns value folded into [lo, hi]. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00591">scl.h:591</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00595">595</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a297aacbcf08eb865ff0eacc6601ea2bd"></a>
@@ -1155,8 +1129,8 @@ template&lt;unsigned N, class T &gt; </div>
 <p>Approximate inverse square root using log base-2 and Newton methods. </p>
 <p>'N' determines the accuracy of the approximation. For N=0, a quick and dirty log base-2 approximation is performed. For N&gt;0, N Newton iterations are applied to improve the result. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00808">808</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                     {</div><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    T r=invSqrtLog2(v);</div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    invSqrtNewton&lt;N&gt;(r, v*T(0.5));</div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00812">812</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a195c87f789b133bc853cc38e5838bbec"></a>
@@ -1207,9 +1181,8 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>log base-2 linearly mapped to [0, 1] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00610">610</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                                                 {</div><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    v = <a class="code" href="namespacegam_1_1scl.html#a5269cc901c11dd073976f78ee612d0d8">log2Fast</a>(scl::abs(v) + T(0.000001));    <span class="comment">// offset to avoid -inf</span></div><div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="keywordflow">return</span> scl::max(v * recMin, T(-1)) + T(1);</div><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_a5269cc901c11dd073976f78ee612d0d8"><div class="ttname"><a href="namespacegam_1_1scl.html#a5269cc901c11dd073976f78ee612d0d8">gam::scl::log2Fast</a></div><div class="ttdeci">float log2Fast(float v)</div><div class="ttdoc">Fast base-2 logarithm. For value &lt;= 0, behavior is undefined. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00617">scl.h:617</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00614">614</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="ac59a75ade4e75e81b831469e28fe16bd"></a>
@@ -1239,9 +1212,8 @@ template&lt;class T &gt; </div>
 <p>Returns base-2 logarithm of value. </p>
 <p>If the value is not an exact power of two, the logarithm of the next highest power of two will taken. This uses an algorithm devised by Eric Cole, Jan. 2006. From "Bit Twiddling Hacks", <a href="http://graphics.stanford.edu/~seander/bithacks.html">http://graphics.stanford.edu/~seander/bithacks.html</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00615">615</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;{ <span class="keywordflow">return</span> deBruijn(<a class="code" href="namespacegam_1_1scl.html#afe5e2be4708be3625a53d27519c7d1b2">ceilPow2</a>(v)); }</div><div class="ttc" id="namespacegam_1_1scl_html_afe5e2be4708be3625a53d27519c7d1b2"><div class="ttname"><a href="namespacegam_1_1scl.html#afe5e2be4708be3625a53d27519c7d1b2">gam::scl::ceilPow2</a></div><div class="ttdeci">uint32_t ceilPow2(uint32_t value)</div><div class="ttdoc">Returns power of two ceiling of value. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00537">scl.h:537</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00619">619</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a9c8185bea5350c19ffd896ddaa1930db"></a>
@@ -1339,8 +1311,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00674">674</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                                                          {</div><div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordflow">return</span> pow(ival, pc/divs);</div><div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00678">678</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="adc13ade223b4b924e4983de79f514000"></a>
@@ -1377,8 +1349,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00887">887</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                                       {</div><div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    T y = x * (T(2) - gam::scl::abs(x));</div><div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <span class="keywordflow">return</span> y * (T(0.775) + T(0.225) * gam::scl::abs(y));</div><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00891">891</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a7f737a7bf573322febb59060922341f7"></a>
@@ -1415,8 +1387,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00896">896</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                                     {</div><div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    T nn = n*n;</div><div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <span class="keywordflow">return</span> n * (T(3.138982) + nn * (T(-5.133625) + nn * (T(2.428288) - nn * T(0.433645))));</div><div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00900">900</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a2d37b96db013c2866c9e144f5fc997a2"></a>
@@ -1453,8 +1425,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00901">901</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                                     {</div><div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    T nn = n*n;</div><div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keywordflow">return</span> n * (T(3.1415191) + nn * (T(-5.1662729) + nn * (T(2.5422065) + nn * (T(-0.5811243) + nn * T(0.0636716)))));</div><div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00905">905</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a0fb63e28ddd38c500c2014281f3a528f"></a>
@@ -1491,8 +1463,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00852">852</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                                     {</div><div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">if</span>(r &lt; T(M_PI_4) &amp;&amp; r &gt; T(-M_PI_4)){</div><div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        T rr = r*r;</div><div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <span class="keywordflow">return</span> r * (T(1) - T(t71) * rr * (T(t72) - rr * (T(t73) - rr)));</div><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    }</div><div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(r &gt; T(0)){</div><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        r -= T(M_PI_2);</div><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        <span class="keywordtype">float</span> rr = r*r;</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        <span class="keywordflow">return</span> T(1) - rr * T(t81) * (T(t82) - rr * (T(t83) - rr * (T(t84) - rr)));</div><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    }</div><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        r += T(M_PI_2);</div><div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="keywordtype">float</span> rr = r*r;</div><div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">return</span> T(-1) + rr * T(t81) * (T(t82) - rr * (T(t83) - rr * (T(t84) - rr)));</div><div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    }</div><div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00856">856</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="aedd5ac8a38399a4bcb04eba12a3b96a5"></a>
@@ -1529,8 +1501,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00869">869</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                                     {</div><div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <span class="keywordflow">if</span>(r &lt; T(M_PI_4) &amp;&amp; r &gt; T(-M_PI_4)){</div><div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        T rr = r*r;</div><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="keywordflow">return</span> r * (T(1) - T(t91) * rr * (T(t92) - rr * (T(t93) - rr * (T(t94) - rr))));</div><div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    }</div><div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(r &gt; T(0)){</div><div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        r -= T(M_PI_2);</div><div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        T rr = r*r;</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="keywordflow">return</span> T(1) - rr * T(ta1) * (T(ta2) - rr * (T(ta3) - rr * (T(ta4) - rr * (T(ta5) - rr))));</div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    }</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    <span class="keywordflow">else</span>{</div><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        r += T(M_PI_2);</div><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        T rr = r*r;</div><div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        <span class="keywordflow">return</span> T(-1) + rr * T(ta1) * (T(ta2) - rr * (T(ta3) - rr * (T(ta4) - rr * (T(ta5) - rr))));</div><div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    }</div><div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00873">873</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a3f3cfc9c9899a654eb8b55fc2b1d4f89"></a>
@@ -1572,9 +1544,8 @@ template&lt;class T &gt; </div>
 <p>Smooth negative map. </p>
 <p>The return value is close to 1 if v &lt; 0 and close to 0 if v &gt; 0. The smoothness is controlled with the bw argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00710">710</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;{ <span class="keywordflow">return</span> T(0.5) - <a class="code" href="namespacegam_1_1scl.html#a2f9f438f804dec343c49c2614a633e56">smoothSign</a>(v, bw)*T(0.5); }</div><div class="ttc" id="namespacegam_1_1scl_html_a2f9f438f804dec343c49c2614a633e56"><div class="ttname"><a href="namespacegam_1_1scl.html#a2f9f438f804dec343c49c2614a633e56">gam::scl::smoothSign</a></div><div class="ttdeci">T smoothSign(T v, T bw)</div><div class="ttdoc">Continuous sign map. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00728">scl.h:728</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00714">714</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="ae1615f11ef7b4c564feb9b298a939f7b"></a>
@@ -1616,8 +1587,8 @@ template&lt;class T &gt; </div>
 <p>Peak function. </p>
 <p>When v is the output of y=x^2, this formula approximates the true formula for a resonant peak 1/(1 - 2rcos(theta) + r^2). The argument bw is equivalent to (1-r)^2. In general, the approximation has a slightly smaller bandwidth than the true response. Also, the true response is periodic, while this one is not. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00724">724</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;{ <span class="keywordflow">return</span> bw/(v+bw); }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00728">728</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a50f497adcdd089f320a83b21bd0e2110"></a>
@@ -1659,9 +1630,8 @@ template&lt;class T &gt; </div>
 <p>Smooth positive map. </p>
 <p>The return value is close to 1 if v &gt; 0 and close to 0 if v &lt; 0. The smoothness is controlled with the bw argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00714">714</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;{ <span class="keywordflow">return</span> T(0.5) + <a class="code" href="namespacegam_1_1scl.html#a2f9f438f804dec343c49c2614a633e56">smoothSign</a>(v, bw)*T(0.5); }</div><div class="ttc" id="namespacegam_1_1scl_html_a2f9f438f804dec343c49c2614a633e56"><div class="ttname"><a href="namespacegam_1_1scl.html#a2f9f438f804dec343c49c2614a633e56">gam::scl::smoothSign</a></div><div class="ttdeci">T smoothSign(T v, T bw)</div><div class="ttdoc">Continuous sign map. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00728">scl.h:728</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00718">718</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a2f9f438f804dec343c49c2614a633e56"></a>
@@ -1703,8 +1673,8 @@ template&lt;class T &gt; </div>
 <p>Continuous sign map. </p>
 <p>The return value is close to 1 if v &gt; 0 and close to -1 if v &lt; 0. 'bw' controls the width of the transition region. If 'bw' is 0, then this turns into a signum function. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00728">728</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;{ <span class="keywordflow">return</span> v/(scl::abs(v) + bw); }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00732">732</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a3390dddea7c82566b3d706c727c2989e"></a>
@@ -1746,9 +1716,8 @@ template&lt;class T &gt; </div>
 <p>Returns a continuous value measuring how close to zero the value is. </p>
 <p>The graph of this function resembles a resonant peak. The function uses the square of the value for evaluation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00732">732</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#ac78264a63674710fd9509e26b835ea51">smoothZero</a>(v, bw, scl::pow2&lt;T&gt;); }</div><div class="ttc" id="namespacegam_1_1scl_html_ac78264a63674710fd9509e26b835ea51"><div class="ttname"><a href="namespacegam_1_1scl.html#ac78264a63674710fd9509e26b835ea51">gam::scl::smoothZero</a></div><div class="ttdeci">T smoothZero(T v, T bw, F f)</div><div class="ttdoc">Same as smoothZero(), but takes a unary function to be applied to the value. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00730">scl.h:730</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00736">736</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="ae3ed3edffdc9b97e28ce7136f08db581"></a>
@@ -1780,8 +1749,8 @@ template&lt;unsigned N, class T &gt; </div>
 <p>Approximate square root using log base-2 and Newton methods. </p>
 <p>'N' determines the accuracy of the approximation. For N=0, a quick and dirty log base-2 approximation is performed. For N&gt;0, N Newton iterations are applied to improve the result. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00790">790</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                  {</div><div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    T r=sqrtLog2(v);</div><div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    sqrtNewton&lt;N&gt;(r,v);</div><div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00794">794</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a1230ba2a29d3e15a8ca6c7d3f6208c49"></a>
@@ -1811,8 +1780,8 @@ template&lt;unsigned N, class T &gt; </div>
 <p>Returns number of trailing zeros in 32-bit int. </p>
 <p>This implements an algorithm from the paper "Using de Bruijn Sequences to Index 1 in a Computer Word" by Charles E. Leiserson, Harald Prokof, and Keith H. Randall. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l01039">1039</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;{ <span class="keywordflow">return</span> deBruijn(v &amp; -int32_t(v)); }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l01043">1043</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 <a id="a5e955cf2999f4d72b19153c1d46fcf99"></a>
@@ -1866,20 +1835,16 @@ template&lt;class T &gt; </div>
 <p>Returns value wrapped in [lo, hi). </p>
 <p>'numWraps' reports how many wrappings occured where the sign, + or -, signifies above 'hi' or below 'lo', respectively. </p>
 
-<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00965">965</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                                                                {</div><div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;    <span class="keywordflow">if</span>(lo == hi){ numWraps = 0xFFFFFFFF; <span class="keywordflow">return</span> lo; }</div><div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;</div><div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    T diff = hi - lo;</div><div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    numWraps = 0;</div><div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;</div><div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordflow">if</span>(v &gt;= hi){</div><div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        v -= diff;</div><div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        <span class="keywordflow">if</span>(v &gt;= hi){</div><div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;            numWraps = long((v - lo)/diff);</div><div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;            v -= diff * T(numWraps);</div><div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;        }</div><div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;        ++numWraps;</div><div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    }</div><div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(v &lt; lo){</div><div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        v += diff;</div><div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        <span class="keywordflow">if</span>(v &lt; lo){</div><div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;            numWraps = long((v - lo)/diff) - 1;</div><div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;            v -= diff * T(numWraps);</div><div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        }</div><div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        --numWraps;</div><div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    }</div><div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="scl_8h_source.html#l00969">969</a> of file <a class="el" href="scl_8h_source.html">scl.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1scl.html">scl</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:21 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

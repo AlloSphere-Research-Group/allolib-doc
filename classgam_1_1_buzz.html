@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1_buzz.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_buzz.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_buzz.html">Buzz</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,11 +77,9 @@ $(document).ready(function(){initNavTree('classgam_1_1_buzz.html','');});
  <a href="classgam_1_1_buzz.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_oscillator_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/Oscillator.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::Buzz&lt; Tv, Td &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::Buzz&lt; Tv, Td &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_buzz__inherit__graph.png" border="0" usemap="#gam_1_1_buzz_3_01_tv_00_01_td_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1_buzz_3_01_tv_00_01_td_01_4_inherit__map" id="gam_1_1_buzz_3_01_tv_00_01_td_01_4_inherit__map">
 <area shape="rect" id="node4" href="structgam_1_1_impulse.html" title="Band&#45;limited impulse train. " alt="" coords="87,244,269,271"/>
@@ -112,17 +87,15 @@ $(document).ready(function(){initNavTree('classgam_1_1_buzz.html','');});
 <area shape="rect" id="node5" href="structgam_1_1_saw.html" title="Band&#45;limited saw wave. " alt="" coords="5,319,161,345"/>
 <area shape="rect" id="node6" href="structgam_1_1_square.html" title="Band&#45;limited square wave. " alt="" coords="185,319,360,345"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::Buzz&lt; Tv, Td &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::Buzz&lt; Tv, Td &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_buzz__coll__graph.png" border="0" usemap="#gam_1_1_buzz_3_01_tv_00_01_td_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1_buzz_3_01_tv_00_01_td_01_4_coll__map" id="gam_1_1_buzz_3_01_tv_00_01_td_01_4_coll__map">
 <area shape="rect" id="node2" href="classgam_1_1_accum_phase.html" title="Floating&#45;point phase accumulator with output in [&#45;A, A) " alt="" coords="5,162,183,203"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -337,23 +310,18 @@ template&lt;class Tv, class Td &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_oscillator_8h_source.html#l01512">1512</a> of file <a class="el" href="_oscillator_8h_source.html">Oscillator.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;:   Base(f, p), mAmp(0), mPrev(Tv(0)), mNormalize(<span class="keyword">true</span>)</div><div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;{</div><div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;    onDomainChange(1);</div><div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    this-&gt;<a class="code" href="classgam_1_1_buzz.html#a1028608f4116ba5bc978ee008a902709">harmonics</a>(<a class="code" href="classgam_1_1_buzz.html#a1028608f4116ba5bc978ee008a902709">harmonics</a>);</div><div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;}</div><div class="ttc" id="classgam_1_1_buzz_html_a1028608f4116ba5bc978ee008a902709"><div class="ttname"><a href="classgam_1_1_buzz.html#a1028608f4116ba5bc978ee008a902709">gam::Buzz::harmonics</a></div><div class="ttdeci">void harmonics(Tv num)</div><div class="ttdoc">Set number of harmonics. </div><div class="ttdef"><b>Definition:</b> <a href="_oscillator_8h_source.html#l01519">Oscillator.h:1519</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_oscillator_8h_source.html">Oscillator.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_buzz.html">Buzz</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

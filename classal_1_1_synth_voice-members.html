@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_voice.html">SynthVoice</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al::SynthVoice Member List</div>  </div>
@@ -95,8 +72,8 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#a1cdad381efc4899151119fd88a7ee9af">active</a>()</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#aa5e31349ea3d58fe3a332649b28afddb">free</a>()</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get</b>(float *pFields) (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getEndOffsetFrames</b>(int framesPerBuffer) (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getEndOffsetFrames</b>(int framesPerBuffer) (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#a8677623237dbfd3b0ab5bfd36c920568">getParamFields</a>(float *pFields)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#a649cec152742593b5b61b5b476548de7">getStartOffsetFrames</a>(int framesPerBuffer)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>id</b>(int idValue) (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>id</b>() (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -105,20 +82,17 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_voice.html','');});
   <tr><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#acabb52a7269c97251103b6ec825db5f6">onTriggerOff</a>()</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#add7c2f32f2ffbc52b64090c5231e7521">onTriggerOn</a>()</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>PolySynth</b> (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setParamFields</b>(float *pFields, int numFields) (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#a19a71c95a42a73d04bc4fb324cb44e4d">setParamFields</a>(float *pFields, int numFields)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>SynthVoice</b>() (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#ad45552fb530bece54cfe43892c7b5a3e">triggerOff</a>(int offsetFrames=0)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classal_1_1_synth_voice.html#aa93e6643154a0f93975f5b56be8d628a">triggerOn</a>(int offsetFrames=0)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~SynthVoice</b>() (defined in <a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a>)</td><td class="entry"><a class="el" href="classal_1_1_synth_voice.html">al::SynthVoice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

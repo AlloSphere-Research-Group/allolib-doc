@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___conversion_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___conversion_8hpp_source.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_6cc295a44006f69a4b1b59a80ed8ac0b.html">types</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Conversion.hpp</div>  </div>
@@ -102,7 +79,7 @@ $(document).ready(function(){initNavTree('al___conversion_8hpp_source.html','');
 <div class="ttc" id="namespaceal_html_a7a0edcf75b4ae53eb60f703a23450fa7"><div class="ttname"><a href="namespaceal.html#a7a0edcf75b4ae53eb60f703a23450fa7">al::unitToUInt2</a></div><div class="ttdeci">uint32_t unitToUInt2(float u)</div><div class="ttdoc">Convert float in [0, 1) to 32-bit unsigned int in [0, 2^32) </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00384">al_Conversion.hpp:384</a></div></div>
 <div class="ttc" id="namespaceal_html_a150618c9feacbf56a7da03bbc2042180"><div class="ttname"><a href="namespaceal.html#a150618c9feacbf56a7da03bbc2042180">al::punFU</a></div><div class="ttdeci">uint32_t punFU(float v)</div><div class="ttdoc">Type-pun 32-bit float to 32-bit unsigned int. </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00151">al_Conversion.hpp:151</a></div></div>
 <div class="ttc" id="namespaceal_html_aa86441bf5e21167c03f006403cf88f35"><div class="ttname"><a href="namespaceal.html#aa86441bf5e21167c03f006403cf88f35">al::punFI</a></div><div class="ttdeci">int32_t punFI(float v)</div><div class="ttdoc">Type-pun 32-bit float to 32-bit signed int. </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00154">al_Conversion.hpp:154</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="namespaceal_html_a4d3f0876b1eba127cba9d7c26ac4af95"><div class="ttname"><a href="namespaceal.html#a4d3f0876b1eba127cba9d7c26ac4af95">al::base10To36</a></div><div class="ttdeci">char base10To36(int dec10)</div><div class="ttdoc">Convert decimal integer to ascii base-36 character. </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00217">al_Conversion.hpp:217</a></div></div>
 <div class="ttc" id="namespaceal_html_a6e9299b7742a9db44ba0b3a885e9a6ea"><div class="ttname"><a href="namespaceal.html#a6e9299b7742a9db44ba0b3a885e9a6ea">al::uintToUnitS</a></div><div class="ttdeci">T uintToUnitS(uint32_t v)</div><div class="ttdoc">Convert 32-bit unsigned integer to unit float in [-1, 1) </div></div>
 <div class="ttc" id="namespaceal_html_a604c51f2a59f192757df7c8407c657c5"><div class="ttname"><a href="namespaceal.html#a604c51f2a59f192757df7c8407c657c5">al::unitToUInt</a></div><div class="ttdeci">uint32_t unitToUInt(float u)</div><div class="ttdoc">Convert float in [0, 1) to 32-bit unsigned int in [0, 2^32) </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00378">al_Conversion.hpp:378</a></div></div>
@@ -118,15 +95,11 @@ $(document).ready(function(){initNavTree('al___conversion_8hpp_source.html','');
 <div class="ttc" id="namespaceal_html_aecbdb6c596b997bba2fc440dee50b1a6"><div class="ttname"><a href="namespaceal.html#aecbdb6c596b997bba2fc440dee50b1a6">al::punIF</a></div><div class="ttdeci">double punIF(int64_t v)</div><div class="ttdoc">Type-pun 64-bit signed int to 64-bit float. </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00166">al_Conversion.hpp:166</a></div></div>
 <div class="ttc" id="namespaceal_html_a4a73504c6c93789a16baaf8fdc3012c2"><div class="ttname"><a href="namespaceal.html#a4a73504c6c93789a16baaf8fdc3012c2">al::fraction</a></div><div class="ttdeci">float fraction(uint32_t bits, uint32_t phase)</div><div class="ttdoc">Converts linear integer phase to fraction. </div><div class="ttdef"><b>Definition:</b> <a href="al___conversion_8hpp_source.html#l00276">al_Conversion.hpp:276</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_6cc295a44006f69a4b1b59a80ed8ac0b.html">types</a></li><li class="navelem"><b>al_Conversion.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

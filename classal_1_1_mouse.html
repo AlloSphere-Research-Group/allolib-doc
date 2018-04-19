@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_mouse.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_mouse.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_mouse.html">Mouse</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -98,7 +75,7 @@ $(document).ready(function(){initNavTree('classal_1_1_mouse.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___window_8hpp_source.html">al/core/io/al_Window.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___window_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/io/al_Window.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -222,26 +199,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>WindowImpl</b></td><
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___window_8hpp_source.html#l00126">126</a> of file <a class="el" href="al___window_8hpp_source.html">al_Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa455cc064dabaae1dde52d1d928f32fb7">LEFT</a>  = 0,      </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa70f31a71208afbeac9c811b95793cd15">MIDDLE</a>  = 1,      </div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11faec736b688a1e8d3d46f37b2f600b86c6">RIGHT</a>  = 2,      </div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa8f873e3ea6085930040f6a4d086b5545">EXTRA</a>  = 3        </div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  };</div><div class="ttc" id="classal_1_1_mouse_html_a6e0dd50c155e28df537007b07d68a11fa455cc064dabaae1dde52d1d928f32fb7"><div class="ttname"><a href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa455cc064dabaae1dde52d1d928f32fb7">al::Mouse::LEFT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00127">al_Window.hpp:127</a></div></div>
-<div class="ttc" id="classal_1_1_mouse_html_a6e0dd50c155e28df537007b07d68a11fa8f873e3ea6085930040f6a4d086b5545"><div class="ttname"><a href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa8f873e3ea6085930040f6a4d086b5545">al::Mouse::EXTRA</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00130">al_Window.hpp:130</a></div></div>
-<div class="ttc" id="classal_1_1_mouse_html_a6e0dd50c155e28df537007b07d68a11fa70f31a71208afbeac9c811b95793cd15"><div class="ttname"><a href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa70f31a71208afbeac9c811b95793cd15">al::Mouse::MIDDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00128">al_Window.hpp:128</a></div></div>
-<div class="ttc" id="classal_1_1_mouse_html_a6e0dd50c155e28df537007b07d68a11faec736b688a1e8d3d46f37b2f600b86c6"><div class="ttname"><a href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11faec736b688a1e8d3d46f37b2f600b86c6">al::Mouse::RIGHT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00129">al_Window.hpp:129</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___window_8hpp_source.html">al_Window.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_mouse.html">Mouse</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

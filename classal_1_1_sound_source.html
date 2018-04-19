@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_sound_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_sound_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_sound_source.html">SoundSource</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -97,23 +74,19 @@ $(document).ready(function(){initNavTree('classal_1_1_sound_source.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___audio_scene_8hpp_source.html">al/core/sound/al_AudioScene.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::SoundSource:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___audio_scene_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/sound/al_AudioScene.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::SoundSource:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_sound_source__inherit__graph.png" border="0" usemap="#al_1_1_sound_source_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_sound_source_inherit__map" id="al_1_1_sound_source_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_audio_scene_object.html" title="Base class for an object (listener or source) in an audio scene. " alt="" coords="5,5,165,32"/>
 <area shape="rect" id="node3" href="classal_1_1_dist_atten.html" title="al::DistAtten\&lt; double \&gt;" alt="" coords="190,5,367,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::SoundSource:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::SoundSource:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_sound_source__coll__graph.png" border="0" usemap="#al_1_1_sound_source_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_sound_source_coll__map" id="al_1_1_sound_source_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_audio_scene_object.html" title="Base class for an object (listener or source) in an audio scene. " alt="" coords="251,408,411,435"/>
@@ -126,7 +99,7 @@ $(document).ready(function(){initNavTree('classal_1_1_sound_source.html','');});
 <area shape="rect" id="node9" href="structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="357,139,518,165"/>
 <area shape="rect" id="node11" href="classal_1_1_dist_atten.html" title="al::DistAtten\&lt; double \&gt;" alt="" coords="435,408,613,435"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -402,24 +375,18 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>mScale</b></td></tr
 <p>Read sample from delay-line using linear interpolation The index specifies how many samples ago by which to read back from the buffer. The index must be less than or equal to bufferSize()-2. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___audio_scene_8hpp_source.html#l00266">266</a> of file <a class="el" href="al___audio_scene_8hpp_source.html">al_AudioScene.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                         {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordtype">int</span> index0 = index;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordtype">float</span> a = mSound.<a class="code" href="classal_1_1_ring_buffer.html#a2cdd387505279f38a606dd0727696df2">read</a>(index0);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">float</span> b = mSound.<a class="code" href="classal_1_1_ring_buffer.html#a2cdd387505279f38a606dd0727696df2">read</a>(index0+1);</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordtype">float</span> frac = index - index0;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">//return ipl::linear(frac, a, b);</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">float</span> a0 = mSound.<a class="code" href="classal_1_1_ring_buffer.html#a2cdd387505279f38a606dd0727696df2">read</a>(index0-1);</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordtype">float</span> b1 = mSound.<a class="code" href="classal_1_1_ring_buffer.html#a2cdd387505279f38a606dd0727696df2">read</a>(index0+2);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceal_1_1ipl.html#a26ffc66ac3be99197f46819c3dc33ce4">ipl::cubic</a>(frac, a0, a, b, b1);</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div><div class="ttc" id="classal_1_1_ring_buffer_html_a2cdd387505279f38a606dd0727696df2"><div class="ttname"><a href="classal_1_1_ring_buffer.html#a2cdd387505279f38a606dd0727696df2">al::RingBuffer::read</a></div><div class="ttdeci">T &amp; read(int i)</div><div class="ttdoc">Get reference to element relative to newest element. </div><div class="ttdef"><b>Definition:</b> <a href="al___buffer_8hpp_source.html#l00245">al_Buffer.hpp:245</a></div></div>
-<div class="ttc" id="namespaceal_1_1ipl_html_a26ffc66ac3be99197f46819c3dc33ce4"><div class="ttname"><a href="namespaceal_1_1ipl.html#a26ffc66ac3be99197f46819c3dc33ce4">al::ipl::cubic</a></div><div class="ttdeci">Tv cubic(Tf frac, const Tv &amp;w, const Tv &amp;x, const Tv &amp;y, const Tv &amp;z)</div><div class="ttdoc">Cubic interpolation. </div><div class="ttdef"><b>Definition:</b> <a href="al___interpolation_8hpp_source.html#l00312">al_Interpolation.hpp:312</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___audio_scene_8hpp_source.html">al_AudioScene.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_sound_source.html">SoundSource</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

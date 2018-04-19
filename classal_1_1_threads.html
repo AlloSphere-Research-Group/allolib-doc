@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_threads.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_threads.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_threads.html">Threads</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -97,12 +74,10 @@ $(document).ready(function(){initNavTree('classal_1_1_threads.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___thread_8hpp_source.html">al/core/system/al_Thread.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Threads&lt; ThreadFunction &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___thread_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/system/al_Thread.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::Threads&lt; ThreadFunction &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_threads__coll__graph.png" border="0" usemap="#al_1_1_threads_3_01_thread_function_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_threads_3_01_thread_function_01_4_coll__map" id="al_1_1_threads_3_01_thread_function_01_4_coll__map">
 <area shape="rect" id="node2" href="structal_1_1_threads_1_1_worker.html" title="A thread and function. " alt="" coords="13,260,221,301"/>
@@ -110,7 +85,7 @@ $(document).ready(function(){initNavTree('classal_1_1_threads.html','');});
 <area shape="rect" id="node5" href="structal_1_1_c_thread_function.html" title="C&#45;style thread function with user data. " alt="" coords="133,81,284,108"/>
 <area shape="rect" id="node4" href="classal_1_1_thread.html" title="al::Thread" alt="" coords="136,171,223,197"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -215,9 +190,7 @@ template&lt;class ThreadFunction &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___thread_8hpp_source.html#l00157">157</a> of file <a class="el" href="al___thread_8hpp_source.html">al_Thread.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    :   mSize(0), mWorkers(0)</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classal_1_1_threads.html#accc7df88f76a65d7b336564819e4c4c5">resize</a>(<a class="code" href="classal_1_1_threads.html#a6c652ef0e96cc765bd50313af60cdd7b">size</a>);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div><div class="ttc" id="classal_1_1_threads_html_accc7df88f76a65d7b336564819e4c4c5"><div class="ttname"><a href="classal_1_1_threads.html#accc7df88f76a65d7b336564819e4c4c5">al::Threads::resize</a></div><div class="ttdeci">void resize(int n)</div><div class="ttdoc">Resize number of workers. </div><div class="ttdef"><b>Definition:</b> <a href="al___thread_8hpp_source.html#l00169">al_Thread.hpp:169</a></div></div>
-<div class="ttc" id="classal_1_1_threads_html_a6c652ef0e96cc765bd50313af60cdd7b"><div class="ttname"><a href="classal_1_1_threads.html#a6c652ef0e96cc765bd50313af60cdd7b">al::Threads::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Returns number of workers. </div><div class="ttdef"><b>Definition:</b> <a href="al___thread_8hpp_source.html#l00166">al_Thread.hpp:166</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -283,10 +256,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___thread_8hpp_source.html#l00216">216</a> of file <a class="el" href="al___thread_8hpp_source.html">al_Thread.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                                              {</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">double</span> diam = <a class="code" href="classal_1_1_threads.html#a9b3eeb2d5d99c1ede39b9db1b9fe2988">range</a>(<a class="code" href="namespaceal.html#a7075f46376a9dcccc420f8dd1b329812">max</a>,<a class="code" href="namespaceal.html#a2fd420846f99fa0c8c500209a66995de">min</a>);</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordtype">double</span> left = diam * i + <a class="code" href="namespaceal.html#a2fd420846f99fa0c8c500209a66995de">min</a>;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        interval[0] = left;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        interval[1] = left + diam;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div><div class="ttc" id="namespaceal_html_a7075f46376a9dcccc420f8dd1b329812"><div class="ttname"><a href="namespaceal.html#a7075f46376a9dcccc420f8dd1b329812">al::max</a></div><div class="ttdeci">T max(const T &amp;v1, const T &amp;v2, const T &amp;v3)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00716">al_Functions.hpp:716</a></div></div>
-<div class="ttc" id="classal_1_1_threads_html_a9b3eeb2d5d99c1ede39b9db1b9fe2988"><div class="ttname"><a href="classal_1_1_threads.html#a9b3eeb2d5d99c1ede39b9db1b9fe2988">al::Threads::range</a></div><div class="ttdeci">double range(T max, T min=T(0))</div><div class="ttdoc">Get worker sub-interval range of a full interval [min, max) </div><div class="ttdef"><b>Definition:</b> <a href="al___thread_8hpp_source.html#l00205">al_Thread.hpp:205</a></div></div>
-<div class="ttc" id="namespaceal_html_a2fd420846f99fa0c8c500209a66995de"><div class="ttname"><a href="namespaceal.html#a2fd420846f99fa0c8c500209a66995de">al::min</a></div><div class="ttdeci">T min(const T &amp;v1, const T &amp;v2, const T &amp;v3)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00718">al_Functions.hpp:718</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a9b3eeb2d5d99c1ede39b9db1b9fe2988"></a>
@@ -331,25 +301,18 @@ template&lt;class T &gt; </div>
 <p>This is useful for determining how to break up for loops into sub-intervals. E.g., if the full loop interval is [ 0, N ), then the ith worker's interval is [ range(N)*i, range(N)*(i+1) ). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___thread_8hpp_source.html#l00205">205</a> of file <a class="el" href="al___thread_8hpp_source.html">al_Thread.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                   {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="namespaceal.html#a7075f46376a9dcccc420f8dd1b329812">max</a>-<a class="code" href="namespaceal.html#a2fd420846f99fa0c8c500209a66995de">min</a>) / double(<a class="code" href="classal_1_1_threads.html#a6c652ef0e96cc765bd50313af60cdd7b">size</a>());</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div><div class="ttc" id="namespaceal_html_a7075f46376a9dcccc420f8dd1b329812"><div class="ttname"><a href="namespaceal.html#a7075f46376a9dcccc420f8dd1b329812">al::max</a></div><div class="ttdeci">T max(const T &amp;v1, const T &amp;v2, const T &amp;v3)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00716">al_Functions.hpp:716</a></div></div>
-<div class="ttc" id="namespaceal_html_a2fd420846f99fa0c8c500209a66995de"><div class="ttname"><a href="namespaceal.html#a2fd420846f99fa0c8c500209a66995de">al::min</a></div><div class="ttdeci">T min(const T &amp;v1, const T &amp;v2, const T &amp;v3)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00718">al_Functions.hpp:718</a></div></div>
-<div class="ttc" id="classal_1_1_threads_html_a6c652ef0e96cc765bd50313af60cdd7b"><div class="ttname"><a href="classal_1_1_threads.html#a6c652ef0e96cc765bd50313af60cdd7b">al::Threads::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Returns number of workers. </div><div class="ttdef"><b>Definition:</b> <a href="al___thread_8hpp_source.html#l00166">al_Thread.hpp:166</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___thread_8hpp_source.html">al_Thread.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_threads.html">Threads</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

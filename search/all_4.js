@@ -53,6 +53,7 @@ var searchData=
   ['delaysize',['delaySize',['../classal_1_1_sound_source.html#ad0674282e7855eb38e97d88ee1e37c58',1,'al::SoundSource']]],
   ['delaytoindex',['delayToIndex',['../classal_1_1_sound_source.html#a6f49abdea3a76fcc4d1ad32828e6ff53',1,'al::SoundSource']]],
   ['delayunit',['DelayUnit',['../structgam_1_1_transfer_func_1_1_delay_unit.html',1,'gam::TransferFunc::DelayUnit'],['../classgam_1_1_delay.html#a45b4a0bb905436f157de166cc2c688d4',1,'gam::Delay::delayUnit(float u)'],['../classgam_1_1_delay.html#a7a97e063cb553362d996ee58acdc57bc',1,'gam::Delay::delayUnit() const'],['../structgam_1_1_transfer_func_1_1_delay_unit.html#a694cd78de91c9d94c6cd554512dd043c',1,'gam::TransferFunc::DelayUnit::DelayUnit()']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['depth',['depth',['../classal_1_1_texture.html#af4e7b8583da8dfdd27dea7dc0c321245',1,'al::Texture::depth()'],['../classal_1_1_array.html#a1ffc9a2003fe759bfb059266b13fbbb8',1,'al::Array::depth()']]],
   ['depth_5fbuf',['DEPTH_BUF',['../classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e',1,'al::Window']]],
   ['depth_5ftest',['DEPTH_TEST',['../classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6',1,'al::Graphics']]],

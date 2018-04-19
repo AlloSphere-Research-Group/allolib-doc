@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_image.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_image.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_image.html">Image</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -98,12 +75,10 @@ $(document).ready(function(){initNavTree('classal_1_1_image.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___image_8hpp_source.html">al/util/al_Image.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Image:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___image_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Image.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::Image:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_image__coll__graph.png" border="0" usemap="#al_1_1_image_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_image_coll__map" id="al_1_1_image_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_image_1_1_impl.html" title="al::Image::Impl" alt="" coords="5,185,125,212"/>
@@ -113,7 +88,7 @@ $(document).ready(function(){initNavTree('classal_1_1_image.html','');});
 <area shape="rect" id="node6" title="STL class. " alt="" coords="265,185,351,212"/>
 <area shape="rect" id="node7" title="STL class. " alt="" coords="243,95,381,136"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -291,11 +266,7 @@ wal, xpm
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00073">73</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a46ac0233e530e3f0a6e670ab1b2a02ba">LUMINANCE</a> = 0,  </div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a10b8e4666be72ad29003a0c6b34ce84f">LUMALPHA</a>,       </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7aa71c91edff67be4dad3365167c7abcce">RGB</a>,            </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a20b7af7ab42c16dc92d09469df5ebfce">RGBA</a>,           </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        UNKNOWN_FORMAT</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div><div class="ttc" id="classal_1_1_image_html_a3333f6a52ce15d5ccbcf9250039314a7a10b8e4666be72ad29003a0c6b34ce84f"><div class="ttname"><a href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a10b8e4666be72ad29003a0c6b34ce84f">al::Image::LUMALPHA</a></div><div class="ttdoc">lumalpha (2-plane) </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00075">al_Image.hpp:75</a></div></div>
-<div class="ttc" id="classal_1_1_image_html_a3333f6a52ce15d5ccbcf9250039314a7a46ac0233e530e3f0a6e670ab1b2a02ba"><div class="ttname"><a href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a46ac0233e530e3f0a6e670ab1b2a02ba">al::Image::LUMINANCE</a></div><div class="ttdoc">luminance (1-plane) </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00074">al_Image.hpp:74</a></div></div>
-<div class="ttc" id="classal_1_1_image_html_a3333f6a52ce15d5ccbcf9250039314a7aa71c91edff67be4dad3365167c7abcce"><div class="ttname"><a href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7aa71c91edff67be4dad3365167c7abcce">al::Image::RGB</a></div><div class="ttdoc">rgb (3-plane) </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00076">al_Image.hpp:76</a></div></div>
-<div class="ttc" id="classal_1_1_image_html_a3333f6a52ce15d5ccbcf9250039314a7a20b7af7ab42c16dc92d09469df5ebfce"><div class="ttname"><a href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a20b7af7ab42c16dc92d09469df5ebfce">al::Image::RGBA</a></div><div class="ttdoc">rgba (4-plane) </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00077">al_Image.hpp:77</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -364,9 +335,7 @@ template&lt;typename Pix &gt; </div>
 <p>Warning: doesn't check that Pix has matching type/component count. Warning: no bounds checking performed on x and y. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00181">181</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                                {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">array</a>().<a class="code" href="classal_1_1_array.html#a4ba08fa1747aa2c81ef435b7a16f181e">cell</a>&lt;Pix&gt;(x, y);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div><div class="ttc" id="classal_1_1_image_html_ae79f0e5d91401a8ce2509681ee09c4dd"><div class="ttname"><a href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">al::Image::array</a></div><div class="ttdeci">Array &amp; array()</div><div class="ttdoc">Get pixels as an Array. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00139">al_Image.hpp:139</a></div></div>
-<div class="ttc" id="classal_1_1_array_html_a4ba08fa1747aa2c81ef435b7a16f181e"><div class="ttname"><a href="classal_1_1_array.html#a4ba08fa1747aa2c81ef435b7a16f181e">al::Array::cell</a></div><div class="ttdeci">T * cell(size_t x) const</div><div class="ttdoc">Get the components at a given index in the array (no bounds checking) </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00369">al_Array.hpp:369</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a86e74d2f82621623ac7b625c33775bdf"></a>
@@ -409,9 +378,7 @@ template&lt;typename Pix &gt; </div>
 <p>Warning: doesn't check that Pix has matching type/component count. Warning: no bounds checking performed on x and y. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00190">190</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                   {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> *<a class="code" href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">array</a>().<a class="code" href="classal_1_1_array.html#a4ba08fa1747aa2c81ef435b7a16f181e">cell</a>&lt;Pix&gt;(x, y);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div><div class="ttc" id="classal_1_1_image_html_ae79f0e5d91401a8ce2509681ee09c4dd"><div class="ttname"><a href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">al::Image::array</a></div><div class="ttdeci">Array &amp; array()</div><div class="ttdoc">Get pixels as an Array. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00139">al_Image.hpp:139</a></div></div>
-<div class="ttc" id="classal_1_1_array_html_a4ba08fa1747aa2c81ef435b7a16f181e"><div class="ttname"><a href="classal_1_1_array.html#a4ba08fa1747aa2c81ef435b7a16f181e">al::Array::cell</a></div><div class="ttdeci">T * cell(size_t x) const</div><div class="ttdoc">Get the components at a given index in the array (no bounds checking) </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00369">al_Array.hpp:369</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2a3301297333a37cd0afd6e2e3a6e3db"></a>
@@ -442,7 +409,7 @@ template&lt;typename Pix &gt; </div>
 <p>The flags consist of a bitwise-or of the level of compression in [0,100] and other flags which may be specific to the image format. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00173">173</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{ mCompression=flags; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aba0e2cfb66290aedde1a8a75078f3d1b"></a>
@@ -518,9 +485,7 @@ template&lt;typename Pix &gt; </div>
 <p>Warning: doesn't check that Pix has matching type/component count Warning: no bounds checking performed on x and y </p>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00208">208</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                                      {</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">array</a>().<a class="code" href="classal_1_1_array.html#a742321d69afa6fc0760328d2299ab160">read</a>(&amp;pix.r, x, y);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div><div class="ttc" id="classal_1_1_array_html_a742321d69afa6fc0760328d2299ab160"><div class="ttname"><a href="classal_1_1_array.html#a742321d69afa6fc0760328d2299ab160">al::Array::read</a></div><div class="ttdeci">void read(T *val, int x) const</div><div class="ttdoc">Read the component values from array into val array (no bounds checking) </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00387">al_Array.hpp:387</a></div></div>
-<div class="ttc" id="classal_1_1_image_html_ae79f0e5d91401a8ce2509681ee09c4dd"><div class="ttname"><a href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">al::Image::array</a></div><div class="ttdeci">Array &amp; array()</div><div class="ttdoc">Get pixels as an Array. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00139">al_Image.hpp:139</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6a672359be983d9b4f5b6dcb5d4cdb4b"></a>
@@ -577,10 +542,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True on success; false otherwise. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00219">219</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                  {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        mArray.<a class="code" href="classal_1_1_array.html#a71dbd6075b90e1ea0d1e0f8fe1114902">formatAligned</a>(<a class="code" href="classal_1_1_image.html#a65aa285bf11ea82c54aa12b9bcecbba2">components</a>(<a class="code" href="classal_1_1_image.html#aedf03585c3740c9b64cd344e1c8a266e">format</a>), Array::type&lt;T&gt;(), dimX, dimY, 1);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div><div class="ttc" id="classal_1_1_array_html_a71dbd6075b90e1ea0d1e0f8fe1114902"><div class="ttname"><a href="classal_1_1_array.html#a71dbd6075b90e1ea0d1e0f8fe1114902">al::Array::formatAligned</a></div><div class="ttdeci">void formatAligned(int components, AlloTy ty, uint32_t dimx, size_t align)</div><div class="ttdoc">Change the format (header/layout) of the Array reallocating if necessary. </div></div>
-<div class="ttc" id="classal_1_1_image_html_aedf03585c3740c9b64cd344e1c8a266e"><div class="ttname"><a href="classal_1_1_image.html#aedf03585c3740c9b64cd344e1c8a266e">al::Image::format</a></div><div class="ttdeci">Format format() const</div><div class="ttdoc">Get pixel format. </div></div>
-<div class="ttc" id="classal_1_1_image_html_a65aa285bf11ea82c54aa12b9bcecbba2"><div class="ttname"><a href="classal_1_1_image.html#a65aa285bf11ea82c54aa12b9bcecbba2">al::Image::components</a></div><div class="ttdeci">static int components(Format v)</div><div class="ttdoc">Get number of components per pixel element. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00276">al_Image.hpp:276</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4e1558c309e375ad236cae9679d0312c"></a>
@@ -736,10 +698,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00288">288</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    Array a;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    a.data.ptr          = (<span class="keywordtype">char</span> *)const_cast&lt;T *&gt;(<a class="code" href="classal_1_1_image.html#a398325f85a54bf56f4d9beb740f5fa17">pixels</a>);</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    a.header.type       = Array::type&lt;T&gt;();</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    a.header.components = <a class="code" href="classal_1_1_image.html#a65aa285bf11ea82c54aa12b9bcecbba2">Image::components</a>(fmt);</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    allo_array_setdim2d(&amp;a.header, nx, ny);</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    allo_array_setstride(&amp;a.header, 1);</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">bool</span> res = <a class="code" href="classal_1_1_image.html#a4e1558c309e375ad236cae9679d0312c">save</a>(filePath, a, compress);</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    a.data.ptr = NULL; <span class="comment">// prevent ~Array from deleting data</span></div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div><div class="ttc" id="classal_1_1_image_html_a4e1558c309e375ad236cae9679d0312c"><div class="ttname"><a href="classal_1_1_image.html#a4e1558c309e375ad236cae9679d0312c">al::Image::save</a></div><div class="ttdeci">bool save(const std::string &amp;filePath)</div><div class="ttdoc">Save image to disk. </div></div>
-<div class="ttc" id="classal_1_1_image_html_a65aa285bf11ea82c54aa12b9bcecbba2"><div class="ttname"><a href="classal_1_1_image.html#a65aa285bf11ea82c54aa12b9bcecbba2">al::Image::components</a></div><div class="ttdeci">static int components(Format v)</div><div class="ttdoc">Get number of components per pixel element. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00276">al_Image.hpp:276</a></div></div>
-<div class="ttc" id="classal_1_1_image_html_a398325f85a54bf56f4d9beb740f5fa17"><div class="ttname"><a href="classal_1_1_image.html#a398325f85a54bf56f4d9beb740f5fa17">al::Image::pixels</a></div><div class="ttdeci">T * pixels()</div><div class="ttdoc">Get pointer to pixels. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00146">al_Image.hpp:146</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afb44d06daa67ef02e3f94039a2a7042e"></a>
@@ -788,24 +747,18 @@ template&lt;typename Pix &gt; </div>
 <p>Warning: doesn't check that Pix has matching type/component count Warning: no bounds checking performed on x and y </p>
 
 <p class="definition">Definition at line <a class="el" href="al___image_8hpp_source.html#l00199">199</a> of file <a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                       {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">array</a>().<a class="code" href="classal_1_1_array.html#ae4d660378e153c90b07499c00e3e8d7a">write</a>(&amp;pix.r, x, y);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div><div class="ttc" id="classal_1_1_image_html_ae79f0e5d91401a8ce2509681ee09c4dd"><div class="ttname"><a href="classal_1_1_image.html#ae79f0e5d91401a8ce2509681ee09c4dd">al::Image::array</a></div><div class="ttdeci">Array &amp; array()</div><div class="ttdoc">Get pixels as an Array. </div><div class="ttdef"><b>Definition:</b> <a href="al___image_8hpp_source.html#l00139">al_Image.hpp:139</a></div></div>
-<div class="ttc" id="classal_1_1_array_html_ae4d660378e153c90b07499c00e3e8d7a"><div class="ttname"><a href="classal_1_1_array.html#ae4d660378e153c90b07499c00e3e8d7a">al::Array::write</a></div><div class="ttdeci">void write(const T *val, int x)</div><div class="ttdoc">Write component values from val array into array (no bounds checking) </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00518">al_Array.hpp:518</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___image_8hpp_source.html">al_Image.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_image.html">Image</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

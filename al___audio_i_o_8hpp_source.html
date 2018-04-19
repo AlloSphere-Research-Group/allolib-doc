@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___audio_i_o_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___audio_i_o_8hpp_source.html','');}
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8dd042fbb7a60aa2a281f0fbd7623958.html">io</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_AudioIO.hpp</div>  </div>
@@ -101,7 +78,7 @@ $(document).ready(function(){initNavTree('al___audio_i_o_8hpp_source.html','');}
 <div class="ttc" id="classal_1_1_audio_i_o_html_a363ddb1b915c63b0737273c5f5debc0e"><div class="ttname"><a href="classal_1_1_audio_i_o.html#a363ddb1b915c63b0737273c5f5debc0e">al::AudioIO::clipOut</a></div><div class="ttdeci">void clipOut(bool v)</div><div class="ttdoc">Set whether to clip output between -1 and 1. </div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00220">al_AudioIO.hpp:220</a></div></div>
 <div class="ttc" id="classal_1_1_audio_i_o_data_html_ab546ddad34586d23d7d30517ececcaec"><div class="ttname"><a href="classal_1_1_audio_i_o_data.html#ab546ddad34586d23d7d30517ececcaec">al::AudioIOData::channelsOut</a></div><div class="ttdeci">unsigned int channelsOut() const</div><div class="ttdoc">Get effective number of output channels. </div></div>
 <div class="ttc" id="classal_1_1_audio_i_o_data_html_a9740704353b18238a7394b89b6bcd466"><div class="ttname"><a href="classal_1_1_audio_i_o_data.html#a9740704353b18238a7394b89b6bcd466">al::AudioIOData::framesPerSecond</a></div><div class="ttdeci">double framesPerSecond() const</div><div class="ttdoc">Get frames/second of audio I/O streams. </div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_audio_i_o_html_ae30adb54b65bec0f66713d3adf58bed6"><div class="ttname"><a href="classal_1_1_audio_i_o.html#ae30adb54b65bec0f66713d3adf58bed6">al::AudioIO::zeroNANs</a></div><div class="ttdeci">void zeroNANs(bool v)</div><div class="ttdoc">Set whether to zero NANs in output buffer going to DAC. </div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00229">al_AudioIO.hpp:229</a></div></div>
 <div class="ttc" id="classal_1_1_audio_i_o_data_html_ad7fa2e3d3d6b5b212bdd8e1959d49c58"><div class="ttname"><a href="classal_1_1_audio_i_o_data.html#ad7fa2e3d3d6b5b212bdd8e1959d49c58">al::AudioIOData::channelsBus</a></div><div class="ttdeci">unsigned int channelsBus() const</div><div class="ttdoc">Get number of allocated bus channels. </div></div>
 <div class="ttc" id="namespaceal_html_a640f5bee0f94a3f8c547f1a742e8f1e0"><div class="ttname"><a href="namespaceal.html#a640f5bee0f94a3f8c547f1a742e8f1e0">al::audioCallback</a></div><div class="ttdeci">void(* audioCallback)(AudioIOData &amp;io)</div><div class="ttdoc">Audio callback type. </div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00055">al_AudioIO.hpp:55</a></div></div>
@@ -113,15 +90,11 @@ $(document).ready(function(){initNavTree('al___audio_i_o_8hpp_source.html','');}
 <div class="ttc" id="classal_1_1_audio_device_html_a5e1705d00eb49195a075dd7a38dbfbcd"><div class="ttname"><a href="classal_1_1_audio_device.html#a5e1705d00eb49195a075dd7a38dbfbcd">al::AudioDevice::StreamMode</a></div><div class="ttdeci">StreamMode</div><div class="ttdoc">Stream mode. </div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00118">al_AudioIO.hpp:118</a></div></div>
 <div class="ttc" id="classal_1_1_audio_i_o_data_html_a32e1b1c5cbc8a5b503787269ca8ca5bd"><div class="ttname"><a href="classal_1_1_audio_i_o_data.html#a32e1b1c5cbc8a5b503787269ca8ca5bd">al::AudioIOData::framesPerBuffer</a></div><div class="ttdeci">unsigned int framesPerBuffer() const</div><div class="ttdoc">Get frames/buffer of audio I/O stream. </div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8dd042fbb7a60aa2a281f0fbd7623958.html">io</a></li><li class="navelem"><b>al_AudioIO.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

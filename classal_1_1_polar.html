@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_polar.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_polar.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_polar.html">Polar</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -95,14 +72,12 @@ $(document).ready(function(){initNavTree('classal_1_1_polar.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___complex_8hpp_source.html">al/util/al_Complex.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Polar&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___complex_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Complex.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::Polar&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_polar__coll__graph.png" border="0" usemap="#al_1_1_polar_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -179,9 +154,7 @@ template&lt;class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___complex_8hpp_source.html#l00076">76</a> of file <a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;: <a class="code" href="classal_1_1_polar.html#ae25abb3fc29203774c54bdbd594a9ce8">m</a>(T(1)), <a class="code" href="classal_1_1_polar.html#a85d8571636ceafe81c716c3bbe12dbb6">p</a>(phs){}</div><div class="ttc" id="classal_1_1_polar_html_a85d8571636ceafe81c716c3bbe12dbb6"><div class="ttname"><a href="classal_1_1_polar.html#a85d8571636ceafe81c716c3bbe12dbb6">al::Polar::p</a></div><div class="ttdeci">T p</div><div class="ttdoc">Phase, in radians. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00070">al_Complex.hpp:70</a></div></div>
-<div class="ttc" id="classal_1_1_polar_html_ae25abb3fc29203774c54bdbd594a9ce8"><div class="ttname"><a href="classal_1_1_polar.html#ae25abb3fc29203774c54bdbd594a9ce8">al::Polar::m</a></div><div class="ttdeci">T m</div><div class="ttdoc">Magnitude. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00069">al_Complex.hpp:69</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0456e71fb0abd22aea58758011005ea7"></a>
@@ -228,9 +201,7 @@ template&lt;class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___complex_8hpp_source.html#l00080">80</a> of file <a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;: <a class="code" href="classal_1_1_polar.html#ae25abb3fc29203774c54bdbd594a9ce8">m</a>(mag), <a class="code" href="classal_1_1_polar.html#a85d8571636ceafe81c716c3bbe12dbb6">p</a>(phs){}</div><div class="ttc" id="classal_1_1_polar_html_a85d8571636ceafe81c716c3bbe12dbb6"><div class="ttname"><a href="classal_1_1_polar.html#a85d8571636ceafe81c716c3bbe12dbb6">al::Polar::p</a></div><div class="ttdeci">T p</div><div class="ttdoc">Phase, in radians. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00070">al_Complex.hpp:70</a></div></div>
-<div class="ttc" id="classal_1_1_polar_html_ae25abb3fc29203774c54bdbd594a9ce8"><div class="ttname"><a href="classal_1_1_polar.html#ae25abb3fc29203774c54bdbd594a9ce8">al::Polar::m</a></div><div class="ttdeci">T m</div><div class="ttdoc">Magnitude. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00069">al_Complex.hpp:69</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a84160608a4bd926a5af693cd1acc61ff"></a>
@@ -266,22 +237,18 @@ template&lt;class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___complex_8hpp_source.html#l00083">83</a> of file <a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{ *<span class="keyword">this</span> = v; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_polar.html">Polar</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

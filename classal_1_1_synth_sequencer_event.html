@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_synth_sequencer_event.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,25 +57,44 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_sequencer_event.html
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_sequencer_event.html">SynthSequencerEvent</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classal_1_1_synth_sequencer_event-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">al::SynthSequencerEvent Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::SynthSequencerEvent:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Collaboration diagram for al::SynthSequencerEvent:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_synth_sequencer_event__coll__graph.png" border="0" usemap="#al_1_1_synth_sequencer_event_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_synth_sequencer_event_coll__map" id="al_1_1_synth_sequencer_event_coll__map">
-<area shape="rect" id="node2" href="classal_1_1_synth_voice.html" title="The SynthVoice class. " alt="" coords="40,5,155,32"/>
+<area shape="rect" id="node2" href="classal_1_1_synth_voice.html" title="The SynthVoice class. " alt="" coords="5,13,120,39"/>
+<area shape="rect" id="node3" href="structal_1_1_synth_sequencer_event_1_1_param_fields.html" title="al::SynthSequencerEvent\l::ParamFields" alt="" coords="144,5,328,47"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structal_1_1_synth_sequencer_event_1_1_param_fields.html">ParamFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a20c7bf880732824a920a58c3ba793eb0"><td class="memItemLeft" align="right" valign="top"><a id="a20c7bf880732824a920a58c3ba793eb0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <b>EVENT_VOICE</b>, 
+<b>EVENT_PFIELDS</b>, 
+<b>EVENT_TEMPO</b>
+ }</td></tr>
+<tr class="separator:a20c7bf880732824a920a58c3ba793eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a993ba571766083e31d2ff7c9fdfb93c2"><td class="memItemLeft" align="right" valign="top"><a id="a993ba571766083e31d2ff7c9fdfb93c2"></a>
@@ -115,26 +106,32 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> {-1}</
 <tr class="memitem:a8fb8d54ddf88cc26e62e96759c1d1571"><td class="memItemLeft" align="right" valign="top"><a id="a8fb8d54ddf88cc26e62e96759c1d1571"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>offsetCounter</b> {0}</td></tr>
 <tr class="separator:a8fb8d54ddf88cc26e62e96759c1d1571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6c15b43a33645e4d1d98df146402ce"><td class="memItemLeft" align="right" valign="top"><a id="afc6c15b43a33645e4d1d98df146402ce"></a>
-<a class="el" href="classal_1_1_synth_voice.html">SynthVoice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>voice</b></td></tr>
-<tr class="separator:afc6c15b43a33645e4d1d98df146402ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e0fdcc859f943c75caac476570dbb4"><td class="memItemLeft" ><a id="a84e0fdcc859f943c75caac476570dbb4"></a>
+union {</td></tr>
+<tr class="memitem:ae5aafd12ab38df6e0babf0b858155c24"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="classal_1_1_synth_voice.html">SynthVoice</a> *&#160;&#160;&#160;<b>voice</b></td></tr>
+<tr class="separator:ae5aafd12ab38df6e0babf0b858155c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7206a02f6e8b32d01f986c16e0f54236"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="structal_1_1_synth_sequencer_event_1_1_param_fields.html">ParamFields</a>&#160;&#160;&#160;<b>fields</b></td></tr>
+<tr class="separator:a7206a02f6e8b32d01f986c16e0f54236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5caa5de3127989478746b5fc7330530"><td class="memItemLeft" >
+&#160;&#160;&#160;float&#160;&#160;&#160;<b>tempo</b></td></tr>
+<tr class="separator:ab5caa5de3127989478746b5fc7330530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e0fdcc859f943c75caac476570dbb4"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a84e0fdcc859f943c75caac476570dbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00432">432</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00448">448</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_sequencer_event.html">SynthSequencerEvent</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

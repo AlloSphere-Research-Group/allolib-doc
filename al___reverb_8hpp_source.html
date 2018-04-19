@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___reverb_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___reverb_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_b2f8b8af6cc1fe8abe5e012e99c34514.html">sound</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Reverb.hpp</div>  </div>
@@ -99,7 +76,7 @@ $(document).ready(function(){initNavTree('al___reverb_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_static_delay_line_html_abb20b953fe2d5b960588df8424745152"><div class="ttname"><a href="classal_1_1_static_delay_line.html#abb20b953fe2d5b960588df8424745152">al::StaticDelayLine::comb</a></div><div class="ttdeci">T comb(const T &amp;v, const T &amp;ffd, const T &amp;fbk)</div><div class="ttdoc">Comb filter input using a delay time equal to the maximum size of the delay-line. ...</div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00104">al_Reverb.hpp:104</a></div></div>
 <div class="ttc" id="classal_1_1_reverb_html_add391bf2a0727cdec3f994675b06a2d7"><div class="ttname"><a href="classal_1_1_reverb.html#add391bf2a0727cdec3f994675b06a2d7">al::Reverb::diffusionIn1</a></div><div class="ttdeci">Reverb &amp; diffusionIn1(T v)</div><div class="ttdoc">Set input diffusion 1 amount, [0,1) </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00172">al_Reverb.hpp:172</a></div></div>
 <div class="ttc" id="classal_1_1_reverb_html_a70d897a595268479409a5d5b19341454"><div class="ttname"><a href="classal_1_1_reverb.html#a70d897a595268479409a5d5b19341454">al::Reverb::diffusionDecay2</a></div><div class="ttdeci">Reverb &amp; diffusionDecay2(T v)</div><div class="ttdoc">Set tank decay diffusion 2 amount, [0,1) </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00181">al_Reverb.hpp:181</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_reverb_html_a031fe023d172a5d205c88f7873fa16ec"><div class="ttname"><a href="classal_1_1_reverb.html#a031fe023d172a5d205c88f7873fa16ec">al::Reverb::diffusionIn2</a></div><div class="ttdeci">Reverb &amp; diffusionIn2(T v)</div><div class="ttdoc">Set input diffusion 2 amount, [0,1) </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00175">al_Reverb.hpp:175</a></div></div>
 <div class="ttc" id="classal_1_1_static_delay_line_html_a44d558186ebd3c2490dcbb19ff4217e4"><div class="ttname"><a href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">al::StaticDelayLine::allpass</a></div><div class="ttdeci">T allpass(const T &amp;v, const T &amp;ffd)</div><div class="ttdoc">Allpass filter input using a delay time equal to the maximum size of the delay-line. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00112">al_Reverb.hpp:112</a></div></div>
 <div class="ttc" id="classal_1_1_reverb_html_a32b1753ac9964243dc92487c6c85ce03"><div class="ttname"><a href="classal_1_1_reverb.html#a32b1753ac9964243dc92487c6c85ce03">al::Reverb::bandwidth</a></div><div class="ttdeci">Reverb &amp; bandwidth(T v)</div><div class="ttdoc">Set input signal bandwidth, in [0,1]. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00150">al_Reverb.hpp:150</a></div></div>
@@ -115,15 +92,11 @@ $(document).ready(function(){initNavTree('al___reverb_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_static_delay_line_html_ae963b8a529f0b69f915a7efc58b9fab0"><div class="ttname"><a href="classal_1_1_static_delay_line.html#ae963b8a529f0b69f915a7efc58b9fab0">al::StaticDelayLine::write</a></div><div class="ttdeci">void write(const T &amp;v)</div><div class="ttdoc">Write value to delay. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00091">al_Reverb.hpp:91</a></div></div>
 <div class="ttc" id="classal_1_1_static_delay_line_html_a86a9e3d55da0e44cebd8c25e19d7c3d8"><div class="ttname"><a href="classal_1_1_static_delay_line.html#a86a9e3d55da0e44cebd8c25e19d7c3d8">al::StaticDelayLine::size</a></div><div class="ttdeci">static int size()</div><div class="ttdoc">Get size of delay-line. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00067">al_Reverb.hpp:67</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_b2f8b8af6cc1fe8abe5e012e99c34514.html">sound</a></li><li class="navelem"><b>al_Reverb.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:15 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

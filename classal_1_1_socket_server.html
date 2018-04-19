@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_socket_server.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_socket_server.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_socket_server.html">SocketServer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -100,27 +77,23 @@ $(document).ready(function(){initNavTree('classal_1_1_socket_server.html','');})
 <p>Server socket.  
  <a href="classal_1_1_socket_server.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___socket_8hpp_source.html">al/util/al_Socket.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::SocketServer:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___socket_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Socket.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::SocketServer:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_socket_server__inherit__graph.png" border="0" usemap="#al_1_1_socket_server_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_socket_server_inherit__map" id="al_1_1_socket_server_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_socket.html" title="al::Socket" alt="" coords="26,5,113,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::SocketServer:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::SocketServer:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_socket_server__coll__graph.png" border="0" usemap="#al_1_1_socket_server_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_socket_server_coll__map" id="al_1_1_socket_server_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_socket.html" title="al::Socket" alt="" coords="26,5,113,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -251,14 +224,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onOpen</b> ()
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___socket_8hpp_source.html#l00058">58</a> of file <a class="el" href="al___socket_8hpp_source.html">al_Socket.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// IPv4/v6 protocols</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fad5dea746c19d63f7161528930074ebff">TCP</a>     =   6,  </div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa59906e87603218c2b3ea00281fa367c7">UDP</a>     =  17,  </div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fafb89508200e32fd388c4c5c4c51e1774">SCTP</a>    = 132,  </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// Transmission types</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa3773edd202f45ed36159e979f6e83b0a">STREAM</a>  = 1&lt;&lt;8, </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa8d65f748accd97aeac1e9bfd1c58b085">DGRAM</a>   = 2&lt;&lt;8, </div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// Families</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa354c2a0cd1063d53460777a81cacc6b2">INET</a>    = 1&lt;&lt;16, </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fad2fa525761ee35372713e664299aa6f0">INET6</a>   = 2&lt;&lt;16  </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div><div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fa59906e87603218c2b3ea00281fa367c7"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa59906e87603218c2b3ea00281fa367c7">al::Socket::UDP</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00061">al_Socket.hpp:61</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fafb89508200e32fd388c4c5c4c51e1774"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fafb89508200e32fd388c4c5c4c51e1774">al::Socket::SCTP</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00062">al_Socket.hpp:62</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fa8d65f748accd97aeac1e9bfd1c58b085"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa8d65f748accd97aeac1e9bfd1c58b085">al::Socket::DGRAM</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00066">al_Socket.hpp:66</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fa3773edd202f45ed36159e979f6e83b0a"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa3773edd202f45ed36159e979f6e83b0a">al::Socket::STREAM</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00065">al_Socket.hpp:65</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fad2fa525761ee35372713e664299aa6f0"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fad2fa525761ee35372713e664299aa6f0">al::Socket::INET6</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00070">al_Socket.hpp:70</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fad5dea746c19d63f7161528930074ebff"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fad5dea746c19d63f7161528930074ebff">al::Socket::TCP</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00060">al_Socket.hpp:60</a></div></div>
-<div class="ttc" id="classal_1_1_socket_html_afcd098fcaa5710818638a3eb2fa9469fa354c2a0cd1063d53460777a81cacc6b2"><div class="ttname"><a href="classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa354c2a0cd1063d53460777a81cacc6b2">al::Socket::INET</a></div><div class="ttdef"><b>Definition:</b> <a href="al___socket_8hpp_source.html#l00069">al_Socket.hpp:69</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -318,11 +284,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onOpen</b> ()
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___socket_8hpp_source.html#l00224">224</a> of file <a class="el" href="al___socket_8hpp_source.html">al_Socket.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    :   <a class="code" href="classal_1_1_socket.html#abff2b0d053a50382aa6afd5cf1b6b5de">Socket</a>(<a class="code" href="classal_1_1_socket.html#a8e86af845a688ae360eb220449b41ad2">port</a>, <a class="code" href="classal_1_1_socket.html#a73b2a5e9c75137329502a288f577dce3">address</a>, <a class="code" href="classal_1_1_socket.html#a1e41ea00628b7887c742988e878fef53">timeout</a>, type)</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        SocketServer::onOpen();</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div><div class="ttc" id="classal_1_1_socket_html_a1e41ea00628b7887c742988e878fef53"><div class="ttname"><a href="classal_1_1_socket.html#a1e41ea00628b7887c742988e878fef53">al::Socket::timeout</a></div><div class="ttdeci">al_sec timeout() const</div><div class="ttdoc">Get timeout duration, in seconds. </div></div>
-<div class="ttc" id="classal_1_1_socket_html_a8e86af845a688ae360eb220449b41ad2"><div class="ttname"><a href="classal_1_1_socket.html#a8e86af845a688ae360eb220449b41ad2">al::Socket::port</a></div><div class="ttdeci">uint16_t port() const</div><div class="ttdoc">Get port number. </div></div>
-<div class="ttc" id="classal_1_1_socket_html_a73b2a5e9c75137329502a288f577dce3"><div class="ttname"><a href="classal_1_1_socket.html#a73b2a5e9c75137329502a288f577dce3">al::Socket::address</a></div><div class="ttdeci">const std::string &amp; address() const</div><div class="ttdoc">Get IP address string. </div></div>
-<div class="ttc" id="classal_1_1_socket_html_abff2b0d053a50382aa6afd5cf1b6b5de"><div class="ttname"><a href="classal_1_1_socket.html#abff2b0d053a50382aa6afd5cf1b6b5de">al::Socket::Socket</a></div><div class="ttdeci">Socket()</div><div class="ttdoc">Create uninitialized socket. </div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -550,15 +512,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onOpen</b> ()
 <li><a class="el" href="al___socket_8hpp_source.html">al_Socket.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_socket_server.html">SocketServer</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

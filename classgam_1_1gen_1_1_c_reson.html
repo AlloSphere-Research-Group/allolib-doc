@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1gen_1_1_c_reson.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1gen_1_1_c_reson.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><b>gen</b></li><li class="navelem"><a class="el" href="classgam_1_1gen_1_1_c_reson.html">CReson</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -101,26 +78,22 @@ $(document).ready(function(){initNavTree('classgam_1_1gen_1_1_c_reson.html','');
  <a href="classgam_1_1gen_1_1_c_reson.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gen_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/gen.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::gen::CReson&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::gen::CReson&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1gen_1_1_c_reson__inherit__graph.png" border="0" usemap="#gam_1_1gen_1_1_c_reson_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1gen_1_1_c_reson_3_01_t_01_4_inherit__map" id="gam_1_1gen_1_1_c_reson_3_01_t_01_4_inherit__map">
 <area shape="rect" id="node2" href="classgam_1_1_complex.html" title="Complex number. " alt="" coords="17,5,171,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::gen::CReson&lt; T &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::gen::CReson&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1gen_1_1_c_reson__coll__graph.png" border="0" usemap="#gam_1_1gen_1_1_c_reson_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1gen_1_1_c_reson_3_01_t_01_4_coll__map" id="gam_1_1gen_1_1_c_reson_3_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="classgam_1_1_complex.html" title="Complex number. " alt="" coords="17,124,171,151"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -408,7 +381,7 @@ class gam::gen::CReson&lt; T &gt;</h3>
 <p><a class="el" href="classgam_1_1_complex.html" title="Complex number. ">Complex</a> resonator. </p>
 <p>A complex resonator consists of two complex numbers- one is an absolute phase and amplitude and the other is a relative (differential) frequency and decay/grow factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00484">484</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00493">493</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba869fbae66cc748dc291f1ae33dddcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba869fbae66cc748dc291f1ae33dddcb">&#9670;&nbsp;</a></span>CReson()</h2>
@@ -467,9 +440,8 @@ template&lt;class T  = double&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00494">494</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                                                                                      {</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keyword">set</span>(frq, <a class="code" href="classgam_1_1gen_1_1_c_reson.html#a9bec2a2c52ae3a9abd1ca8a57c281619">amp</a>, phs);</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div><div class="ttc" id="classgam_1_1gen_1_1_c_reson_html_a9bec2a2c52ae3a9abd1ca8a57c281619"><div class="ttname"><a href="classgam_1_1gen_1_1_c_reson.html#a9bec2a2c52ae3a9abd1ca8a57c281619">gam::gen::CReson::amp</a></div><div class="ttdeci">void amp(const T &amp;v)</div><div class="ttdoc">Set amplitude. </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00509">gen.h:509</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00503">503</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -524,27 +496,19 @@ template&lt;class T  = double&gt; </div>
 <p>Set unit frequency, amplitude, unit phase, and decay/grow factor. </p>
 <p>The phase state will be rewound 1 iteration so the first function call will return a complex number at the desired phase. </p>
 
-<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00536">536</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                                                                         {</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        this-&gt;<a class="code" href="classgam_1_1_complex.html#a9da648a1a379488f6c8d74f6d18f8110">fromPolar</a>(<a class="code" href="classgam_1_1gen_1_1_c_reson.html#a9bec2a2c52ae3a9abd1ca8a57c281619">amp</a>, phs*M_2PI);</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <a class="code" href="classgam_1_1gen_1_1_c_reson.html#ac6c07e07990030ecac6bd0669d000a65">factor</a>(frq, dec);</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <a class="code" href="classgam_1_1gen_1_1_c_reson.html#a78e0a0fd7fba0fc00ba857e69c186862">recede</a>();</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    }</div><div class="ttc" id="classgam_1_1gen_1_1_c_reson_html_ac6c07e07990030ecac6bd0669d000a65"><div class="ttname"><a href="classgam_1_1gen_1_1_c_reson.html#ac6c07e07990030ecac6bd0669d000a65">gam::gen::CReson::factor</a></div><div class="ttdeci">void factor(const T &amp;frq, const T &amp;dec=T(1))</div><div class="ttdoc">Set recursive multiplication factor (frequency and decay/growth factor) </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00523">gen.h:523</a></div></div>
-<div class="ttc" id="classgam_1_1gen_1_1_c_reson_html_a78e0a0fd7fba0fc00ba857e69c186862"><div class="ttname"><a href="classgam_1_1gen_1_1_c_reson.html#a78e0a0fd7fba0fc00ba857e69c186862">gam::gen::CReson::recede</a></div><div class="ttdeci">const C &amp; recede()</div><div class="ttdoc">Recede one iteration and return value. </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00506">gen.h:506</a></div></div>
-<div class="ttc" id="classgam_1_1_complex_html_a9da648a1a379488f6c8d74f6d18f8110"><div class="ttname"><a href="classgam_1_1_complex.html#a9da648a1a379488f6c8d74f6d18f8110">gam::Complex::fromPolar</a></div><div class="ttdeci">C &amp; fromPolar(const T &amp;m, const T &amp;p)</div><div class="ttdoc">Set magnitude and phase. </div><div class="ttdef"><b>Definition:</b> <a href="_types_8h_source.html#l00080">Types.h:80</a></div></div>
-<div class="ttc" id="classgam_1_1gen_1_1_c_reson_html_a9bec2a2c52ae3a9abd1ca8a57c281619"><div class="ttname"><a href="classgam_1_1gen_1_1_c_reson.html#a9bec2a2c52ae3a9abd1ca8a57c281619">gam::gen::CReson::amp</a></div><div class="ttdeci">void amp(const T &amp;v)</div><div class="ttdoc">Set amplitude. </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00509">gen.h:509</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00545">545</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="gen_8h_source.html">gen.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1gen.html">gen</a></li><li class="navelem"><a class="el" href="classgam_1_1gen_1_1_c_reson.html">CReson</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:20 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___array_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___array_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Array.hpp</div>  </div>
@@ -114,7 +91,7 @@ $(document).ready(function(){initNavTree('al___array_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_array_html_addb6572434ef7495b4f22d5bbf2939dd"><div class="ttname"><a href="classal_1_1_array.html#addb6572434ef7495b4f22d5bbf2939dd">al::Array::fill</a></div><div class="ttdeci">void fill(void(*func)(T *values, double normx))</div><div class="ttdoc">Use a pure C function to fill an array with data. </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00649">al_Array.hpp:649</a></div></div>
 <div class="ttc" id="struct_allo_array_html_a3b979e443995e93b283ad9ab17dfd10c"><div class="ttname"><a href="struct_allo_array.html#a3b979e443995e93b283ad9ab17dfd10c">AlloArray::data</a></div><div class="ttdeci">union AlloArray::@69 data</div></div>
 <div class="ttc" id="classal_1_1_vec_html"><div class="ttname"><a href="classal_1_1_vec.html">al::Vec</a></div><div class="ttdoc">Fixed-size n-vector. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00054">al_Vec.hpp:54</a></div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_array_html_afe6d2bf13c0a43ba63824dd439a88a2f"><div class="ttname"><a href="classal_1_1_array.html#afe6d2bf13c0a43ba63824dd439a88a2f">al::Array::as</a></div><div class="ttdeci">T &amp; as(int x)</div><div class="ttdoc">Return a particular cell casted to a typed reference (no bounds checking) </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00230">al_Array.hpp:230</a></div></div>
 <div class="ttc" id="classal_1_1_array_html_a8566ceea15a74ca5d667a5d373e5a422"><div class="ttname"><a href="classal_1_1_array.html#a8566ceea15a74ca5d667a5d373e5a422">al::Array::dim</a></div><div class="ttdeci">uint32_t dim(int i=0) const</div><div class="ttdoc">Get size of dimension. </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00099">al_Array.hpp:99</a></div></div>
 <div class="ttc" id="classal_1_1_array_html_ab4738412a9e306ecca7cafda66dea007"><div class="ttname"><a href="classal_1_1_array.html#ab4738412a9e306ecca7cafda66dea007">al::Array::set1d</a></div><div class="ttdeci">void set1d(T *cell)</div><div class="ttdoc">Fill with the same cell value throughout. </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00746">al_Array.hpp:746</a></div></div>
@@ -145,15 +122,11 @@ $(document).ready(function(){initNavTree('al___array_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_array_html_a68dd335d086ba21e032cf3abd9b47a61"><div class="ttname"><a href="classal_1_1_array.html#a68dd335d086ba21e032cf3abd9b47a61">al::Array::isType</a></div><div class="ttdeci">bool isType(AlloTy ty) const</div><div class="ttdoc">Verify elements are a particular type. </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00094">al_Array.hpp:94</a></div></div>
 <div class="ttc" id="classal_1_1_array_html_a1f10e4f8bb86d35cd93c07ea1ea7ba47"><div class="ttname"><a href="classal_1_1_array.html#a1f10e4f8bb86d35cd93c07ea1ea7ba47">al::Array::stride</a></div><div class="ttdeci">uint32_t stride(int i=0) const</div><div class="ttdoc">Get stride of dimension, in bytes. </div><div class="ttdef"><b>Definition:</b> <a href="al___array_8hpp_source.html#l00103">al_Array.hpp:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_8631e2db5a32fcef9ee7806e7955fdd4.html">util</a></li><li class="navelem"><b>al_Array.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

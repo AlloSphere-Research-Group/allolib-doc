@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structgam_1_1gen_1_1_r_add_wrap.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('structgam_1_1gen_1_1_r_add_wrap.html',
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><b>gen</b></li><li class="navelem"><a class="el" href="structgam_1_1gen_1_1_r_add_wrap.html">RAddWrap</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -100,30 +77,26 @@ $(document).ready(function(){initNavTree('structgam_1_1gen_1_1_r_add_wrap.html',
  <a href="structgam_1_1gen_1_1_r_add_wrap.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gen_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/gen.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for gam::gen::RAddWrap&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for gam::gen::RAddWrap&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="structgam_1_1gen_1_1_r_add_wrap__inherit__graph.png" border="0" usemap="#gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_inherit__map" id="gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_inherit__map">
 <area shape="rect" id="node2" href="structgam_1_1gen_1_1_r_add.html" title="Recursive add generator that generates lines. " alt="" coords="21,155,184,181"/>
 <area shape="rect" id="node3" href="structgam_1_1gen_1_1_val.html" title="Single value generator. " alt="" coords="28,80,177,107"/>
 <area shape="rect" id="node4" href="structgam_1_1gen_1_1_default.html" title="Generates the default value of its associated type. " alt="" coords="14,5,191,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::gen::RAddWrap&lt; T &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for gam::gen::RAddWrap&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="structgam_1_1gen_1_1_r_add_wrap__coll__graph.png" border="0" usemap="#gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_coll__map" id="gam_1_1gen_1_1_r_add_wrap_3_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="structgam_1_1gen_1_1_r_add.html" title="Recursive add generator that generates lines. " alt="" coords="103,199,265,225"/>
 <area shape="rect" id="node3" href="structgam_1_1gen_1_1_val.html" title="Single value generator. " alt="" coords="180,95,329,121"/>
 <area shape="rect" id="node4" href="structgam_1_1gen_1_1_default.html" title="Generates the default value of its associated type. " alt="" coords="167,5,345,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -206,7 +179,7 @@ struct gam::gen::RAddWrap&lt; T &gt;</h3>
 
 <p>Recursive addition wrapped in interval [min, max) </p>
 
-<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00397">397</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00406">406</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3073a469d29089db9893636eae5c04d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3073a469d29089db9893636eae5c04d9">&#9670;&nbsp;</a></span>operator()()</h2>
@@ -234,26 +207,19 @@ template&lt;class T  = gam::real&gt; </div>
 </div><div class="memdoc">
 <p>&lt; Generate next value </p>
 
-<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00400">400</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                         {                              </div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="structgam_1_1gen_1_1_r_add.html#aced5d5628f299494ec959d3bc6c220c4">RAdd&lt;T&gt;::operator()</a>();</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structgam_1_1gen_1_1_val.html#a270a7a05857adb972c016c8ed1ffe5c4">val</a>=<a class="code" href="namespacegam_1_1scl.html#a573358a72e36be1d3c32cead13a1b8e4">scl::wrap</a>(<a class="code" href="structgam_1_1gen_1_1_val.html#a270a7a05857adb972c016c8ed1ffe5c4">val</a>,max,min);</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    } </div><div class="ttc" id="structgam_1_1gen_1_1_r_add_html_aced5d5628f299494ec959d3bc6c220c4"><div class="ttname"><a href="structgam_1_1gen_1_1_r_add.html#aced5d5628f299494ec959d3bc6c220c4">gam::gen::RAdd::operator()</a></div><div class="ttdeci">const T &amp; operator()() const</div><div class="ttdoc">Generate next value. </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00360">gen.h:360</a></div></div>
-<div class="ttc" id="structgam_1_1gen_1_1_val_html_a270a7a05857adb972c016c8ed1ffe5c4"><div class="ttname"><a href="structgam_1_1gen_1_1_val.html#a270a7a05857adb972c016c8ed1ffe5c4">gam::gen::Val::val</a></div><div class="ttdeci">T val</div><div class="ttdoc">Value. </div><div class="ttdef"><b>Definition:</b> <a href="gen_8h_source.html#l00054">gen.h:54</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a573358a72e36be1d3c32cead13a1b8e4"><div class="ttname"><a href="namespacegam_1_1scl.html#a573358a72e36be1d3c32cead13a1b8e4">gam::scl::wrap</a></div><div class="ttdeci">T wrap(T value, T hi=T(1), T lo=T(0))</div><div class="ttdoc">Returns value wrapped in [lo, hi). </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00947">scl.h:947</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="gen_8h_source.html#l00409">409</a> of file <a class="el" href="gen_8h_source.html">gen.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="gen_8h_source.html">gen.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1gen.html">gen</a></li><li class="navelem"><a class="el" href="structgam_1_1gen_1_1_r_add_wrap.html">RAddWrap</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:21 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

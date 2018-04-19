@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_vec.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_vec.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_vec.html">Vec</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -100,27 +77,23 @@ $(document).ready(function(){initNavTree('classal_1_1_vec.html','');});
 <p>Fixed-size n-vector.  
  <a href="classal_1_1_vec.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___vec_8hpp_source.html">al/core/math/al_Vec.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::Vec&lt; N, T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___vec_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/math/al_Vec.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::Vec&lt; N, T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_vec__inherit__graph.png" border="0" usemap="#al_1_1_vec_3_01_n_00_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_vec_3_01_n_00_01_t_01_4_inherit__map" id="al_1_1_vec_3_01_n_00_01_t_01_4_inherit__map">
 <area shape="rect" id="node2" href="structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="5,5,167,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Vec&lt; N, T &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::Vec&lt; N, T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_vec__coll__graph.png" border="0" usemap="#al_1_1_vec_3_01_n_00_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_vec_3_01_n_00_01_t_01_4_coll__map" id="al_1_1_vec_3_01_n_00_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="5,139,167,165"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -497,7 +470,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00112">112</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{ <span class="keyword">set</span>(v); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="afc4ff9926e0ae3e86be2b361c91b52b2"></a>
@@ -544,7 +517,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00116">116</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{ <span class="keyword">set</span>(v1, v2); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="afb2424f848c63c9815a391f160b07853"></a>
@@ -598,7 +571,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00121">121</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{ <span class="keyword">set</span>(v1, v2, v3); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a60cc205c1b8938641fa069aab4b4cc3e"></a>
@@ -659,7 +632,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00127">127</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{ <span class="keyword">set</span>(v1, v2, v3, v4); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="abeef58ff334720d738649768456bf4af"></a>
@@ -697,7 +670,7 @@ template&lt;int N2, class T2 &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00131">131</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{ <span class="keyword">set</span>(v); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a41cece06eaad491fb43e7acb5e86d17e"></a>
@@ -746,7 +719,7 @@ template&lt;class Tv , class Ts &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00136">136</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{ <span class="keyword">set</span>(v,s); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="abf765d4be307763ed5fc3b2c6b7e3c80"></a>
@@ -795,7 +768,7 @@ template&lt;class T2 &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00141">141</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{ <span class="keyword">set</span>(v,stride); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -842,8 +815,7 @@ template&lt;int Dimension&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00310">310</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                        {</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="classal_1_1_vec.html#a8750d165731bc90fe31013121d8b8224">Vec</a> res(*<span class="keyword">this</span>);</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    res[Dimension] += shift;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  }</div><div class="ttc" id="classal_1_1_vec_html_a8750d165731bc90fe31013121d8b8224"><div class="ttname"><a href="classal_1_1_vec.html#a8750d165731bc90fe31013121d8b8224">al::Vec::Vec</a></div><div class="ttdeci">Vec(const T &amp;v=T())</div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00112">al_Vec.hpp:112</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a39f6db21ef8c4608831338cd339f3f77"></a>
@@ -876,9 +848,7 @@ template&lt;int N, class T&gt; </div>
 <p>The p-norm is pth root of the sum of the absolute value of the elements raised to the pth power, (sum |x_n|^p) ^ (1/p). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00343">343</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                           {</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    T r = pow(<a class="code" href="namespaceal.html#a23e5f3177e4ea2b964cf3673394b806d">abs</a>((*<span class="keyword">this</span>)[0]), p);</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i&lt;N; ++i){ r += pow(<a class="code" href="namespaceal.html#a23e5f3177e4ea2b964cf3673394b806d">abs</a>((*<span class="keyword">this</span>)[i]), p); }</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> pow(r, T(1)/p);</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  }</div><div class="ttc" id="namespaceal_html_a23e5f3177e4ea2b964cf3673394b806d"><div class="ttname"><a href="namespaceal.html#a23e5f3177e4ea2b964cf3673394b806d">al::abs</a></div><div class="ttdeci">T abs(const Vec&lt; N, T &gt; &amp;v)</div><div class="ttdoc">Get absolute value (magnitude) of vector. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00467">al_Vec.hpp:467</a></div></div>
-<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2737e88df374bcf0874ecf24bd72ed64"></a>
@@ -908,8 +878,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00632">632</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                                    {</div><div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classal_1_1_vec.html#ad9ad33bbbd8db5a41e6410b007fc05ba">mag</a>(scale);</div><div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;}</div><div class="ttc" id="classal_1_1_vec_html_ad9ad33bbbd8db5a41e6410b007fc05ba"><div class="ttname"><a href="classal_1_1_vec.html#ad9ad33bbbd8db5a41e6410b007fc05ba">al::Vec::mag</a></div><div class="ttdeci">T mag() const</div><div class="ttdoc">Returns magnitude. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00334">al_Vec.hpp:334</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a78defc67dd75a3b3212b3af96ad357a7"></a>
@@ -947,8 +916,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00399">399</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                                     {</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_vec.html#a8750d165731bc90fe31013121d8b8224">Vec</a>(*this).normalize(scale); }</div><div class="ttc" id="classal_1_1_vec_html_a8750d165731bc90fe31013121d8b8224"><div class="ttname"><a href="classal_1_1_vec.html#a8750d165731bc90fe31013121d8b8224">al::Vec::Vec</a></div><div class="ttdeci">Vec(const T &amp;v=T())</div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00112">al_Vec.hpp:112</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aaf2af2b1417376e6d5e1c2ad00c05986"></a>
@@ -981,8 +949,7 @@ template&lt;int N, class T&gt; </div>
 <p>This also gives the projection onto a plane defined by normal 'u'. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00411">411</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                    {</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">return</span> (*<span class="keyword">this</span>) - <a class="code" href="classal_1_1_vec.html#ae66854f24898dc59c9153b20d4a65b05">projection</a>(u);</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  }</div><div class="ttc" id="classal_1_1_vec_html_ae66854f24898dc59c9153b20d4a65b05"><div class="ttname"><a href="classal_1_1_vec.html#ae66854f24898dc59c9153b20d4a65b05">al::Vec::projection</a></div><div class="ttdeci">Vec projection(const Vec &amp;u) const</div><div class="ttdoc">Get projection of vector onto a unit vector. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00403">al_Vec.hpp:403</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af34daeee9a8f142925827cd205da3464"></a>
@@ -1038,23 +1005,18 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00425">425</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                                   {</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">double</span> a = cos(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>);</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">double</span> b = sin(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>);</div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    T t = (*this)[dim1];</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    T u = (*this)[dim2];</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    (*this)[dim1] = t*a - u*b;</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    (*this)[dim2] = t*b + u*a;</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  }</div><div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_vec.html">Vec</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

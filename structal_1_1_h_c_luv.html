@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structal_1_1_h_c_luv.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('structal_1_1_h_c_luv.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="structal_1_1_h_c_luv.html">HCLuv</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -95,7 +72,7 @@ $(document).ready(function(){initNavTree('structal_1_1_h_c_luv.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___color_8hpp_source.html">al/core/types/al_Color.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___color_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/types/al_Color.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -243,9 +220,7 @@ union {</td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l00994">994</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;: h(h), <a class="code" href="structal_1_1_h_c_luv.html#a3faeb242d830a1d907eb6ec7fc18a30a">c</a>(<a class="code" href="structal_1_1_h_c_luv.html#a3faeb242d830a1d907eb6ec7fc18a30a">c</a>), <a class="code" href="structal_1_1_h_c_luv.html#a56c738d9494bb57484b9c0a35f184b10">l</a>(<a class="code" href="structal_1_1_h_c_luv.html#a56c738d9494bb57484b9c0a35f184b10">l</a>){}</div><div class="ttc" id="structal_1_1_h_c_luv_html_a3faeb242d830a1d907eb6ec7fc18a30a"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a3faeb242d830a1d907eb6ec7fc18a30a">al::HCLuv::c</a></div><div class="ttdeci">float c</div><div class="ttdoc">&lt; hue component in [0, 1] </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00982">al_Color.hpp:982</a></div></div>
-<div class="ttc" id="structal_1_1_h_c_luv_html_a56c738d9494bb57484b9c0a35f184b10"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a56c738d9494bb57484b9c0a35f184b10">al::HCLuv::l</a></div><div class="ttdeci">float l</div><div class="ttdoc">range in [0, 1] </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00984">al_Color.hpp:984</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab99086133feb54b0e3a6ebee134be9d5"></a>
@@ -281,10 +256,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l00998">998</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;: h(<a class="code" href="structal_1_1_h_c_luv.html#a8cfb45d9459a4cbc28445adf447f7467">HCLuv</a>[0]), <a class="code" href="structal_1_1_h_c_luv.html#a3faeb242d830a1d907eb6ec7fc18a30a">c</a>(<a class="code" href="structal_1_1_h_c_luv.html#a8cfb45d9459a4cbc28445adf447f7467">HCLuv</a>[1]), <a class="code" href="structal_1_1_h_c_luv.html#a56c738d9494bb57484b9c0a35f184b10">l</a>(<a class="code" href="structal_1_1_h_c_luv.html#a8cfb45d9459a4cbc28445adf447f7467">HCLuv</a>[2]){}</div><div class="ttc" id="structal_1_1_h_c_luv_html_a3faeb242d830a1d907eb6ec7fc18a30a"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a3faeb242d830a1d907eb6ec7fc18a30a">al::HCLuv::c</a></div><div class="ttdeci">float c</div><div class="ttdoc">&lt; hue component in [0, 1] </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00982">al_Color.hpp:982</a></div></div>
-<div class="ttc" id="structal_1_1_h_c_luv_html_a8cfb45d9459a4cbc28445adf447f7467"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a8cfb45d9459a4cbc28445adf447f7467">al::HCLuv::HCLuv</a></div><div class="ttdeci">HCLuv(float h=1, float c=1, float l=1)</div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00994">al_Color.hpp:994</a></div></div>
-<div class="ttc" id="structal_1_1_h_c_luv_html_a56c738d9494bb57484b9c0a35f184b10"><div class="ttname"><a href="structal_1_1_h_c_luv.html#a56c738d9494bb57484b9c0a35f184b10">al::HCLuv::l</a></div><div class="ttdeci">float l</div><div class="ttdoc">range in [0, 1] </div><div class="ttdef"><b>Definition:</b> <a href="al___color_8hpp_source.html#l00984">al_Color.hpp:984</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3aac693fb26d606f852552511f7f5fe8"></a>
@@ -318,7 +290,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01001">1001</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a86cb2e80e251a37b1582dc5520b8974f"></a>
@@ -352,7 +324,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01004">1004</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa9b2aca4af1df87cba99303b60b057be"></a>
@@ -386,7 +358,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01007">1007</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0b8c8cf5dc7ae37995f85c784df8b50d"></a>
@@ -420,7 +392,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01010">1010</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="adcfd9d3c5201315b916245ce7197f322"></a>
@@ -454,7 +426,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01013">1013</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae62cc3bfef49a9b186df4d25c98785b7"></a>
@@ -488,7 +460,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___color_8hpp_source.html#l01016">1016</a> of file <a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;{ *<span class="keyword">this</span> = w; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -515,15 +487,11 @@ template&lt;class T &gt; </div>
 <li><a class="el" href="al___color_8hpp_source.html">al_Color.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="structal_1_1_h_c_luv.html">HCLuv</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

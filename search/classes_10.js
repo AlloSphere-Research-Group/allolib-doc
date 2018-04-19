@@ -14,7 +14,7 @@ var searchData=
   ['ray',['Ray',['../classal_1_1_ray.html',1,'al']]],
   ['rbo',['RBO',['../classal_1_1_r_b_o.html',1,'al']]],
   ['rcos',['RCos',['../structgam_1_1gen_1_1_r_cos.html',1,'gam::gen']]],
-  ['rebind',['rebind',['../structgam_1_1_allocator_3_01void_01_4_1_1rebind.html',1,'gam::Allocator&lt; void &gt;::rebind&lt; U &gt;'],['../structgam_1_1_allocator_1_1rebind.html',1,'gam::Allocator&lt; T &gt;::rebind&lt; U &gt;']]],
+  ['rebind',['rebind',['../structgam_1_1_allocator_1_1rebind.html',1,'gam::Allocator&lt; T &gt;::rebind&lt; U &gt;'],['../structgam_1_1_allocator_3_01void_01_4_1_1rebind.html',1,'gam::Allocator&lt; void &gt;::rebind&lt; U &gt;']]],
   ['recip',['Recip',['../structgam_1_1gen_1_1_recip.html',1,'gam::gen']]],
   ['recorder',['Recorder',['../classgam_1_1_recorder.html',1,'gam']]],
   ['recv',['Recv',['../classal_1_1osc_1_1_recv.html',1,'al::osc']]],

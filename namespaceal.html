@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespaceal.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,7 @@ $(document).ready(function(){initNavTree('namespaceal.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -96,6 +69,9 @@ $(document).ready(function(){initNavTree('namespaceal.html','');});
 <div class="title">al Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classal_1_1_synth_recorder.html">SynthRecorder</a> class records the events arriving at a <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a>.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -433,6 +409,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_stereo_speaker_layout.html">StereoSpeakerLayout</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structal_1_1_synth_event.html">SynthEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_g_u_i.html">SynthGUI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classal_1_1_synth_g_u_i.html" title="The SynthGUI class. ">SynthGUI</a> class.  <a href="classal_1_1_synth_g_u_i.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_recorder.html">SynthRecorder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_synth_sequencer.html">SynthSequencer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event Sequencer triggering audio visual "notes".  <a href="classal_1_1_synth_sequencer.html#details">More...</a><br /></td></tr>
@@ -1635,6 +1616,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>endIMGUI</b> ()</td><
 <tr class="memitem:a2bca328af7950cd40e1e926ae1218d30"><td class="memItemLeft" align="right" valign="top"><a id="a2bca328af7950cd40e1e926ae1218d30"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>shutdownIMGUI</b> ()</td></tr>
 <tr class="separator:a2bca328af7950cd40e1e926ae1218d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc6dcfacef25d84b81df6bd1e0ddc47"><td class="memItemLeft" align="right" valign="top"><a id="a8dc6dcfacef25d84b81df6bd1e0ddc47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>beginIMGUI_minimal</b> (bool use_input)</td></tr>
+<tr class="separator:a8dc6dcfacef25d84b81df6bd1e0ddc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cbbb9b1cdfdd5901f03c5d332ad79b"><td class="memItemLeft" align="right" valign="top"><a id="ac5cbbb9b1cdfdd5901f03c5d332ad79b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endIMGUI_minimal</b> (bool show)</td></tr>
+<tr class="separator:ac5cbbb9b1cdfdd5901f03c5d332ad79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8b73781e89eec2b9a19c49739604be"><td class="memItemLeft" align="right" valign="top"><a id="abd8b73781e89eec2b9a19c49739604be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>imgui_is_using_input</b> ()</td></tr>
+<tr class="separator:abd8b73781e89eec2b9a19c49739604be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c991a0d071dc8f4b8c7c4592ff2ce2"><td class="memItemLeft" align="right" valign="top"><a id="ac2c991a0d071dc8f4b8c7c4592ff2ce2"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>demangle</b> (const char *name)</td></tr>
 <tr class="separator:ac2c991a0d071dc8f4b8c7c4592ff2ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1646,7 +1636,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
 <tr class="separator:a86e522f9694702e5f0de2c3d629fbe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Ensures that GPU resources are valid even when a rendering context is rebuilt.</p>
+<div class="textblock"><p>The <a class="el" href="classal_1_1_synth_recorder.html">SynthRecorder</a> class records the events arriving at a <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a>. </p>
+<p>Ensures that GPU resources are valid even when a rendering context is rebuilt.</p>
 <p>GPUContext represents an object with a corollary rendering context on a GPU. <a class="el" href="classal_1_1_g_p_u_object.html">GPUObject</a> is a shared base class for all objects that have a corrollary object on the GPU, and which must be re-submitted when the rendering context is rebuilt. An object that inherits GPUContext must call contextDestroy() when the context has been invalidated. For example, the <a class="el" href="classal_1_1_window.html" title="Window with OpenGL context. ">al::Window</a> object does this automatically when the window is closed or enters/leaves fullscreen. Doing so will mark all associated GPUObjects as invalidated (calling their onDestroy() handlers). Each <a class="el" href="classal_1_1_g_p_u_object.html">GPUObject</a> should call validate() before attempting to render; this will re-submit the resources (by calling its onCreate() handler).</p>
 <p>GPUContexts are identified by an integer ID, which increments for each context created. The first created context has ID=0. GPUObjects will register with this context by default.</p>
 <p>A note on coordinate conventions</p>
@@ -1680,9 +1671,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
 <li>name</li>
 <li>a 4x4 matrix transform relative to its parent</li>
 <li>a list of children</li>
-<li>a number of meshes (indexing scene arrays) </li>
+<li>a number of meshes (indexing scene arrays)</li>
 </ul>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+<p>Events are stored in a text file that looks like:</p>
+<div class="fragment"><div class="line">+ 0 72 SineEnv 6.5 523.251 0.5 0.2 1 0</div><div class="line">+ 0.149975 74 SineEnv 6.5 587.33 0.5 0.2 1 0</div><div class="line">- 0.183213 72</div><div class="line">+ 0.283204 76 SineEnv 6.5 659.255 0.5 0.2 1 0</div><div class="line">- 0.366428 74</div><div class="line">- 0.483025 76</div></div><!-- fragment --><p>The '+' command triggers the start of an event and the '-' command triggers the end of the event. The first number after the command is the time at which it should happen and the second one is the id of the event, used to connect the 'trigger off' to a previous 'trigger on'.</p>
+<p>Alternatively, the sequence can be recorded in CPP_FORMAT that produces C++ code that can be pasted to deliver the sequence.</p>
+<p>The sequences stored in the text file can be played back using <a class="el" href="classal_1_1_synth_sequencer.html" title="Event Sequencer triggering audio visual &quot;notes&quot;. ">SynthSequencer</a> You must make sre that the synthesizers referenced in the sequence have enough allocated polyphony for the whole sequence or alternatively that the class has been registered to the <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a> using registerSynthClass().</p>
+<div class="fragment"><div class="line">SynthSequencer seq;</div><div class="line"><span class="comment">// Pre allocate voices</span></div><div class="line">seq.synth().allocatePolyphony&lt;SineEnv&gt;(64);</div><div class="line"><span class="comment">// Register class with PolySynth</span></div><div class="line">seq.synth().registerSynthClass&lt;SineEnv&gt;(<span class="stringliteral">&quot;SineEnv&quot;</span>);</div></div><!-- fragment --> </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a5dfa2921e5987fc7c1b677f28a5cd539"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dfa2921e5987fc7c1b677f28a5cd539">&#9670;&nbsp;</a></span>OctalSpeakerLayout</h2>
 
@@ -1711,6 +1706,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use <a class="el" href="classal_1_1_socket_server.html" title="Server socket. ">SocketServer</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___socket_8hpp_source.html#l00242">242</a> of file <a class="el" href="al___socket_8hpp_source.html">al_Socket.hpp</a>.</p>
 
@@ -1727,6 +1723,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use <a class="el" href="classal_1_1_socket_client.html" title="Client socket. ">SocketClient</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___socket_8hpp_source.html#l00239">239</a> of file <a class="el" href="al___socket_8hpp_source.html">al_Socket.hpp</a>.</p>
 
@@ -1758,11 +1755,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___dist_atten_8hpp_source.html#l00051">51</a> of file <a class="el" href="al___dist_atten_8hpp_source.html">al_DistAtten.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                   {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespaceal.html#a199d044169a6054c07ce669c39466498ad973db0b371bccdee71ef244acebf022">ATTEN_NONE</a>=0,      </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="namespaceal.html#a199d044169a6054c07ce669c39466498af426d7cf7abef4c030fed95b1c264717">ATTEN_LINEAR</a>,      </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="namespaceal.html#a199d044169a6054c07ce669c39466498a0fcc5b42603cb655b0c7999472d5216c">ATTEN_INVERSE</a>,      </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="namespaceal.html#a199d044169a6054c07ce669c39466498a997c8527071f17596e09f430617a3acc">ATTEN_INVERSE_SQUARE</a>  </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="ttc" id="namespaceal_html_a199d044169a6054c07ce669c39466498a997c8527071f17596e09f430617a3acc"><div class="ttname"><a href="namespaceal.html#a199d044169a6054c07ce669c39466498a997c8527071f17596e09f430617a3acc">al::ATTEN_INVERSE_SQUARE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00055">al_DistAtten.hpp:55</a></div></div>
-<div class="ttc" id="namespaceal_html_a199d044169a6054c07ce669c39466498af426d7cf7abef4c030fed95b1c264717"><div class="ttname"><a href="namespaceal.html#a199d044169a6054c07ce669c39466498af426d7cf7abef4c030fed95b1c264717">al::ATTEN_LINEAR</a></div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00053">al_DistAtten.hpp:53</a></div></div>
-<div class="ttc" id="namespaceal_html_a199d044169a6054c07ce669c39466498ad973db0b371bccdee71ef244acebf022"><div class="ttname"><a href="namespaceal.html#a199d044169a6054c07ce669c39466498ad973db0b371bccdee71ef244acebf022">al::ATTEN_NONE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00052">al_DistAtten.hpp:52</a></div></div>
-<div class="ttc" id="namespaceal_html_a199d044169a6054c07ce669c39466498a0fcc5b42603cb655b0c7999472d5216c"><div class="ttname"><a href="namespaceal.html#a199d044169a6054c07ce669c39466498a0fcc5b42603cb655b0c7999472d5216c">al::ATTEN_INVERSE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___dist_atten_8hpp_source.html#l00054">al_DistAtten.hpp:54</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae79a89949199dd159d7d1f86a64403a0"></a>
@@ -1789,10 +1782,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___audio_scene_8hpp_source.html#l00167">167</a> of file <a class="el" href="al___audio_scene_8hpp_source.html">al_AudioScene.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0adfff3d60d2d9974226f944553f99b754">DOPPLER_NONE</a>=0,         </div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0aa5ef1a82a933940afe33310e836f83e3">DOPPLER_SYMMETRICAL</a>,    </div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0a43490432bad855d1c9699112ecd3110d">DOPPLER_PHYSICAL</a>        </div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div><div class="ttc" id="namespaceal_html_ae79a89949199dd159d7d1f86a64403a0a43490432bad855d1c9699112ecd3110d"><div class="ttname"><a href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0a43490432bad855d1c9699112ecd3110d">al::DOPPLER_PHYSICAL</a></div><div class="ttdef"><b>Definition:</b> <a href="al___audio_scene_8hpp_source.html#l00170">al_AudioScene.hpp:170</a></div></div>
-<div class="ttc" id="namespaceal_html_ae79a89949199dd159d7d1f86a64403a0adfff3d60d2d9974226f944553f99b754"><div class="ttname"><a href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0adfff3d60d2d9974226f944553f99b754">al::DOPPLER_NONE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___audio_scene_8hpp_source.html#l00168">al_AudioScene.hpp:168</a></div></div>
-<div class="ttc" id="namespaceal_html_ae79a89949199dd159d7d1f86a64403a0aa5ef1a82a933940afe33310e836f83e3"><div class="ttname"><a href="namespaceal.html#ae79a89949199dd159d7d1f86a64403a0aa5ef1a82a933940afe33310e836f83e3">al::DOPPLER_SYMMETRICAL</a></div><div class="ttdef"><b>Definition:</b> <a href="al___audio_scene_8hpp_source.html#l00169">al_AudioScene.hpp:169</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -2707,7 +2697,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>asciiToMIDI</b> (int a
 <p>Algorithm from Dawson, B. "Comparing floating point numbers", <a href="http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm">http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00461">461</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                             {</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="comment">// Make sure maxULP is non-negative and small enough that the</span></div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="comment">// default NAN won&#39;t compare as equal to anything.</span></div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="comment">//assert(maxULP &gt; 0 &amp;&amp; maxULP &lt; 4 * 1024 * 1024);</span></div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="keyword">union</span>{ <span class="keywordtype">float</span> f; int32_t i; } u;</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  u.f=a; int32_t ai = u.i;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  u.f=b; int32_t bi = u.i;</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="comment">// Make ai and bi lexicographically ordered as a twos-complement int</span></div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">if</span>(ai &lt; 0) ai = 0x80000000 - ai;</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keywordflow">if</span>(bi &lt; 0) bi = 0x80000000 - bi;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keywordflow">return</span> std::abs((<span class="keywordtype">float</span>)(ai - bi)) &lt;= maxULP;</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aded4d9162eecb556e24c0f3cd2e958c5"></a>
@@ -2738,7 +2728,7 @@ template&lt;class T &gt; </div>
 <p>Convert amplitude to decibels </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00069">69</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{ <span class="keywordflow">return</span> 20*std::log(amp); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af80f2ef3a7c49b63c8b76bf7a7a5fa26"></a>
@@ -2771,8 +2761,7 @@ template&lt;class T &gt; </div>
 <p>Fast approximation to atan2(). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00489">489</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                                       {</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  T r, <a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>;</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  T ay = std::abs(y) + T(1e-10);      <span class="comment">// kludge to prevent 0/0 condition</span></div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keywordflow">if</span>(x &lt; T(0)){</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    r = (x + ay) / (ay - x);</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    angle = T(M_3PI_4);</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="keywordflow">else</span>{</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    r = (x - ay) / (x + ay);</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    angle = T(M_PI_4);</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  }</div><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  angle += (T(0.1963)*r*r - T(0.9817))*r;</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="keywordflow">return</span> y &lt; T(0) ? -angle : angle;</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;}</div><div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af698361a52baaadf969f995f5c6c3f78"></a>
@@ -2813,9 +2802,7 @@ template&lt;class T &gt; </div>
 <p>Returns value clipped ouside of range [-eps, eps] </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00487">487</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;{ <span class="keywordflow">return</span> (v &gt;= T(0)) ? std::max(v, e) : <a class="code" href="namespacestd.html">std</a>::<a class="code" href="namespacegam_1_1scl.html#a781eddc520823326a13c3866376a6aac">min</a>(v, -e); }</div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a781eddc520823326a13c3866376a6aac"><div class="ttname"><a href="namespacegam_1_1scl.html#a781eddc520823326a13c3866376a6aac">gam::scl::min</a></div><div class="ttdeci">T min(T v1, T v2, T v3)</div><div class="ttdoc">Returns minimum of three values. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l01033">scl.h:1033</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a305a92788021baeaf04d5e9589a5ac34"></a>
@@ -2846,7 +2833,7 @@ template&lt;class T &gt; </div>
 <p>From "Bit Twiddling Hacks", <a href="http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel">http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetParallel</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00507">507</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                                   {</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  v = v - ((v &gt;&gt; 1) &amp; 0x55555555);                    <span class="comment">// reuse input as temporary</span></div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  v = (v &amp; 0x33333333) + ((v &gt;&gt; 2) &amp; 0x33333333);     <span class="comment">// temp</span></div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="keywordflow">return</span> ((v + ((v &gt;&gt; 4) &amp; 0xF0F0F0F)) * 0x1010101) &gt;&gt; 24; <span class="comment">// count</span></div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2a73b8667b6327be9fc8cb33e0372b87"></a>
@@ -2883,7 +2870,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00230">230</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                               {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  uint32_t v=0; <span class="keywordtype">int</span> n = strlen(<span class="keywordtype">string</span>);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;n; ++i) <span class="keywordflow">if</span>(<span class="keywordtype">string</span>[i] == <span class="charliteral">&#39;1&#39;</span>) v |= 1&lt;&lt;(n-1-i);</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3d377bcc9eac6e30016908ad17e6f76d"></a>
@@ -2914,7 +2901,7 @@ template&lt;class T &gt; </div>
 <p>Sets argument to zero if subnormal. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00244">244</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                    {</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">const</span> uint32_t i = punFU(v);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keyword">const</span> uint32_t frac = i &amp; MaskFrac&lt;float&gt;();</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">const</span> uint32_t expo = i &amp; MaskExpo&lt;float&gt;();</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span>(expo == 0 &amp;&amp; frac != 0) v = 0.f;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af8c9e3e75ee0e5239f1edddbcc352673"></a>
@@ -2945,7 +2932,7 @@ template&lt;class T &gt; </div>
 <p>Sets argument to zero if subnormal. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00253">253</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                      {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">const</span> uint64_t i = punFU(v);</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">const</span> uint64_t frac = i &amp; MaskFrac&lt;double&gt;();</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keyword">const</span> uint64_t expo = i &amp; MaskExpo&lt;double&gt;();</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">if</span>(expo == 0 &amp;&amp; frac != 0) v = 0.;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4e0542ac92c928a4709e0908c75ee52b"></a>
@@ -2993,8 +2980,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___spherical_8hpp_source.html#l00248">248</a> of file <a class="el" href="al___spherical_8hpp_source.html">al_Spherical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                      {</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  T r = <a class="code" href="namespacegam_1_1scl.html#ae3ed3edffdc9b97e28ce7136f08db581">sqrt</a>(x*x + y*y + z*z);</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  T t = atan2(y, x);</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  z = acos(z/r);</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  y = t;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  x = r;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_ae3ed3edffdc9b97e28ce7136f08db581"><div class="ttname"><a href="namespacegam_1_1scl.html#ae3ed3edffdc9b97e28ce7136f08db581">gam::scl::sqrt</a></div><div class="ttdeci">T sqrt(T v)</div><div class="ttdoc">Approximate square root using log base-2 and Newton methods. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00790">scl.h:790</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5871238946c53c69bbe794b38ba8574e"></a>
@@ -3035,7 +3021,7 @@ template&lt;class T &gt; </div>
 <p>Returns floating point value rounded to next highest integer. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00513">513</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;{ <span class="keywordflow">return</span> std::ceil(v/s)*s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5b903297ac73ab3a1344e110589262d9"></a>
@@ -3066,7 +3052,7 @@ template&lt;class T &gt; </div>
 <p>This uses an algorithm devised by Sean Anderson, Sep. 2001. From "Bit Twiddling Hacks", <a href="http://graphics.stanford.edu/~seander/bithacks.html">http://graphics.stanford.edu/~seander/bithacks.html</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00516">516</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                                    {</div><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  --v;</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  v |= v &gt;&gt; 1;</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  v |= v &gt;&gt; 2;</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  v |= v &gt;&gt; 4;</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  v |= v &gt;&gt; 8;</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  v |= v &gt;&gt;16;</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordflow">return</span> v+1;</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a934517330017566a669a8d722398f709"></a>
@@ -3127,7 +3113,7 @@ template&lt;int N, class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00555">555</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                                                                                              {</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> T _1_3 = T(1)/T(3);</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  c = (p1+p2+p3)*_1_3;</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1ea1cc7b53231b0c0dd6e2095f300ef0"></a>
@@ -3174,7 +3160,7 @@ template&lt;class T &gt; </div>
 <p>Returns value clipped to [lo, hi] </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00526">526</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                                                       {</div><div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;       <span class="keywordflow">if</span>(v &lt; lo) <span class="keywordflow">return</span> lo;</div><div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(v &gt; hi) <span class="keywordflow">return</span> hi;</div><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af11d0c3a9a3ebbb2c84efe447003f919"></a>
@@ -3229,7 +3215,7 @@ template&lt;class T &gt; </div>
 <p>clipFlag signifies if and where clipping occured. 0 means no clipping occured, -1 means clipping occured at the lower bound, and 1 means clipping at the upper bound. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00532">532</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                                                       {</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  clipFlag = 0;</div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;       <span class="keywordflow">if</span>(v &lt; lo){ clipFlag = -1; <span class="keywordflow">return</span> lo; }</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(v &gt; hi){ clipFlag =  1; <span class="keywordflow">return</span> hi; }</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af635f126b77657b51ce1a93a28fd9aef"></a>
@@ -3270,8 +3256,7 @@ template&lt;class T &gt; </div>
 <p>Returns value clipped to [-hi, hi]. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00539">539</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a1ea1cc7b53231b0c0dd6e2095f300ef0">al::clip</a>(v, hi, -hi); }</div><div class="ttc" id="namespaceal_html_a1ea1cc7b53231b0c0dd6e2095f300ef0"><div class="ttname"><a href="namespaceal.html#a1ea1cc7b53231b0c0dd6e2095f300ef0">al::clip</a></div><div class="ttdeci">T clip(const T &amp;value, const T &amp;hi=T(1), const T &amp;lo=T(0))</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00526">al_Functions.hpp:526</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3a29d117f828e88f154aeae3e0fdc1b7"></a>
@@ -3296,7 +3281,7 @@ template&lt;class T &gt; </div>
 <p>This function can be more convenient than calling a copy constructor since one does not need to explicitly write the type of the object. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00117">117</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{ <span class="keywordflow">return</span> T(obj); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1352d5bea80358151c11f6524648ff9b"></a>
@@ -3327,7 +3312,7 @@ template&lt;class T &gt; </div>
 <p>Convert decibels to amplitude </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00132">132</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{ return ::pow(10, db/20.); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa61a5861aa7893946f71971e7e677921"></a>
@@ -3350,7 +3335,7 @@ template&lt;class T &gt; </div>
 <p>Get determinant </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00572">572</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                                {</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keywordflow">return</span> m(0,0);</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="acb3325d46bf6ac2b758dd8d287d07349"></a>
@@ -3373,7 +3358,7 @@ template&lt;class T &gt; </div>
 <p>Get determinant </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00580">580</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                                {</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordflow">return</span> m(0,0)*m(1,1) - m(0,1)*m(1,0);</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae78a72bc13fa3f160261cb8c1ca40293"></a>
@@ -3396,7 +3381,7 @@ template&lt;class T &gt; </div>
 <p>Get determinant </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00588">588</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;                                {</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordflow">return</span></div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    m(0,0)*(m(1,1)*m(2,2) - m(1,2)*m(2,1)) +</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    m(0,1)*(m(1,2)*m(2,0) - m(1,0)*m(2,2)) +</div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    m(0,2)*(m(1,0)*m(2,1) - m(1,1)*m(2,0));</div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2b7b5913e8db77502b0f5efb068179fa"></a>
@@ -3421,7 +3406,7 @@ template&lt;int N, class T &gt; </div>
 <p>This computes the determinant using cofactor (or Laplace) expansion. The algorithm operates by recursively computing determinants of submatrices. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00602">602</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                                {</div><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  T res = 0;</div><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; ++i){</div><div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    T entry = m(0,i);</div><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordflow">if</span>(entry != T(0)){</div><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      res += entry * m.cofactor(0,i);</div><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    }</div><div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  }</div><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa1601bdb71ac3809de1576cb4976ff31"></a>
@@ -3454,8 +3439,7 @@ template&lt;class T &gt; </div>
 <a href="http://en.wikipedia.org/wiki/Error_function">http://en.wikipedia.org/wiki/Error_function</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00544">544</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                             {</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  <span class="keyword">static</span> T a = 0.147;</div><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keyword">const</span> T x2 = x*x;</div><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  <span class="keyword">const</span> T ax2 = a * x2;</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a4b9395462499c968255feefd8e974a93">al::sgn</a>(x)*std::sqrt(T(1) - std::exp(-x2*(T(4./M_PI) + ax2)/(T(1)+ax2)));</div><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;}</div><div class="ttc" id="namespaceal_html_a4b9395462499c968255feefd8e974a93"><div class="ttname"><a href="namespaceal.html#a4b9395462499c968255feefd8e974a93">al::sgn</a></div><div class="ttdeci">T sgn(const T &amp;v, const T &amp;norm=T(1))</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00782">al_Functions.hpp:782</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3aeccffdbab51e5b2cab2b97d025d002"></a>
@@ -3486,8 +3470,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether or not an integer value is even. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00541">541</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;{ <span class="keywordflow">return</span> 0 == <a class="code" href="namespaceal.html#a6e43efc43f7570be467a4442d253f495">al::odd</a>(v); }</div><div class="ttc" id="namespaceal_html_a6e43efc43f7570be467a4442d253f495"><div class="ttname"><a href="namespaceal.html#a6e43efc43f7570be467a4442d253f495">al::odd</a></div><div class="ttdeci">bool odd(const T &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00739">al_Functions.hpp:739</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3f88bf4afda6ac9b12aa22873870d0b2"></a>
@@ -3516,7 +3499,7 @@ template&lt;class T &gt; </div>
 <p>Returns factorial. Argument must be less than or equal to 12. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00551">551</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;{ <span class="keywordflow">return</span> mFactorial12u[v]; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aba17591660c318242fc292ba64771585"></a>
@@ -3545,7 +3528,7 @@ template&lt;class T &gt; </div>
 <p>Returns square root of factorial </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00553">553</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                                  {</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keywordflow">if</span>(v&lt;=1) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  <span class="keywordtype">double</span> r=1;</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=2; i&lt;=v; ++i) r *= std::sqrt(i);</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0ab9cc1e2e93dcb2dff6e272b533f545"></a>
@@ -3576,7 +3559,7 @@ template&lt;class T &gt; </div>
 <p>The true exponent is the return value minus 127. For example, values in [0.5, 1) return 126 (01111110), so the true exponent is 126 - 127 = -1. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00266">266</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                      {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">return</span> punFU(v) &gt;&gt; 23 &amp; 0xff;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5b81fa38c979ae94a7da92b3223ba2b8"></a>
@@ -3617,7 +3600,7 @@ template&lt;class T &gt; </div>
 <p>Returns floor of floating point value. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00560">560</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;{ <span class="keywordflow">return</span> std::floor(v/s)*s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae6b0655a2902fa6cb1556442e127bc38"></a>
@@ -3648,7 +3631,7 @@ template&lt;class T &gt; </div>
 <p>This uses an algorithm devised by Sean Anderson, Sep. 2001. From "Bit Twiddling Hacks", <a href="http://graphics.stanford.edu/~seander/bithacks.html">http://graphics.stanford.edu/~seander/bithacks.html</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00563">563</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                                     {</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  v |= v &gt;&gt; 1;</div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  v |= v &gt;&gt; 2;</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  v |= v &gt;&gt; 4;</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  v |= v &gt;&gt; 8;</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  v |= v &gt;&gt; 16;</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <span class="keywordflow">return</span> (v &gt;&gt; 1) + 1;</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad1fb93acd3513290b5c4ac8f402ba808"></a>
@@ -3697,8 +3680,7 @@ template&lt;class T &gt; </div>
 <p>For out-of-range values, the boundaries act like mirrors reflecting the value into the range. For an even number of periods out of the range this is identical to a <a class="el" href="namespaceal.html#abab359a45740fff6e459019fab5975e2">wrap()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00572">572</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                                                       {</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keywordtype">long</span> numWraps;</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  T R = <a class="code" href="namespaceal.html#abab359a45740fff6e459019fab5975e2">al::wrap</a>(v, numWraps, hi, lo);</div><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <span class="keywordflow">if</span>(numWraps &amp; 1) R = hi + lo - R;</div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keywordflow">return</span> R;</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div><div class="ttc" id="namespaceal_html_abab359a45740fff6e459019fab5975e2"><div class="ttname"><a href="namespaceal.html#abab359a45740fff6e459019fab5975e2">al::wrap</a></div><div class="ttdeci">T wrap(const T &amp;value, const T &amp;hi=T(1), const T &amp;lo=T(0))</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00809">al_Functions.hpp:809</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab4556d3171dafe878f45a4a99c5dec7a"></a>
@@ -3745,7 +3727,7 @@ template&lt;class T &gt; </div>
 <p>Returns value folded into [lo, hi] one time. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00579">579</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                                                           {</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordflow">if</span>(v &gt; hi) <span class="keywordflow">return</span> hi + (hi - v);</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordflow">if</span>(v &lt; lo) <span class="keywordflow">return</span> lo + (lo - v);</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4a73504c6c93789a16baaf8fdc3012c2"></a>
@@ -3787,7 +3769,7 @@ template&lt;class T &gt; </div>
 Note: the fraction only has 24-bits of precision. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00276">276</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                                    {</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  phase = phase &lt;&lt; bits &gt;&gt; 9 | Expo1&lt;float&gt;();</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordflow">return</span> punUF(phase) - 1.f;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2090ba7150a810fd3de64b1d95d69e23"></a>
@@ -3818,7 +3800,7 @@ template&lt;class T &gt; </div>
 <p>Returns e^(-v*v) </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00585">585</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;{ <span class="keywordflow">return</span> std::exp(-v*v); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a433911d7b80de439047ca3e580e5684c"></a>
@@ -3851,8 +3833,7 @@ template&lt;class T &gt; </div>
 <p>Return greatest common divisor of two arguments </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00587">587</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                                 {</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <span class="keywordflow">if</span>(y==T(0)) <span class="keywordflow">return</span> std::abs(x);</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a433911d7b80de439047ca3e580e5684c">al::gcd</a>(y, static_cast&lt;T&gt;(std::remainder(x,y)));</div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;}</div><div class="ttc" id="namespaceal_html_a433911d7b80de439047ca3e580e5684c"><div class="ttname"><a href="namespaceal.html#a433911d7b80de439047ca3e580e5684c">al::gcd</a></div><div class="ttdeci">T gcd(const T &amp;x, const T &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00587">al_Functions.hpp:587</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad7d2d0cae8ef1a818a68519510c8988c"></a>
@@ -3877,7 +3858,7 @@ template&lt;class T &gt; </div>
 <a href="http://en.wikipedia.org/wiki/Gudermannian_function">http://en.wikipedia.org/wiki/Gudermannian_function</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00593">593</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                               {</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="keywordflow">return</span> T(2) * std::atan(exp(x)) - T(M_PI_2);</div><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a01e6ff37545e24d45fe18c45c526a06b"></a>
@@ -3900,8 +3881,7 @@ template&lt;class T &gt; </div>
 <p>Invert matrix, returns whether matrix was able to be inverted </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00617">617</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                        {</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  T det = <a class="code" href="namespaceal.html#aa61a5861aa7893946f71971e7e677921">determinant</a>(m);</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  <span class="keywordflow">if</span>(det != 0){</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    m(0,0) /= det;</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  }</div><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;}</div><div class="ttc" id="namespaceal_html_aa61a5861aa7893946f71971e7e677921"><div class="ttname"><a href="namespaceal.html#aa61a5861aa7893946f71971e7e677921">al::determinant</a></div><div class="ttdeci">T determinant(const Mat&lt; 1, T &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="al___mat_8hpp_source.html#l00572">al_Mat.hpp:572</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aedc6c8730862493cfe47b3e0075d4238"></a>
@@ -3924,8 +3904,7 @@ template&lt;class T &gt; </div>
 <p>Invert matrix, returns whether matrix was able to be inverted </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00630">630</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                        {</div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  T det = <a class="code" href="namespaceal.html#aa61a5861aa7893946f71971e7e677921">determinant</a>(m);</div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  <span class="keywordflow">if</span>(det != 0){</div><div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    m = Mat&lt;2,T&gt;(</div><div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;       m(1,1),-m(0,1),</div><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;      -m(1,0), m(0,0)</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    ) /= det;</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  }</div><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;}</div><div class="ttc" id="namespaceal_html_aa61a5861aa7893946f71971e7e677921"><div class="ttname"><a href="namespaceal.html#aa61a5861aa7893946f71971e7e677921">al::determinant</a></div><div class="ttdeci">T determinant(const Mat&lt; 1, T &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="al___mat_8hpp_source.html#l00572">al_Mat.hpp:572</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa4e60131c00859bbfcb820339b7c48ab"></a>
@@ -3948,7 +3927,7 @@ template&lt;int N, class T &gt; </div>
 <p>Invert matrix, returns whether matrix was able to be inverted </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00646">646</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                        {</div><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  <span class="comment">// Get cofactor matrix, C</span></div><div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  Mat&lt;N,T&gt; C = m.cofactorMatrix();</div><div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div><div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="comment">// Compute determinant</span></div><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  T det = T(0);</div><div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; ++i){</div><div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    det += m(0,i) * C(0,i);</div><div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  }</div><div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div><div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  <span class="comment">// Divide adjugate matrix, C^T, by determinant</span></div><div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;  <span class="keywordflow">if</span>(det != T(0)){</div><div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    m = (C.transpose() *= T(1)/det);</div><div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  }</div><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7b18bb9bb26fb7813665c8065cbcee70"></a>
@@ -3996,7 +3975,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00597">597</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                                  {</div><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="comment">//  T res = 1, bin = 1;</span></div><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">//  for(int i=n; i&gt;=1; --i){</span></div><div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="comment">//    bin = bin * (k+i) / (n + 1 - i);</span></div><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="comment">//    res = bin - x * res / i;</span></div><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="comment">//  }</span></div><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="comment">//  return res;</span></div><div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  <span class="keywordflow">if</span>(n &lt;0) <span class="keywordflow">return</span> T(0);</div><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  T L1= 0, R = 1;</div><div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i&lt;=n; ++i){</div><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    T L0 = L1;</div><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    L1 = R;</div><div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    R = ((2*i + k-1 - x)*L1 - (i + k-1)*L0)/i;</div><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  }</div><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordflow">return</span> R;</div><div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aab3a1b08de897c27811f94bbeb74ff63"></a>
@@ -4045,8 +4024,7 @@ template&lt;class T &gt; </div>
 <p><a href="http://comp.cs.ehime-u.ac.jp/~ogata/nac/index.html">http://comp.cs.ehime-u.ac.jp/~ogata/nac/index.html</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00710">710</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                                  {</div><div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#aab3a1b08de897c27811f94bbeb74ff63">al::legendreP</a>(l,m, std::cos(t), std::sin(t));</div><div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div><div class="ttc" id="namespaceal_html_aab3a1b08de897c27811f94bbeb74ff63"><div class="ttname"><a href="namespaceal.html#aab3a1b08de897c27811f94bbeb74ff63">al::legendreP</a></div><div class="ttdeci">T legendreP(int l, int m, T t)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00710">al_Functions.hpp:710</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a70d2bb9995e24c326bb1f8ca25c9b9e0"></a>
@@ -4087,7 +4065,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether the absolute value is less than an epsilon. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00714">714</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;{ <span class="keywordflow">return</span> std::abs(v) &lt; eps; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7075f46376a9dcccc420f8dd1b329812"></a>
@@ -4134,7 +4112,7 @@ template&lt;class T &gt; </div>
 <p>Returns maximum of three values </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00716">716</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;{ <span class="keywordflow">return</span> std::max(std::max(v1,v2),v3); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4a4f53c3ebf1101824b0eb3c78f73527"></a>
@@ -4175,7 +4153,7 @@ template&lt;class T &gt; </div>
 <p>Returns mean of two values </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00717">717</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;{ <span class="keywordflow">return</span> (v1 + v2) * T(0.5); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2fd420846f99fa0c8c500209a66995de"></a>
@@ -4222,7 +4200,7 @@ template&lt;class T &gt; </div>
 <p>Returns minimum of three values </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00718">718</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;{ <span class="keywordflow">return</span> std::min(std::min(v1,v2),v3); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a9da403c39d92da43b4aae7c050e9844f"></a>
@@ -4263,8 +4241,7 @@ template&lt;class T &gt; </div>
 <p>Returns nearest integer division of one value to another </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00253">253</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{ <span class="keywordflow">return</span> to / <a class="code" href="namespacegam_1_1scl.html#adb04dc72bf6a9107200ea9a7ae483469">round</a>(to/of); }</div><div class="ttc" id="namespacegam_1_1scl_html_adb04dc72bf6a9107200ea9a7ae483469"><div class="ttname"><a href="namespacegam_1_1scl.html#adb04dc72bf6a9107200ea9a7ae483469">gam::scl::round</a></div><div class="ttdeci">T round(T v)</div><div class="ttdoc">Returns floating point value rounded to nearest integer. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00680">scl.h:680</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a08f69403d6e66bb2afba2292d8ad254c"></a>
@@ -4305,7 +4282,7 @@ template&lt;class T &gt; </div>
 <p>Returns the next representable floating-point or integer value following x in the direction of y </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00729">729</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;{ <span class="keywordflow">return</span> std::nextafter(x,y); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad566fa512ff98f81749c473e18db371a"></a>
@@ -4346,7 +4323,7 @@ template&lt;class T &gt; </div>
 <p>Returns next largest value of 'val' that is a multiple of 'multiple'. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00732">732</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                                   {</div><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  uint32_t div = (uint32_t)(v / m);</div><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <span class="keywordflow">return</span> T(div + 1) * m;</div><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a38062767e9a7f5c01626682df8695b00"></a>
@@ -4407,8 +4384,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00593">593</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                                                                                           {</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  cross(n, p2-p1, p3-p1);</div><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  n.<a class="code" href="classal_1_1_vec.html#a2737e88df374bcf0874ecf24bd72ed64">normalize</a>();</div><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;}</div><div class="ttc" id="classal_1_1_vec_html_a2737e88df374bcf0874ecf24bd72ed64"><div class="ttname"><a href="classal_1_1_vec.html#a2737e88df374bcf0874ecf24bd72ed64">al::Vec::normalize</a></div><div class="ttdeci">Vec &amp; normalize(T scale=T(1))</div><div class="ttdoc">Set magnitude to one without changing direction. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00632">al_Vec.hpp:632</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1006f6ecf26563dc8c6e744b495e5666"></a>
@@ -4458,7 +4434,7 @@ template&lt;class T &gt; </div>
 <p>Returns the number of digits in the integer portion </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00737">737</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;{ <span class="keywordflow">return</span> std::floor(std::log10(v)) + 1; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6e43efc43f7570be467a4442d253f495"></a>
@@ -4489,7 +4465,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether or not an integer value is odd. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00739">739</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;{ <span class="keywordflow">return</span> v &amp; T(1); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af9e8b9459b8c99267685e1accc83014e"></a>
@@ -4542,7 +4518,7 @@ template&lt;class T &gt; </div>
 <p>Evaluates polynomial a0 + a1 x + a2 x^2 </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00741">741</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;{ <span class="keywordflow">return</span> a0 + v*(a1 + v*a2); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8c6e496eca0e958f3c2ccb62ee17a87a"></a>
@@ -4640,13 +4616,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00755">755</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                                         {</div><div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  <span class="keywordflow">switch</span>(power){</div><div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordflow">case</span> 0: <span class="keywordflow">return</span> T(1);</div><div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordflow">case</span> 1: <span class="keywordflow">return</span> base;</div><div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordflow">case</span> 2: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#afa6c42c03bc95426e80f0cf18a696e5f">pow2</a>(base);</div><div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">case</span> 3: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a3247bcd8b7edebe733cb6cd79d024eb2">pow3</a>(base);</div><div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keywordflow">case</span> 4: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a82c83816422ef4ad5ee0ed595254d656">pow4</a>(base);</div><div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keywordflow">case</span> 5: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a639d4bf44278422936bcf1a25b00661b">pow5</a>(base);</div><div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordflow">case</span> 6: <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a4f89fb4de6e8f159427db5fee670f5eb">pow6</a>(base);</div><div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">case</span> 7: <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a4f89fb4de6e8f159427db5fee670f5eb">pow6</a>(base)*base;</div><div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <span class="keywordflow">case</span> 8: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a11c907bbd248edbab1893f2784cffb43">pow8</a>(base);</div><div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordflow">case</span> 9: <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1scl.html#a11c907bbd248edbab1893f2784cffb43">pow8</a>(base)*base;</div><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">default</span>:{</div><div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;      T r = <a class="code" href="namespacegam_1_1scl.html#a11c907bbd248edbab1893f2784cffb43">pow8</a>(base)*<a class="code" href="namespacegam_1_1scl.html#afa6c42c03bc95426e80f0cf18a696e5f">pow2</a>(base);</div><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=10; i&lt;power; ++i) r *= base;</div><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;      <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    }</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  }</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_a82c83816422ef4ad5ee0ed595254d656"><div class="ttname"><a href="namespacegam_1_1scl.html#a82c83816422ef4ad5ee0ed595254d656">gam::scl::pow4</a></div><div class="ttdeci">T pow4(T v)</div><div class="ttdoc">Returns value to the 4th power. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00670">scl.h:670</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a639d4bf44278422936bcf1a25b00661b"><div class="ttname"><a href="namespacegam_1_1scl.html#a639d4bf44278422936bcf1a25b00661b">gam::scl::pow5</a></div><div class="ttdeci">T pow5(T v)</div><div class="ttdoc">Returns value to the 5th power. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00671">scl.h:671</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_afa6c42c03bc95426e80f0cf18a696e5f"><div class="ttname"><a href="namespacegam_1_1scl.html#afa6c42c03bc95426e80f0cf18a696e5f">gam::scl::pow2</a></div><div class="ttdeci">T pow2(T v)</div><div class="ttdoc">Returns value to the 2nd power. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00668">scl.h:668</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a3247bcd8b7edebe733cb6cd79d024eb2"><div class="ttname"><a href="namespacegam_1_1scl.html#a3247bcd8b7edebe733cb6cd79d024eb2">gam::scl::pow3</a></div><div class="ttdeci">T pow3(T v)</div><div class="ttdoc">Returns value to the 3rd power. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00669">scl.h:669</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a11c907bbd248edbab1893f2784cffb43"><div class="ttname"><a href="namespacegam_1_1scl.html#a11c907bbd248edbab1893f2784cffb43">gam::scl::pow8</a></div><div class="ttdeci">T pow8(T v)</div><div class="ttdoc">Returns value to the 8th power. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00672">scl.h:672</a></div></div>
-<div class="ttc" id="namespaceal_html_a4f89fb4de6e8f159427db5fee670f5eb"><div class="ttname"><a href="namespaceal.html#a4f89fb4de6e8f159427db5fee670f5eb">al::pow6</a></div><div class="ttdeci">T pow6(const T &amp;v)</div><div class="ttdoc">Returns value to the 6th power. </div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00750">al_Functions.hpp:750</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5e15be42a4331a52661d87800cbfc512"></a>
@@ -4675,7 +4645,7 @@ template&lt;class T &gt; </div>
 <p>Returns (n+1)th prime number up to n=53. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00775">775</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;{ <span class="keywordflow">return</span> mPrimes54[n]; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="afb113be6c0a6feeb623b22a5ec7fe0ca"></a>
@@ -4762,8 +4732,7 @@ template&lt;typename T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___printing_8hpp_source.html#l00081">81</a> of file <a class="el" href="al___printing_8hpp_source.html">al_Printing.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{ <a class="code" href="namespaceal.html#afb113be6c0a6feeb623b22a5ec7fe0ca">print</a>(&amp;v, 1, append); }</div><div class="ttc" id="namespaceal_html_afb113be6c0a6feeb623b22a5ec7fe0ca"><div class="ttname"><a href="namespaceal.html#afb113be6c0a6feeb623b22a5ec7fe0ca">al::print</a></div><div class="ttdeci">void print(const T *arr, int size, const char *append=&quot;&quot;)</div><div class="ttdoc">Print an array of numbers. </div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4c466dcfdbf1869d916c7513a6e67036"></a>
@@ -4818,7 +4787,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___printing_8hpp_source.html#l00151">151</a> of file <a class="el" href="al___printing_8hpp_source.html">al_Printing.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                       {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;nx; ++j){</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;ny; ++i){</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">float</span> v = pix[j*nx + i];</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;%c &quot;</span>, intensityToASCII(v));</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  } printf(<span class="stringliteral">&quot;\n&quot;</span>); }</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a21a3073f765c23f83f53474456cf025b"></a>
@@ -4859,8 +4828,7 @@ template&lt;typename T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___printing_8hpp_source.html#l00074">74</a> of file <a class="el" href="al___printing_8hpp_source.html">al_Printing.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <a class="code" href="namespaceal.html#afb113be6c0a6feeb623b22a5ec7fe0ca">print</a>(arr, size, <span class="stringliteral">&quot;\n&quot;</span>); }</div><div class="ttc" id="namespaceal_html_afb113be6c0a6feeb623b22a5ec7fe0ca"><div class="ttname"><a href="namespaceal.html#afb113be6c0a6feeb623b22a5ec7fe0ca">al::print</a></div><div class="ttdeci">void print(const T *arr, int size, const char *append=&quot;&quot;)</div><div class="ttdoc">Print an array of numbers. </div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a961e399872ee1f050dd69256913ee151"></a>
@@ -4942,7 +4910,7 @@ template&lt;typename T &gt; </div>
 <p>This function uses a union to avoid problems with direct pointer casting when the fstrict-aliasing compiler flag is on. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00151">151</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{ Twiddle&lt; float&gt; u(v); <span class="keywordflow">return</span> u.u; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2fa7004b3f65e67269c82e2d97ec0d5f"></a>
@@ -4973,7 +4941,7 @@ template&lt;typename T &gt; </div>
 <p>This function uses a union to avoid problems with direct pointer casting when the fstrict-aliasing compiler flag is on. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00145">145</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{ Twiddle&lt;float&gt; u(v); <span class="keywordflow">return</span> u.f; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a75e234766e59a460c44cfd53f682dfcf"></a>
@@ -5028,8 +4996,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00520">520</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                                                                                {</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  T c = cosAng;</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  T s = sinAng;</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="comment">// Rodrigues&#39; rotation formula:</span></div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  vec = vec*c + cross(normal, vec)*s + normal*(normal.<a class="code" href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">dot</a>(vec)*(T(1)-c));</div><div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div><div class="ttc" id="classal_1_1_vec_html_aa5fee82d55d3f5cc48443e1f19903aad"><div class="ttname"><a href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">al::Vec::dot</a></div><div class="ttdeci">T dot(const Vec&lt; N, U &gt; &amp;v) const</div><div class="ttdoc">Returns dot (inner) product between vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00327">al_Vec.hpp:327</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0ff0a3bc220e99d66171bc3d387f6952"></a>
@@ -5077,7 +5044,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___vec_8hpp_source.html#l00534">534</a> of file <a class="el" href="al___vec_8hpp_source.html">al_Vec.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                                                                {</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  rotate(vec, normal, cos(angle), sin(angle));</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="afc0b72e9edcefe5f8d173e9ae75e15bd"></a>
@@ -5116,8 +5083,7 @@ template&lt;class VecN , class T &gt; </div>
 <p>Rotates two vectors by angle in plane formed from bivector v1 ^ v2 </p>
 
 <p class="definition">Definition at line <a class="el" href="al___complex_8hpp_source.html#l00226">226</a> of file <a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                                         {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  VecN t = <a class="code" href="namespaceal.html#a75e234766e59a460c44cfd53f682dfcf">al::rotate</a>(v1, v2, a);</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  v2 = <a class="code" href="namespaceal.html#a75e234766e59a460c44cfd53f682dfcf">al::rotate</a>(v2, VecN(-v1), a);</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  v1 = t;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div><div class="ttc" id="namespaceal_html_a75e234766e59a460c44cfd53f682dfcf"><div class="ttname"><a href="namespaceal.html#a75e234766e59a460c44cfd53f682dfcf">al::rotate</a></div><div class="ttdeci">void rotate(Vec&lt; 3, T &gt; &amp;vec, const Vec&lt; 3, T &gt; &amp;normal, double cosAng, double sinAng)</div><div class="ttdoc">Rotate a vector around a normal vector. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00520">al_Vec.hpp:520</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3d78c2574a648fcf2c44003c9768508b"></a>
@@ -5158,7 +5124,7 @@ template&lt;class T &gt; </div>
 <p>Returns value rounded to nearest integer multiple of 'step' towards zero. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00777">777</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;{ <span class="keywordflow">return</span> std::round(v/s) * s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad568f4267154f330c142cb1605e885b1"></a>
@@ -5205,7 +5171,7 @@ template&lt;class T &gt; </div>
 <p>Returns value rounded to nearest integer multiple of 'step' towards zero. Faster version to avoid 1/step divide. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00778">778</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;{ <span class="keywordflow">return</span> std::round(v * r) * s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a52522414f03221f7b6ee9875cfaea9f6"></a>
@@ -5236,10 +5202,7 @@ template&lt;class T &gt; </div>
 <p>Returns value rounded to nearest integer away from zero. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00779">779</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;{ <span class="keywordflow">return</span> v&lt;T(0) ? <a class="code" href="namespaceal.html#a5b81fa38c979ae94a7da92b3223ba2b8">al::floor</a>(v) : <a class="code" href="namespaceal.html">al</a>::<a class="code" href="namespacegam_1_1scl.html#a9d0d6586bf707bfbb3bb94d6b416ec16">ceil</a>(v); }</div><div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
-<div class="ttc" id="namespaceal_html_a5b81fa38c979ae94a7da92b3223ba2b8"><div class="ttname"><a href="namespaceal.html#a5b81fa38c979ae94a7da92b3223ba2b8">al::floor</a></div><div class="ttdeci">T floor(const T &amp;val, const T &amp;step)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00560">al_Functions.hpp:560</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a9d0d6586bf707bfbb3bb94d6b416ec16"><div class="ttname"><a href="namespacegam_1_1scl.html#a9d0d6586bf707bfbb3bb94d6b416ec16">gam::scl::ceil</a></div><div class="ttdeci">T ceil(T val)</div><div class="ttdoc">Returns floating point value rounded to next highest integer. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00533">scl.h:533</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8207252b571c96bc1addbdd7d8cee6d6"></a>
@@ -5280,10 +5243,7 @@ template&lt;class T &gt; </div>
 <p>Returns value rounded to nearest to nearest integer multiple of 'step' away from zero. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00780">780</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;{ <span class="keywordflow">return</span> v&lt;T(0) ? <a class="code" href="namespaceal.html#a5b81fa38c979ae94a7da92b3223ba2b8">al::floor</a>(v,s) : <a class="code" href="namespaceal.html">al</a>::<a class="code" href="namespacegam_1_1scl.html#a9d0d6586bf707bfbb3bb94d6b416ec16">ceil</a>(v,s); }</div><div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
-<div class="ttc" id="namespaceal_html_a5b81fa38c979ae94a7da92b3223ba2b8"><div class="ttname"><a href="namespaceal.html#a5b81fa38c979ae94a7da92b3223ba2b8">al::floor</a></div><div class="ttdeci">T floor(const T &amp;val, const T &amp;step)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00560">al_Functions.hpp:560</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a9d0d6586bf707bfbb3bb94d6b416ec16"><div class="ttname"><a href="namespacegam_1_1scl.html#a9d0d6586bf707bfbb3bb94d6b416ec16">gam::scl::ceil</a></div><div class="ttdeci">T ceil(T val)</div><div class="ttdoc">Returns floating point value rounded to next highest integer. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00533">scl.h:533</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4b9395462499c968255feefd8e974a93"></a>
@@ -5324,8 +5284,7 @@ template&lt;class T &gt; </div>
 <p>Signum function for real numbers </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00782">782</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;{ <span class="keywordflow">return</span> v==T(0) ? T(0) : v&lt;T(0) ? -<a class="code" href="namespacegam_1_1arr.html#a436f98b063c0ad0afe5f809cc0047270">norm</a> : <a class="code" href="namespacegam_1_1arr.html#a436f98b063c0ad0afe5f809cc0047270">norm</a>; }</div><div class="ttc" id="namespacegam_1_1arr_html_a436f98b063c0ad0afe5f809cc0047270"><div class="ttname"><a href="namespacegam_1_1arr.html#a436f98b063c0ad0afe5f809cc0047270">gam::arr::norm</a></div><div class="ttdeci">double norm(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns norm of array values. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00231">arr.h:231</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aaee09ed63c305f6ac32ecc141045062f"></a>
@@ -5366,7 +5325,7 @@ template&lt;class T &gt; </div>
 <p>Unnormalized sinc function </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00784">784</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;{ <span class="keywordflow">return</span> (std::abs(r) &gt; eps) ? std::sin(r)/r : std::cos(r); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa46708ab331be0d22136de6365a49338"></a>
@@ -5419,7 +5378,7 @@ template&lt;class T &gt; </div>
 <p>Returns slope of line passing through two points. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00786">786</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;{ <span class="keywordflow">return</span> (y2-y1)/(x2-x1); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a316b5a2949ca945618aab0c4f53ac0c5"></a>
@@ -5460,7 +5419,7 @@ template&lt;class T &gt; </div>
 <p>Sort values so that value1 &lt;= value2. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00788">788</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;{ <span class="keywordflow">if</span>(v1&gt;v2){ T t=v1; v1=v2; v2=t; } }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="afad91132eff17caf0b443ffce0a4bba3"></a>
@@ -5508,7 +5467,7 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___spherical_8hpp_source.html#l00236">236</a> of file <a class="el" href="al___spherical_8hpp_source.html">al_Spherical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                      {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  T rsinp = r * sin(p);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  T rcosp = r * cos(p);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  r = rsinp * cos(t);</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  t = rsinp * sin(t);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  p = rcosp;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a54066bd7998ee889f0a04ba9dd293fae"></a>
@@ -5554,8 +5513,7 @@ template&lt;int N, class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>vector describing projected coordinate on n-1 hyperplane </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___spherical_8hpp_source.html#l00260">260</a> of file <a class="el" href="al___spherical_8hpp_source.html">al_Spherical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                             {</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a7cf08c7572b9d03b413a2d56fb7515d8">sub</a>&lt;N-1&gt;(v) * (T(1)/v[N-1]);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div><div class="ttc" id="namespaceal_html_a7cf08c7572b9d03b413a2d56fb7515d8"><div class="ttname"><a href="namespaceal.html#a7cf08c7572b9d03b413a2d56fb7515d8">al::sub</a></div><div class="ttdeci">Vec&lt; M, T &gt; sub(const Vec&lt; N, T &gt; &amp;v, int begin=0)</div><div class="ttdoc">Get a subvector. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00480">al_Vec.hpp:480</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a223da6b1f51d3a7e8515ae723de3681f"></a>
@@ -5578,11 +5536,7 @@ template&lt;class Vec3 , class T &gt; </div>
 <p>Stereographically project complex number onto Riemann sphere </p>
 
 <p class="definition">Definition at line <a class="el" href="al___complex_8hpp_source.html#l00237">237</a> of file <a class="el" href="al___complex_8hpp_source.html">al_Complex.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                    {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  T magSqr = c.<a class="code" href="classal_1_1_complex.html#aec8ec88787c25cc14a489528706bcfa4">magSqr</a>();</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  T <a class="code" href="namespacegam_1_1arr.html#aec27f2a9d4d4d3825c2962484ac178e8">mul</a> = T(2)/(magSqr + T(1));</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">return</span> Vec3(</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    c.<a class="code" href="classal_1_1_complex.html#a2b012f87713033e13acf07ba220f6e11">r</a>*mul,</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    c.<a class="code" href="classal_1_1_complex.html#a236bdec18e7fc6e2a535568d17e0f8cb">i</a>*mul,</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    (magSqr - T(1))*mul*T(0.5)</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  );</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div><div class="ttc" id="namespacegam_1_1arr_html_aec27f2a9d4d4d3825c2962484ac178e8"><div class="ttname"><a href="namespacegam_1_1arr.html#aec27f2a9d4d4d3825c2962484ac178e8">gam::arr::mul</a></div><div class="ttdeci">void mul(T *dst, const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Multiply destination array by source array. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00201">arr.h:201</a></div></div>
-<div class="ttc" id="classal_1_1_complex_html_a236bdec18e7fc6e2a535568d17e0f8cb"><div class="ttname"><a href="classal_1_1_complex.html#a236bdec18e7fc6e2a535568d17e0f8cb">al::Complex::i</a></div><div class="ttdeci">T i</div><div class="ttdoc">Imaginary component. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00100">al_Complex.hpp:100</a></div></div>
-<div class="ttc" id="classal_1_1_complex_html_aec8ec88787c25cc14a489528706bcfa4"><div class="ttname"><a href="classal_1_1_complex.html#aec8ec88787c25cc14a489528706bcfa4">al::Complex::magSqr</a></div><div class="ttdeci">T magSqr() const</div><div class="ttdoc">Returns square of norm, |z|^2. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00189">al_Complex.hpp:189</a></div></div>
-<div class="ttc" id="classal_1_1_complex_html_a2b012f87713033e13acf07ba220f6e11"><div class="ttname"><a href="classal_1_1_complex.html#a2b012f87713033e13acf07ba220f6e11">al::Complex::r</a></div><div class="ttdeci">T r</div><div class="ttdoc">Real component. </div><div class="ttdef"><b>Definition:</b> <a href="al___complex_8hpp_source.html#l00099">al_Complex.hpp:99</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5715feed6e8d122fb5e763ad7b9d29ec"></a>
@@ -5613,7 +5567,7 @@ template&lt;class T &gt; </div>
 <p>Sum of integers squared from 1 to n. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00790">790</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                              {</div><div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> T c1_6 = 1/T(6);</div><div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> T c2_6 = c1_6*T(2);</div><div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="keywordflow">return</span> n*(n+1)*(c2_6*n+c1_6);</div><div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5184860679d7dc5575231fb0af25a14d"></a>
@@ -5644,7 +5598,7 @@ template&lt;class T &gt; </div>
 <p>This implements an algorithm from the paper "Using de Bruijn Sequences to Index 1 in a Computer Word" by Charles E. Leiserson, Harald Prokof, and Keith H. Randall. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00796">796</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;{ <span class="keywordflow">return</span> deBruijn(v &amp; -v); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab15dcba5bf53f93e28b7c7b0cdd10d03"></a>
@@ -5685,7 +5639,7 @@ template&lt;class T &gt; </div>
 <p>Truncates floating point value to step. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00798">798</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;{ <span class="keywordflow">return</span> std::trunc(v/s)*s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae71d216179aedd721033b8accc7e7a72"></a>
@@ -5732,7 +5686,7 @@ template&lt;class T &gt; </div>
 <p>Truncates floating point value to step. Faster version to avoid 1/step divide. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00799">799</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;{ <span class="keywordflow">return</span> std::trunc(v*r)*s; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a604c51f2a59f192757df7c8407c657c5"></a>
@@ -5763,7 +5717,7 @@ template&lt;class T &gt; </div>
 <p>This conversion is most accurate on a linear scale. Input values outside [0, 1) result in undefined behavior. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00378">378</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                   {</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  ++v;  <span class="comment">// go into [1,2] range, FP fraction is now result</span></div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordflow">return</span> punFU(v) &lt;&lt; 9;</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7a0edcf75b4ae53eb60f703a23450fa7"></a>
@@ -5794,7 +5748,7 @@ template&lt;class T &gt; </div>
 <p>This conversion is most accurate on an exponential scale. Input values outside [-1, 1) return 0. Values in [-1, 0] behave as positive values in [0, 1). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___conversion_8hpp_source.html#l00384">384</a> of file <a class="el" href="al___conversion_8hpp_source.html">al_Conversion.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                    {</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  uint32_t normalU = punFU(v);</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  uint32_t rbs = 126UL - (normalU &gt;&gt; 23UL);</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">//  printf(&quot;%x %lu\n&quot;, (normalU | 0x800000) &lt;&lt; 8, rbs);</span></div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">//  printf(&quot;%x\n&quot;, 0x80000000UL &gt;&gt; rbs);</span></div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">return</span> (((normalU | 0x800000UL) &lt;&lt; 8UL) &amp; (~ULONG_MAX | 0xffffffffUL)) &gt;&gt; rbs;</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//  uint32_t normalU = punFU(v);</span></div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">//  uint32_t rbs = 118UL - ((normalU &gt;&gt; 23UL) &amp; (~ULONG_MAX | 0x7fffffUL));</span></div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment"></span><span class="comment">//  return ((normalU &amp; (~ULONG_MAX | 0xffffffUL)) | 0x800000UL) &gt;&gt; rbs;</span></div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//Her00</span></div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//float y = v + 1.f;</span></div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">//return ((unsigned long&amp;)v) &amp; 0x7FFFFF;      // last 23 bits</span></div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="aeb22e9d95c2ec10b05324cb054990476"></a>
@@ -5841,7 +5795,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether value is in interval [lo, hi]. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00801">801</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;{ <span class="keywordflow">return</span> !((v &lt; lo) || (v &gt; hi)); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7e2366116eaac9d1037af687bf5a3369"></a>
@@ -5900,8 +5854,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether 3 values are in interval [lo, hi]. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00804">804</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                                                                                        {</div><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#aeb22e9d95c2ec10b05324cb054990476">al::within</a>(v1,lo,hi) &amp;&amp; <a class="code" href="namespaceal.html#aeb22e9d95c2ec10b05324cb054990476">al::within</a>(v2,lo,hi) &amp;&amp; <a class="code" href="namespaceal.html#aeb22e9d95c2ec10b05324cb054990476">al::within</a>(v3,lo,hi);</div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;}</div><div class="ttc" id="namespaceal_html_aeb22e9d95c2ec10b05324cb054990476"><div class="ttname"><a href="namespaceal.html#aeb22e9d95c2ec10b05324cb054990476">al::within</a></div><div class="ttdeci">bool within(const T &amp;v, const T &amp;lo, const T &amp;hi)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00801">al_Functions.hpp:801</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a402e95bb33a2573d222702e632c74d78"></a>
@@ -5948,7 +5901,7 @@ template&lt;class T &gt; </div>
 <p>Returns whether value is in interval [lo, hi). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00802">802</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;{ <span class="keywordflow">return</span> (!(v &lt; lo)) &amp;&amp; (v &lt; hi); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="abab359a45740fff6e459019fab5975e2"></a>
@@ -5995,8 +5948,7 @@ template&lt;class T &gt; </div>
 <p>Returns value wrapped in [lo, hi). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00809">809</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                                                       {</div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;  <span class="keywordflow">if</span>(lo == hi) <span class="keywordflow">return</span> lo;</div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  T R = v;</div><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  T diff = hi - lo;</div><div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div><div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="keywordflow">if</span>(R &gt;= hi){</div><div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    R -= diff;</div><div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span>(R &gt;= hi) R -= diff * uint32_t((R - lo)/diff);</div><div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  }</div><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(R &lt; lo){</div><div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    R += diff;</div><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="comment">// If value is very slightly less than &#39;lo&#39;, then less significant</span></div><div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="comment">// digits might get truncated by adding a larger number.</span></div><div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keywordflow">if</span>(R==diff) <span class="keywordflow">return</span> <a class="code" href="namespaceal.html#a08f69403d6e66bb2afba2292d8ad254c">al::nextAfter</a>(R, lo);</div><div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div><div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordflow">if</span>(R &lt; lo) R += diff * uint32_t(((lo - R)/diff) + 1);</div><div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">if</span>(R==diff) <span class="keywordflow">return</span> lo;</div><div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;  }</div><div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  <span class="keywordflow">return</span> R;</div><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;}</div><div class="ttc" id="namespaceal_html_a08f69403d6e66bb2afba2292d8ad254c"><div class="ttname"><a href="namespaceal.html#a08f69403d6e66bb2afba2292d8ad254c">al::nextAfter</a></div><div class="ttdeci">T nextAfter(const T &amp;x, const T &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00729">al_Functions.hpp:729</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afdca7e4f558c80704c9dfe6b781a0481"></a>
@@ -6051,7 +6003,7 @@ template&lt;class T &gt; </div>
 <p>'numWraps' reports how many wrappings occured where the sign, + or -, signifies above 'hi' or below 'lo', respectively. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00832">832</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                                                                       {</div><div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <span class="keywordflow">if</span>(lo == hi){ numWraps = 0xFFFFFFFF; <span class="keywordflow">return</span> lo; }</div><div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  T R = v;</div><div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  T diff = hi - lo;</div><div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  numWraps = 0;</div><div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div><div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="keywordflow">if</span>(R &gt;= hi){</div><div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    R -= diff;</div><div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">if</span>(R &gt;= hi){</div><div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;      numWraps = long((R - lo)/diff);</div><div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;      R -= diff * numWraps;</div><div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    }</div><div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    ++numWraps;</div><div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  }</div><div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(R &lt; lo){</div><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    R += diff;</div><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    <span class="keywordflow">if</span>(R &lt; lo){</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;      numWraps = long((R - lo)/diff) - 1;</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;      R -= diff * numWraps;</div><div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    }</div><div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    --numWraps;</div><div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  }</div><div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <span class="keywordflow">return</span> R;</div><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a02593b7bb80f83f51ef276ae288e6fec"></a>
@@ -6084,8 +6036,7 @@ template&lt;class T &gt; </div>
 <p>Returns value incremented by 1 and wrapped into interval [0, max). </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00405">405</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;{ ++v; <span class="keywordflow">return</span> v == <a class="code" href="namespacegam_1_1scl.html#aef3edea911471eec67a80c4c8dc6d046">max</a> ? 0 : v; }</div><div class="ttc" id="namespacegam_1_1scl_html_aef3edea911471eec67a80c4c8dc6d046"><div class="ttname"><a href="namespacegam_1_1scl.html#aef3edea911471eec67a80c4c8dc6d046">gam::scl::max</a></div><div class="ttdeci">T max(T v1, T v2, T v3)</div><div class="ttdoc">Returns maximum of three values. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l01031">scl.h:1031</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5ccb344df3f76c5eb8ec593ad894627a"></a>
@@ -6126,7 +6077,7 @@ template&lt;class T &gt; </div>
 <p>Like <a class="el" href="namespaceal.html#abab359a45740fff6e459019fab5975e2">wrap()</a>, but only adds or subtracts 'hi' once from value. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00858">858</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                                              {</div><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;       <span class="keywordflow">if</span>(v &gt;= hi ) <span class="keywordflow">return</span> v - hi;</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(v &lt; T(0)) <span class="keywordflow">return</span> v + hi;</div><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4911206e29f73da7441ea02255584d09"></a>
@@ -6157,7 +6108,7 @@ template&lt;class T &gt; </div>
 <p>Returns value wrapped in [-pi, pi) </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00870">870</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                                   {</div><div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="comment">// The result is    [r+pi - 2pi floor([r+pi] / 2pi)] - pi</span></div><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="comment">// which simplified is  r - 2pi floor([r+pi] / 2pi) .</span></div><div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  T r = r_;</div><div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="keywordflow">if</span>(r &gt;= T(M_PI)){</div><div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    r -= T(M_2PI);</div><div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keywordflow">if</span>(r &lt; T(M_PI)) <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    <span class="keywordflow">return</span> r - T(<span class="keywordtype">long</span>((r+M_PI)*M_1_2PI)  )*M_2PI;</div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;  }</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r &lt; T(-M_PI)){</div><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    r += T(M_2PI);</div><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">if</span>(r &gt;= T(-M_PI)) <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">return</span> r - T(<span class="keywordtype">long</span>((r+M_PI)*M_1_2PI)-1)*M_2PI;</div><div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  }</div><div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7cdffae94bec1ea44587abb24231e617"></a>
@@ -6188,19 +6139,15 @@ template&lt;class T &gt; </div>
 <p>Like <a class="el" href="namespaceal.html#a4911206e29f73da7441ea02255584d09">wrapPhase()</a>, but only wraps once </p>
 
 <p class="definition">Definition at line <a class="el" href="al___functions_8hpp_source.html#l00887">887</a> of file <a class="el" href="al___functions_8hpp_source.html">al_Functions.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                                      {</div><div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;  <span class="keywordflow">if</span>(r &gt;= T(M_PI))    <span class="keywordflow">return</span> r - T(M_2PI);</div><div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(r &lt; T(-M_PI)) <span class="keywordflow">return</span> r + T(M_2PI);</div><div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

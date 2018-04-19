@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_mat.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_mat.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_mat.html">Mat</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,14 +76,12 @@ $(document).ready(function(){initNavTree('classal_1_1_mat.html','');});
 <p>Fixed-size n-by-n square matrix.  
  <a href="classal_1_1_mat.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___mat_8hpp_source.html">al/core/math/al_Mat.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Mat&lt; N, T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___mat_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/math/al_Mat.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::Mat&lt; N, T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_mat__coll__graph.png" border="0" usemap="#al_1_1_mat_3_01_n_00_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -458,7 +433,7 @@ template&lt;class U &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00094">94</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{ <span class="keyword">set</span>(arr); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4817bb107eaf06e0ea97f073662a647f"></a>
@@ -496,7 +471,7 @@ template&lt;class U &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00098">98</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{ <span class="keyword">set</span>(src.elems()); }</div></div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -546,7 +521,7 @@ template&lt;int N, class T&gt; </div>
 <p>Returns reference to result </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00299">299</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                          {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;N; ++j){</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keyword">const</span> Vec&lt;N,T&gt;&amp; bcol = b.col(j);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; ++i){</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        r(i,j) = a.row(i).dot(bcol);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      }</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6b6ec4f0adb1ac293fd9978ad9ac3543"></a>
@@ -602,8 +577,7 @@ template&lt;int N, class T&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00456">456</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                               {</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordtype">double</span> cs = cos(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>);</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">double</span> sn = sin(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>);</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> R=0; R&lt;N-1; ++R){</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      <span class="keyword">const</span> T&amp; v1 = (*this)(R, dim1);</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      <span class="keyword">const</span> T&amp; v2 = (*this)(R, dim2);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      T t = v1*cs + v2*sn;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      (*this)(R, dim2) = v2*cs - v1*sn;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      (*this)(R, dim1) = t;</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    }</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  }</div><div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2d26fddd7f1b1ffe62ca224dce6ced36"></a>
@@ -668,22 +642,18 @@ template&lt;class U &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00341">341</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                                                          {</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    IT(numElements){ (*this)[i*matStride+matOffset]=arr[i]; } <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_mat.html">Mat</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

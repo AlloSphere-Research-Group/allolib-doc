@@ -20,6 +20,7 @@ var searchData=
   ['getgroup',['getGroup',['../classal_1_1_parameter_wrapper.html#ab4be4789b2c600b939e5b7b90ed3bc95',1,'al::ParameterWrapper']]],
   ['getinterval',['getInterval',['../classal_1_1_threads.html#ae0bf621eef5f0a9ef6a55f86fecbe9f8',1,'al::Threads']]],
   ['getname',['getName',['../classal_1_1_parameter_wrapper.html#aa5830a4b29ed57dcf27df47ed94fed47',1,'al::ParameterWrapper']]],
+  ['getparamfields',['getParamFields',['../classal_1_1_synth_voice.html#a8677623237dbfd3b0ab5bfd36c920568',1,'al::SynthVoice']]],
   ['getpoint',['getPoint',['../classal_1_1_frustum.html#ac25143a30ce3d8dbda4f4778c64cb14f',1,'al::Frustum::getPoint(const Vec&lt; 3, U &gt; &amp;frac) const'],['../classal_1_1_frustum.html#ae55b13f652f5a41a6db70888b9e2a43e',1,'al::Frustum::getPoint(const U &amp;fracx, const U &amp;fracy, const U &amp;fracz) const']]],
   ['getrootpath',['getRootPath',['../classal_1_1_preset_handler.html#a4709bf7a38e14d33dd0c5511b31c036e',1,'al::PresetHandler']]],
   ['getrotationto',['getRotationTo',['../classal_1_1_quat.html#aa898edecdebaba2c19e3dbe5159858d2',1,'al::Quat']]],

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_reverb.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_reverb.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_reverb.html">Reverb</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -99,12 +76,10 @@ $(document).ready(function(){initNavTree('classal_1_1_reverb.html','');});
 <p>Plate reverberator.  
  <a href="classal_1_1_reverb.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___reverb_8hpp_source.html">al/core/sound/al_Reverb.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Reverb&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___reverb_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/sound/al_Reverb.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for al::Reverb&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_reverb__coll__graph.png" border="0" usemap="#al_1_1_reverb_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_reverb_3_01_t_01_4_coll__map" id="al_1_1_reverb_3_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_static_delay_line.html" title="al::StaticDelayLine\l\&lt; 908, T \&gt;" alt="" coords="153,131,297,173"/>
@@ -122,7 +97,7 @@ $(document).ready(function(){initNavTree('classal_1_1_reverb.html','');});
 <area shape="rect" id="node15" href="classal_1_1_static_delay_line.html" title="al::StaticDelayLine\l\&lt; 4453, T \&gt;" alt="" coords="153,902,297,943"/>
 <area shape="rect" id="node16" href="classal_1_1_static_delay_line.html" title="al::StaticDelayLine\l\&lt; 379, T \&gt;" alt="" coords="153,967,297,1009"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -272,7 +247,7 @@ template&lt;class T  = float&gt; </div>
 <p>This sets the cutoff frequency of a one-pole low-pass filter on the input signal. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___reverb_8hpp_source.html#l00150">150</a> of file <a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{ mOPIn.damping(T(1)-v); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a673c9c182de4d34cac8ead3b2b7a17dc"></a>
@@ -305,7 +280,7 @@ template&lt;class T  = float&gt; </div>
 <p>Higher amounts will dampen the diffusive sound more quickly. Note: values in [-1, 0] create an inverse effect that attentuates low rather than high frequencies. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___reverb_8hpp_source.html#l00157">157</a> of file <a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{ mOP1.damping(v); mOP2.damping(v); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a20ad5f92d1f04d7f389c12b6bedbceaf"></a>
@@ -360,7 +335,7 @@ template&lt;class T  = float&gt; </div>
 <p>Values near 0.7 are recommended. Moving further away from 0.7 will lead to more distinct echoes. </p>
 
 <p class="definition">Definition at line <a class="el" href="al___reverb_8hpp_source.html#l00166">166</a> of file <a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                       {</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        mDfIn1=in1; mDfIn2=in2; mDfDcy1=decay1; mDfDcy2=decay2;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac1a7b5337565da337a0918a2d5e1607a"></a>
@@ -417,7 +392,7 @@ template&lt;class T  = float&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>dry input sample </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___reverb_8hpp_source.html#l00236">236</a> of file <a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                       {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        T s = inout1;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        (*this)(s, inout1, out2, wetAmt*T(0.6));</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        inout1 += s;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;          out2 += s;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0432724e32346f65a08c1a5ac887a79e"></a>
@@ -480,26 +455,18 @@ template&lt;class T  = float&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___reverb_8hpp_source.html#l00190">190</a> of file <a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                                            {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        T v = mPreDelay(in * T(0.5));</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        v = mOPIn(v);</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        v = mAPIn1.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(v, mDfIn1);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        v = mAPIn2.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(v, mDfIn1);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        v = mAPIn3.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(v, mDfIn2);</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        v = mAPIn4.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(v, mDfIn2);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        T a = v + mDly22.<a class="code" href="classal_1_1_static_delay_line.html#abae592b7fe5f3d26496d5af2f31f08a4">back</a>() * mDecay;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        T b = v + mDly12.<a class="code" href="classal_1_1_static_delay_line.html#abae592b7fe5f3d26496d5af2f31f08a4">back</a>() * mDecay;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        a = mAPDecay11.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(a,-mDfDcy1);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        a = mDly11(a);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        a = mOP1(a) * mDecay;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        a = mAPDecay12.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(a, mDfDcy2);</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        mDly12.<a class="code" href="classal_1_1_static_delay_line.html#ae963b8a529f0b69f915a7efc58b9fab0">write</a>(a);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        b = mAPDecay21.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(b,-mDfDcy1);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        b = mDly21(b);</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        b = mOP2(b) * mDecay;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        b = mAPDecay22.<a class="code" href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">allpass</a>(b, mDfDcy2);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        mDly22.<a class="code" href="classal_1_1_static_delay_line.html#ae963b8a529f0b69f915a7efc58b9fab0">write</a>(b);</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        out1 = (  mDly21.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(266)</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                + mDly21.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(2974)</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                - mAPDecay22.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(1913)</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                + mDly22.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(1996)</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                - mDly11.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(1990)</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                - mAPDecay12.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(187)</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                - mDly12.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(1066)) * gain;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        out2 = (  mDly11.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(353)</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                + mDly11.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(3627)</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                - mAPDecay12.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(1228)</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                + mDly12.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(2673)</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                - mDly21.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(2111)</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                - mAPDecay22.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(335)</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                - mDly22.<a class="code" href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">read</a>(121)) * gain;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div><div class="ttc" id="classal_1_1_static_delay_line_html_abae592b7fe5f3d26496d5af2f31f08a4"><div class="ttname"><a href="classal_1_1_static_delay_line.html#abae592b7fe5f3d26496d5af2f31f08a4">al::StaticDelayLine::back</a></div><div class="ttdeci">const T &amp; back() const</div><div class="ttdoc">Get element at back. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00070">al_Reverb.hpp:70</a></div></div>
-<div class="ttc" id="classal_1_1_static_delay_line_html_a0724b5e7bcc6118943857fc93fb2ab1b"><div class="ttname"><a href="classal_1_1_static_delay_line.html#a0724b5e7bcc6118943857fc93fb2ab1b">al::StaticDelayLine::read</a></div><div class="ttdeci">const T &amp; read(int i) const</div><div class="ttdoc">Read value at delay i. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00083">al_Reverb.hpp:83</a></div></div>
-<div class="ttc" id="classal_1_1_static_delay_line_html_a44d558186ebd3c2490dcbb19ff4217e4"><div class="ttname"><a href="classal_1_1_static_delay_line.html#a44d558186ebd3c2490dcbb19ff4217e4">al::StaticDelayLine::allpass</a></div><div class="ttdeci">T allpass(const T &amp;v, const T &amp;ffd)</div><div class="ttdoc">Allpass filter input using a delay time equal to the maximum size of the delay-line. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00112">al_Reverb.hpp:112</a></div></div>
-<div class="ttc" id="classal_1_1_static_delay_line_html_ae963b8a529f0b69f915a7efc58b9fab0"><div class="ttname"><a href="classal_1_1_static_delay_line.html#ae963b8a529f0b69f915a7efc58b9fab0">al::StaticDelayLine::write</a></div><div class="ttdeci">void write(const T &amp;v)</div><div class="ttdoc">Write value to delay. </div><div class="ttdef"><b>Definition:</b> <a href="al___reverb_8hpp_source.html#l00091">al_Reverb.hpp:91</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___reverb_8hpp_source.html">al_Reverb.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_reverb.html">Reverb</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

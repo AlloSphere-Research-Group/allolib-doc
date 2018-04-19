@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classgam_1_1_pan.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_pan.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_pan.html">Pan</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,13 +76,11 @@ $(document).ready(function(){initNavTree('classgam_1_1_pan.html','');});
  <a href="classgam_1_1_pan.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_effects_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/Effects.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::Pan&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Collaboration diagram for gam::Pan&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classgam_1_1_pan__coll__graph.png" border="0" usemap="#gam_1_1_pan_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -185,8 +160,7 @@ template&lt;class T  = gam::real&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_effects_8h_source.html#l00321">321</a> of file <a class="el" href="_effects_8h_source.html">Effects.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{ this-&gt;<a class="code" href="classgam_1_1_pan.html#a9aa74a36543de39192c065c1e5ec5c7a">pos</a>(<a class="code" href="classgam_1_1_pan.html#a9aa74a36543de39192c065c1e5ec5c7a">pos</a>); }</div><div class="ttc" id="classgam_1_1_pan_html_a9aa74a36543de39192c065c1e5ec5c7a"><div class="ttname"><a href="classgam_1_1_pan.html#a9aa74a36543de39192c065c1e5ec5c7a">gam::Pan::pos</a></div><div class="ttdeci">void pos(T v)</div><div class="ttdoc">Set position (constant power law) </div><div class="ttdef"><b>Definition:</b> <a href="_effects_8h_source.html#l00349">Effects.h:349</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -226,9 +200,7 @@ template&lt;class T  = gam::real&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_effects_8h_source.html#l00349">349</a> of file <a class="el" href="_effects_8h_source.html">Effects.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                 {</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> T c0 = 1./<a class="code" href="namespacegam_1_1scl.html#ae3ed3edffdc9b97e28ce7136f08db581">sqrt</a>(2);</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> T c1 = 0.5 - c0;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> T c2 =-0.5/c1;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        v = <a class="code" href="namespacegam_1_1scl.html#a62c854975103219baff140eebd466e54">scl::clip</a>(v, T(1), T(-1));</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        w1 = c1 * v * (v + c2) + c0;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        w2 = w1 + v;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">/* // exact formula, for reference</span></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">        v = scl::clip(v, (T)1, (T)-1);</span></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">        v = (v+T(1))*M_PI_4;    // put in [0, pi/2]</span></div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">        w1 = cos(v);</span></div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">        w2 = sin(v);*/</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div><div class="ttc" id="namespacegam_1_1scl_html_ae3ed3edffdc9b97e28ce7136f08db581"><div class="ttname"><a href="namespacegam_1_1scl.html#ae3ed3edffdc9b97e28ce7136f08db581">gam::scl::sqrt</a></div><div class="ttdeci">T sqrt(T v)</div><div class="ttdoc">Approximate square root using log base-2 and Newton methods. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00790">scl.h:790</a></div></div>
-<div class="ttc" id="namespacegam_1_1scl_html_a62c854975103219baff140eebd466e54"><div class="ttname"><a href="namespacegam_1_1scl.html#a62c854975103219baff140eebd466e54">gam::scl::clip</a></div><div class="ttdeci">T clip(T value, T hi=T(1), T lo=T(0))</div><div class="ttdoc">Returns value clipped to [lo, hi]. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00547">scl.h:547</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a46fd756f8a77df20b7e29b79174e14de"></a>
@@ -278,8 +250,7 @@ template&lt;class T  = gam::real&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_effects_8h_source.html#l00370">370</a> of file <a class="el" href="_effects_8h_source.html">Effects.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                         {</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="classgam_1_1_pan.html#a9aa74a36543de39192c065c1e5ec5c7a">pos</a>(v); w1*=gain; w2*=gain;</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div><div class="ttc" id="classgam_1_1_pan_html_a9aa74a36543de39192c065c1e5ec5c7a"><div class="ttname"><a href="classgam_1_1_pan.html#a9aa74a36543de39192c065c1e5ec5c7a">gam::Pan::pos</a></div><div class="ttdeci">void pos(T v)</div><div class="ttdoc">Set position (constant power law) </div><div class="ttdef"><b>Definition:</b> <a href="_effects_8h_source.html#l00349">Effects.h:349</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0088d0b4055e39bb8f8eca8039f6e851"></a>
@@ -317,23 +288,18 @@ template&lt;class T  = gam::real&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_effects_8h_source.html#l00379">379</a> of file <a class="el" href="_effects_8h_source.html">Effects.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                  {</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        v = <a class="code" href="namespacegam_1_1scl.html#a62c854975103219baff140eebd466e54">scl::clip</a>(v, T(1), T(-1));</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        w1 = T(0.5) - v * T(0.5);</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        w2 = w1 + v;</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div><div class="ttc" id="namespacegam_1_1scl_html_a62c854975103219baff140eebd466e54"><div class="ttname"><a href="namespacegam_1_1scl.html#a62c854975103219baff140eebd466e54">gam::scl::clip</a></div><div class="ttdeci">T clip(T value, T hi=T(1), T lo=T(0))</div><div class="ttdoc">Returns value clipped to [lo, hi]. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l00547">scl.h:547</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_effects_8h_source.html">Effects.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="classgam_1_1_pan.html">Pan</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:19 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

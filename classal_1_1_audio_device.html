@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_audio_device.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_audio_device.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_audio_device.html">AudioDevice</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -99,27 +76,23 @@ $(document).ready(function(){initNavTree('classal_1_1_audio_device.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___audio_i_o_8hpp_source.html">al/core/io/al_AudioIO.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::AudioDevice:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___audio_i_o_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/io/al_AudioIO.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::AudioDevice:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_audio_device__inherit__graph.png" border="0" usemap="#al_1_1_audio_device_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_audio_device_inherit__map" id="al_1_1_audio_device_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_audio_device_info.html" title="al::AudioDeviceInfo" alt="" coords="5,5,155,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::AudioDevice:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::AudioDevice:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_audio_device__coll__graph.png" border="0" usemap="#al_1_1_audio_device_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_audio_device_coll__map" id="al_1_1_audio_device_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_audio_device_info.html" title="al::AudioDeviceInfo" alt="" coords="5,5,155,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -270,9 +243,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mValid</b> {false}</t
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___audio_i_o_8hpp_source.html#l00118">118</a> of file <a class="el" href="al___audio_i_o_8hpp_source.html">al_AudioIO.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                  {</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="classal_1_1_audio_device.html#a5e1705d00eb49195a075dd7a38dbfbcdaf6fd23f4a7e985bbd48b14f189869ddc">INPUT</a> = 1, </div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="classal_1_1_audio_device.html#a5e1705d00eb49195a075dd7a38dbfbcdad0837c41607b1676200d57a1a4aa73a8">OUTPUT</a> = 2 </div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  };</div><div class="ttc" id="classal_1_1_audio_device_html_a5e1705d00eb49195a075dd7a38dbfbcdad0837c41607b1676200d57a1a4aa73a8"><div class="ttname"><a href="classal_1_1_audio_device.html#a5e1705d00eb49195a075dd7a38dbfbcdad0837c41607b1676200d57a1a4aa73a8">al::AudioDevice::OUTPUT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00120">al_AudioIO.hpp:120</a></div></div>
-<div class="ttc" id="classal_1_1_audio_device_html_a5e1705d00eb49195a075dd7a38dbfbcdaf6fd23f4a7e985bbd48b14f189869ddc"><div class="ttname"><a href="classal_1_1_audio_device.html#a5e1705d00eb49195a075dd7a38dbfbcdaf6fd23f4a7e985bbd48b14f189869ddc">al::AudioDevice::INPUT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___audio_i_o_8hpp_source.html#l00119">al_AudioIO.hpp:119</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -339,15 +310,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mValid</b> {false}</t
 <li><a class="el" href="al___audio_i_o_8hpp_source.html">al_AudioIO.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_audio_device.html">AudioDevice</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

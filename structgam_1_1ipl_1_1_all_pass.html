@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structgam_1_1ipl_1_1_all_pass.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('structgam_1_1ipl_1_1_all_pass.html',''
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1ipl.html">ipl</a></li><li class="navelem"><a class="el" href="structgam_1_1ipl_1_1_all_pass.html">AllPass</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -99,13 +76,11 @@ $(document).ready(function(){initNavTree('structgam_1_1ipl_1_1_all_pass.html',''
  <a href="structgam_1_1ipl_1_1_all_pass.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_strategy_8h_source.html">/home/andres/Documents/src/Allostuff/allolib/external/Gamma/Gamma/Strategy.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for gam::ipl::AllPass&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Collaboration diagram for gam::ipl::AllPass&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="structgam_1_1ipl_1_1_all_pass__coll__graph.png" border="0" usemap="#gam_1_1ipl_1_1_all_pass_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -228,23 +203,18 @@ template&lt;class AccessStrategy &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_strategy_8h_source.html#l00290">290</a> of file <a class="el" href="_strategy_8h_source.html">Strategy.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                                                                                                        {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacegam_1_1ipl.html#a1d7d43f297d9cc8fd82300e7866043b6">ipl::allpass</a>(</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            iFrac,</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            src[iInt],</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            src[acc.mapP1(iInt+1, max, min)],</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            prev</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        );</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div><div class="ttc" id="namespacegam_1_1ipl_html_a1d7d43f297d9cc8fd82300e7866043b6"><div class="ttname"><a href="namespacegam_1_1ipl.html#a1d7d43f297d9cc8fd82300e7866043b6">gam::ipl::allpass</a></div><div class="ttdeci">Tv allpass(Tf frac, const Tv &amp;x, const Tv &amp;y, Tv &amp;o1)</div><div class="ttdoc">First order allpass interpolation. </div><div class="ttdef"><b>Definition:</b> <a href="ipl_8h_source.html#l00117">ipl.h:117</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_strategy_8h_source.html">Strategy.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1ipl.html">ipl</a></li><li class="navelem"><a class="el" href="structgam_1_1ipl_1_1_all_pass.html">AllPass</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:21 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacegam_1_1arr.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('namespacegam_1_1arr.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1arr.html">arr</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -387,9 +364,8 @@ template&lt;class T &gt; </div>
 <p>Sum elements from src into ring-buffer ring. </p>
 <p>Returns the next tap index. This will not guaranteed to be in the range [0, ringSize). </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00329">329</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                                                                              {</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">unsigned</span> endTap = ringTap + len;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">if</span>(endTap &lt;= ringSize){     <span class="comment">// haven&#39;t gone past end</span></div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="namespacegam_1_1arr.html#a57921e7a2bbcae73bf4e44c1390e9c41">add</a>(ring + ringTap, src, len);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">else</span>{                       <span class="comment">// have gone past end, do wrapped addition</span></div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordtype">unsigned</span> samplesUnder   = ringSize - ringTap;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordtype">unsigned</span> samplesOver    = endTap - ringSize;</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="namespacegam_1_1arr.html#a57921e7a2bbcae73bf4e44c1390e9c41">add</a>(ring + ringTap, src, samplesUnder);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="namespacegam_1_1arr.html#a57921e7a2bbcae73bf4e44c1390e9c41">add</a>(ring, src + samplesUnder, samplesOver);</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> endTap;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div><div class="ttc" id="namespacegam_1_1arr_html_a57921e7a2bbcae73bf4e44c1390e9c41"><div class="ttname"><a href="namespacegam_1_1arr.html#a57921e7a2bbcae73bf4e44c1390e9c41">gam::arr::add</a></div><div class="ttdeci">void add(T *dst, const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Add source array to destination array. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00053">arr.h:53</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00334">334</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="ab464b6505e0c6447c31ae23dc53a2c00"></a>
@@ -445,8 +421,8 @@ template&lt;class T , class Index &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00413">413</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                                                               {</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">if</span>(numIndices == 0) <span class="keywordflow">return</span>;</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    Index * newIndices = indices;</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">unsigned</span> newNumIndices = 0;</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    T prev = src[*indices++];</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordtype">bool</span> inCluster = <span class="keyword">false</span>;</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    LOOP(numIndices - 1, 1){</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        Index index = *indices++;</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        T curr = src[index];</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">if</span>( scl::abs(curr - prev) &lt;= threshold ){</div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            <span class="keywordflow">if</span>(!inCluster){</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                <span class="comment">// Add previous index</span></div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                *newIndices++ = indices[-2];</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                ++newNumIndices;</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            }</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="comment">// Add current index</span></div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            *newIndices++ = index;</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            ++newNumIndices;</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            inCluster = <span class="keyword">true</span>;</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        }</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">else</span>{</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            inCluster = <span class="keyword">false</span>;</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        prev = curr;</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    }</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    numIndices = newNumIndices;</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00418">418</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="aff4b6b287382bc4c303acbcebcb3b2fd"></a>
@@ -506,8 +482,8 @@ template&lt;class Ts , class Tb &gt; </div>
 <p>Compute histogram of 'src'. </p>
 <p>Values in 'src' are tallied and placed in 'bins', where the index of the bin is the integer part of the source values. Source values greater than the number of bins are ignored. The scale and offset parameters can be used to put the src values into the proper range. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00496">496</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                                                                                          {</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    LOOP(len, 1){</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        int32_t j = (int32_t)(src[i] * scale);</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">if</span>(j &gt;= 0 &amp;&amp; j &lt; (int32_t)numBins) bins[j]++;</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00501">501</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a92adac78071b0c8c7b24c1de92a4cdbf"></a>
@@ -547,8 +523,8 @@ template&lt;class Index &gt; </div>
 <p>Sets indices [numIndices, maxNumIndices) to complement indices. </p>
 <p>Indices must be sorted from low to high. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00859">859</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                                                                                    {</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    Index * comp = indices + numIndices;</div><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0; i&lt;maxNumIndices; i++){</div><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keywordflow">if</span>(*indices == i)   ++indices;</div><div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">else</span>                *comp++ = i;</div><div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    }</div><div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00864">864</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="ad2195070f4b560bcccb54c6928ddace6"></a>
@@ -639,8 +615,8 @@ template&lt;class Index , class T &gt; </div>
 <p>Locates local maxima and writes their indices into 'dst'. </p>
 <p>Returns number of maxima found. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00572">572</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                                                                       {</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    T prev = src[0];</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    T curr = src[str];</div><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    </div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordtype">unsigned</span> numPeaks = 0;</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    </div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=(str&lt;&lt;1); i&lt;len; i+=str){</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        T next = src[i];</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">if</span>(curr &gt; prev &amp;&amp; curr &gt; next){</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            *dst++ = i-str;</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            ++numPeaks;</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            i+=str;</div><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            <span class="keywordflow">if</span>(i&lt;len){</div><div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                prev = next;</div><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                curr = src[i];</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;            }</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        }</div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordflow">else</span>{</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            prev = curr;</div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            curr = next;</div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        }</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    }</div><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">return</span> numPeaks;</div><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00577">577</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="af560cea1ff06a08c31604c2ae2956e38"></a>
@@ -680,10 +656,8 @@ template&lt;class T &gt; </div>
 <p>Returns weighted mean of array values. </p>
 <p>Weights must be positive. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00625">625</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                                                              {</div><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    T <a class="code" href="namespacegam_1_1arr.html#ac18472e15b3a6a707c1c0dfc4c2f04dd">mean</a> = T(0);</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="comment">// One loop: faster, but less accurate</span></div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="comment">//  LOOP(len,</span></div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="comment">//      mean += *src++ * *weight;</span></div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="comment">//      normFactor += *weight++;</span></div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="comment">//  )</span></div><div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="comment">//  return mean /= normFactor;</span></div><div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="comment">// Two loops: slower, but avoids overflow</span></div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    T normFactor = T(1) / <a class="code" href="namespacegam_1_1arr.html#a863e0b55ceb8bd0235ca9a2bfa36ea0c">sum</a>(weights, len);</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    LOOP(len,1){ mean += *src++ * *weights++ * normFactor; }</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">return</span> mean;</div><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;}</div><div class="ttc" id="namespacegam_1_1arr_html_a863e0b55ceb8bd0235ca9a2bfa36ea0c"><div class="ttname"><a href="namespacegam_1_1arr.html#a863e0b55ceb8bd0235ca9a2bfa36ea0c">gam::arr::sum</a></div><div class="ttdeci">T sum(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns sum of values. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00776">arr.h:776</a></div></div>
-<div class="ttc" id="namespacegam_1_1arr_html_ac18472e15b3a6a707c1c0dfc4c2f04dd"><div class="ttname"><a href="namespacegam_1_1arr.html#ac18472e15b3a6a707c1c0dfc4c2f04dd">gam::arr::mean</a></div><div class="ttdeci">T mean(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns the mean (average) value of array values. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00600">arr.h:600</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00630">630</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a367de7e8249571e06fc9eaa44c3852ff"></a>
@@ -717,10 +691,8 @@ template&lt;class T &gt; </div>
 <p>Returns weighted mean in [0, len) of indices of weights. </p>
 <p>Weights must be positive. Can be used to compute centroid of spectrum. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00642">642</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                                                    {</div><div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    T <a class="code" href="namespacegam_1_1arr.html#ac18472e15b3a6a707c1c0dfc4c2f04dd">mean</a> = T(0);</div><div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    T normFactor = <a class="code" href="namespacegam_1_1arr.html#a863e0b55ceb8bd0235ca9a2bfa36ea0c">sum</a>(weights, len);</div><div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span>(normFactor == T(0)) <span class="keywordflow">return</span> T(0);</div><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    normFactor = T(1) / normFactor;</div><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    T weightFactor = T(0);</div><div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    LOOP(len,1){</div><div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        mean += *weights++ * weightFactor;</div><div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        weightFactor += normFactor;</div><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    }</div><div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordflow">return</span> mean;</div><div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;}</div><div class="ttc" id="namespacegam_1_1arr_html_a863e0b55ceb8bd0235ca9a2bfa36ea0c"><div class="ttname"><a href="namespacegam_1_1arr.html#a863e0b55ceb8bd0235ca9a2bfa36ea0c">gam::arr::sum</a></div><div class="ttdeci">T sum(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns sum of values. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00776">arr.h:776</a></div></div>
-<div class="ttc" id="namespacegam_1_1arr_html_ac18472e15b3a6a707c1c0dfc4c2f04dd"><div class="ttname"><a href="namespacegam_1_1arr.html#ac18472e15b3a6a707c1c0dfc4c2f04dd">gam::arr::mean</a></div><div class="ttdeci">T mean(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns the mean (average) value of array values. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00600">arr.h:600</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00647">647</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a470ced746fcae7fcb3220ccc5b5d1182"></a>
@@ -763,8 +735,8 @@ template&lt;class T &gt; </div>
 <p>The sequence of mirror isometries are identity (d) and rotation (p). The first len/2 elements of the array are mirrored.<br />
 Ex.: [ 1, 2, 3, 4, x, x, x, x] -&gt; [ 1, 2, 3, 4,-4,-3,-2,-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00360">360</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                            {</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    T * arr2 = arr + len - 1;   <span class="comment">// 2nd half end</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    LOOP(len, 2){ *arr2-- = -*arr++; }</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00365">365</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a86c1914e1943dea2def236a02a6a7b82"></a>
@@ -807,8 +779,8 @@ template&lt;class T &gt; </div>
 <p>The sequence of mirror isometries are identity (d) and glide relfection (q). The first len/2 elements of the array are mirrored.<br />
 Ex.: [ 1, 2, 3, 4, x, x, x, x] -&gt; [ 1, 2, 3, 4,-1,-2,-3,-4] </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00366">366</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                            {</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    T * arr2 = arr + (len&gt;&gt;1);  <span class="comment">// 2nd half begin</span></div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    LOOP(len, 2){ *arr2++ = -*arr++; }</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00371">371</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a8d538f7dbaafb0fcd1d27b71a7e710e9"></a>
@@ -850,9 +822,8 @@ template&lt;class T &gt; </div>
 <p>Multiply array by a Bartlett (triangle) window. </p>
 <p>Works only for even sized arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00372">372</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                                              {</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    T * end = arr + len - 1;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordtype">unsigned</span> len_2 = len &gt;&gt; 1;</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keyword">const</span> T <a class="code" href="namespacegam_1_1scl.html#a6993914e45b9937b5da0d3b501a43562">slope</a> = (T)1. / (T)len_2;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    T line = slope;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    </div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    *arr++ = (T)0;</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    LOOP(len_2 - 1, 1){</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        *arr++ *= line;</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        *end-- *= line;</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        line += slope;</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_a6993914e45b9937b5da0d3b501a43562"><div class="ttname"><a href="namespacegam_1_1scl.html#a6993914e45b9937b5da0d3b501a43562">gam::scl::slope</a></div><div class="ttdeci">T slope(T x1, T y1, T x2, T y2)</div><div class="ttdoc">Returns slope of line passing through two points. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l01037">scl.h:1037</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00377">377</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a5c7dc8a48b34a8f5de67673cd2f02396"></a>
@@ -898,8 +869,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Multiply 'arr' by 'src' where 'src' is the first 'len'/2 + 1 elements of a symmetric window. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00387">387</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                                                               {</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    T * end = arr + len - 1;</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    len &gt;&gt;= 1;</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    </div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    *arr++ *= *src++;</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    LOOP(len - 1, 1){</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keyword">const</span> T val = *src++;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        *arr++ *= val;</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        *end-- *= val;</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    }</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    *arr *= *src;</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00392">392</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a4f22bdcc8c82515cc7b86c57e59b43a3"></a>
@@ -939,11 +910,8 @@ template&lt;class T &gt; </div>
 <p>Uniformly scale array values to fit in [-1, 1]. </p>
 <p>Returns the applied normalization multiplication factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00401">401</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                                     {</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespacegam_1_1scl.html#aef3edea911471eec67a80c4c8dc6d046">max</a> = gam::norm(arr[<a class="code" href="namespacegam_1_1arr.html#a9da18a9b7134245dd2dd387bdca00b04">indexOfMaxNorm</a>(arr, len)]);</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">double</span> normFactor = <a class="code" href="namespacegam_1_1mem.html#a21135a4123adc9bbfcca511c51f01b50">scale</a>/max;</div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span>(max != 0.){</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0; i&lt;len; ++i){</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            arr[i]*=normFactor;</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> normFactor;</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div><div class="ttc" id="namespacegam_1_1scl_html_aef3edea911471eec67a80c4c8dc6d046"><div class="ttname"><a href="namespacegam_1_1scl.html#aef3edea911471eec67a80c4c8dc6d046">gam::scl::max</a></div><div class="ttdeci">T max(T v1, T v2, T v3)</div><div class="ttdoc">Returns maximum of three values. </div><div class="ttdef"><b>Definition:</b> <a href="scl_8h_source.html#l01031">scl.h:1031</a></div></div>
-<div class="ttc" id="namespacegam_1_1mem_html_a21135a4123adc9bbfcca511c51f01b50"><div class="ttname"><a href="namespacegam_1_1mem.html#a21135a4123adc9bbfcca511c51f01b50">gam::mem::scale</a></div><div class="ttdeci">void scale(T *dst, const T *src, unsigned lenSrc, float stride)</div><div class="ttdoc">Copies elements from &amp;#39;src&amp;#39; to fractionally strided locations in &amp;#39;dst&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00540">mem.h:540</a></div></div>
-<div class="ttc" id="namespacegam_1_1arr_html_a9da18a9b7134245dd2dd387bdca00b04"><div class="ttname"><a href="namespacegam_1_1arr.html#a9da18a9b7134245dd2dd387bdca00b04">gam::arr::indexOfMaxNorm</a></div><div class="ttdeci">unsigned indexOfMaxNorm(const T *src, unsigned len, unsigned str=1)</div><div class="ttdoc">Returns index of maximum normed value (i.e., magnitude) </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00523">arr.h:523</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00406">406</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="acb79dd62c4f3496f938a63b29a99b840"></a>
@@ -977,8 +945,8 @@ template&lt;class T &gt; </div>
 <p>Insertion sort of elements. </p>
 <p>Elements are sorted from lowest to highest. This sort is fastest for small length arrays and mostly sorted sets. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00730">730</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                                         {</div><div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 1; i &lt; len; i++){</div><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        T val = arr[i];</div><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordtype">unsigned</span> j = i - 1;</div><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordflow">for</span>(; (j &lt; len) &amp;&amp; (arr[j] &gt; val); j--){</div><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            arr[j + 1] = arr[j];                                      </div><div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        }</div><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        arr[j + 1] = val;</div><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    } </div><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00735">735</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a7991032e84f3586a87e0f218f1c80633"></a>
@@ -1018,8 +986,8 @@ template&lt;class T , class Index &gt; </div>
 <p>Insertion sort of indexed elements. </p>
 <p>Elements are sorted from lowest to highest. This sort is fastest for small length arrays and mostly sorted sets. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00742">742</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                                                                       {</div><div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 1; i &lt; numIndices; i++)</div><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    {</div><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        Index index = indices[i];</div><div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        T val = src[index];</div><div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        <span class="keywordtype">unsigned</span> j = i - 1;</div><div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <span class="keywordflow">while</span>((j &lt; numIndices) &amp;&amp; (val &lt; src[indices[j]]))</div><div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        {</div><div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            indices[j + 1] = indices[j]; </div><div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            --j;                                         </div><div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        }</div><div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        indices[j + 1] = index;</div><div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    } </div><div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00747">747</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="aa15659e89c104327307f167d12a09917"></a>
@@ -1065,9 +1033,8 @@ template&lt;class T , class Index &gt; </div>
 <p>Quick sort of elements. </p>
 <p>Elements are sorted from lowest to highest. </p>
 
-<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00758">758</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                                                                  {</div><div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="comment">// must be at least 1 element to sort</span></div><div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">if</span>(end &gt; beg + 1) {</div><div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordtype">long</span> piv = indices[beg], l = beg + 1, r = end;</div><div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        T pivVal = src[piv];</div><div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordflow">while</span> (l &lt; r){</div><div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            <span class="keywordflow">if</span> ( src[indices[l]] &lt;= pivVal ) </div><div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                l++;</div><div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            <span class="keywordflow">else</span> </div><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                mem::swap(indices[l], indices[--r]);</div><div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        }</div><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        mem::swap(indices[--l], indices[beg]);</div><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <a class="code" href="namespacegam_1_1arr.html#aa15659e89c104327307f167d12a09917">sortQuick</a>(src, indices, beg, l);</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <a class="code" href="namespacegam_1_1arr.html#aa15659e89c104327307f167d12a09917">sortQuick</a>(src, indices, r, end);</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    }</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;}</div><div class="ttc" id="namespacegam_1_1arr_html_aa15659e89c104327307f167d12a09917"><div class="ttname"><a href="namespacegam_1_1arr.html#aa15659e89c104327307f167d12a09917">gam::arr::sortQuick</a></div><div class="ttdeci">void sortQuick(const T *src, Index *indices, long beg, long end)</div><div class="ttdoc">Quick sort of elements. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00758">arr.h:758</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="arr_8h_source.html#l00763">763</a> of file <a class="el" href="arr_8h_source.html">arr.h</a>.</p>
+
 </div>
 </div>
 <a id="a91f7685a88ce2d422f631d45beb33595"></a>
@@ -1145,15 +1112,11 @@ template&lt;class T , class Index &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1arr.html">arr</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:20 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

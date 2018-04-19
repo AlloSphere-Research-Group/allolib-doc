@@ -1,16 +1,10 @@
 var searchData=
 [
-  ['sampler_5f1d',['SAMPLER_1D',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0a252437f13e68ad7ecc734b84cb9af8c5',1,'al::ShaderProgram']]],
-  ['sampler_5f1d_5fshadow',['SAMPLER_1D_SHADOW',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0abf700b46cb1b46830f7cd576e9f4e642',1,'al::ShaderProgram']]],
-  ['sampler_5f2d',['SAMPLER_2D',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0add7b02da3a7cac728fb95ab701dcc006',1,'al::ShaderProgram']]],
-  ['sampler_5f2d_5fshadow',['SAMPLER_2D_SHADOW',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0ab20973326267208cf967dd1a8939b3f8',1,'al::ShaderProgram']]],
-  ['sampler_5f3d',['SAMPLER_3D',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0adf1694241f53e0d5177cb1dceea3481b',1,'al::ShaderProgram']]],
-  ['sampler_5fcube',['SAMPLER_CUBE',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0a3f3da120c349b7855c3d9f7532199418',1,'al::ShaderProgram']]],
-  ['sampler_5frect',['SAMPLER_RECT',['../classal_1_1_shader_program.html#a6b3961df5c014f4765a28631b074e3e0a7782d8062ade6e6d0051d95205399b19',1,'al::ShaderProgram']]],
-  ['scissor_5ftest',['SCISSOR_TEST',['../classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083accca79a3da56da68726d516ea49b26e1',1,'al::Graphics']]],
-  ['sctp',['SCTP',['../classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fafb89508200e32fd388c4c5c4c51e1774',1,'al::Socket']]],
-  ['single_5fbuf',['SINGLE_BUF',['../classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb',1,'al::Window']]],
-  ['stencil_5fbuf',['STENCIL_BUF',['../classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0',1,'al::Window']]],
-  ['stereo_5fbuf',['STEREO_BUF',['../classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a',1,'al::Window']]],
-  ['stream',['STREAM',['../classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fa3773edd202f45ed36159e979f6e83b0a',1,'al::Socket']]]
+  ['parabolic',['PARABOLIC',['../tbl_8h.html#abfa71d3d59bc0bfc3ba88a629af04b23acbce5eb400d1cf73f562d0b15e2b26c6',1,'gam']]],
+  ['pcm_5f16',['PCM_16',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89add6c3e6c2e2deb5b12c61a079b709148',1,'gam::SoundFile']]],
+  ['pcm_5f24',['PCM_24',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89aeabfde87323ea599419922c6339f4313',1,'gam::SoundFile']]],
+  ['pcm_5f32',['PCM_32',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89ae1cbb430223f0b9f5fab0bdbc0a20715',1,'gam::SoundFile']]],
+  ['pcm_5fs8',['PCM_S8',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89a98593335e10ad4f8938c1a2bceacc33b',1,'gam::SoundFile']]],
+  ['pcm_5fu8',['PCM_U8',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89a9d61bd79129d58a432ac965c5a8a5374',1,'gam::SoundFile']]],
+  ['point',['POINT',['../classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699a25995bc288d68b3a55df788498f2e30b',1,'al::Graphics']]]
 ];

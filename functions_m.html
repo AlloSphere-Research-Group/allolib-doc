@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -57,20 +44,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_m.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -112,6 +85,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>makeTriple()
 : <a class="el" href="classal_1_1_vbap.html#a45d7ecbb08bdc2fe3fb4436babfdf64d">al::Vbap</a>
+</li>
+<li>manageImGUI()
+: <a class="el" href="classal_1_1_synth_g_u_i.html#adebb42730ffebd28021c6de7ef57c85e">al::SynthGUI</a>
 </li>
 <li>map()
 : <a class="el" href="classgam_1_1_unit_mapper.html#a1655d8357238308d363fa5604108de95">gam::UnitMapper&lt; T &gt;</a>
@@ -234,11 +210,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>meta()
 : <a class="el" href="classal_1_1_keyboard.html#ab5f70f4577e3600be1bacb7ac48a599e">al::Keyboard</a>
 </li>
-<li>middle()
-: <a class="el" href="classal_1_1_mouse.html#af12b8765ebf3889d0b020211ad622d78">al::Mouse</a>
-</li>
 <li>MIDDLE
 : <a class="el" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11fa70f31a71208afbeac9c811b95793cd15">al::Mouse</a>
+</li>
+<li>middle()
+: <a class="el" href="classal_1_1_mouse.html#af12b8765ebf3889d0b020211ad622d78">al::Mouse</a>
 </li>
 <li>MIN
 : <a class="el" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873abac252fa2962eb7999460c7a7fa2b54199">al::Graphics</a>
@@ -263,11 +239,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classgam_1_1_l_f_o.html#a5f932be364f6dccdcfb84589ef3fc734">gam::LFO&lt; Sp, Td &gt;</a>
 </li>
 <li>mode()
-: <a class="el" href="classal_1_1_file.html#ab1c963ce96e4fe969c990296954b744d">al::File</a>
+: <a class="el" href="classal_1_1_file.html#a67e3c357375b760c30006a08c5095a49">al::File</a>
 </li>
 <li>modI()
-: <a class="el" href="classgam_1_1_d_w_o.html#a528ad8ad8e53d4cb2a70d0936a71d04d">gam::DWO&lt; Sp, Td &gt;</a>
-, <a class="el" href="classgam_1_1_l_f_o.html#ab3992222225904beec4ca77d354e13f4">gam::LFO&lt; Sp, Td &gt;</a>
+: <a class="el" href="classgam_1_1_d_w_o.html#a734af91be7dd3dc98a2658a8d2859a62">gam::DWO&lt; Sp, Td &gt;</a>
+, <a class="el" href="classgam_1_1_l_f_o.html#ad4848e7a172978719820d159e0acf8de">gam::LFO&lt; Sp, Td &gt;</a>
 </li>
 <li>modulate()
 : <a class="el" href="classgam_1_1_chorus.html#a7548f1884c5edb9e8f426e41fe1324d0">gam::Chorus&lt; T &gt;</a>
@@ -279,20 +255,20 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classal_1_1_window.html#a6d480efe39f68507f0deae74df405583">al::Window</a>
 </li>
 <li>mouseDown()
-: <a class="el" href="classal_1_1_window_app.html#ae6d9cec7bc2600ecd6d30cb666172c7f">al::WindowApp</a>
+: <a class="el" href="classal_1_1_window_app.html#a1668cd4edba7488fda97af73cb660f00">al::WindowApp</a>
 , <a class="el" href="classal_1_1_window_event_handler.html#a926a1af88c308b63cd3ea682c047b2b6">al::WindowEventHandler</a>
 </li>
 <li>mouseDrag()
 : <a class="el" href="classal_1_1_nav_input_control.html#a32aec3a2f2c0e00f82b2fbc0f3c5106a">al::NavInputControl</a>
-, <a class="el" href="classal_1_1_window_app.html#a606c44009cd97fc44b4226fa39098c01">al::WindowApp</a>
+, <a class="el" href="classal_1_1_window_app.html#af1b34aa1ea4d07e25573648413e642e0">al::WindowApp</a>
 , <a class="el" href="classal_1_1_window_event_handler.html#ad476f6f025462377ad45143b7ca2463e">al::WindowEventHandler</a>
 </li>
 <li>mouseMove()
-: <a class="el" href="classal_1_1_window_app.html#a226aa0cf596163b4634312099253af47">al::WindowApp</a>
+: <a class="el" href="classal_1_1_window_app.html#a9b12c98f8b91127cdda64f006fff71f8">al::WindowApp</a>
 , <a class="el" href="classal_1_1_window_event_handler.html#a7929e6947a80085e6ba6f8dcc4252de4">al::WindowEventHandler</a>
 </li>
 <li>mouseUp()
-: <a class="el" href="classal_1_1_window_app.html#ab9c166b035e5892bf55985d0cefafc62">al::WindowApp</a>
+: <a class="el" href="classal_1_1_window_app.html#af0945753495082b321fc7b09d452830b">al::WindowApp</a>
 , <a class="el" href="classal_1_1_window_event_handler.html#a3d000863b0acd0bf3f7f4e63072b9201">al::WindowEventHandler</a>
 </li>
 <li>move()
@@ -345,14 +321,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:23 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

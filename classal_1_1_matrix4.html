@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_matrix4.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_matrix4.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_matrix4.html">Matrix4</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -97,27 +74,23 @@ $(document).ready(function(){initNavTree('classal_1_1_matrix4.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___matrix4_8hpp_source.html">al/core/math/al_Matrix4.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::Matrix4&lt; T &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___matrix4_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/core/math/al_Matrix4.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::Matrix4&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_matrix4__inherit__graph.png" border="0" usemap="#al_1_1_matrix4_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_matrix4_3_01_t_01_4_inherit__map" id="al_1_1_matrix4_3_01_t_01_4_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_mat.html" title="al::Mat\&lt; 4, T \&gt;" alt="" coords="10,5,130,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Matrix4&lt; T &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::Matrix4&lt; T &gt;:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_matrix4__coll__graph.png" border="0" usemap="#al_1_1_matrix4_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_matrix4_3_01_t_01_4_coll__map" id="al_1_1_matrix4_3_01_t_01_4_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_mat.html" title="al::Mat\&lt; 4, T \&gt;" alt="" coords="10,95,130,121"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -558,7 +531,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00121">121</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  :  Base(src)</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  {}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7a02e36e11cd247d6b8dba65fd58fcb6"></a>
@@ -594,7 +567,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00126">126</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  :  Base(src)</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {}</div></div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -658,9 +631,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00392">392</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                                                                                                            {</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">Matrix4</a>(</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;       ur[0], ur[1], ur[2], -(ur.<a class="code" href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">dot</a>(eyePos)),</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;       uu[0], uu[1], uu[2], -(uu.<a class="code" href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">dot</a>(eyePos)),</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;       uf[0], uf[1], uf[2], -(uf.<a class="code" href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">dot</a>(eyePos)),</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      0, 0, 0, 1</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    );</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div><div class="ttc" id="classal_1_1_vec_html_aa5fee82d55d3f5cc48443e1f19903aad"><div class="ttname"><a href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">al::Vec::dot</a></div><div class="ttdeci">T dot(const Vec&lt; N, U &gt; &amp;v) const</div><div class="ttdoc">Returns dot (inner) product between vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00327">al_Vec.hpp:327</a></div></div>
-<div class="ttc" id="classal_1_1_matrix4_html_a1eed8c476d4a80dcfc4bdc87d78fb513"><div class="ttname"><a href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">al::Matrix4::Matrix4</a></div><div class="ttdeci">Matrix4()</div><div class="ttdoc">Default constructor creates an identity matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00068">al_Matrix4.hpp:68</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a75fbce67ec6620b64347b76d13322814"></a>
@@ -716,11 +687,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00406">406</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                                                                        {</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    Vec&lt;3,T&gt; z = (at - eyePos).<a class="code" href="namespacegam_1_1arr.html#a4f22bdcc8c82515cc7b86c57e59b43a3">normalize</a>();</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    Vec&lt;3,T&gt; y = up; y.<a class="code" href="classal_1_1_vec.html#a2737e88df374bcf0874ecf24bd72ed64">normalize</a>();</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    Vec&lt;3,T&gt; x = <a class="code" href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">cross</a>(z, up).normalize();</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#af33c8412c17906013a6e2cf2c9d682fe">lookAt</a>(x, y, -z, eyePos);</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  }</div><div class="ttc" id="namespacegam_1_1arr_html_a4f22bdcc8c82515cc7b86c57e59b43a3"><div class="ttname"><a href="namespacegam_1_1arr.html#a4f22bdcc8c82515cc7b86c57e59b43a3">gam::arr::normalize</a></div><div class="ttdeci">double normalize(T *arr, unsigned len, double scale=1)</div><div class="ttdoc">Uniformly scale array values to fit in [-1, 1]. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00401">arr.h:401</a></div></div>
-<div class="ttc" id="classal_1_1_matrix4_html_af33c8412c17906013a6e2cf2c9d682fe"><div class="ttname"><a href="classal_1_1_matrix4.html#af33c8412c17906013a6e2cf2c9d682fe">al::Matrix4::lookAt</a></div><div class="ttdeci">static Matrix4 lookAt(const Vec&lt; 3, T &gt; &amp;ur, const Vec&lt; 3, T &gt; &amp;uu, const Vec&lt; 3, T &gt; &amp;uf, const Vec&lt; 3, T &gt; &amp;eyePos)</div><div class="ttdoc">Get a viewing matrix based on an eye reference frame. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00392">al_Matrix4.hpp:392</a></div></div>
-<div class="ttc" id="namespaceal_html_ad14a4f234c06e599950cccc84adaab80"><div class="ttname"><a href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">al::cross</a></div><div class="ttdeci">void cross(Vec&lt; 3, T &gt; &amp;r, const Vec&lt; 3, T &gt; &amp;a, const Vec&lt; 3, T &gt; &amp;b)</div><div class="ttdoc">Sets r to cross product, a x b. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00486">al_Vec.hpp:486</a></div></div>
-<div class="ttc" id="classal_1_1_vec_html_a2737e88df374bcf0874ecf24bd72ed64"><div class="ttname"><a href="classal_1_1_vec.html#a2737e88df374bcf0874ecf24bd72ed64">al::Vec::normalize</a></div><div class="ttdeci">Vec &amp; normalize(T scale=T(1))</div><div class="ttdoc">Set magnitude to one without changing direction. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00632">al_Vec.hpp:632</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8a9b8a7062e1bd562e811b4f5c0470b7"></a>
@@ -767,7 +734,7 @@ template&lt;typename T  = double&gt; </div>
 <p>Returns reference to result </p>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00299">299</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                          {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;N; ++j){</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keyword">const</span> Vec&lt;N,T&gt;&amp; bcol = b.col(j);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;N; ++i){</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        r(i,j) = a.row(i).dot(bcol);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      }</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span> r;</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4b648d23d4b8f60f9eb72c1e460b870a"></a>
@@ -844,8 +811,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00350">350</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                                     {</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    T W = r-l;  T W2 = r+l;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    T H = t-b;  T H2 = t+b;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    T D = f-n;  T D2 = f+n;</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">Matrix4</a>(  2/W,  0,    0,    -W2/W,</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            0,    2/H,  0,    -H2/H,</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            0,    0,    -2/D,  -D2/D,</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            0,    0,    0,    1  );</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a1eed8c476d4a80dcfc4bdc87d78fb513"><div class="ttname"><a href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">al::Matrix4::Matrix4</a></div><div class="ttdeci">Matrix4()</div><div class="ttdoc">Default constructor creates an identity matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00068">al_Matrix4.hpp:68</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a18c4e3451b2dfcf15a9cbcde214e7b3f"></a>
@@ -908,8 +874,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00377">377</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                             {</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    T W = r-l;  T W2 = r+l;</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    T H = t-b;  T H2 = t+b;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">Matrix4</a>(  2/W,  0,    0,    -W2/W,</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            0,    2/H,  0,    -H2/H,</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            0,    0,    -1,    0,</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            0,    0,    0,    1  );</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a1eed8c476d4a80dcfc4bdc87d78fb513"><div class="ttname"><a href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">al::Matrix4::Matrix4</a></div><div class="ttdeci">Matrix4()</div><div class="ttdoc">Default constructor creates an identity matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00068">al_Matrix4.hpp:68</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a904c343eabcd544fa11b9f659594faf6"></a>
@@ -986,8 +951,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00207">207</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                                           {</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    T W = r-l;  T W2 = r+l;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    T H = t-b;  T H2 = t+b;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    T D = f-n;  T D2 = f+n;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    T n2 = n*2;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    T fn2 = f*n2;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">Matrix4</a>(  n2/W,  0,    W2/W,    0,</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            0,    n2/H,  H2/H,    0,</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            0,    0,    -D2/D,    -fn2/D,</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            0,    0,    -1,      0 );</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a1eed8c476d4a80dcfc4bdc87d78fb513"><div class="ttname"><a href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">al::Matrix4::Matrix4</a></div><div class="ttdeci">Matrix4()</div><div class="ttdoc">Default constructor creates an identity matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00068">al_Matrix4.hpp:68</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2d22a3042933340e391d8a25df8a5bc8"></a>
@@ -1050,8 +1014,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00225">225</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                                              {</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">double</span> f = 1./tan(fovy*M_DEG2RAD/2.);</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    T D = far-near;  T D2 = far+near;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    T fn2 = far*near*2;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">Matrix4</a>(  f/aspect,  0,  0,      0,</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            0,      f,  0,      0,</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            0,      0,  -D2/D,    -fn2/D,</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            0,      0,  -1,      0</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    );</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a1eed8c476d4a80dcfc4bdc87d78fb513"><div class="ttname"><a href="classal_1_1_matrix4.html#a1eed8c476d4a80dcfc4bdc87d78fb513">al::Matrix4::Matrix4</a></div><div class="ttdeci">Matrix4()</div><div class="ttdoc">Default constructor creates an identity matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00068">al_Matrix4.hpp:68</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a013398f378bdaca67c911fa21c796427"></a>
@@ -1129,11 +1092,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00248">248</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  {</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    Vec&lt;3,T&gt; va, vb, vc;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    Vec&lt;3,T&gt; vr, vu, vn;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    T l, r, b, t, d;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">// compute orthonormal basis for the screen</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    vr = (nearBR-nearBL).<a class="code" href="namespacegam_1_1arr.html#a4f22bdcc8c82515cc7b86c57e59b43a3">normalize</a>();  <span class="comment">// right vector</span></div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    vu = (nearTL-nearBL).<a class="code" href="namespacegam_1_1arr.html#a4f22bdcc8c82515cc7b86c57e59b43a3">normalize</a>();  <span class="comment">// up vector</span></div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">cross</a>(vn, vr, vu);  <span class="comment">// normal(forward) vector (out from screen)</span></div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    vn.normalize();</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// compute vectors from eye to screen corners:</span></div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    va = nearBL-eye;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    vb = nearBR-eye;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    vc = nearTL-eye;</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// distance from eye to screen-plane</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">// = component of va along vector vn (normal to screen)</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    d = -va.<a class="code" href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">dot</a>(vn);</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// find extent of perpendicular projection</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    T nbyd = near/d;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    l = vr.dot(va) * nbyd;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    r = vr.dot(vb) * nbyd;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    b = vu.dot(va) * nbyd;  <span class="comment">// not vd?</span></div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    t = vu.dot(vc) * nbyd;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a904c343eabcd544fa11b9f659594faf6">perspective</a>(l, r, b, t, near, far);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a904c343eabcd544fa11b9f659594faf6"><div class="ttname"><a href="classal_1_1_matrix4.html#a904c343eabcd544fa11b9f659594faf6">al::Matrix4::perspective</a></div><div class="ttdeci">static Matrix4 perspective(T l, T r, T b, T t, T n, T f)</div><div class="ttdoc">Get a perspective projection matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00207">al_Matrix4.hpp:207</a></div></div>
-<div class="ttc" id="classal_1_1_vec_html_aa5fee82d55d3f5cc48443e1f19903aad"><div class="ttname"><a href="classal_1_1_vec.html#aa5fee82d55d3f5cc48443e1f19903aad">al::Vec::dot</a></div><div class="ttdeci">T dot(const Vec&lt; N, U &gt; &amp;v) const</div><div class="ttdoc">Returns dot (inner) product between vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00327">al_Vec.hpp:327</a></div></div>
-<div class="ttc" id="namespacegam_1_1arr_html_a4f22bdcc8c82515cc7b86c57e59b43a3"><div class="ttname"><a href="namespacegam_1_1arr.html#a4f22bdcc8c82515cc7b86c57e59b43a3">gam::arr::normalize</a></div><div class="ttdeci">double normalize(T *arr, unsigned len, double scale=1)</div><div class="ttdoc">Uniformly scale array values to fit in [-1, 1]. </div><div class="ttdef"><b>Definition:</b> <a href="arr_8h_source.html#l00401">arr.h:401</a></div></div>
-<div class="ttc" id="namespaceal_html_ad14a4f234c06e599950cccc84adaab80"><div class="ttname"><a href="namespaceal.html#ad14a4f234c06e599950cccc84adaab80">al::cross</a></div><div class="ttdeci">void cross(Vec&lt; 3, T &gt; &amp;r, const Vec&lt; 3, T &gt; &amp;a, const Vec&lt; 3, T &gt; &amp;b)</div><div class="ttdoc">Sets r to cross product, a x b. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00486">al_Vec.hpp:486</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1b9f9f5cc7b578b62e0244cc1884de72"></a>
@@ -1217,8 +1176,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00313">313</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                                                                                  {</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">double</span> tanfovy = tan(fovy*M_DEG2RAD/2.);</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    T t = near * tanfovy;  <span class="comment">// height of view at distance = near</span></div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    T b = -t;</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    T l = -aspect*t;</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    T r = aspect*t;</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    T shift = -xShift*near/focal;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    l += shift;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    r += shift;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    shift = -yShift*near/focal;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    t += shift;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    b += shift;</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classal_1_1_matrix4.html#a904c343eabcd544fa11b9f659594faf6">perspective</a>(l, r, b, t, near, far);</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  }</div><div class="ttc" id="classal_1_1_matrix4_html_a904c343eabcd544fa11b9f659594faf6"><div class="ttname"><a href="classal_1_1_matrix4.html#a904c343eabcd544fa11b9f659594faf6">al::Matrix4::perspective</a></div><div class="ttdeci">static Matrix4 perspective(T l, T r, T b, T t, T n, T f)</div><div class="ttdoc">Get a perspective projection matrix. </div><div class="ttdef"><b>Definition:</b> <a href="al___matrix4_8hpp_source.html#l00207">al_Matrix4.hpp:207</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6b6ec4f0adb1ac293fd9978ad9ac3543"></a>
@@ -1272,7 +1230,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00456">456</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                               {</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordtype">double</span> cs = cos(angle);</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">double</span> sn = sin(angle);</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> R=0; R&lt;N-1; ++R){</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      <span class="keyword">const</span> T&amp; v1 = (*this)(R, dim1);</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      <span class="keyword">const</span> T&amp; v2 = (*this)(R, dim2);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      T t = v1*cs + v2*sn;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      (*this)(R, dim2) = v2*cs - v1*sn;</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      (*this)(R, dim1) = t;</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    }</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2d26fddd7f1b1ffe62ca224dce6ced36"></a>
@@ -1333,7 +1291,7 @@ template&lt;typename T  = double&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mat_8hpp_source.html#l00341">341</a> of file <a class="el" href="al___mat_8hpp_source.html">al_Mat.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                                                          {</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    IT(numElements){ (*this)[i*matStride+matOffset]=arr[i]; } <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="af343e4e1823d67b1ec0214c2d7f4fc7f"></a>
@@ -1366,22 +1324,18 @@ template&lt;typename T  = double&gt; </div>
 <p>This is typically what is required to project a vertex through a transform. For a better explanation, </p><dl class="section see"><dt>See also</dt><dd><a href="http://xkcd.com/184/">http://xkcd.com/184/</a> -g </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="al___matrix4_8hpp_source.html#l00448">448</a> of file <a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                                                 {</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span> * vCol;</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  }</div></div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___matrix4_8hpp_source.html">al_Matrix4.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_matrix4.html">Matrix4</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_v_a_o_mesh.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_v_a_o_mesh.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_v_a_o_mesh.html">VAOMesh</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -97,21 +74,17 @@ $(document).ready(function(){initNavTree('classal_1_1_v_a_o_mesh.html','');});
 <div class="title">al::VAOMesh Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::VAOMesh:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::VAOMesh:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_v_a_o_mesh__inherit__graph.png" border="0" usemap="#al_1_1_v_a_o_mesh_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_v_a_o_mesh_inherit__map" id="al_1_1_v_a_o_mesh_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_mesh.html" title="Stores buffers related to rendering graphical objects. " alt="" coords="19,5,95,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::VAOMesh:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::VAOMesh:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_v_a_o_mesh__coll__graph.png" border="0" usemap="#al_1_1_v_a_o_mesh_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_v_a_o_mesh_coll__map" id="al_1_1_v_a_o_mesh_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_mesh.html" title="Stores buffers related to rendering graphical objects. " alt="" coords="884,157,960,184"/>
@@ -119,7 +92,7 @@ $(document).ready(function(){initNavTree('classal_1_1_v_a_o_mesh.html','');});
 <area shape="rect" id="node5" href="structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="108,81,269,108"/>
 <area shape="rect" id="node10" href="structal_1_1_color.html" title="al::Color" alt="" coords="341,208,417,235"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -742,8 +715,7 @@ Primitive&#160;</td><td class="memItemRight" valign="bottom"><b>mPrimitive</b></
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mesh_8hpp_source.html#l00198">198</a> of file <a class="el" href="al___mesh_8hpp_source.html">al_Mesh.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                           {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classal_1_1_mesh.html#a472b534442db7203fe77ec15b93ad7ed">ribbonize</a>(&amp;width, 0, faceBinormal);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div><div class="ttc" id="classal_1_1_mesh_html_a472b534442db7203fe77ec15b93ad7ed"><div class="ttname"><a href="classal_1_1_mesh.html#a472b534442db7203fe77ec15b93ad7ed">al::Mesh::ribbonize</a></div><div class="ttdeci">void ribbonize(float width=0.04, bool faceBinormal=false)</div><div class="ttdoc">Ribbonize curve. </div><div class="ttdef"><b>Definition:</b> <a href="al___mesh_8hpp_source.html#l00198">al_Mesh.hpp:198</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afd51dd432feb1038f4f04179ca79b70d"></a>
@@ -1051,22 +1023,18 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___mesh_8hpp_source.html#l00394">394</a> of file <a class="el" href="al___mesh_8hpp_source.html">al_Mesh.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                                                          {</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordflow">if</span>(end&lt;0) end += vertices().size()+1; <span class="comment">// negative index wraps to end of array</span></div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=begin; i&lt;end; ++i){</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    Vertex&amp; v = vertices()[i];</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    v.set(m * Vec&lt;4,T&gt;(v, 1));</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___v_a_o_mesh_8hpp_source.html">al_VAOMesh.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_v_a_o_mesh.html">VAOMesh</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

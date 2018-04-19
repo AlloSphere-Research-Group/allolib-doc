@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_window_app.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_window_app.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_window_app.html">WindowApp</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -99,11 +76,9 @@ $(document).ready(function(){initNavTree('classal_1_1_window_app.html','');});
 <div class="title">al::WindowApp Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::WindowApp:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::WindowApp:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_window_app__inherit__graph.png" border="0" usemap="#al_1_1_window_app_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_window_app_inherit__map" id="al_1_1_window_app_inherit__map">
 <area shape="rect" id="node5" href="classal_1_1_app.html" title="al::App" alt="" coords="182,155,249,181"/>
@@ -111,25 +86,33 @@ $(document).ready(function(){initNavTree('classal_1_1_window_app.html','');});
 <area shape="rect" id="node3" href="classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="124,5,307,32"/>
 <area shape="rect" id="node4" href="classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="331,5,396,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::WindowApp:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::WindowApp:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_window_app__coll__graph.png" border="0" usemap="#al_1_1_window_app_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_window_app_coll__map" id="al_1_1_window_app_coll__map">
-<area shape="rect" id="node2" href="classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="781,218,876,245"/>
-<area shape="rect" id="node3" href="classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="347,122,450,149"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="355,355,442,382"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="27,348,166,389"/>
-<area shape="rect" id="node7" href="classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="5,71,188,98"/>
-<area shape="rect" id="node12" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html" title="al::WindowApp::StandardWindow\lAppKeyControls" alt="" coords="520,5,757,47"/>
-<area shape="rect" id="node8" href="classal_1_1_mouse.html" title="al::Mouse" alt="" coords="357,406,441,433"/>
-<area shape="rect" id="node10" href="structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="335,305,463,331"/>
-<area shape="rect" id="node11" href="classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="796,269,861,295"/>
+<area shape="rect" id="node2" href="classal_1_1_window.html" title="Window with OpenGL context. " alt="" coords="1514,244,1609,271"/>
+<area shape="rect" id="node3" href="classal_1_1_keyboard.html" title="al::Keyboard" alt="" coords="1078,355,1181,381"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="206,507,293,533"/>
+<area shape="rect" id="node21" href="classal_1_1_shader_program.html" title="Shader program object. " alt="" coords="709,635,852,661"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="5,499,144,541"/>
+<area shape="rect" id="node7" href="classal_1_1_window_event_handler.html" title="Controller for handling input and window events. " alt="" coords="689,71,872,97"/>
+<area shape="rect" id="node24" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html" title="al::WindowApp::StandardWindow\lAppKeyControls" alt="" coords="1251,7,1488,49"/>
+<area shape="rect" id="node8" href="classal_1_1_mouse.html" title="al::Mouse" alt="" coords="1087,121,1171,148"/>
+<area shape="rect" id="node10" href="structal_1_1_window_1_1_dim.html" title="Window pixel dimensions. " alt="" coords="1065,304,1193,331"/>
+<area shape="rect" id="node11" href="classal_1_1_f_p_s.html" title="al::FPS" alt="" coords="1529,144,1594,171"/>
+<area shape="rect" id="node12" href="classal_1_1_graphics.html" title="al::Graphics" alt="" coords="1512,471,1611,497"/>
+<area shape="rect" id="node13" href="classal_1_1_render_manager.html" title="al::RenderManager" alt="" coords="1058,584,1201,611"/>
+<area shape="rect" id="node14" href="classal_1_1_viewport_stack.html" title="al::ViewportStack" alt="" coords="713,584,849,611"/>
+<area shape="rect" id="node15" href="classal_1_1_easy_v_a_o.html" title="al::EasyVAO" alt="" coords="731,685,831,712"/>
+<area shape="rect" id="node16" href="classal_1_1_v_a_o.html" title="al::VAO" alt="" coords="431,685,500,712"/>
+<area shape="rect" id="node17" href="classal_1_1_g_p_u_object.html" title="al::GPUObject" alt="" coords="193,661,305,688"/>
+<area shape="rect" id="node22" href="classal_1_1_shader_base.html" title="al::ShaderBase" alt="" coords="406,635,525,661"/>
+<area shape="rect" id="node18" href="classal_1_1_matrix_stack.html" title="al::MatrixStack" alt="" coords="721,749,840,776"/>
+<area shape="rect" id="node20" href="classal_1_1_f_b_o_stack.html" title="al::FBOStack" alt="" coords="729,533,833,560"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -172,27 +155,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>verbose</b> (bool b=t
 <tr class="memitem:a66b2b544bd49bd46cb5245e5934a294e"><td class="memItemLeft" align="right" valign="top"><a id="a66b2b544bd49bd46cb5245e5934a294e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
 <tr class="separator:a66b2b544bd49bd46cb5245e5934a294e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44859d68b03486e30fc777ecde4f5de9"><td class="memItemLeft" align="right" valign="top"><a id="a44859d68b03486e30fc777ecde4f5de9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>open</b> ()</td></tr>
-<tr class="separator:a44859d68b03486e30fc777ecde4f5de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa99b58b13a180b15a983001b303a7dd"><td class="memItemLeft" align="right" valign="top"><a id="afa99b58b13a180b15a983001b303a7dd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
-<tr class="separator:afa99b58b13a180b15a983001b303a7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9db36747c70a57d254552ac53455a83"><td class="memItemLeft" align="right" valign="top"><a id="ae9db36747c70a57d254552ac53455a83"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>closeApp</b> ()</td></tr>
-<tr class="separator:ae9db36747c70a57d254552ac53455a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0dc3ee596a6e04eb342fb1797e6a0be"><td class="memItemLeft" align="right" valign="top"><a id="af0dc3ee596a6e04eb342fb1797e6a0be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>quit</b> ()</td></tr>
 <tr class="separator:af0dc3ee596a6e04eb342fb1797e6a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51536aa1510d522be4af38075f0abb24"><td class="memItemLeft" align="right" valign="top"><a id="a51536aa1510d522be4af38075f0abb24"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldQuit</b> ()</td></tr>
 <tr class="separator:a51536aa1510d522be4af38075f0abb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a34929b7c7224daa13651b81cf80d58"><td class="memItemLeft" align="right" valign="top"><a id="a1a34929b7c7224daa13651b81cf80d58"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onInit</b> ()</td></tr>
+<tr class="separator:a1a34929b7c7224daa13651b81cf80d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af198c8c5c76478c3a2ab738a781b63c4"><td class="memItemLeft" align="right" valign="top"><a id="af198c8c5c76478c3a2ab738a781b63c4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreate</b> ()</td></tr>
 <tr class="separator:af198c8c5c76478c3a2ab738a781b63c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab227c8831486ac1368fa31d6f893740d"><td class="memItemLeft" align="right" valign="top"><a id="ab227c8831486ac1368fa31d6f893740d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> ()</td></tr>
-<tr class="separator:ab227c8831486ac1368fa31d6f893740d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fd5f720a6d275f410e092e7d2b1935"><td class="memItemLeft" align="right" valign="top"><a id="ac0fd5f720a6d275f410e092e7d2b1935"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onAnimate</b> (double dt)</td></tr>
+<tr class="separator:ac0fd5f720a6d275f410e092e7d2b1935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618f6d43846eb64afe8ba6d7cd94e2fb"><td class="memItemLeft" align="right" valign="top"><a id="a618f6d43846eb64afe8ba6d7cd94e2fb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> (<a class="el" href="classal_1_1_graphics.html">Graphics</a> &amp;g)</td></tr>
+<tr class="separator:a618f6d43846eb64afe8ba6d7cd94e2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c47f7f4da139da1c9429be9530f412c"><td class="memItemLeft" align="right" valign="top"><a id="a4c47f7f4da139da1c9429be9530f412c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onExit</b> ()</td></tr>
+<tr class="separator:a4c47f7f4da139da1c9429be9530f412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af021b5d8ed3d7249fe333dd3b364ac41"><td class="memItemLeft" align="right" valign="top"><a id="af021b5d8ed3d7249fe333dd3b364ac41"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onKeyDown</b> (<a class="el" href="classal_1_1_keyboard.html">Keyboard</a> const &amp;k)</td></tr>
 <tr class="separator:af021b5d8ed3d7249fe333dd3b364ac41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,38 +200,38 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onResize</b> 
 <tr class="memitem:a3b7a994c37213c5ed4676196a5a61219"><td class="memItemLeft" align="right" valign="top"><a id="a3b7a994c37213c5ed4676196a5a61219"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onVisibility</b> (bool v)</td></tr>
 <tr class="separator:a3b7a994c37213c5ed4676196a5a61219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812c6eee0fec084b353627f9e972b897"><td class="memItemLeft" align="right" valign="top"><a id="a812c6eee0fec084b353627f9e972b897"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a812c6eee0fec084b353627f9e972b897">keyDown</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) override</td></tr>
-<tr class="memdesc:a812c6eee0fec084b353627f9e972b897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is pressed. <br /></td></tr>
-<tr class="separator:a812c6eee0fec084b353627f9e972b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7342e1951ad669bcd115f9586822539a"><td class="memItemLeft" align="right" valign="top"><a id="a7342e1951ad669bcd115f9586822539a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a7342e1951ad669bcd115f9586822539a">keyUp</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) override</td></tr>
-<tr class="memdesc:a7342e1951ad669bcd115f9586822539a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is released. <br /></td></tr>
-<tr class="separator:a7342e1951ad669bcd115f9586822539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="memItemLeft" align="right" valign="top"><a id="ae6d9cec7bc2600ecd6d30cb666172c7f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ae6d9cec7bc2600ecd6d30cb666172c7f">mouseDown</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is pressed. <br /></td></tr>
-<tr class="separator:ae6d9cec7bc2600ecd6d30cb666172c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606c44009cd97fc44b4226fa39098c01"><td class="memItemLeft" align="right" valign="top"><a id="a606c44009cd97fc44b4226fa39098c01"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a606c44009cd97fc44b4226fa39098c01">mouseDrag</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:a606c44009cd97fc44b4226fa39098c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves while a button is down. <br /></td></tr>
-<tr class="separator:a606c44009cd97fc44b4226fa39098c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226aa0cf596163b4634312099253af47"><td class="memItemLeft" align="right" valign="top"><a id="a226aa0cf596163b4634312099253af47"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a226aa0cf596163b4634312099253af47">mouseMove</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:a226aa0cf596163b4634312099253af47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves. <br /></td></tr>
-<tr class="separator:a226aa0cf596163b4634312099253af47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c166b035e5892bf55985d0cefafc62"><td class="memItemLeft" align="right" valign="top"><a id="ab9c166b035e5892bf55985d0cefafc62"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ab9c166b035e5892bf55985d0cefafc62">mouseUp</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) override</td></tr>
-<tr class="memdesc:ab9c166b035e5892bf55985d0cefafc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is released. <br /></td></tr>
-<tr class="separator:ab9c166b035e5892bf55985d0cefafc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d8135953f7f46b7b66001129a748d7"><td class="memItemLeft" align="right" valign="top"><a id="ae3d8135953f7f46b7b66001129a748d7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ae3d8135953f7f46b7b66001129a748d7">resize</a> (int dw, int dh) override</td></tr>
-<tr class="memdesc:ae3d8135953f7f46b7b66001129a748d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever window dimensions change. <br /></td></tr>
-<tr class="separator:ae3d8135953f7f46b7b66001129a748d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6dbc0738d66ddcd73ded30c66efee56"><td class="memItemLeft" align="right" valign="top"><a id="ab6dbc0738d66ddcd73ded30c66efee56"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#ab6dbc0738d66ddcd73ded30c66efee56">visibility</a> (bool v) override</td></tr>
-<tr class="memdesc:ab6dbc0738d66ddcd73ded30c66efee56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when window changes from hidden to shown and vice versa. <br /></td></tr>
-<tr class="separator:ab6dbc0738d66ddcd73ded30c66efee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539424edab1c2afea3837f1612e4d74"><td class="memItemLeft" align="right" valign="top"><a id="a5539424edab1c2afea3837f1612e4d74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a5539424edab1c2afea3837f1612e4d74">keyDown</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) final</td></tr>
+<tr class="memdesc:a5539424edab1c2afea3837f1612e4d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is pressed. <br /></td></tr>
+<tr class="separator:a5539424edab1c2afea3837f1612e4d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6bb56262f923bac6a450b9ac49045c"><td class="memItemLeft" align="right" valign="top"><a id="a1a6bb56262f923bac6a450b9ac49045c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1a6bb56262f923bac6a450b9ac49045c">keyUp</a> (const <a class="el" href="classal_1_1_keyboard.html">Keyboard</a> &amp;k) final</td></tr>
+<tr class="memdesc:a1a6bb56262f923bac6a450b9ac49045c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a keyboard key is released. <br /></td></tr>
+<tr class="separator:a1a6bb56262f923bac6a450b9ac49045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1668cd4edba7488fda97af73cb660f00"><td class="memItemLeft" align="right" valign="top"><a id="a1668cd4edba7488fda97af73cb660f00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1668cd4edba7488fda97af73cb660f00">mouseDown</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:a1668cd4edba7488fda97af73cb660f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is pressed. <br /></td></tr>
+<tr class="separator:a1668cd4edba7488fda97af73cb660f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b34aa1ea4d07e25573648413e642e0"><td class="memItemLeft" align="right" valign="top"><a id="af1b34aa1ea4d07e25573648413e642e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#af1b34aa1ea4d07e25573648413e642e0">mouseDrag</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:af1b34aa1ea4d07e25573648413e642e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves while a button is down. <br /></td></tr>
+<tr class="separator:af1b34aa1ea4d07e25573648413e642e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b12c98f8b91127cdda64f006fff71f8"><td class="memItemLeft" align="right" valign="top"><a id="a9b12c98f8b91127cdda64f006fff71f8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a9b12c98f8b91127cdda64f006fff71f8">mouseMove</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:a9b12c98f8b91127cdda64f006fff71f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mouse moves. <br /></td></tr>
+<tr class="separator:a9b12c98f8b91127cdda64f006fff71f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0945753495082b321fc7b09d452830b"><td class="memItemLeft" align="right" valign="top"><a id="af0945753495082b321fc7b09d452830b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#af0945753495082b321fc7b09d452830b">mouseUp</a> (const <a class="el" href="classal_1_1_mouse.html">Mouse</a> &amp;m) final</td></tr>
+<tr class="memdesc:af0945753495082b321fc7b09d452830b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a mouse button is released. <br /></td></tr>
+<tr class="separator:af0945753495082b321fc7b09d452830b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="memItemLeft" align="right" valign="top"><a id="a1606d2fe53ef18ccf32d8b0846d7d4ef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a1606d2fe53ef18ccf32d8b0846d7d4ef">resize</a> (int dw, int dh) final</td></tr>
+<tr class="memdesc:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever window dimensions change. <br /></td></tr>
+<tr class="separator:a1606d2fe53ef18ccf32d8b0846d7d4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="memItemLeft" align="right" valign="top"><a id="a5f0b8524aa7d397de3d11eb77825b6e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window_app.html#a5f0b8524aa7d397de3d11eb77825b6e6">visibility</a> (bool v) final</td></tr>
+<tr class="memdesc:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when window changes from hidden to shown and vice versa. <br /></td></tr>
+<tr class="separator:a5f0b8524aa7d397de3d11eb77825b6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc11108a099d7de066e029a92b1e5e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classal_1_1_window.html#a8fc11108a099d7de066e029a92b1e5e2">create</a> (bool is_verbose=false)</td></tr>
 <tr class="separator:a8fc11108a099d7de066e029a92b1e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee466974382bc35186708c58bfae4c5"><td class="memItemLeft" align="right" valign="top"><a id="aaee466974382bc35186708c58bfae4c5"></a>
@@ -462,6 +445,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab45bb0fbd19072057e206a9d2d8055a1"><td class="memItemLeft" align="right" valign="top"><a id="ab45bb0fbd19072057e206a9d2d8055a1"></a>
 <a class="el" href="structal_1_1_window_app_1_1_standard_window_app_key_controls.html">StandardWindowAppKeyControls</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stdControls</b></td></tr>
 <tr class="separator:ab45bb0fbd19072057e206a9d2d8055a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2051406d84fd0567984e2a7d5900b1ab"><td class="memItemLeft" align="right" valign="top"><a id="a2051406d84fd0567984e2a7d5900b1ab"></a>
+<a class="el" href="classal_1_1_graphics.html">Graphics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mGraphics</b></td></tr>
+<tr class="separator:a2051406d84fd0567984e2a7d5900b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841d9cc4f994eb5c83e39dfdc4be0d77"><td class="memItemLeft" align="right" valign="top"><a id="a841d9cc4f994eb5c83e39dfdc4be0d77"></a>
 std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mShouldQuitApp</b> {false}</td></tr>
 <tr class="separator:a841d9cc4f994eb5c83e39dfdc4be0d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,7 +598,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="al___window_app_8hpp_source.html#l00021">21</a> of file <a class="el" href="al___window_app_8hpp_source.html">al_WindowApp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="al___window_app_8hpp_source.html#l00023">23</a> of file <a class="el" href="al___window_app_8hpp_source.html">al_WindowApp.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="add8b356ea242f51782775790a0fc58b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add8b356ea242f51782775790a0fc58b3">&#9670;&nbsp;</a></span>DisplayMode</h2>
@@ -657,16 +643,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___window_8hpp_source.html#l00223">223</a> of file <a class="el" href="al___window_8hpp_source.html">al_Window.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                   : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb">SINGLE_BUF</a>  = 1&lt;&lt;0,    </div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">DOUBLE_BUF</a>  = 1&lt;&lt;1,    </div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a">STEREO_BUF</a>  = 1&lt;&lt;2,    </div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0">ACCUM_BUF</a>  = 1&lt;&lt;3,    </div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">ALPHA_BUF</a>  = 1&lt;&lt;4,    </div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">DEPTH_BUF</a>  = 1&lt;&lt;5,    </div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0">STENCIL_BUF</a>  = 1&lt;&lt;6,    </div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c">MULTISAMPLE</a> = 1&lt;&lt;7,    </div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0">DEFAULT_BUF</a>  = <a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">DOUBLE_BUF</a>|<a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">ALPHA_BUF</a>|<a class="code" href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">DEPTH_BUF</a> </div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  };</div><div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2920400dd01e7cc147a33b3a2bb6887c">al::Window::MULTISAMPLE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00231">al_Window.hpp:231</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a49b33ed2924992fbc12fa5bd3a0353e0">al::Window::DEFAULT_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00232">al_Window.hpp:232</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a021951fe2932213c86cde11aa50edc14">al::Window::ALPHA_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00228">al_Window.hpp:228</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3adbbb638882adfa04ec1e2705613dafeb">al::Window::SINGLE_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00224">al_Window.hpp:224</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aee4fc37df877e6456285a231024ca89a">al::Window::STEREO_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00226">al_Window.hpp:226</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a923a035a156909bb1e58fe73927f55fd">al::Window::DOUBLE_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00225">al_Window.hpp:225</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a75cbf1266fbb9dfa69aeced4e5e559a0">al::Window::ACCUM_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00227">al_Window.hpp:227</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3a2699967d930614ce3563150abe2df2a0">al::Window::STENCIL_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00230">al_Window.hpp:230</a></div></div>
-<div class="ttc" id="classal_1_1_window_html_add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e"><div class="ttname"><a href="classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3aa8d484c3f400d9dee78c10849e8a039e">al::Window::DEPTH_BUF</a></div><div class="ttdef"><b>Definition:</b> <a href="al___window_8hpp_source.html#l00229">al_Window.hpp:229</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -782,15 +759,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>mFramebufferHeight</b>
 <li><a class="el" href="al___window_app_8hpp_source.html">al_WindowApp.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_window_app.html">WindowApp</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:12 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:18 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

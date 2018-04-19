@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacegam_1_1mem.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('namespacegam_1_1mem.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1mem.html">mem</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -336,8 +313,8 @@ template&lt;class T &gt; </td></tr>
 </div><div class="memdoc">
 <p>Duplicates strided elements in array a_a_a_a_ -&gt; aaaaaaaa numFrames = 4, stride = 2 b___b___ -&gt; bbbbbbbb numFrames = 2, stride = 4 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00637">637</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                                                                                                {</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=1; i&lt;stride; i++){</div><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0; j&lt;numFrames * stride; j+=stride){</div><div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            dst[i + j] = src[j];</div><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        }</div><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    }</div><div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00642">642</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="af00a91e5d21ace1710cf164b82dd7668"></a>
@@ -399,9 +376,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00373">373</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                                                                         {</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordtype">unsigned</span> under = ringSize - ringTap;</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">deepCopy</a>(dst, ring + ringTap, under);</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">deepCopy</a>(dst + under, ring, ringTap);</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_ad88594f5f48c916381281e116d161be4"><div class="ttname"><a href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">gam::mem::deepCopy</a></div><div class="ttdeci">void deepCopy(T *dst, const T *src, unsigned len)</div><div class="ttdoc">Copy source &amp;#39;src&amp;#39; array bytes to destination &amp;#39;dst&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00057">mem.h:57</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00378">378</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a8dc842687e62a3a41b15ad3f633b662b"></a>
@@ -453,9 +429,8 @@ template&lt;class T &gt; </div>
 <p>Copies elements into a ring buffer. </p>
 <p>Returns the next tap index. This will not guaranteed to be in the range [0, ringSize) and therefore should be wrapped into the proper range. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00338">338</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                                                                               {</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">unsigned</span> endTap = ringTap + len;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">if</span>(endTap &lt;= ringSize){     <span class="comment">// haven&#39;t gone past end</span></div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">deepCopy</a>(ring + ringTap, src, len);</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">else</span>{                       <span class="comment">// have gone past end, do wrapped copy</span></div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordtype">unsigned</span> under  = ringSize - ringTap;</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordtype">unsigned</span> over   = endTap - ringSize;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">deepCopy</a>(ring + ringTap, src, under);</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">deepCopy</a>(ring, src + under, over);</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">return</span> endTap;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_ad88594f5f48c916381281e116d161be4"><div class="ttname"><a href="namespacegam_1_1mem.html#ad88594f5f48c916381281e116d161be4">gam::mem::deepCopy</a></div><div class="ttdeci">void deepCopy(T *dst, const T *src, unsigned len)</div><div class="ttdoc">Copy source &amp;#39;src&amp;#39; array bytes to destination &amp;#39;dst&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00057">mem.h:57</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00343">343</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a2cea65a293ac8d43308c3faff77abe0d"></a>
@@ -509,8 +484,8 @@ template&lt;class T &gt; </div>
 <p>Deinterleave an array of elements with any number of channels. </p>
 <p>numFrames = length / numChannels </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00597">597</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                                                                                          {</div><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="keywordtype">unsigned</span> numSamples = numFrames * numChannels;</div><div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> c=0; c &lt; numChannels; c++){</div><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=c; i &lt; numSamples; i+=numChannels){</div><div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            *dst++ = src[i];</div><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        }</div><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    }</div><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00602">602</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ac217348fed8cf16a0adf9f90e0ad99e9"></a>
@@ -559,8 +534,8 @@ template&lt;class T &gt; </div>
 <p>numFrames = length / numChannels <br />
 Example: abababab -&gt; aaaabbbb </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00607">607</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                                                                     {</div><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    T * dst2 = dst + numFrames;</div><div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    LOOP(numFrames, 1){</div><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        *dst2++ = *src++;</div><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        *dst++  = *src++;</div><div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    }</div><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00612">612</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a615404892ba2264bf1bef98c76e3d3af"></a>
@@ -615,8 +590,8 @@ template&lt;class T &gt; </div>
 <p>Elements are copied contiguously from 'src' to strided locations in 'dst'. 'dst' must have room for 'lenSrc' times 'amount' elements. <br />
 Ex.: 1234 -&gt; 1.2.3.4. (amount = 2) Ex.: 1234 -&gt; 1..2..3..4.. (amount = 3) </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00380">380</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                                                            {</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    LOOP(lenSrc,1){ *dst = *src++; dst += amount; }</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00385">385</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ab8b68a0a5b28de9e6d5c496610ea4e2f"></a>
@@ -648,8 +623,8 @@ template&lt;class T &gt; </div>
 <p>Like standard free, but checks if pointer is valid (!=0) and sets it to zero after freeing it. </p>
 <p>This uses C-style memory management. No destructors will be called on class-type objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00385">385</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                          {</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span>(ptr){ std::free(ptr); ptr=0; }</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00390">390</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a03607617a113074db0f9f33200f54200"></a>
@@ -709,8 +684,8 @@ template&lt;class T &gt; </div>
 <p>Finds index 'ind' of first element in 'src' equal to 'elem'. </p>
 <p>Returns whether a match was found. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00390">390</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                                                                                         {</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    LOOP(len,str){ <span class="keywordflow">if</span>(src[i] == v){ ind=i; <span class="keywordflow">return</span> <span class="keyword">true</span>; } }</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00395">395</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="aa5a84b3aa7a90479c034f178d28fece0"></a>
@@ -764,8 +739,8 @@ template&lt;class T &gt; </div>
 <p>Interleave an array of elements with any number of channels. </p>
 <p>numFrames = length / numChannels </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00616">616</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                                                                                        {</div><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="keywordtype">unsigned</span> numSamples = numFrames * numChannels;</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> c=0; c &lt; numChannels; c++){</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=c; i &lt; numSamples; i+=numChannels){</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            dst[i] = *src++;</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        }</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    }</div><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00621">621</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ae7aac4aa836e79aa035f1e34d9b2750b"></a>
@@ -814,8 +789,8 @@ template&lt;class T &gt; </div>
 <p>numFrames = length / numChannels <br />
  Example: aaaabbbb -&gt; abababab </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00626">626</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                                                                   {</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keyword">const</span> T * src2 = src + numFrames;</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    LOOP(numFrames, 1){</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        *dst++ = *src2++;</div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        *dst++ = *src++;</div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00631">631</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a755d488e268a37f02a5b6d1d59e67b28"></a>
@@ -877,8 +852,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00402">402</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                                                         {</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">unsigned</span> c = offset % stride;</div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    LOOP(len,1){</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span>(0 == c){ arr++; c = stride; }</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keywordflow">else</span>        *arr++ = (T)0;</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        --c;</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00407">407</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a7e77f879b890a8f5436b4ead60afa56f"></a>
@@ -918,10 +893,8 @@ template&lt;class T &gt; </div>
 <p>Perform kth permutation on array. </p>
 <p>The length of the array must be &lt;= 20. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00412">412</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                                          {</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="namespaceal.html#a3f88bf4afda6ac9b12aa22873870d0b2">factorial</a> = 1;</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;     <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=1; i&lt;len; i++){</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        factorial *= i;</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordtype">unsigned</span> j = i - ((k / factorial) % (i + 1));</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], arr[j]);</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;     }</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div><div class="ttc" id="namespaceal_html_a3f88bf4afda6ac9b12aa22873870d0b2"><div class="ttname"><a href="namespaceal.html#a3f88bf4afda6ac9b12aa22873870d0b2">al::factorial</a></div><div class="ttdeci">uint32_t factorial(uint32_t n0to12)</div><div class="ttdef"><b>Definition:</b> <a href="al___functions_8hpp_source.html#l00551">al_Functions.hpp:551</a></div></div>
-<div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00417">417</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="abf04fe2964bfac35fd779d461cedb1e9"></a>
@@ -970,8 +943,8 @@ template&lt;class T &gt; </div>
 <p>The first len/2 elements will be overwritten. <br />
 Example: ....1234 -&gt; 43211234 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00437">437</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                                            {</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">unsigned</span> end = indexLast(len,str);</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    LOOP(len&gt;&gt;1, str){</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        arr[i] = arr[end-i];</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    }</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00442">442</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a45a04ed51472af3775658145b82bdacb"></a>
@@ -1020,8 +993,8 @@ template&lt;class T &gt; </div>
 <p>The last len/2 elements will be overwritten. <br />
 Example: 1234.... -&gt; 12344321 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00445">445</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                                                             {</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordtype">unsigned</span> end = indexLast(len,str);</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    LOOP(len&gt;&gt;1, str){</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        arr[end-i] = arr[i];</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }   </div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;}   </div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00450">450</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a4aeeaa89e6010368cfab607b11c8a990"></a>
@@ -1069,8 +1042,8 @@ template&lt;class T &gt; </div>
 <p>Repeats first 'chunkSize' elements until end of array. </p>
 <p>Example: 1234.... -&gt; 12341234 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00453">453</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                                                             {</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">unsigned</span> rd = 0;</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">unsigned</span> wr = chunkSize;</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    LOOP(len - chunkSize, 1){</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">if</span>(rd == chunkSize) rd = 0;</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        arr[wr] = arr[rd];</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        wr++;</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        rd++;</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00458">458</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ae7dac5695b0d6700d1f321ebb112b10b"></a>
@@ -1110,8 +1083,8 @@ template&lt;class T &gt; </div>
 <p>Resizes array. Returns true if resized, false otherwise. </p>
 <p>This uses C-style memory management. No constructors or destructors will be called on class-type objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00475">475</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                                                         {</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">if</span>((sizeNow != sizeNew) &amp;&amp; (0 != sizeNew)){</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        T * ptr = (T *)std::realloc(arr, sizeNew * <span class="keyword">sizeof</span>(T));</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">if</span>(0 != ptr){ arr = ptr; <span class="keywordflow">return</span> <span class="keyword">true</span>; } <span class="comment">// successful resize</span></div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    }</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00480">480</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a6b3034ca737e68828aa354f4cbdca966"></a>
@@ -1159,9 +1132,8 @@ template&lt;class T &gt; </div>
 <p>Reverse elements' order in array. </p>
 <p>Example: 1234 -&gt; 4321 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00484">484</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                                                        {</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordtype">unsigned</span> end = indexLast(len,str);</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    LOOP(len&gt;&gt;1, str){ <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], arr[end-i]); }</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00489">489</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a903a571247242520bd4567913ca1078f"></a>
@@ -1209,9 +1181,8 @@ template&lt;class T &gt; </div>
 <p>Reverse every two elements. </p>
 <p>Example: 1234 -&gt; 2143 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00490">490</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                                                         {</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    LOOP(len, 2){ <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], arr[i+1]); }</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00495">495</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ab826906ec32d6e707d4e005fc2ff3e0f"></a>
@@ -1259,9 +1230,8 @@ template&lt;class T &gt; </div>
 <p>Rotate elements half the length of the array. </p>
 <p>Works only for even length arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00495">495</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                                                           {</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    T * half = arr + (((len&gt;&gt;1)/str)*str);</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    LOOP(len&gt;&gt;1, str){ <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], half[i]); }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00500">500</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a25b25cac95ff6c4545fecf040c6764c7"></a>
@@ -1309,9 +1279,8 @@ template&lt;class T &gt; </div>
 <p>Rotate elements left by 1. </p>
 <p>Example: 1234 -&gt; 2341 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00522">522</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                                            {</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    LOOP(len-str, str){ <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], arr[i+str]); }</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00527">527</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a74882e729d18d4a397d54c8c8c3bdf29"></a>
@@ -1359,9 +1328,8 @@ template&lt;class T &gt; </div>
 <p>Rotate elements right by 1. </p>
 <p>Example: 1234 -&gt; 4123 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00532">532</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                                             {</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordtype">unsigned</span> end = indexLast(len,str);</div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=end; i&gt;=str; i-=str){</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">swap</a>(arr[i], arr[i-str]);</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    }</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a6e112f35991347d58035664a3237b7f2"><div class="ttname"><a href="namespacegam_1_1mem.html#a6e112f35991347d58035664a3237b7f2">gam::mem::swap</a></div><div class="ttdeci">void swap(T &amp;elem1, T &amp;elem2)</div><div class="ttdoc">Swaps two elements in memory. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00585">mem.h:585</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00537">537</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a21135a4123adc9bbfcca511c51f01b50"></a>
@@ -1417,8 +1385,8 @@ template&lt;class T &gt; </div>
 Ex.: 12345678 -&gt; 12.34.56.78 (amount = 1.5) <br />
 Ex.: 1234 -&gt; 1..2..3..4.. (amount = 3) </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00540">540</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                                                                        {</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    *dst = *src++;</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordtype">float</span> dstIndex = 0.5f;                          <span class="comment">// add offset to round</span></div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    lenSrc--;</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    LOOP(lenSrc, 1){</div><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        dstIndex += amount;</div><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        dst[(unsigned)dstIndex] = *src++;</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="comment">//printf(&quot;%d\n&quot;, (unsigned)dstIndex);</span></div><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    }</div><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00545">545</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a5359adc1ce82fc68ec6399949e3219c3"></a>
@@ -1474,9 +1442,8 @@ template&lt;class T &gt; </div>
 Ex.: 12345678 -&gt; 12.34.56 (amount = 1.5) <br />
 Ex.: 1234 -&gt; 1..2 (amount = 3) </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00553">553</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                                                                         {</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keywordtype">unsigned</span> temp = (unsigned)((<span class="keywordtype">float</span>)len / amount);    <span class="comment">// theoretical # to copy from src</span></div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">if</span>(temp &lt; len) len = temp;                  <span class="comment">// actual # to copy from src</span></div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <a class="code" href="namespacegam_1_1mem.html#a21135a4123adc9bbfcca511c51f01b50">scale</a>(dst, src, len, amount);</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a21135a4123adc9bbfcca511c51f01b50"><div class="ttname"><a href="namespacegam_1_1mem.html#a21135a4123adc9bbfcca511c51f01b50">gam::mem::scale</a></div><div class="ttdeci">void scale(T *dst, const T *src, unsigned lenSrc, float stride)</div><div class="ttdoc">Copies elements from &amp;#39;src&amp;#39; to fractionally strided locations in &amp;#39;dst&amp;#39;. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00540">mem.h:540</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00558">558</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="af5a368105c01c45106885e3d4c41214a"></a>
@@ -1525,8 +1492,8 @@ template&lt;class T &gt; </div>
 <p>'len' must be an integer multiple of 'amount'. <br />
 Example: 1234.... -&gt; 11223344 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00561">561</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                                                           {</div><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    T * end = arr + len;</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    </div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    len /= amount;</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    arr += len;</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    LOOP(len, 1){</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        end -= amount;</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        T v = *--arr;</div><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0; k&lt;amount; ++k) end[k]=v;</div><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    }</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00566">566</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="ad8a7ce7dc6ab454f070bc585ce189192"></a>
@@ -1581,8 +1548,8 @@ template&lt;class T &gt; </div>
 <p>'dst' must have room for 'lenSrc' times 'amount' elements. <br />
 Example: 1234 -&gt; 11223344 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00576">576</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                                                                             {</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    LOOP(lenSrc, 1){</div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        T v = *src++;</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0; k&lt;amount; ++k) dst[k]=v;</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        dst += amount;</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    }</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00581">581</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 <a id="a1143f215aedbbe3f75afcccdd4ac5d54"></a>
@@ -1624,21 +1591,16 @@ template&lt;class T &gt; </div>
 <p>Transpose a 2 x (len/2) matrix. </p>
 <p>Example: 12121212 -&gt; 11112222 </p>
 
-<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00590">590</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                                             {</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=2; i &lt;= len-2; i+=2){</div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <a class="code" href="namespacegam_1_1mem.html#a903a571247242520bd4567913ca1078f">reverse2</a>(arr + (i&gt;&gt;1), len - i);</div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    }</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}</div><div class="ttc" id="namespacegam_1_1mem_html_a903a571247242520bd4567913ca1078f"><div class="ttname"><a href="namespacegam_1_1mem.html#a903a571247242520bd4567913ca1078f">gam::mem::reverse2</a></div><div class="ttdeci">void reverse2(T *arr, unsigned len, unsigned str=1)</div><div class="ttdoc">Reverse every two elements. </div><div class="ttdef"><b>Definition:</b> <a href="mem_8h_source.html#l00490">mem.h:490</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mem_8h_source.html#l00595">595</a> of file <a class="el" href="mem_8h_source.html">mem.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>gam</b></li><li class="navelem"><a class="el" href="namespacegam_1_1mem.html">mem</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:21 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

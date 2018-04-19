@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_poly_synth.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_poly_synth.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_poly_synth.html">PolySynth</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -179,7 +156,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00194">194</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00210">210</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a30d7ef1f3197dd2e59d13419d56cc698"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30d7ef1f3197dd2e59d13419d56cc698">&#9670;&nbsp;</a></span>allocatePolyphony()</h2>
@@ -200,8 +177,8 @@ template&lt;class TSynthVoice &gt; </div>
 </div><div class="memdoc">
 <p>Preallocate a number of voices of a particular TSynthVoice to avoid doing realtime allocation. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00744">744</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                                            {</div><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    std::unique_lock&lt;std::mutex&gt; lk(mFreeVoiceLock);</div><div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    SynthVoice *lastVoice = mFreeVoices;</div><div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <span class="keywordflow">if</span> (lastVoice) {</div><div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <span class="keywordflow">while</span> (lastVoice-&gt;next) { lastVoice = lastVoice-&gt;next; }</div><div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        lastVoice = mFreeVoices = <span class="keyword">new</span> TSynthVoice;</div><div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        number--;</div><div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    }</div><div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; number; i++) {</div><div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        lastVoice-&gt;next = <span class="keyword">new</span> TSynthVoice;</div><div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        lastVoice = lastVoice-&gt;next;</div><div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    }</div><div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00797">797</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="ae44a88fd062e849a13123c88fe71ceb5"></a>
@@ -264,8 +241,8 @@ template&lt;class TSynthVoice &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00349">349</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{mAudioGain = gainValue;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00365">365</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="ac5e038f4b762543d7ffc728501d66ea6"></a>
@@ -294,8 +271,8 @@ template&lt;class TSynthVoice &gt; </div>
 <p>get current audio gain </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00355">355</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{<span class="keywordflow">return</span> mAudioGain;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00371">371</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="af87383f2c28f2d82aff00c36c6d96f1e"></a>
@@ -319,8 +296,8 @@ template&lt;class TSynthVoice &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 <p>Returns a free voice from the internal dynamic allocated pool. You must call triggerVoice to put the voice back in the rendering chain after setting its properties, otherwise it will be lost. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00719">719</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                                 {</div><div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    std::unique_lock&lt;std::mutex&gt; lk(mFreeVoiceLock); <span class="comment">// Only one getVoice() call at a time</span></div><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    SynthVoice *freeVoice = mFreeVoices;</div><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    SynthVoice *previousVoice = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordflow">while</span> (freeVoice) {</div><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">if</span> (std::type_index(<span class="keyword">typeid</span>(*freeVoice)) == std::type_index(<span class="keyword">typeid</span>(TSynthVoice))) {</div><div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            <span class="keywordflow">if</span> (previousVoice) {</div><div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                previousVoice-&gt;next = freeVoice-&gt;next;</div><div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                mFreeVoices = freeVoice-&gt;next;</div><div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;            }</div><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        }</div><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        previousVoice = freeVoice;</div><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        freeVoice = freeVoice-&gt;next;</div><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    }</div><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordflow">if</span> (!freeVoice) { <span class="comment">// No free voice in list, so we need to allocate it</span></div><div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="comment">// TODO report current polyphony for more informed allocation of polyphony</span></div><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Allocating voice of type &quot;</span> &lt;&lt; <span class="keyword">typeid</span> (TSynthVoice).name() &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; std::endl;</div><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        freeVoice = <span class="keyword">new</span> TSynthVoice;</div><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    }</div><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>TSynthVoice *<span class="keyword">&gt;</span>(freeVoice);</div><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00772">772</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a491cb0423936e725f9088c6b63c3ac74"></a>
@@ -529,8 +506,8 @@ template&lt;class TSynthVoice &gt; </div>
 <p>Register a <a class="el" href="classal_1_1_synth_voice.html" title="The SynthVoice class. ">SynthVoice</a> class to allow instantiating it by name</p>
 <p>This is needed for remote instantiation and for text sequence playback. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00379">379</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                            {</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span> (mCreators.find(name) != mCreators.end()) {</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Warning: Overriding registration of SynthVoice: &quot;</span> &lt;&lt; name &lt;&lt; std::endl;</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        mCreators[name] = []() {</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> TSynthVoice;</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        };</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00395">395</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="aafc4406a9fe88f0269ea1c565e0f0acb"></a>
@@ -636,15 +613,11 @@ template&lt;class TSynthVoice &gt; </div>
 <li><a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_poly_synth.html">PolySynth</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

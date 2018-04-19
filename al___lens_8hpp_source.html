@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___lens_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___lens_8hpp_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8287d74bb027deea89b54e36da9b0527.html">graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Lens.hpp</div>  </div>
@@ -96,7 +73,7 @@ $(document).ready(function(){initNavTree('al___lens_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_lens_html_a15bcb15bc8f4e1fda2d2552185705b55"><div class="ttname"><a href="classal_1_1_lens.html#a15bcb15bc8f4e1fda2d2552185705b55">al::Lens::near</a></div><div class="ttdeci">double near() const</div><div class="ttdoc">Get frustum near plane distance. </div><div class="ttdef"><b>Definition:</b> <a href="al___lens_8hpp_source.html#l00080">al_Lens.hpp:80</a></div></div>
 <div class="ttc" id="classal_1_1_lens_html_a1e3a82ba93fd9428fbc458fa21b9675e"><div class="ttname"><a href="classal_1_1_lens.html#a1e3a82ba93fd9428fbc458fa21b9675e">al::Lens::eyeSepAuto</a></div><div class="ttdeci">double eyeSepAuto() const</div><div class="ttdoc">Get automatic inter-ocular distance. </div><div class="ttdef"><b>Definition:</b> <a href="al___lens_8hpp_source.html#l00084">al_Lens.hpp:84</a></div></div>
 <div class="ttc" id="classal_1_1_lens_html_ad4c678edfa9d56600096821907f457dd"><div class="ttname"><a href="classal_1_1_lens.html#ad4c678edfa9d56600096821907f457dd">al::Lens::getFovyForHeight</a></div><div class="ttdeci">static double getFovyForHeight(double height, double depth)</div><div class="ttdoc">Calculate desired fovy, given the Y height of the border at a specified Z depth: </div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="classal_1_1_lens_html_a93069aa6d4f44c8726604e77ee6dddaa"><div class="ttname"><a href="classal_1_1_lens.html#a93069aa6d4f44c8726604e77ee6dddaa">al::Lens::getFovyForFovX</a></div><div class="ttdeci">static double getFovyForFovX(double fovx, double aspect)</div><div class="ttdoc">Calculate required fovy to produce a specific fovx. </div></div>
 <div class="ttc" id="classal_1_1_lens_html_a078eaa54b1769bb0d3d6e866aad68f85"><div class="ttname"><a href="classal_1_1_lens.html#a078eaa54b1769bb0d3d6e866aad68f85">al::Lens::near</a></div><div class="ttdeci">Lens &amp; near(double v)</div><div class="ttdoc">Set frustum near plane distance. </div><div class="ttdef"><b>Definition:</b> <a href="al___lens_8hpp_source.html#l00074">al_Lens.hpp:74</a></div></div>
 <div class="ttc" id="classal_1_1_lens_html_a9b94b42decf013829f4f45296211ecc4"><div class="ttname"><a href="classal_1_1_lens.html#a9b94b42decf013829f4f45296211ecc4">al::Lens::Lens</a></div><div class="ttdeci">Lens(double fovy=30, double nearClip=0.1, double farClip=100, double focalLength=6, double eyeSep=0.02)</div></div>
@@ -109,15 +86,11 @@ $(document).ready(function(){initNavTree('al___lens_8hpp_source.html','');});
 <div class="ttc" id="classal_1_1_lens_html"><div class="ttname"><a href="classal_1_1_lens.html">al::Lens</a></div><div class="ttdef"><b>Definition:</b> <a href="al___lens_8hpp_source.html#l00055">al_Lens.hpp:55</a></div></div>
 <div class="ttc" id="classal_1_1_lens_html_a5e157ce8626e21a727cc7c3668f6fa0f"><div class="ttname"><a href="classal_1_1_lens.html#a5e157ce8626e21a727cc7c3668f6fa0f">al::Lens::eyeSep</a></div><div class="ttdeci">double eyeSep() const</div><div class="ttdoc">Get eye separation. </div><div class="ttdef"><b>Definition:</b> <a href="al___lens_8hpp_source.html#l00083">al_Lens.hpp:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_8287d74bb027deea89b54e36da9b0527.html">graphics</a></li><li class="navelem"><b>al_Lens.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:14 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

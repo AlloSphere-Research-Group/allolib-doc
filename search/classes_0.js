@@ -27,7 +27,6 @@ var searchData=
   ['ambiencode',['AmbiEncode',['../classal_1_1_ambi_encode.html',1,'al']]],
   ['ambisonicsspatializer',['AmbisonicsSpatializer',['../classal_1_1_ambisonics_spatializer.html',1,'al']]],
   ['app',['App',['../classal_1_1_app.html',1,'al']]],
-  ['appeventhandler',['AppEventHandler',['../classal_1_1_app_1_1_app_event_handler.html',1,'al::App']]],
   ['array',['Array',['../classal_1_1_array.html',1,'al::Array'],['../classgam_1_1_array.html',1,'gam::Array&lt; T, A &gt;']]],
   ['array_3c_20sined_3c_20tv_2c_20domain1_20_3e_20_3e',['Array&lt; SineD&lt; Tv, Domain1 &gt; &gt;',['../classgam_1_1_array.html',1,'gam']]],
   ['array_3c_20siner_3c_20tv_2c_20domain1_20_3e_20_3e',['Array&lt; SineR&lt; Tv, Domain1 &gt; &gt;',['../classgam_1_1_array.html',1,'gam']]],

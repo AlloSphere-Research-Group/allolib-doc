@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_graphics.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_graphics.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_graphics.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -98,21 +75,17 @@ $(document).ready(function(){initNavTree('classal_1_1_graphics.html','');});
 <div class="title">al::Graphics Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::Graphics:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="dynheader">
+Inheritance diagram for al::Graphics:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_graphics__inherit__graph.png" border="0" usemap="#al_1_1_graphics_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_graphics_inherit__map" id="al_1_1_graphics_inherit__map">
 <area shape="rect" id="node2" href="classal_1_1_render_manager.html" title="al::RenderManager" alt="" coords="5,5,148,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Graphics:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::Graphics:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_graphics__coll__graph.png" border="0" usemap="#al_1_1_graphics_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_graphics_coll__map" id="al_1_1_graphics_coll__map">
 <area shape="rect" id="node2" href="classal_1_1_render_manager.html" title="al::RenderManager" alt="" coords="1007,139,1149,165"/>
@@ -127,7 +100,7 @@ $(document).ready(function(){initNavTree('classal_1_1_graphics.html','');});
 <area shape="rect" id="node13" title="STL class. " alt="" coords="206,165,293,192"/>
 <area shape="rect" id="node14" title="STL class. " alt="" coords="5,158,144,199"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -752,12 +725,7 @@ static <a class="el" href="classal_1_1_f_b_o_stack.html">FBOStack</a>&#160;</td>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___graphics_8hpp_source.html#l00071">71</a> of file <a class="el" href="al___graphics_8hpp_source.html">al_Graphics.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba4c33c6787a5e6e0b23ec0d367d3c1209">FUNC_ADD</a> = GL_FUNC_ADD,           </div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba01de1a2ab9254869713c4e8597923bc7">FUNC_SUBTRACT</a> = GL_FUNC_SUBTRACT, </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba2975084c3bf5e0766dfcf6ea586b7dae">FUNC_REVERSE_SUBTRACT</a> =</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        GL_FUNC_REVERSE_SUBTRACT, </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873abac252fa2962eb7999460c7a7fa2b54199">MIN</a> = GL_MIN, </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba92f69b5b837651327e0ef606db7cc4dc">MAX</a> = GL_MAX  </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  };</div><div class="ttc" id="classal_1_1_graphics_html_a5999a858590e252c3f1b98f56a1873aba2975084c3bf5e0766dfcf6ea586b7dae"><div class="ttname"><a href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba2975084c3bf5e0766dfcf6ea586b7dae">al::Graphics::FUNC_REVERSE_SUBTRACT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00074">al_Graphics.hpp:74</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a5999a858590e252c3f1b98f56a1873aba4c33c6787a5e6e0b23ec0d367d3c1209"><div class="ttname"><a href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba4c33c6787a5e6e0b23ec0d367d3c1209">al::Graphics::FUNC_ADD</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00072">al_Graphics.hpp:72</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a5999a858590e252c3f1b98f56a1873abac252fa2962eb7999460c7a7fa2b54199"><div class="ttname"><a href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873abac252fa2962eb7999460c7a7fa2b54199">al::Graphics::MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00076">al_Graphics.hpp:76</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a5999a858590e252c3f1b98f56a1873aba01de1a2ab9254869713c4e8597923bc7"><div class="ttname"><a href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba01de1a2ab9254869713c4e8597923bc7">al::Graphics::FUNC_SUBTRACT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00073">al_Graphics.hpp:73</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a5999a858590e252c3f1b98f56a1873aba92f69b5b837651327e0ef606db7cc4dc"><div class="ttname"><a href="classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873aba92f69b5b837651327e0ef606db7cc4dc">al::Graphics::MAX</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00077">al_Graphics.hpp:77</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8333edb3bdbf594564ef0067ec3dd083"></a>
@@ -783,11 +751,7 @@ static <a class="el" href="classal_1_1_f_b_o_stack.html">FBOStack</a>&#160;</td>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___graphics_8hpp_source.html#l00080">80</a> of file <a class="el" href="al___graphics_8hpp_source.html">al_Graphics.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                  : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a2021f5d7fdae3d23146576097cdd6d1b">BLEND</a> = GL_BLEND, </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6">DEPTH_TEST</a> = GL_DEPTH_TEST, </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083accca79a3da56da68726d516ea49b26e1">SCISSOR_TEST</a> =</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        GL_SCISSOR_TEST,     </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a7d5f4a796dc9f62e54711b4ab05ec7d6">CULL_FACE</a> = GL_CULL_FACE </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  };</div><div class="ttc" id="classal_1_1_graphics_html_a8333edb3bdbf594564ef0067ec3dd083accca79a3da56da68726d516ea49b26e1"><div class="ttname"><a href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083accca79a3da56da68726d516ea49b26e1">al::Graphics::SCISSOR_TEST</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00083">al_Graphics.hpp:83</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a8333edb3bdbf594564ef0067ec3dd083a2021f5d7fdae3d23146576097cdd6d1b"><div class="ttname"><a href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a2021f5d7fdae3d23146576097cdd6d1b">al::Graphics::BLEND</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00081">al_Graphics.hpp:81</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a8333edb3bdbf594564ef0067ec3dd083a7d5f4a796dc9f62e54711b4ab05ec7d6"><div class="ttname"><a href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a7d5f4a796dc9f62e54711b4ab05ec7d6">al::Graphics::CULL_FACE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00085">al_Graphics.hpp:85</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6"><div class="ttname"><a href="classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083a88a2c75dfed184b6ac4955ee84edefe6">al::Graphics::DEPTH_TEST</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00082">al_Graphics.hpp:82</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a75c9c36738c93269d43ef7e6d518f0b6"></a>
@@ -811,10 +775,7 @@ static <a class="el" href="classal_1_1_f_b_o_stack.html">FBOStack</a>&#160;</td>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___graphics_8hpp_source.html#l00088">88</a> of file <a class="el" href="al___graphics_8hpp_source.html">al_Graphics.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac391411833ff33267493980cdfd74ce1">FRONT</a> = GL_FRONT,                  </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ab0dab784ae6044ab7913c52e31166ef2">BACK</a> = GL_BACK,                    </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac533c55274271636a70ba436455a3710">FRONT_AND_BACK</a> = GL_FRONT_AND_BACK </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  };</div><div class="ttc" id="classal_1_1_graphics_html_a75c9c36738c93269d43ef7e6d518f0b6ac533c55274271636a70ba436455a3710"><div class="ttname"><a href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac533c55274271636a70ba436455a3710">al::Graphics::FRONT_AND_BACK</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00091">al_Graphics.hpp:91</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a75c9c36738c93269d43ef7e6d518f0b6ab0dab784ae6044ab7913c52e31166ef2"><div class="ttname"><a href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ab0dab784ae6044ab7913c52e31166ef2">al::Graphics::BACK</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00090">al_Graphics.hpp:90</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a75c9c36738c93269d43ef7e6d518f0b6ac391411833ff33267493980cdfd74ce1"><div class="ttname"><a href="classal_1_1_graphics.html#a75c9c36738c93269d43ef7e6d518f0b6ac391411833ff33267493980cdfd74ce1">al::Graphics::FRONT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00089">al_Graphics.hpp:89</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7f8948796cde3c2b436d8c818dd4b699"></a>
@@ -838,10 +799,7 @@ static <a class="el" href="classal_1_1_f_b_o_stack.html">FBOStack</a>&#160;</td>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="al___graphics_8hpp_source.html#l00094">94</a> of file <a class="el" href="al___graphics_8hpp_source.html">al_Graphics.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                   : <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699a25995bc288d68b3a55df788498f2e30b">POINT</a> = GL_POINT, </div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699ad1adbf6b3580f010b0a1858970775d1e">LINE</a> = GL_LINE,   </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699a295168b83d599d656fb815ec379f4f42">FILL</a> = GL_FILL    </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  };</div><div class="ttc" id="classal_1_1_graphics_html_a7f8948796cde3c2b436d8c818dd4b699a295168b83d599d656fb815ec379f4f42"><div class="ttname"><a href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699a295168b83d599d656fb815ec379f4f42">al::Graphics::FILL</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00097">al_Graphics.hpp:97</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a7f8948796cde3c2b436d8c818dd4b699ad1adbf6b3580f010b0a1858970775d1e"><div class="ttname"><a href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699ad1adbf6b3580f010b0a1858970775d1e">al::Graphics::LINE</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00096">al_Graphics.hpp:96</a></div></div>
-<div class="ttc" id="classal_1_1_graphics_html_a7f8948796cde3c2b436d8c818dd4b699a25995bc288d68b3a55df788498f2e30b"><div class="ttname"><a href="classal_1_1_graphics.html#a7f8948796cde3c2b436d8c818dd4b699a25995bc288d68b3a55df788498f2e30b">al::Graphics::POINT</a></div><div class="ttdef"><b>Definition:</b> <a href="al___graphics_8hpp_source.html#l00095">al_Graphics.hpp:95</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -967,24 +925,18 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="al___render_manager_8hpp_source.html#l00154">154</a> of file <a class="el" href="al___render_manager_8hpp_source.html">al_RenderManager.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="classal_1_1_render_manager.html#a2fb48fab999fedd9cc42a678329a02e2">rotate</a>(<a class="code" href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">angle</a>, axis[0],axis[1],axis[2]);</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div><div class="ttc" id="classal_1_1_render_manager_html_a2fb48fab999fedd9cc42a678329a02e2"><div class="ttname"><a href="classal_1_1_render_manager.html#a2fb48fab999fedd9cc42a678329a02e2">al::RenderManager::rotate</a></div><div class="ttdeci">void rotate(float angle, float x=0., float y=0., float z=1.)</div></div>
-<div class="ttc" id="namespaceal_html_a7be5747e8d4348af7f9dda1bbf480ee4"><div class="ttname"><a href="namespaceal.html#a7be5747e8d4348af7f9dda1bbf480ee4">al::angle</a></div><div class="ttdeci">T angle(const Vec&lt; N, T &gt; &amp;a, const Vec&lt; N, T &gt; &amp;b)</div><div class="ttdoc">Returns angle, in interval [0, pi], between two vectors. </div><div class="ttdef"><b>Definition:</b> <a href="al___vec_8hpp_source.html#l00541">al_Vec.hpp:541</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___graphics_8hpp_source.html">al_Graphics.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_graphics.html">Graphics</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_array.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_array.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_array.html">Array</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -98,29 +75,25 @@ $(document).ready(function(){initNavTree('classal_1_1_array.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="al___array_8hpp_source.html">al/util/al_Array.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for al::Array:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p><code>#include &lt;<a class="el" href="al___array_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/al_Array.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for al::Array:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_array__inherit__graph.png" border="0" usemap="#al_1_1_array_inherit__map" alt="Inheritance graph"/></div>
 <map name="al_1_1_array_inherit__map" id="al_1_1_array_inherit__map">
 <area shape="rect" id="node3" href="classal_1_1_voxels.html" title="al::Voxels" alt="" coords="5,155,91,181"/>
 <area shape="rect" id="node2" href="struct_allo_array.html" title="AlloArray" alt="" coords="7,5,89,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for al::Array:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for al::Array:</div>
+<div class="dyncontent">
 <div class="center"><img src="classal_1_1_array__coll__graph.png" border="0" usemap="#al_1_1_array_coll__map" alt="Collaboration graph"/></div>
 <map name="al_1_1_array_coll__map" id="al_1_1_array_coll__map">
 <area shape="rect" id="node2" href="struct_allo_array.html" title="AlloArray" alt="" coords="29,95,111,121"/>
 <area shape="rect" id="node3" href="struct_allo_array_header.html" title="AlloArrayHeader" alt="" coords="5,5,135,32"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -650,10 +623,7 @@ template&lt;typename T &gt; </div>
 <p>Reads the linearly interpolated component values into val array </p>
 
 <p class="definition">Definition at line <a class="el" href="al___array_8hpp_source.html#l00419">419</a> of file <a class="el" href="al___array_8hpp_source.html">al_Array.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                                                                           {</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    x = wrap&lt;double&gt;(x, (double)<a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">dim</a>[0], 0.);</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="comment">// convert 0..1 field indices to 0..(d-1) cell indices</span></div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> xa = (<span class="keyword">const</span> unsigned)DOUBLE_FLOOR(x);</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">unsigned</span> xb = xa+1; <span class="keywordflow">if</span> (xb == <a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">dim</a>[0]) xb = 0;</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="comment">// get the normalized 0..1 interp factors, of x,y,z:</span></div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">double</span> faaa = DOUBLE_FRAC(x);</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">double</span> fbaa = 1.f - faaa;</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="comment">// get the cell addresses for each neighbor:</span></div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    T * paaa = cell&lt;T&gt;(xa);</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    T * pbaa = cell&lt;T&gt;(xb);</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">// for each plane of the field, do the interp:</span></div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">for</span> (uint8_t p=0; p&lt;<a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#aa99c9687a7fc5da91e030efeacb05bfa">components</a>; p++) {</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        val[p] =    (paaa[p] * faaa) + (pbaa[p] * fbaa);</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    }</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div><div class="ttc" id="struct_allo_array_header_html_aa99c9687a7fc5da91e030efeacb05bfa"><div class="ttname"><a href="struct_allo_array_header.html#aa99c9687a7fc5da91e030efeacb05bfa">AlloArrayHeader::components</a></div><div class="ttdeci">uint8_t components</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00131">al_Array.h:131</a></div></div>
-<div class="ttc" id="struct_allo_array_html_a1217a22a9db55146cc5ee835fe4e6f7d"><div class="ttname"><a href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">AlloArray::header</a></div><div class="ttdeci">AlloArrayHeader header</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00160">al_Array.h:160</a></div></div>
-<div class="ttc" id="struct_allo_array_header_html_ad4fa1a78fe51a24b7826034842c8adab"><div class="ttname"><a href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">AlloArrayHeader::dim</a></div><div class="ttdeci">uint32_t dim[ALLO_ARRAY_MAX_DIMS]</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00137">al_Array.h:137</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af23cdf06d0d567517b47ab095b9be546"></a>
@@ -726,10 +696,7 @@ template&lt;typename T &gt; </div>
 <p>AKA trilinear splat writes the linearly interpolated plane values from val array into array </p>
 
 <p class="definition">Definition at line <a class="el" href="al___array_8hpp_source.html#l00550">550</a> of file <a class="el" href="al___array_8hpp_source.html">al_Array.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                                                                           {</div><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    x = wrap&lt;double&gt;(x, (double)<a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">dim</a>[0], 0.);</div><div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> xa = (<span class="keyword">const</span> unsigned)DOUBLE_FLOOR(x);</div><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordtype">unsigned</span> xb = xa+1; <span class="keywordflow">if</span> (xb == <a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">dim</a>[0]) xb = 0;</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="comment">// get the normalized 0..1 interp factors, of x,y,z:</span></div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordtype">double</span> xbf = DOUBLE_FRAC(x);</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keywordtype">double</span> xaf = 1.f - xbf;</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="comment">// get the interpolation corner weights:</span></div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="keywordtype">double</span> faaa = xaf;</div><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordtype">double</span> fbaa = xbf;</div><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    T * paaa = cell&lt;T&gt;(xa);</div><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    T * pbaa = cell&lt;T&gt;(xb);</div><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">// for each plane of the field, do the 3D interp:</span></div><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordflow">for</span> (uint8_t p=0; p&lt;<a class="code" href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">header</a>.<a class="code" href="struct_allo_array_header.html#aa99c9687a7fc5da91e030efeacb05bfa">components</a>; p++) {</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        T tmp = val[p];</div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        paaa[p] += tmp * faaa;</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        pbaa[p] += tmp * fbaa;</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    }</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;}</div><div class="ttc" id="struct_allo_array_header_html_aa99c9687a7fc5da91e030efeacb05bfa"><div class="ttname"><a href="struct_allo_array_header.html#aa99c9687a7fc5da91e030efeacb05bfa">AlloArrayHeader::components</a></div><div class="ttdeci">uint8_t components</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00131">al_Array.h:131</a></div></div>
-<div class="ttc" id="struct_allo_array_html_a1217a22a9db55146cc5ee835fe4e6f7d"><div class="ttname"><a href="struct_allo_array.html#a1217a22a9db55146cc5ee835fe4e6f7d">AlloArray::header</a></div><div class="ttdeci">AlloArrayHeader header</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00160">al_Array.h:160</a></div></div>
-<div class="ttc" id="struct_allo_array_header_html_ad4fa1a78fe51a24b7826034842c8adab"><div class="ttname"><a href="struct_allo_array_header.html#ad4fa1a78fe51a24b7826034842c8adab">AlloArrayHeader::dim</a></div><div class="ttdeci">uint32_t dim[ALLO_ARRAY_MAX_DIMS]</div><div class="ttdef"><b>Definition:</b> <a href="al___array_8h_source.html#l00137">al_Array.h:137</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -777,15 +744,11 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="al___array_8hpp_source.html">al_Array.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_array.html">Array</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:16 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

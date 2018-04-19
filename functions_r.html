@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -57,20 +44,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_r.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -368,14 +341,13 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classal_1_1osc_1_1_message.html#a847176a74e3f95d38fdbf2c7650c729f">al::osc::Message</a>
 </li>
 <li>resize()
-: <a class="el" href="classal_1_1_app_1_1_app_event_handler.html#a293ae88e7fc832d5356984bc3700e867">al::App::AppEventHandler</a>
-, <a class="el" href="classal_1_1_buffer.html#a521c18b768d939629a360056644c28ec">al::Buffer&lt; T, Alloc &gt;</a>
+: <a class="el" href="classal_1_1_buffer.html#a521c18b768d939629a360056644c28ec">al::Buffer&lt; T, Alloc &gt;</a>
 , <a class="el" href="classal_1_1_image.html#a6a672359be983d9b4f5b6dcb5d4cdb4b">al::Image</a>
 , <a class="el" href="classal_1_1_r_b_o.html#aada3d7113d41dc335238890813fef02b">al::RBO</a>
 , <a class="el" href="classal_1_1_ring_buffer.html#ae205f05d902ef9139c257b95b54d89cf">al::RingBuffer&lt; T, Alloc &gt;</a>
-, <a class="el" href="classal_1_1_texture.html#aad37f32ba372b83d26eb5dd547b09ea6">al::Texture</a>
+, <a class="el" href="classal_1_1_texture.html#a5d2efdd51648152c48ba429b8096ba39">al::Texture</a>
 , <a class="el" href="classal_1_1_threads.html#accc7df88f76a65d7b336564819e4c4c5">al::Threads&lt; ThreadFunction &gt;</a>
-, <a class="el" href="classal_1_1_window_app.html#ae3d8135953f7f46b7b66001129a748d7">al::WindowApp</a>
+, <a class="el" href="classal_1_1_window_app.html#a1606d2fe53ef18ccf32d8b0846d7d4ef">al::WindowApp</a>
 , <a class="el" href="classal_1_1_window_event_handler.html#a7dec4ce57a4af4d90542059aad98a192">al::WindowEventHandler</a>
 , <a class="el" href="classgam_1_1_array_base.html#a587949e2eed317e83dbc00de95da9b82">gam::ArrayBase&lt; T, S, A &gt;</a>
 , <a class="el" href="classgam_1_1_c_f_f_t.html#a412fffc7de2f71eec2a0dd9861ced04c">gam::CFFT&lt; T &gt;</a>
@@ -414,7 +386,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>RGB
 : <a class="el" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7aa71c91edff67be4dad3365167c7abcce">al::Image</a>
-, <a class="el" href="structal_1_1_r_g_b.html#a3c224c385664b721b975cd23dfabc66a">al::RGB</a>
+, <a class="el" href="structal_1_1_r_g_b.html#a4c405662d89cdd277b275a50f9fe16f3">al::RGB</a>
 </li>
 <li>rgba
 : <a class="el" href="structal_1_1_colori.html#a61164f89889fb277ccc5c6d715a18a95">al::Colori</a>
@@ -423,19 +395,19 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a20b7af7ab42c16dc92d09469df5ebfce">al::Image</a>
 </li>
 <li>ribbonize()
-: <a class="el" href="classal_1_1_mesh.html#a472b534442db7203fe77ec15b93ad7ed">al::Mesh</a>
-</li>
-<li>right()
-: <a class="el" href="classal_1_1_mouse.html#aacd04cf56e96e71e57d065ea0c63459c">al::Mouse</a>
+: <a class="el" href="classal_1_1_mesh.html#afd51dd432feb1038f4f04179ca79b70d">al::Mesh</a>
 </li>
 <li>RIGHT
 : <a class="el" href="classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11faec736b688a1e8d3d46f37b2f600b86c6">al::Mouse</a>
+</li>
+<li>right()
+: <a class="el" href="classal_1_1_mouse.html#aacd04cf56e96e71e57d065ea0c63459c">al::Mouse</a>
 </li>
 <li>Ring()
 : <a class="el" href="classgam_1_1_ring.html#ad87e5b1c8ebef534c3cc9a619f18df4e">gam::Ring&lt; T, A &gt;</a>
 </li>
 <li>RingBuffer()
-: <a class="el" href="classal_1_1_ring_buffer.html#ad2a1f998739cc3cad41fc1799aac79f8">al::RingBuffer&lt; T, Alloc &gt;</a>
+: <a class="el" href="classal_1_1_ring_buffer.html#af461e9bc3de9543b3b6f5e418d81fd45">al::RingBuffer&lt; T, Alloc &gt;</a>
 </li>
 <li>RMul()
 : <a class="el" href="structgam_1_1gen_1_1_r_mul.html#a6b2b048f100bdbfe9897ae1e664b7a4e">gam::gen::RMul&lt; T &gt;</a>
@@ -465,7 +437,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="classgam_1_1_s_t_f_t.html#a9ace346859caeecc5ca3474725b5e356">gam::STFT</a>
 </li>
 <li>rotateGlobal()
-: <a class="el" href="classal_1_1_mat.html#a98871db9735c75b86d9f40dc18cac92d">al::Mat&lt; N, T &gt;</a>
+: <a class="el" href="classal_1_1_mat.html#afb34d9cf6ac2e36d7f5e83653adb6d72">al::Mat&lt; N, T &gt;</a>
 </li>
 <li>rotateHue()
 : <a class="el" href="structal_1_1_h_c_lab.html#a6207e86c0fa8a83016058ec903189bf1">al::HCLab</a>
@@ -498,14 +470,11 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:13 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:23 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

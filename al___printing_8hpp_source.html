@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('al___printing_8hpp_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('al___printing_8hpp_source.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_5ceb6323349e76cab580cb54c0ad9cd7.html">system</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">al_Printing.hpp</div>  </div>
@@ -94,19 +71,15 @@ $(document).ready(function(){initNavTree('al___printing_8hpp_source.html','');})
 <div class="ttc" id="namespaceal_html_af5ed48ee87cb475c4897c4bec6fcdb4d"><div class="ttname"><a href="namespaceal.html#af5ed48ee87cb475c4897c4bec6fcdb4d">al::intensityToASCII</a></div><div class="ttdeci">char intensityToASCII(float v)</div><div class="ttdoc">Returns an ASCII character with intensity most closely matching a value in [0,1) </div><div class="ttdef"><b>Definition:</b> <a href="al___printing_8hpp_source.html#l00119">al_Printing.hpp:119</a></div></div>
 <div class="ttc" id="namespaceal_html_a961e399872ee1f050dd69256913ee151"><div class="ttname"><a href="namespaceal.html#a961e399872ee1f050dd69256913ee151">al::printPlot</a></div><div class="ttdeci">void printPlot(float value, uint32_t width=50, bool spaces=true, const char *point=&quot;o&quot;)</div><div class="ttdoc">Print signed unit value on a horizontal plot. </div></div>
 <div class="ttc" id="namespaceal_html_afb113be6c0a6feeb623b22a5ec7fe0ca"><div class="ttname"><a href="namespaceal.html#afb113be6c0a6feeb623b22a5ec7fe0ca">al::print</a></div><div class="ttdeci">void print(const T *arr, int size, const char *append=&quot;&quot;)</div><div class="ttdoc">Print an array of numbers. </div></div>
-<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00020">al_App.hpp:20</a></div></div>
+<div class="ttc" id="namespaceal_html"><div class="ttname"><a href="namespaceal.html">al</a></div><div class="ttdoc">The SynthRecorder class records the events arriving at a PolySynth. </div><div class="ttdef"><b>Definition:</b> <a href="al___app_8hpp_source.html#l00016">al_App.hpp:16</a></div></div>
 <div class="ttc" id="namespaceal_html_a21a3073f765c23f83f53474456cf025b"><div class="ttname"><a href="namespaceal.html#a21a3073f765c23f83f53474456cf025b">al::println</a></div><div class="ttdeci">void println(const T *arr, int size)</div><div class="ttdoc">Print an array of numbers with new line. </div><div class="ttdef"><b>Definition:</b> <a href="al___printing_8hpp_source.html#l00074">al_Printing.hpp:74</a></div></div>
 <div class="ttc" id="namespaceal_html_a4c466dcfdbf1869d916c7513a6e67036"><div class="ttname"><a href="namespaceal.html#a4c466dcfdbf1869d916c7513a6e67036">al::print2D</a></div><div class="ttdeci">void print2D(const T *arr, int nx, int ny, FILE *fp=stdout)</div><div class="ttdoc">Prints 2D array of intensity values. </div><div class="ttdef"><b>Definition:</b> <a href="al___printing_8hpp_source.html#l00151">al_Printing.hpp:151</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9c8ff35e2470abc117df8fc4e6cb35e7.html">andres</a></li><li class="navelem"><a class="el" href="dir_eccdb341dd3e6769b04a1e134b1d1b7f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_c996a58f903345540fb8ca322348f4de.html">src</a></li><li class="navelem"><a class="el" href="dir_54ee6df1778fb597f704799d5c102d0c.html">Allostuff</a></li><li class="navelem"><a class="el" href="dir_2d8e72e12f7340deb45ba46c1762c545.html">allolib</a></li><li class="navelem"><a class="el" href="dir_2920a22084c7c33daed42cbfd3579788.html">include</a></li><li class="navelem"><a class="el" href="dir_3b3be0942b32600ff50f177219d0c997.html">al</a></li><li class="navelem"><a class="el" href="dir_6df5e761c7d0b3bcf5a9ff8762267e49.html">core</a></li><li class="navelem"><a class="el" href="dir_5ceb6323349e76cab580cb54c0ad9cd7.html">system</a></li><li class="navelem"><b>al_Printing.hpp</b></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:10 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:15 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

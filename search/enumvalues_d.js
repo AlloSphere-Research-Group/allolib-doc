@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['tcp',['TCP',['../classal_1_1_socket.html#afcd098fcaa5710818638a3eb2fa9469fad5dea746c19d63f7161528930074ebff',1,'al::Socket']]],
-  ['trunc',['TRUNC',['../namespacegam_1_1ipl.html#a2ba6fb4c7a479b5e6798bb44295ebaaea1fcfe54fed9ebb301b162b71ba44e36e',1,'gam::ipl']]]
+  ['raw',['RAW',['../classgam_1_1_sound_file.html#ab272adac7232ae3d8c14b90630beac89a46920f825b7973ae0fb1c31cac1d23f6',1,'gam::SoundFile']]],
+  ['rectangle',['RECTANGLE',['../tbl_8h.html#af63b63197fb97f959551cdc7e7325671aa2fce37e979dd3b6f8a97a4e5bb5ac79',1,'gam']]],
+  ['rgb',['RGB',['../classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7aa71c91edff67be4dad3365167c7abcce',1,'al::Image']]],
+  ['rgba',['RGBA',['../classal_1_1_image.html#a3333f6a52ce15d5ccbcf9250039314a7a20b7af7ab42c16dc92d09469df5ebfce',1,'al::Image']]],
+  ['right',['RIGHT',['../classal_1_1_mouse.html#a6e0dd50c155e28df537007b07d68a11faec736b688a1e8d3d46f37b2f600b86c6',1,'al::Mouse']]],
+  ['round',['ROUND',['../namespacegam_1_1ipl.html#a2ba6fb4c7a479b5e6798bb44295ebaaea8bf9be554aae22608228233c2d60d9ea',1,'gam::ipl']]]
 ];

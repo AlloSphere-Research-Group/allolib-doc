@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -56,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classal_1_1_synth_sequencer.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +57,11 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_sequencer.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_sequencer.html">SynthSequencer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -98,7 +75,7 @@ $(document).ready(function(){initNavTree('classal_1_1_synth_sequencer.html','');
 <p>Event Sequencer triggering audio visual "notes".  
  <a href="classal_1_1_synth_sequencer.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="al___synth_sequencer_8hpp_source.html">al/util/ui/al_SynthSequencer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="al___synth_sequencer_8hpp_source.html">/home/andres/Documents/src/Allostuff/allolib/include/al/util/ui/al_SynthSequencer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -147,7 +124,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Sequences can be created programatically: </p><div class="fragment"><div class="line">SynthSequencer seq;</div><div class="line">seq.add&lt;SineEnv&gt;( 0  ).<span class="keyword">set</span>(3.5, 260, 0.3, .011, .2);</div><div class="line">seq.add&lt;SineEnv&gt;( 0  ).<span class="keyword">set</span>(3.5, 510, 0.3, .011, .2);</div><div class="line">seq.add&lt;SineEnv&gt;( 3.5).set(3.5, 233, 0.3, .011, .2);</div><div class="line">seq.add&lt;SineEnv&gt;( 3.5).set(3.5, 340, 0.3, .011, .2);</div><div class="line">seq.add&lt;SineEnv&gt;( 3.5).set(7.5, 710, 0.3, 1, 2);</div></div><!-- fragment --><p>The <a class="el" href="classal_1_1_synth_sequencer.html#a638bf3f6be50df5d99cfc5926b593baf" title="Insert this function within the audio callback. ">render()</a> functions need to be places within their relevant contexts like the audio callback (e.g. onSound() ) or the graphics callback (e.g. onDraw())</p>
 <p>A time master can be selected in the constructor to define where the sequencer runs. TIME_MASTER_AUDIO is more precise in time, but you might want to use TIME_MASTER_GRAPHICS if your "note" produces no audio. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00478">478</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00514">514</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7fccff8bba4a39b31d5bfccd8f76907a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fccff8bba4a39b31d5bfccd8f76907a">&#9670;&nbsp;</a></span>add()</h2>
@@ -189,9 +166,8 @@ template&lt;class TSynthVoice &gt; </div>
 <p>This function is not thread safe, so you must add all your notes before starting the sequencer context (e.g. the audio callback if using TIME_MASTER_AUDIO). If you need to insert events on the fly, use triggerOn() directly on the <a class="el" href="classal_1_1_poly_synth.html">PolySynth</a> member</p>
 <p>The TSynthVoice template must be a class inherited from <a class="el" href="classal_1_1_synth_voice.html" title="The SynthVoice class. ">SynthVoice</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00762">762</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                                                                  {</div><div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    std::list&lt;SynthSequencerEvent&gt;::iterator insertedEvent;</div><div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    TSynthVoice *newVoice = mPolySynth.<a class="code" href="classal_1_1_poly_synth.html#af87383f2c28f2d82aff00c36c6d96f1e">getVoice</a>&lt;TSynthVoice&gt;();</div><div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    std::unique_lock&lt;std::mutex&gt; lk(mEventLock);</div><div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="comment">// Insert into event list, sorted.</span></div><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keyword">auto</span> position = mEvents.begin();</div><div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">while</span>(position != mEvents.end() &amp;&amp; position-&gt;startTime &lt; startTime) {</div><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        position++;</div><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    }</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    insertedEvent = mEvents.insert(position, SynthSequencerEvent());</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    insertedEvent-&gt;startTime = startTime;</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    insertedEvent-&gt;duration = duration;</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    insertedEvent-&gt;voice = newVoice;</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">return</span> *newVoice;</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;}</div><div class="ttc" id="classal_1_1_poly_synth_html_af87383f2c28f2d82aff00c36c6d96f1e"><div class="ttname"><a href="classal_1_1_poly_synth.html#af87383f2c28f2d82aff00c36c6d96f1e">al::PolySynth::getVoice</a></div><div class="ttdeci">TSynthVoice * getVoice()</div><div class="ttdoc">Get a reference to a voice. </div><div class="ttdef"><b>Definition:</b> <a href="al___synth_sequencer_8hpp_source.html#l00719">al_SynthSequencer.hpp:719</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00815">815</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a979b4f8affd77d68db95a267da2f8543"></a>
@@ -226,9 +202,8 @@ template&lt;class TSynthVoice &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00518">518</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                                         {</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        io.user&lt;SynthSequencer&gt;().<a class="code" href="classal_1_1_synth_sequencer.html#a638bf3f6be50df5d99cfc5926b593baf">render</a>(io);</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    }</div><div class="ttc" id="classal_1_1_synth_sequencer_html_a638bf3f6be50df5d99cfc5926b593baf"><div class="ttname"><a href="classal_1_1_synth_sequencer.html#a638bf3f6be50df5d99cfc5926b593baf">al::SynthSequencer::render</a></div><div class="ttdeci">void render(AudioIOData &amp;io)</div><div class="ttdoc">Insert this function within the audio callback. </div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00554">554</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a038f7ec4551de33ab6dab77a3f054118"></a>
@@ -256,23 +231,19 @@ template&lt;class TSynthVoice &gt; </div>
 </div><div class="memdoc">
 <p>Set the frame rate at which the graphics run (i.e. how often <a class="el" href="classal_1_1_synth_sequencer.html#a746d0b91708522be0f920a8e8e9aa52c" title="Insert this function within the graphics callback. ">render(Graphics &amp;g)</a> will be called </p>
 
-<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00494">494</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;{mFps = fps;} <span class="comment">// TODO this should be handled through Gamma Domains</span></div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="al___synth_sequencer_8hpp_source.html#l00530">530</a> of file <a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="al___synth_sequencer_8hpp_source.html">al_SynthSequencer.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespaceal.html">al</a></li><li class="navelem"><a class="el" href="classal_1_1_synth_sequencer.html">SynthSequencer</a></li>
-    <li class="footer">Generated on Tue Apr 10 2018 11:13:11 for Allolib by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Thu Apr 19 2018 09:37:17 for Allolib by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>
