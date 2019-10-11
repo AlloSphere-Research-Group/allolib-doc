@@ -1,0 +1,18 @@
+digraph "gam::EchoCSine&lt; Tv, Si, LoopFilter, Td &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::EchoCSine\< Tv,\l Si, LoopFilter, Td \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Echo with damped complex sinusoidal response."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::Delay\< Complex\l\< Tv \>, Si, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_delay.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::ArrayPow2\< Complex\l\< Tv \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array_pow2.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::ArrayBase\< Complex\l\< Tv \>, SizeArrayPow2,\l gam::Allocator\< Complex\l\< Tv \> \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array_base.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="gam::Allocator\< Complex\l\< Tv \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_allocator.html",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="Td",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

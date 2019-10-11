@@ -1,0 +1,37 @@
+digraph "gam::gen::Val&lt; T &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gam::gen::Val\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Single value generator."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::gen::Default\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_default.html",tooltip="Generates the default value of its associated type."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::gen::Impulse\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_impulse.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::gen::Nyquist\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_nyquist.html",tooltip="Generates a Nyquist signal, i.e., -1, 1, -1, 1, …"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="gam::gen::RAdd\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_add.html",tooltip="Recursive add generator that generates lines."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="gam::gen::RAddWrap\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_add_wrap.html",tooltip="Recursive addition wrapped in interval [min, max)"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="gam::gen::Sin\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_sin.html",tooltip="Sinusoid sequence generator."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="gam::gen::RAdd1\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_add1.html",tooltip="Recursive add 1 generator (iota function)"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="gam::gen::RAddN\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_add_n.html",tooltip="Recursive add integer generator."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="gam::gen::RCos\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_cos.html",tooltip="Cosine generator based on recursive formula x0 = c x1 - x2."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="gam::gen::Recip\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_recip.html",tooltip="Reciprocal sequence generator."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node12 [label="gam::gen::RMul\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_mul.html",tooltip="Recursive multiply generator."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node13 [label="gam::gen::RMulAdd\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_mul_add.html",tooltip="Recursive multiply-add generator."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node14 [label="gam::gen::RSin\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_sin.html",tooltip="Sinusoidal generator based on recursive formula x0 = c x1 - x2."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node15 [label="gam::gen::RSin2\< T \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_sin2.html",tooltip=" "];
+}

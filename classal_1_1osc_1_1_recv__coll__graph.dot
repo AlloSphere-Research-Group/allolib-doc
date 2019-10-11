@@ -1,0 +1,24 @@
+digraph "al::osc::Recv"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::osc::Recv",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Socket for receiving OSC packets."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mBuffer" ,fontname="FreeSans.ttf"];
+  Node2 [label="std::vector\< char \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mHandlers" ,fontname="FreeSans.ttf"];
+  Node3 [label="std::vector\< al::osc\l::PacketHandler * \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node4 [label="al::osc::PacketHandler",height=0.2,width=0.4,color="black",URL="$classal_1_1osc_1_1_packet_handler.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mAddress" ,fontname="FreeSans.ttf"];
+  Node5 [label="std::string",height=0.2,width=0.4,color="grey75",tooltip="STL class."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="std::basic_string\<\l char \>",height=0.2,width=0.4,color="grey75",tooltip="STL class."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mThread" ,fontname="FreeSans.ttf"];
+  Node7 [label="al::Thread",height=0.2,width=0.4,color="black",URL="$classal_1_1_thread.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mCFunc" ,fontname="FreeSans.ttf"];
+  Node8 [label="al::CThreadFunction",height=0.2,width=0.4,color="black",URL="$structal_1_1_c_thread_function.html",tooltip="C-style thread function with user data."];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="al::ThreadFunction",height=0.2,width=0.4,color="black",URL="$structal_1_1_thread_function.html",tooltip="Function object interface used by thread."];
+}

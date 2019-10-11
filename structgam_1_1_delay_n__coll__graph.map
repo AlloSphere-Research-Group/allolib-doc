@@ -1,6 +1,0 @@
-<map id="gam::DelayN&lt; T, A &gt;" name="gam::DelayN&lt; T, A &gt;">
-<area shape="rect" id="node2" href="$classgam_1_1_ring.html" title="Ring buffer. " alt="" coords="57,261,200,288"/>
-<area shape="rect" id="node3" href="$classgam_1_1_array.html" title="Resizable array. " alt="" coords="54,185,203,212"/>
-<area shape="rect" id="node4" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; T,\l SizeArray, A \&gt;" alt="" coords="52,95,205,136"/>
-<area shape="rect" id="node6" href="$structgam_1_1_size_array.html" title="Size functor for Array. " alt="" coords="68,5,189,32"/>
-</map>

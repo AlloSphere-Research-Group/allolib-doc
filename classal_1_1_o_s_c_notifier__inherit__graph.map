@@ -1,5 +1,0 @@
-<map id="al::OSCNotifier" name="al::OSCNotifier">
-<area shape="rect" id="node2" href="$classal_1_1_parameter_server.html" title="The ParameterServer class creates an OSC server to receive parameter values. " alt="" coords="5,80,156,107"/>
-<area shape="rect" id="node3" href="$classal_1_1_preset_server.html" title="al::PresetServer" alt="" coords="181,80,306,107"/>
-<area shape="rect" id="node4" href="$classal_1_1_sequence_server.html" title="al::SequenceServer" alt="" coords="330,80,477,107"/>
-</map>

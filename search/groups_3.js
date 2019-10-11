@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['effects',['Effects',['../group___effects.html',1,'']]],
-  ['envelopes',['Envelopes',['../group___envelopes.html',1,'']]]
+  ['i_2fo_2817',['I/O',['../group___i_o.html',1,'']]]
 ];

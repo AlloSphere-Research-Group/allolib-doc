@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="al::SynthVoice",height=0.2,width=0.4,color="black",URL="$classal_1_1_synth_voice.html",tooltip="The SynthVoice class."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node1 [label="al::PositionedVoice",height=0.2,width=0.4,color="black",URL="$classal_1_1_positioned_voice.html",tooltip="The PositionedVoice class."];
+}

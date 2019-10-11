@@ -1,0 +1,26 @@
+var classal_1_1_parameter_m_i_d_i =
+[
+    [ "ControlBinding", "structal_1_1_parameter_m_i_d_i_1_1_control_binding.html", "structal_1_1_parameter_m_i_d_i_1_1_control_binding" ],
+    [ "IncrementBinding", "structal_1_1_parameter_m_i_d_i_1_1_increment_binding.html", "structal_1_1_parameter_m_i_d_i_1_1_increment_binding" ],
+    [ "NoteBinding", "structal_1_1_parameter_m_i_d_i_1_1_note_binding.html", "structal_1_1_parameter_m_i_d_i_1_1_note_binding" ],
+    [ "ToggleBinding", "structal_1_1_parameter_m_i_d_i_1_1_toggle_binding.html", "structal_1_1_parameter_m_i_d_i_1_1_toggle_binding" ],
+    [ "ParameterMIDI", "classal_1_1_parameter_m_i_d_i.html#a378d349cea3f6ab521ac35de865eab99", null ],
+    [ "ParameterMIDI", "classal_1_1_parameter_m_i_d_i.html#a7fb62b07d7d24332cd9a58105c227d8f", null ],
+    [ "bindTo", "classal_1_1_parameter_m_i_d_i.html#a642e71ebb9aa8258524358ef0c7fdc62", null ],
+    [ "clearBindings", "classal_1_1_parameter_m_i_d_i.html#ad99b0da60968216db73aebc4d147f4c7", null ],
+    [ "close", "classal_1_1_parameter_m_i_d_i.html#aee2ebafe8b90259d573b43ac8d72cd66", null ],
+    [ "connectControl", "classal_1_1_parameter_m_i_d_i.html#aa82afa2a8bf3d85642cf375f005ffc2a", null ],
+    [ "connectControl", "classal_1_1_parameter_m_i_d_i.html#a1c3b35e174772f53a48c0089b767fbcc", null ],
+    [ "connectNoteToIncrement", "classal_1_1_parameter_m_i_d_i.html#afbe5b6856cb838e3907471d31dccf8c4", null ],
+    [ "connectNoteToToggle", "classal_1_1_parameter_m_i_d_i.html#a448e2d9e6f673cb35066c47cb2d9625f", null ],
+    [ "connectNoteToValue", "classal_1_1_parameter_m_i_d_i.html#a0356219103441930eb8d431e6f7f0344", null ],
+    [ "getCurrentControlBindings", "classal_1_1_parameter_m_i_d_i.html#a85acb6e6358200c6ae63628bc48882d0", null ],
+    [ "getCurrentNoteBindings", "classal_1_1_parameter_m_i_d_i.html#a1db52afdb5a709200ace50a1eb74b139", null ],
+    [ "init", "classal_1_1_parameter_m_i_d_i.html#a0772f49d2b075f70af31fa6b0f9aa022", null ],
+    [ "isOpen", "classal_1_1_parameter_m_i_d_i.html#ae146a084992b123cba9dd476693c0f8d", null ],
+    [ "onMIDIMessage", "classal_1_1_parameter_m_i_d_i.html#ae92ce4748495531b5b2a05e09abbebbb", null ],
+    [ "open", "classal_1_1_parameter_m_i_d_i.html#a77f02aa3b7b05b34fc6e9063d1eb071f", null ],
+    [ "open", "classal_1_1_parameter_m_i_d_i.html#a0bc2d4fd7b36bbf4c17173712f3e82e6", null ],
+    [ "verbose", "classal_1_1_parameter_m_i_d_i.html#aba2fbc6a8cf1d477b25e7b0c7a260cb9", null ],
+    [ "mBindings", "classal_1_1_parameter_m_i_d_i.html#aca60c6634c46ba69cd64fcae372314b4", null ]
+];

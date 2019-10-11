@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classal_1_1_m_i_d_i_message_handler.html" title="al::MIDIMessageHandler" alt="" coords="5,31,184,57"/>
-<area shape="rect" id="node2" href="$classal_1_1_parameter_m_i_d_i.html" title="The ParameterMIDI class connects Parameter objects to MIDI messages. " alt="" coords="232,5,371,32"/>
-<area shape="rect" id="node3" href="$classal_1_1_preset_m_i_d_i.html" title="The PresetMIDI class connects PresetHandler objects to MIDI messages. " alt="" coords="245,56,357,83"/>
-</map>

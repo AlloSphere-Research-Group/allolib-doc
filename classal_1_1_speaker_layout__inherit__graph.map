@@ -1,8 +1,0 @@
-<map id="al::SpeakerLayout" name="al::SpeakerLayout">
-<area shape="rect" id="node2" href="$structal_1_1_allo_sphere_speaker_layout.html" title="Current arrangement of speakers in AlloSphere. " alt="" coords="192,5,401,32"/>
-<area shape="rect" id="node3" href="$classal_1_1_cube_layout.html" title="al::CubeLayout" alt="" coords="237,56,356,83"/>
-<area shape="rect" id="node4" href="$classal_1_1_speaker_ring_layout.html" title="al::SpeakerRingLayout\&lt; N \&gt;" alt="" coords="193,107,401,133"/>
-<area shape="rect" id="node5" href="$classal_1_1_stereo_speaker_layout.html" title="al::StereoSpeakerLayout" alt="" coords="206,157,387,184"/>
-<area shape="rect" id="node6" href="$classal_1_1_speaker_ring_layout.html" title="al::SpeakerRingLayout\&lt; 2 \&gt;" alt="" coords="193,208,400,235"/>
-<area shape="rect" id="node7" href="$classal_1_1_headset_speaker_layout.html" title="al::HeadsetSpeakerLayout" alt="" coords="449,208,643,235"/>
-</map>

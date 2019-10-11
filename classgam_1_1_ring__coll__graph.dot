@@ -1,0 +1,18 @@
+digraph "gam::Ring&lt; T, A &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::Ring\< T, A \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Ring buffer."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::Array\< T, A \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array.html",tooltip="Resizable array."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::ArrayBase\< T,\l SizeArray, A \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array_base.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="A",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mSize" ,fontname="FreeSans.ttf"];
+  Node5 [label="gam::SizeArray",height=0.2,width=0.4,color="black",URL="$structgam_1_1_size_array.html",tooltip="Size functor for Array."];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mElems" ,fontname="FreeSans.ttf"];
+  Node6 [label="T",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

@@ -1,5 +1,0 @@
-<map id="Strategies" name="Strategies">
-<area shape="rect" id="node1" href="$group__phs_inc.html" title="Phase increment strategies. " alt="" coords="295,68,496,95"/>
-<area shape="rect" id="node2" href="$group__ipl_seq.html" title="Sequence (stream&#45;based) interpolation strategies. " alt="" coords="309,150,481,191"/>
-<area shape="rect" id="node3" href="$group__ipl.html" title="Random&#45;access Interpolation\l Strategies" alt="" coords="289,283,501,325"/>
-</map>

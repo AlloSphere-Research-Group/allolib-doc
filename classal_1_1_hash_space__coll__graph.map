@@ -1,6 +1,0 @@
-<map id="al::HashSpace" name="al::HashSpace">
-<area shape="rect" id="node3" href="$structal_1_1_hash_space_1_1_voxel.html" title="each Voxel contains a linked list of Objects " alt="" coords="761,32,920,59"/>
-<area shape="rect" id="node4" href="$structal_1_1_hash_space_1_1_object.html" title="container for registered spatial elements " alt="" coords="483,59,647,85"/>
-<area shape="rect" id="node5" href="$classal_1_1_vec.html" title="al::Vec\&lt; 3, double \&gt;" alt="" coords="252,59,407,85"/>
-<area shape="rect" id="node6" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, double \&gt;" alt="" coords="5,59,203,85"/>
-</map>

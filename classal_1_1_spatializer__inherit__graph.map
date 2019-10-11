@@ -1,6 +1,0 @@
-<map id="al::Spatializer" name="al::Spatializer">
-<area shape="rect" id="node2" href="$classal_1_1_ambisonics_spatializer.html" title="al::AmbisonicsSpatializer" alt="" coords="5,80,192,107"/>
-<area shape="rect" id="node3" href="$classal_1_1_dbap.html" title="al::Dbap" alt="" coords="217,80,293,107"/>
-<area shape="rect" id="node4" href="$classal_1_1_stereo_panner.html" title="The StereoPanner class. " alt="" coords="317,80,445,107"/>
-<area shape="rect" id="node5" href="$classal_1_1_vbap.html" title="al::Vbap" alt="" coords="469,80,544,107"/>
-</map>

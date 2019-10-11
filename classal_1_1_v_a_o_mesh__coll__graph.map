@@ -1,6 +1,0 @@
-<map id="al::VAOMesh" name="al::VAOMesh">
-<area shape="rect" id="node2" href="$classal_1_1_mesh.html" title="Stores buffers related to rendering graphical objects. " alt="" coords="884,157,960,184"/>
-<area shape="rect" id="node4" href="$classal_1_1_vec.html" title="Fixed&#45;size n&#45;vector. " alt="" coords="319,81,440,108"/>
-<area shape="rect" id="node5" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="108,81,269,108"/>
-<area shape="rect" id="node10" href="$structal_1_1_color.html" title="al::Color" alt="" coords="341,208,417,235"/>
-</map>

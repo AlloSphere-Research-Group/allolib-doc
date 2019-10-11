@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['encodingtype',['EncodingType',['../classgam_1_1_sound_file.html#a7e8ae92b4c1434f9ca0895302a8b9d89',1,'gam::SoundFile']]]
+  ['mode_2758',['Mode',['../classal_1_1_render_to_disk.html#a311dbe9b52ac1534bc50f7a0e7f660c0',1,'al::RenderToDisk']]]
 ];

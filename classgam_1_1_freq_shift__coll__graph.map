@@ -1,8 +1,0 @@
-<map id="gam::FreqShift&lt; T &gt;" name="gam::FreqShift&lt; T &gt;">
-<area shape="rect" id="node2" href="$classgam_1_1_hilbert.html" title="gam::Hilbert\&lt; T \&gt;" alt="" coords="66,389,207,416"/>
-<area shape="rect" id="node3" href="$classgam_1_1_all_pass1.html" title="gam::AllPass1\&lt; T, gam\l::real, gam::Domain1 \&gt;" alt="" coords="5,139,180,180"/>
-<area shape="rect" id="node4" href="$classgam_1_1_domain1.html" title="Domain with normalized sampling frequency and interval. " alt="" coords="33,5,152,32"/>
-<area shape="rect" id="node6" href="$classgam_1_1_c_sine.html" title="gam::CSine\&lt; T \&gt;" alt="" coords="204,146,339,173"/>
-<area shape="rect" id="node7" href="$classgam_1_1_domain_observer.html" title="Domain observer. " alt="" coords="335,5,504,32"/>
-<area shape="rect" id="node8" href="$classgam_1_1_node2.html" title="gam::Node2\&lt; DomainObserver \&gt;" alt="" coords="363,146,604,173"/>
-</map>

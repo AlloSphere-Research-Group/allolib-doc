@@ -1,0 +1,10 @@
+digraph "gam::NoiseWhite&lt; RNG &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::NoiseWhite\< RNG \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="White noise."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rng" ,fontname="FreeSans.ttf"];
+  Node2 [label="RNG",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

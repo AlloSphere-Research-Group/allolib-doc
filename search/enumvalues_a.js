@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nuttall',['NUTTALL',['../tbl_8h.html#af63b63197fb97f959551cdc7e7325671ac62f29d90a090f348c38b09eb37bba48',1,'gam']]],
-  ['nyquist',['NYQUIST',['../tbl_8h.html#af63b63197fb97f959551cdc7e7325671a599afd90701ab76133f8fe90157426ad',1,'gam']]]
+  ['real_5ftime_2795',['REAL_TIME',['../classal_1_1_render_to_disk.html#a311dbe9b52ac1534bc50f7a0e7f660c0af887472bc260fd0f942ba591daf4493a',1,'al::RenderToDisk']]],
+  ['right_2796',['RIGHT',['../classal_1_1_mouse.html#a6da20e2a1a3eb4fd4fe389c4bd66dc8daec736b688a1e8d3d46f37b2f600b86c6',1,'al::Mouse']]]
 ];

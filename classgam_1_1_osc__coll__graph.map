@@ -1,7 +1,0 @@
-<map id="gam::Osc&lt; Tv, Si, Sp, Td &gt;" name="gam::Osc&lt; Tv, Si, Sp, Td &gt;">
-<area shape="rect" id="node2" href="$classgam_1_1_accum.html" title="Fixed&#45;point phase accumulator. " alt="" coords="5,200,179,227"/>
-<area shape="rect" id="node4" href="$classgam_1_1_array_pow2.html" title="gam::ArrayPow2\&lt; Tv \&gt;" alt="" coords="203,200,378,227"/>
-<area shape="rect" id="node5" href="$classgam_1_1_array_base.html" title="gam::ArrayBase\&lt; Tv,\l SizeArrayPow2, gam\l::Allocator\&lt; Tv \&gt; \&gt;" alt="" coords="210,95,371,151"/>
-<area shape="rect" id="node6" href="$classgam_1_1_allocator.html" title="gam::Allocator\&lt; Tv \&gt;" alt="" coords="117,5,280,32"/>
-<area shape="rect" id="node7" href="$structgam_1_1_size_array_pow2.html" title="Size functor for ArrayPow2. " alt="" coords="305,5,461,32"/>
-</map>

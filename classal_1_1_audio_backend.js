@@ -1,0 +1,27 @@
+var classal_1_1_audio_backend =
+[
+    [ "AudioBackend", "classal_1_1_audio_backend.html#af5471c95608ea2f02e6f9200c0b386fe", null ],
+    [ "~AudioBackend", "classal_1_1_audio_backend.html#abdf3035865fd4837b15e654a440ebba1", null ],
+    [ "channels", "classal_1_1_audio_backend.html#a7a19be12b420258b4ddfdc670f384973", null ],
+    [ "close", "classal_1_1_audio_backend.html#aeff67e21d33f6dd3f860a8134889b102", null ],
+    [ "cpu", "classal_1_1_audio_backend.html#ac961d329525a0a620e115c9ac327ef00", null ],
+    [ "error", "classal_1_1_audio_backend.html#a2910530d0b4f34c00bf0185f5e9661f1", null ],
+    [ "inDevice", "classal_1_1_audio_backend.html#a818b609b2673c129523c371a43bfe5aa", null ],
+    [ "inDeviceChans", "classal_1_1_audio_backend.html#ac311f40f5885f9eea13e3859013734b7", null ],
+    [ "isOpen", "classal_1_1_audio_backend.html#a5a3b332f9f8f4972c0198a5cb3f44c4f", null ],
+    [ "isRunning", "classal_1_1_audio_backend.html#a5456ec3de6069304ea8179e1cef996b0", null ],
+    [ "open", "classal_1_1_audio_backend.html#aadabe56385a28468f66982e311134517", null ],
+    [ "outDevice", "classal_1_1_audio_backend.html#a6cd2eea9995940be4919147713b8f352", null ],
+    [ "outDeviceChans", "classal_1_1_audio_backend.html#aaf07d0761fd3eabeef1f0c0c33f04079", null ],
+    [ "printError", "classal_1_1_audio_backend.html#ac03df9caadbe2951505cb52abe8a9f37", null ],
+    [ "printInfo", "classal_1_1_audio_backend.html#a7d95540b3d87d725112c2d1790a0ef82", null ],
+    [ "setInDeviceChans", "classal_1_1_audio_backend.html#aee1a0e66c878561ac29d5c7a04a8811c", null ],
+    [ "setOutDeviceChans", "classal_1_1_audio_backend.html#ad9370d4658295bf45edf5dca8cf340fa", null ],
+    [ "start", "classal_1_1_audio_backend.html#ae1e7ef8e9183b11b0a1b117c120a4fd9", null ],
+    [ "stop", "classal_1_1_audio_backend.html#aeaf50d68f73ad973f96ada4560e5de88", null ],
+    [ "supportsFPS", "classal_1_1_audio_backend.html#af55c0c1afa06a37a74027e77ffadf360", null ],
+    [ "time", "classal_1_1_audio_backend.html#a44326f77eff8187d98085f76c5203bbd", null ],
+    [ "mBackendData", "classal_1_1_audio_backend.html#acaac071f7be7bf43574c77e5e7946f82", null ],
+    [ "mOpen", "classal_1_1_audio_backend.html#a4922608df7264d3c1ce669a915387b43", null ],
+    [ "mRunning", "classal_1_1_audio_backend.html#a873d555409d41883d95a8c1cbe06a5f9", null ]
+];

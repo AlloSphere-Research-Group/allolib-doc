@@ -1,0 +1,24 @@
+digraph "gam::Chirp&lt; T &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::Chirp\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sine wave with frequency and amplitude driven by an exponentially decaying envelope."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" env" ,fontname="FreeSans.ttf"];
+  Node2 [label="gam::Decay\< T \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_decay.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::DomainObserver",height=0.2,width=0.4,color="black",URL="$classgam_1_1_domain_observer.html",tooltip="Domain observer."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::Node2\< DomainObserver \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_node2.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nodeL\nnodeR" ,fontname="FreeSans.ttf"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mVal\nmMul\nmDcy" ,fontname="FreeSans.ttf"];
+  Node5 [label="T",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" freq1\nfreq2" ,fontname="FreeSans.ttf"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" osc" ,fontname="FreeSans.ttf"];
+  Node6 [label="gam::Sine\< T \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_sine.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="gam::AccumPhase\< T,\l DomainObserver \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_accum_phase.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mPhase\nmInc\nmAmp\nmFreqToInc" ,fontname="FreeSans.ttf"];
+}

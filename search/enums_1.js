@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blendeq',['BlendEq',['../classal_1_1_graphics.html#a5999a858590e252c3f1b98f56a1873ab',1,'al::Graphics']]]
+  ['cursor_2754',['Cursor',['../classal_1_1_window.html#a30bb0c27d1ace4656881deaf37a4c28e',1,'al::Window']]]
 ];

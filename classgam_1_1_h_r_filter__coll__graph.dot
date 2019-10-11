@@ -1,0 +1,20 @@
+digraph "gam::HRFilter"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::HRFilter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Head-related filter."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mDist" ,fontname="FreeSans.ttf"];
+  Node2 [label="gam::Dist\< 2+1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_dist.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mEarFilters" ,fontname="FreeSans.ttf"];
+  Node3 [label="gam::HRFilter::EarFilter",height=0.2,width=0.4,color="black",URL="$structgam_1_1_h_r_filter_1_1_ear_filter.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pinnaPeak1\npinnaPeak2\npinnaNotch1\npinnaNotch2\nbackShelf" ,fontname="FreeSans.ttf"];
+  Node4 [label="gam::Biquad\< Tv, Tp,\l Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_biquad.html",tooltip="2-pole/2-zero IIR filter"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="Td",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d1\nd2" ,fontname="FreeSans.ttf"];
+  Node6 [label="Tv",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mReal\nmAlpha\nmResRecip\nmBeta\nmA\nmLevel\nmB\nmFreq\nmFrqToRad\nmImag\n..." ,fontname="FreeSans.ttf"];
+  Node7 [label="Tp",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "al::ParameterServer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::ParameterServer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The ParameterServer class creates an OSC server to receive parameter values."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="al::osc::PacketHandler",height=0.2,width=0.4,color="black",URL="$classal_1_1osc_1_1_packet_handler.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="al::OSCNotifier",height=0.2,width=0.4,color="black",URL="$classal_1_1_o_s_c_notifier.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="al::OSCNode",height=0.2,width=0.4,color="black",URL="$classal_1_1_o_s_c_node.html",tooltip=" "];
+}

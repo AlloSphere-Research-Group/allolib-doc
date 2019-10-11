@@ -1,0 +1,12 @@
+digraph "gam::Process&lt; TAudioIOData &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="gam::Process\< TAudioIOData \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ProcessNode with callback using a gam::AudioIOData-like interface."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::ProcessNode",height=0.2,width=0.4,color="black",URL="$classgam_1_1_process_node.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::Node3\< ProcessNode \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_node3.html",tooltip=" "];
+}

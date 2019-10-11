@@ -1,9 +1,0 @@
-<map id="gam::Domain1" name="gam::Domain1">
-<area shape="rect" id="node2" href="$classgam_1_1_all_pass1.html" title="gam::AllPass1\&lt; T, gam\l::real, gam::Domain1 \&gt;" alt="" coords="190,5,365,47"/>
-<area shape="rect" id="node3" href="$classgam_1_1_all_pass1.html" title="gam::AllPass1\&lt; Tv,\l Tp, gam::Domain1 \&gt;" alt="" coords="197,71,358,112"/>
-<area shape="rect" id="node4" href="$classgam_1_1_delay.html" title="gam::Delay\&lt; Tv, Si,\l gam::Domain1 \&gt;" alt="" coords="201,136,353,177"/>
-<area shape="rect" id="node7" href="$classgam_1_1_sine_d.html" title="gam::SineD\&lt; Tv, Domain1 \&gt;" alt="" coords="172,202,383,229"/>
-<area shape="rect" id="node8" href="$classgam_1_1_sine_r.html" title="gam::SineR\&lt; Tv, Domain1 \&gt;" alt="" coords="173,253,382,279"/>
-<area shape="rect" id="node5" href="$classgam_1_1_comb.html" title="gam::Comb\&lt; Tv, Si,\l float, gam::Domain1 \&gt;" alt="" coords="447,104,622,145"/>
-<area shape="rect" id="node6" href="$classgam_1_1_echo.html" title="gam::Echo\&lt; Tv, Si,\l LoopFilter, gam::Domain1 \&gt;" alt="" coords="431,169,639,211"/>
-</map>

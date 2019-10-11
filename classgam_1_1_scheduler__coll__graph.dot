@@ -1,0 +1,32 @@
+digraph "gam::Scheduler"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gam::Scheduler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Schedules real-time audio processes."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::ProcessNode",height=0.2,width=0.4,color="black",URL="$classgam_1_1_process_node.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::Node3\< ProcessNode \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_node3.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sibling\nchild\nparent" ,fontname="FreeSans.ttf"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mIO" ,fontname="FreeSans.ttf"];
+  Node4 [label="gam::SchedulerAudioIOData",height=0.2,width=0.4,color="black",URL="$structgam_1_1_scheduler_audio_i_o_data.html",tooltip="Audio I/O data structure used by real-time scheduling system."];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mFuncs" ,fontname="FreeSans.ttf"];
+  Node5 [label="std::list\< ControlFunc \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node6 [label="gam::ControlFunc",height=0.2,width=0.4,color="black",URL="$classgam_1_1_control_func.html",tooltip="A function that can be delayed and/or repeated periodically."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mFunc" ,fontname="FreeSans.ttf"];
+  Node7 [label="gam::Func",height=0.2,width=0.4,color="black",URL="$classgam_1_1_func.html",tooltip="Deferrable function."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mLPThread" ,fontname="FreeSans.ttf"];
+  Node8 [label="gam::Thread",height=0.2,width=0.4,color="black",URL="$classgam_1_1_thread.html",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mFreeList" ,fontname="FreeSans.ttf"];
+  Node9 [label="std::queue\< ProcessNode * \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node2 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mAddCommands" ,fontname="FreeSans.ttf"];
+  Node10 [label="std::queue\< gam::Scheduler\l::Command \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node11 [label="gam::Scheduler::Command",height=0.2,width=0.4,color="black",URL="$structgam_1_1_scheduler_1_1_command.html",tooltip=" "];
+  Node2 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" other\nobject" ,fontname="FreeSans.ttf"];
+}

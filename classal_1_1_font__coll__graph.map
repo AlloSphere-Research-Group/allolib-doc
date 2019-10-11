@@ -1,9 +1,0 @@
-<map id="al::Font" name="al::Font">
-<area shape="rect" id="node2" href="$classal_1_1_mesh.html" title="Stores buffers related to rendering graphical objects. " alt="" coords="931,184,1007,211"/>
-<area shape="rect" id="node4" href="$classal_1_1_vec.html" title="Fixed&#45;size n&#45;vector. " alt="" coords="319,81,440,108"/>
-<area shape="rect" id="node5" href="$structal_1_1_vec_elems.html" title="al::VecElems\&lt; N, T \&gt;" alt="" coords="108,81,269,108"/>
-<area shape="rect" id="node10" href="$structal_1_1_color.html" title="al::Color" alt="" coords="341,208,417,235"/>
-<area shape="rect" id="node14" href="$classal_1_1_texture.html" title="al::Texture" alt="" coords="923,285,1014,312"/>
-<area shape="rect" id="node15" href="$classal_1_1_g_p_u_object.html" title="al::GPUObject" alt="" coords="592,360,704,387"/>
-<area shape="rect" id="node16" href="$structal_1_1_font_1_1_font_character.html" title="Metrics of a single font character. " alt="" coords="884,336,1053,363"/>
-</map>

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="al::rnd::MulLinCon",height=0.2,width=0.4,color="black",URL="$classal_1_1rnd_1_1_mul_lin_con.html",tooltip="Multiplicative linear congruential uniform pseudo-random number generator."];
+}

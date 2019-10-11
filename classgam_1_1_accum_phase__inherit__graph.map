@@ -1,8 +1,0 @@
-<map id="gam::AccumPhase&lt; Tv, Td &gt;" name="gam::AccumPhase&lt; Tv, Td &gt;">
-<area shape="rect" id="node3" href="$classgam_1_1_buzz.html" title="Sum of cosine waves. " alt="" coords="98,169,258,196"/>
-<area shape="rect" id="node7" href="$classgam_1_1_d_s_f.html" title="Discrete summation formula (DSF) oscillator. " alt="" coords="282,169,437,196"/>
-<area shape="rect" id="node8" href="$classgam_1_1_sine.html" title="Computed sine wave oscillator. " alt="" coords="461,169,618,196"/>
-<area shape="rect" id="node4" href="$structgam_1_1_impulse.html" title="Band&#45;limited impulse train. " alt="" coords="87,244,269,271"/>
-<area shape="rect" id="node5" href="$structgam_1_1_saw.html" title="Band&#45;limited saw wave. " alt="" coords="5,319,161,345"/>
-<area shape="rect" id="node6" href="$structgam_1_1_square.html" title="Band&#45;limited square wave. " alt="" coords="185,319,360,345"/>
-</map>

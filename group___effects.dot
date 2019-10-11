@@ -1,0 +1,10 @@
+digraph "Effects"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="Filter",height=0.2,width=0.4,color="black",URL="$group___filter.html",tooltip="Signal transformers."];
+  Node1 [label="Effects",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1->Node2 [shape=plaintext, label="gam::Biquad3", color="orange", dir="none", style="dashed"];
+}

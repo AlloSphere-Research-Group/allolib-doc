@@ -1,9 +1,0 @@
-<map id="gam::Scheduler" name="gam::Scheduler">
-<area shape="rect" id="node2" href="$classgam_1_1_process_node.html" title="gam::ProcessNode" alt="" coords="5,66,148,92"/>
-<area shape="rect" id="node3" href="$classgam_1_1_node3.html" title="gam::Node3\&lt; ProcessNode \&gt;" alt="" coords="261,35,476,62"/>
-<area shape="rect" id="node11" href="$structgam_1_1_scheduler_1_1_command.html" title="gam::Scheduler::Command" alt="" coords="269,160,468,187"/>
-<area shape="rect" id="node4" href="$structgam_1_1_scheduler_audio_i_o_data.html" title="Audio I/O data structure used by real&#45;time scheduling system. " alt="" coords="739,219,945,246"/>
-<area shape="rect" id="node6" href="$classgam_1_1_control_func.html" title="A function that can be delayed and/or repeated periodically. " alt="" coords="301,270,436,296"/>
-<area shape="rect" id="node7" href="$classgam_1_1_func.html" title="Deferrable function. " alt="" coords="33,270,121,296"/>
-<area shape="rect" id="node8" href="$classgam_1_1_thread.html" title="gam::Thread" alt="" coords="790,320,894,347"/>
-</map>

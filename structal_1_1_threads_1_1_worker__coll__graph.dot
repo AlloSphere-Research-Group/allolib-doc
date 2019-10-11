@@ -1,0 +1,15 @@
+digraph "al::Threads&lt; ThreadFunction &gt;::Worker"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::Threads\< ThreadFunction\l \>::Worker",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A thread and function."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" function" ,fontname="FreeSans.ttf"];
+  Node2 [label="al::ThreadFunction",height=0.2,width=0.4,color="black",URL="$structal_1_1_thread_function.html",tooltip="Function object interface used by thread."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" thread" ,fontname="FreeSans.ttf"];
+  Node3 [label="al::Thread",height=0.2,width=0.4,color="black",URL="$classal_1_1_thread.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mCFunc" ,fontname="FreeSans.ttf"];
+  Node4 [label="al::CThreadFunction",height=0.2,width=0.4,color="black",URL="$structal_1_1_c_thread_function.html",tooltip="C-style thread function with user data."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+}

@@ -1,8 +1,0 @@
-<map id="al::osc::Recv" name="al::osc::Recv">
-<area shape="rect" id="node3" href="$classal_1_1osc_1_1_packet_handler.html" title="al::osc::PacketHandler" alt="" coords="179,185,346,212"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="370,185,457,212"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="329,81,468,123"/>
-<area shape="rect" id="node6" href="$classal_1_1_thread.html" title="al::Thread" alt="" coords="487,185,574,212"/>
-<area shape="rect" id="node7" href="$structal_1_1_c_thread_function.html" title="C&#45;style thread function with user data. " alt="" coords="493,89,643,115"/>
-<area shape="rect" id="node8" href="$structal_1_1_thread_function.html" title="Function object interface used by thread. " alt="" coords="497,5,639,32"/>
-</map>

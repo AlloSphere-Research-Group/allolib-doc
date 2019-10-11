@@ -1,0 +1,23 @@
+digraph "gam::Domain1"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gam::Domain1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Domain with normalized sampling frequency and interval."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::AllPass1\< T, gam\l::real, gam::Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_all_pass1.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::AllPass1\< Tv,\l Tp, gam::Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_all_pass1.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::Delay\< Tv, Si,\l Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_delay.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="gam::Comb\< Tv, Si,\l float, Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_comb.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="gam::Echo\< Tv, Si,\l LoopFilter, Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_echo.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="gam::SineD\< Tv, Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_sine_d.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="gam::SineR\< Tv, Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_sine_r.html",tooltip=" "];
+}

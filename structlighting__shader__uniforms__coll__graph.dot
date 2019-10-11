@@ -1,0 +1,14 @@
+digraph "lighting_shader_uniforms"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="lighting_shader_uniforms",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" material" ,fontname="FreeSans.ttf"];
+  Node2 [label="material_uniform_locations",height=0.2,width=0.4,color="black",URL="$structmaterial__uniform__locations.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lights" ,fontname="FreeSans.ttf"];
+  Node3 [label="std::vector\< per_light\l_uniform_locations \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node4 [label="per_light_uniform_locations",height=0.2,width=0.4,color="black",URL="$structper__light__uniform__locations.html",tooltip=" "];
+}

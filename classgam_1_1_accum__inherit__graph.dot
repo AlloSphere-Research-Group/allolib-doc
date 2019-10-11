@@ -1,0 +1,21 @@
+digraph "gam::Accum&lt; Sp, Td &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gam::Accum\< Sp, Td \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Fixed-point phase accumulator."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="Td",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::DWO\< Sp, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_d_w_o.html",tooltip="Differenced wave oscillator."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::LFO\< Sp, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_l_f_o.html",tooltip="Low-frequency oscillator."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="gam::Osc\< Sp, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_osc.html",tooltip="Tabulated function oscillator."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="gam::Sweep\< Sp, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_sweep.html",tooltip="Linear sweep in interval [0,1)"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="gam::Upsample\< Sp, Td \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_upsample.html",tooltip="Upsamples and interpolates a signal."];
+}

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['array_20access',['Array access',['../group__access.html',1,'']]],
-  ['analysis',['Analysis',['../group___analysis.html',1,'']]],
-  ['audio_20i_2fo',['Audio I/O',['../group__io.html',1,'']]]
+  ['application_20building_20tools_2814',['Application building tools',['../group___app.html',1,'']]]
 ];

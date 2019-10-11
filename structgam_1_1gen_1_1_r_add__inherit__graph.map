@@ -1,6 +1,0 @@
-<map id="gam::gen::RAdd&lt; T &gt;" name="gam::gen::RAdd&lt; T &gt;">
-<area shape="rect" id="node4" href="$structgam_1_1gen_1_1_r_add_wrap.html" title="Recursive addition wrapped in interval [min, max) " alt="" coords="5,229,200,256"/>
-<area shape="rect" id="node5" href="$structgam_1_1gen_1_1_sin.html" title="Sinusoid sequence generator. " alt="" coords="224,229,373,256"/>
-<area shape="rect" id="node2" href="$structgam_1_1gen_1_1_val.html" title="Single value generator. " alt="" coords="125,80,275,107"/>
-<area shape="rect" id="node3" href="$structgam_1_1gen_1_1_default.html" title="Generates the default value of its associated type. " alt="" coords="111,5,289,32"/>
-</map>

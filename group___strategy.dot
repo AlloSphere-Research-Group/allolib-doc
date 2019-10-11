@@ -1,0 +1,14 @@
+digraph "Strategy"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="Phase Increment Strategies",height=0.2,width=0.4,color="black",URL="$group__phs_inc.html",tooltip="Phase increment strategies."];
+  Node3 [label="Sequence Interpolation\l Strategies",height=0.2,width=0.4,color="black",URL="$group__ipl_seq.html",tooltip="Sequence (stream-based) interpolation strategies."];
+  Node2 [label="Random-access Interpolation\l Strategies",height=0.2,width=0.4,color="black",URL="$group__ipl.html",tooltip=" "];
+  Node1 [label="Strategy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Function objects representing algorithms."];
+  Node1->Node2 [shape=plaintext, label="gam::ipl::Trunc\ngam::ipl::Round\ngam::ipl::Mean2\ngam::ipl::Linear\ngam::ipl::Cubic\ngam::ipl::AllPass\ngam::ipl::Switchable", color="orange", dir="none", style="dashed"];
+  Node1->Node3 [shape=plaintext, label="gam::iplSeq::Base\ngam::iplSeq::Linear\ngam::iplSeq::Cubic\ngam::iplSeq::Cosine", color="orange", dir="none", style="dashed"];
+  Node1->Node4 [shape=plaintext, label="gam::phsInc::Loop\ngam::phsInc::OneShot\ngam::phsInc::NShot\ngam::phsInc::PingPong\ngam::phsInc::Rhythm", color="orange", dir="none", style="dashed"];
+}

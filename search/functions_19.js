@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['zero',['zero',['../classgam_1_1_array_base.html#a5140d305800659c0ea9850a58ecefcd2',1,'gam::ArrayBase::zero()'],['../classgam_1_1_d_f_t_base.html#a26044a3decc2b1f0eb610b89d7b35636',1,'gam::DFTBase::zero()'],['../classgam_1_1_cheby_n.html#afd1599cb3deb65e4e28e2b105415a764',1,'gam::ChebyN::zero()'],['../classgam_1_1_biquad.html#a5b58cea2e0a0d9125e0ab2dd6fb3efeb',1,'gam::Biquad::zero()'],['../classgam_1_1_filter2.html#a99fa3690d89cfea8baa2b7a5aa718064',1,'gam::Filter2::zero()'],['../classgam_1_1_one_pole.html#a6aa7b60e19c3d5c0d6e1f13e03a46365',1,'gam::OnePole::zero()'],['../classgam_1_1_vec.html#af41fffcedf1f3d0a138836739b915c23',1,'gam::Vec::zero()'],['../classal_1_1_vec.html#a5cc81d405db4df332690a1ae57c07638',1,'al::Vec::zero()'],['../classal_1_1_static_delay_line.html#a14bb97666007ffadd1edb35e1638a0ab',1,'al::StaticDelayLine::zero()'],['../classal_1_1_shift_buffer.html#ac2ff93b8d97e5c01c50a77ac5d47f533',1,'al::ShiftBuffer::zero()'],['../classal_1_1_array.html#aa0b26dd0753e21f1b74232c1cd01cb8d',1,'al::Array::zero()'],['../namespacegam_1_1mem.html#a045ccf3ab49e58936459eca5526635ea',1,'gam::mem::zero()']]],
-  ['zeroaux',['zeroAux',['../classgam_1_1_d_f_t_base.html#a3dd028cb9f836c26d87f54523158d73c',1,'gam::DFTBase::zeroAux()'],['../classgam_1_1_d_f_t_base.html#a265bcb82e584d21777b362a065b88547',1,'gam::DFTBase::zeroAux(unsigned num)']]],
-  ['zerobus',['zeroBus',['../classgam_1_1_audio_i_o_data.html#abb030e090c8b744555aa694ddd5cd7cc',1,'gam::AudioIOData::zeroBus()'],['../classal_1_1_audio_i_o_data.html#a23ab9709a3bb19e2d480cda94770364f',1,'al::AudioIOData::zeroBus()']]],
-  ['zerocount',['zeroCount',['../namespacegam_1_1arr.html#a67832f5fe4020121848c3ab7091ceae5',1,'gam::arr']]],
-  ['zerocross',['zeroCross',['../namespacegam_1_1arr.html#a91f7685a88ce2d422f631d45beb33595',1,'gam::arr']]],
-  ['zerocrossfirst',['zeroCrossFirst',['../namespacegam_1_1arr.html#aca2692d9c562e6e8287ced27dbf2cda9',1,'gam::arr']]],
-  ['zerocrossn',['zeroCrossN',['../namespacegam_1_1arr.html#a1746666b46a8a1c45bd1fb2d464cbadb',1,'gam::arr']]],
-  ['zerocrossp',['zeroCrossP',['../namespacegam_1_1scl.html#a8d8cf4e98f676d2cb422ce6e9a8cd6ed',1,'gam::scl']]],
-  ['zerocrossrate',['ZeroCrossRate',['../classgam_1_1_zero_cross_rate.html#a3839e74cf3b52817133634d3619434ce',1,'gam::ZeroCrossRate']]],
-  ['zeroends',['zeroEnds',['../classgam_1_1_d_f_t_base.html#ab26efeb9fcce9d1cec62ee9189e50c94',1,'gam::DFTBase']]],
-  ['zeroing',['zeroing',['../classgam_1_1_one_pole.html#aa67c82032b1cb2ee2b89b46e6e26fa71',1,'gam::OnePole']]],
-  ['zeronans',['zeroNANs',['../classgam_1_1_audio_i_o.html#a874b154c67327c0abe71a498555b81fe',1,'gam::AudioIO::zeroNANs() const'],['../classgam_1_1_audio_i_o.html#abcc2cf3758449dcdff0d8fa03f946278',1,'gam::AudioIO::zeroNANs(bool v)'],['../classal_1_1_audio_i_o.html#a6c4cf5ca2448bf9342f4030e6d437cab',1,'al::AudioIO::zeroNANs() const'],['../classal_1_1_audio_i_o.html#ae30adb54b65bec0f66713d3adf58bed6',1,'al::AudioIO::zeroNANs(bool v)']]],
-  ['zeroout',['zeroOut',['../classgam_1_1_audio_i_o_data.html#a34d9befc2353c879511191ef7149bfa6',1,'gam::AudioIOData::zeroOut()'],['../classal_1_1_audio_i_o_data.html#aab8dbc900ed8b557b62c509ffa10cf66',1,'al::AudioIOData::zeroOut()']]]
+  ['zero_2621',['zero',['../classal_1_1_vec.html#a5cc81d405db4df332690a1ae57c07638',1,'al::Vec::zero()'],['../classal_1_1_static_delay_line.html#a14bb97666007ffadd1edb35e1638a0ab',1,'al::StaticDelayLine::zero()'],['../classal_1_1_shift_buffer.html#ac2ff93b8d97e5c01c50a77ac5d47f533',1,'al::ShiftBuffer::zero()']]],
+  ['zerobus_2622',['zeroBus',['../classal_1_1_audio_i_o_data.html#a23ab9709a3bb19e2d480cda94770364f',1,'al::AudioIOData']]],
+  ['zeronans_2623',['zeroNANs',['../classal_1_1_audio_i_o.html#a6c4cf5ca2448bf9342f4030e6d437cab',1,'al::AudioIO::zeroNANs() const'],['../classal_1_1_audio_i_o.html#ae30adb54b65bec0f66713d3adf58bed6',1,'al::AudioIO::zeroNANs(bool v)']]],
+  ['zeroout_2624',['zeroOut',['../classal_1_1_audio_i_o_data.html#aab8dbc900ed8b557b62c509ffa10cf66',1,'al::AudioIOData']]]
 ];

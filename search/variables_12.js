@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['u',['u',['../structal_1_1_luv.html#a2488351948faf561c630eba8e03ff345',1,'al::Luv']]],
-  ['user',['user',['../structal_1_1_c_thread_function.html#ac252d13aa2f799e67c319f326907df57',1,'al::CThreadFunction']]]
+  ['w_2716',['w',['../classal_1_1_quat.html#a733899770793972e4c9389cb7a6fd4f8',1,'al::Quat']]]
 ];

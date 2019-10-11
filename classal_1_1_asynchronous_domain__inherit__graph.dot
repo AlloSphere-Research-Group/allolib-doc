@@ -1,0 +1,20 @@
+digraph "al::AsynchronousDomain"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::AsynchronousDomain",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="al::ComputationDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_computation_domain.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="al::AudioDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_audio_domain.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="al::GammaAudioDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_gamma_audio_domain.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="al::ConsoleDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_console_domain.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="al::OpenGLGraphicsDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_open_g_l_graphics_domain.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="al::OSCDomain",height=0.2,width=0.4,color="black",URL="$classal_1_1_o_s_c_domain.html",tooltip=" "];
+}

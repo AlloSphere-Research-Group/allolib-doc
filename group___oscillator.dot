@@ -1,0 +1,10 @@
+digraph "Oscillator"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="Oscillator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Periodic waveforms to be used as sound or modulation sources."];
+  Node2 [label="Envelope",height=0.2,width=0.4,color="black",URL="$group___envelope.html",tooltip="Non-periodic, slowly varying modulation sources."];
+  Node1->Node2 [shape=plaintext, label="gam::Osc", color="orange", dir="none", style="dashed"];
+}

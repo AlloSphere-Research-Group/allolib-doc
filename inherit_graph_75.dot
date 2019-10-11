@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node106 [label="RtMidiError",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node106 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node0 [label="al::MIDIError",height=0.2,width=0.4,color="black",URL="$classal_1_1_m_i_d_i_error.html",tooltip=" "];
+}

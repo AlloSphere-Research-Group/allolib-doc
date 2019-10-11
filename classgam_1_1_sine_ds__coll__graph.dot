@@ -1,0 +1,30 @@
+digraph "gam::SineDs&lt; Tv, Td &gt;"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gam::SineDs\< Tv, Td \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Multiple SineDs."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="gam::Array\< SineD\<\l Tv, Domain1 \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="gam::ArrayBase\< SineD\l\< Tv, Domain1 \>, SizeArray,\l gam::Allocator\< SineD\< Tv,\l Domain1 \> \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_array_base.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="gam::Allocator\< SineD\l\< Tv, Domain1 \> \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_allocator.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" const_reference\nconst_pointer" ,fontname="FreeSans.ttf"];
+  Node5 [label="gam::SineD\< Tv, Domain1 \>",height=0.2,width=0.4,color="black",URL="$classgam_1_1_sine_d.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="gam::gen::RSin2\< Tv \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_r_sin2.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="gam::gen::Val\< Tv \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_val.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="gam::gen::Default\< Tv \>",height=0.2,width=0.4,color="black",URL="$structgam_1_1gen_1_1_default.html",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="gam::Domain1",height=0.2,width=0.4,color="black",URL="$classgam_1_1_domain1.html",tooltip="Domain with normalized sampling frequency and interval."];
+  Node10 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mSize" ,fontname="FreeSans.ttf"];
+  Node10 [label="gam::SizeArray",height=0.2,width=0.4,color="black",URL="$structgam_1_1_size_array.html",tooltip="Size functor for Array."];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mElems" ,fontname="FreeSans.ttf"];
+  Node11 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="Td",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}

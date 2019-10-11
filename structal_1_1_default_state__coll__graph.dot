@@ -1,0 +1,16 @@
+digraph "al::DefaultState"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::DefaultState",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pose" ,fontname="FreeSans.ttf"];
+  Node2 [label="al::Pose",height=0.2,width=0.4,color="black",URL="$classal_1_1_pose.html",tooltip="A local coordinate frame."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mVec" ,fontname="FreeSans.ttf"];
+  Node3 [label="al::Vec\< 3, double \>",height=0.2,width=0.4,color="black",URL="$classal_1_1_vec.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="al::VecElems\< N, double \>",height=0.2,width=0.4,color="black",URL="$structal_1_1_vec_elems.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mQuat" ,fontname="FreeSans.ttf"];
+  Node5 [label="al::Quat\< double \>",height=0.2,width=0.4,color="black",URL="$classal_1_1_quat.html",tooltip=" "];
+}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['capability',['Capability',['../classal_1_1_graphics.html#a8333edb3bdbf594564ef0067ec3dd083',1,'al::Graphics']]],
-  ['cursor',['Cursor',['../classal_1_1_window.html#a30bb0c27d1ace4656881deaf37a4c28e',1,'al::Window']]]
+  ['displaymode_2755',['DisplayMode',['../classal_1_1_window.html#add8b356ea242f51782775790a0fc58b3',1,'al::Window']]],
+  ['dopplertype_2756',['DopplerType',['../namespaceal.html#ae79a89949199dd159d7d1f86a64403a0',1,'al']]]
 ];

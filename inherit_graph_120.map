@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classal_1_1_spatializer.html" title="al::Spatializer" alt="" coords="5,81,116,108"/>
-<area shape="rect" id="node2" href="$classal_1_1_ambisonics_spatializer.html" title="al::AmbisonicsSpatializer" alt="" coords="164,5,351,32"/>
-<area shape="rect" id="node3" href="$classal_1_1_dbap.html" title="al::Dbap" alt="" coords="219,56,295,83"/>
-<area shape="rect" id="node4" href="$classal_1_1_stereo_panner.html" title="The StereoPanner class. " alt="" coords="193,107,321,133"/>
-<area shape="rect" id="node5" href="$classal_1_1_vbap.html" title="al::Vbap" alt="" coords="220,157,295,184"/>
-</map>

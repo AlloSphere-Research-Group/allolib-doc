@@ -1,0 +1,12 @@
+digraph "al::PolySynth"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="al::PolySynth",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="al::DynamicScene",height=0.2,width=0.4,color="black",URL="$classal_1_1_dynamic_scene.html",tooltip="The DynamicScene class."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="al::DistributedScene",height=0.2,width=0.4,color="black",URL="$classal_1_1_distributed_scene.html",tooltip="The DistributedScene class."];
+}

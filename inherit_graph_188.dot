@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="al::VecElems\< 1, T \>",height=0.2,width=0.4,color="black",URL="$structal_1_1_vec_elems_3_011_00_01_t_01_4.html",tooltip=" "];
+}

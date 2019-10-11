@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structgam_1_1gen_1_1_default.html" title="gam::gen::Default\&lt;\l uint32_t \&gt;" alt="" coords="5,27,156,69"/>
-<area shape="rect" id="node2" href="$structgam_1_1gen_1_1_val.html" title="gam::gen::Val\&lt; uint32_t \&gt;" alt="" coords="204,35,399,61"/>
-<area shape="rect" id="node3" href="$structgam_1_1gen_1_1_r_mul.html" title="gam::gen::RMul\&lt; uint32_t \&gt;" alt="" coords="447,5,653,32"/>
-<area shape="rect" id="node5" href="$structgam_1_1gen_1_1_r_mul_add.html" title="gam::gen::RMulAdd\&lt;\l uint32_t \&gt;" alt="" coords="471,57,629,98"/>
-<area shape="rect" id="node4" href="$classgam_1_1_r_n_g_mul_lin_con.html" title="Multiplicative linear congruential uniform pseudo&#45;random number generator. " alt="" coords="701,5,856,32"/>
-<area shape="rect" id="node6" href="$classgam_1_1_r_n_g_lin_con.html" title="Linear congruential uniform pseudo&#45;random number generator. " alt="" coords="713,64,845,91"/>
-</map>

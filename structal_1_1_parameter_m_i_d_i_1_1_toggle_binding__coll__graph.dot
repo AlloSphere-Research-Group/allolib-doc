@@ -1,0 +1,30 @@
+digraph "al::ParameterMIDI::ToggleBinding"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="al::ParameterMIDI::\lToggleBinding",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" param" ,fontname="FreeSans.ttf"];
+  Node2 [label="al::ParameterBool",height=0.2,width=0.4,color="black",URL="$classal_1_1_parameter_bool.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="al::Parameter",height=0.2,width=0.4,color="black",URL="$classal_1_1_parameter.html",tooltip="The Parameter class."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="al::ParameterWrapper\l\< float \>",height=0.2,width=0.4,color="black",URL="$classal_1_1_parameter_wrapper.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="al::ParameterMeta",height=0.2,width=0.4,color="black",URL="$classal_1_1_parameter_meta.html",tooltip="The ParameterMeta class defines the base interface for Parameter metadata."];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mHints" ,fontname="FreeSans.ttf"];
+  Node6 [label="std::map\< std::string,\l float \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" keys" ,fontname="FreeSans.ttf"];
+  Node7 [label="std::string",height=0.2,width=0.4,color="grey75",tooltip="STL class."];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="std::basic_string\<\l char \>",height=0.2,width=0.4,color="grey75",tooltip="STL class."];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mGroup\nmPrefix\nmParameterName\nmDisplayName\nmFullAddress" ,fontname="FreeSans.ttf"];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mCallbacks" ,fontname="FreeSans.ttf"];
+  Node9 [label="std::vector\< std::shared\l_ptr\< ParameterChangeCallback \> \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elements" ,fontname="FreeSans.ttf"];
+  Node10 [label="std::shared_ptr\< Parameter\lChangeCallback \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mProcessCallback" ,fontname="FreeSans.ttf"];
+  Node11 [label="std::shared_ptr\< Parameter\lProcessCallback \>",height=0.2,width=0.4,color="grey75",tooltip=" "];
+}
