@@ -23,6 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Allolib", "index.html", [
+    [ "Allolib C/C++ Libraries", "index.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
@@ -80,11 +81,11 @@ var NAVTREEINDEX =
 "classal_1_1_voxels.html#abb7643b5ed68d8c7cf4c95fe8adfd26b",
 "classal_1_1osc_1_1_send.html#a1f4f5a2b5e9a093f4b31022176efbabd",
 "group___math.html#gad1fb93acd3513290b5c4ac8f402ba808",
-"structal_1_1_colori.html#a86c6950b6de5590dfd29b91ea055e496",
-"structal_1_1_h_c_lab.html#a755f49e7d2c988770bacdd4181a45335",
-"structal_1_1_m_r_c_header.html#a8c707e500d64f0ef48cfa3cd4313de7f",
-"structal_1_1_pickable_rotate_handle.html#afac290ebc0fe85911f79b1f2d04b648a",
-"structal_1_1_window_setup_properties.html#a2aca61a4ae57b51332aa019daae53029"
+"structal_1_1_colori.html#a7ac281c2b842fedcccfe790b8c58728a",
+"structal_1_1_h_c_lab.html#a67ca2a02b60f33cb1f87bfdba3b98a0e",
+"structal_1_1_m_r_c_header.html#a879b7d088a7e336fa8fd9ac192812a75",
+"structal_1_1_pickable_rotate_handle.html#af3b2b89f7fa09abe04dfff37412b1e01",
+"structal_1_1_window_setup_properties.html#a29440cde78f69b6177d740747ee5221e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

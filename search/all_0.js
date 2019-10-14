@@ -95,7 +95,8 @@ var searchData=
   ['audiosceneobject_92',['AudioSceneObject',['../classal_1_1_audio_scene_object.html',1,'al']]],
   ['autocorrect_93',['autocorrect',['../classal_1_1_periodic_thread.html#a1e414ca0648e07851a31d0d4ff665627',1,'al::PeriodicThread']]],
   ['azimuth_94',['azimuth',['../classal_1_1_speaker.html#a909fbbd0b48651b0acfbef763674ca27',1,'al::Speaker']]],
-  ['ipl_95',['ipl',['../namespaceal_1_1ipl.html',1,'al']]],
-  ['osc_96',['osc',['../namespaceal_1_1osc.html',1,'al']]],
-  ['rnd_97',['rnd',['../namespaceal_1_1rnd.html',1,'al']]]
+  ['allolib_20c_2fc_2b_2b_20libraries_95',['Allolib C/C++ Libraries',['../index.html',1,'']]],
+  ['ipl_96',['ipl',['../namespaceal_1_1ipl.html',1,'al']]],
+  ['osc_97',['osc',['../namespaceal_1_1osc.html',1,'al']]],
+  ['rnd_98',['rnd',['../namespaceal_1_1rnd.html',1,'al']]]
 ];

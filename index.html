@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Allolib: Main Page</title>
+<title>Allolib: Allolib C/C++ Libraries</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,17 +86,62 @@ $(document).ready(function(){initNavTree('index.html','');});
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Allolib Documentation</div>  </div>
+<div class="title">Allolib C/C++ Libraries </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p>Developed by:</p>
+<p>AlloSphere Research Group</p>
+<p>allolib is a fork of <a href="https://github.com/AlloSphere-Research-Group/AlloSystem">AlloSystem</a>, maintained in separate repository.</p>
+<p>University of California, Santa Barbara</p>
+<p><a href="https://travis-ci.org/AlloSphere-Research-Group/allolib"><img src="https://travis-ci.org/AlloSphere-Research-Group/allolib.svg?branch=master" alt="Build Status" class="inline"/></a> <a href="https://ci.appveyor.com/project/mantaraya36/allolib"><img src="https://ci.appveyor.com/api/projects/status/c311nw14jmwq9lv1?svg=true" alt="Build status" class="inline"/></a></p>
+<h1>Documentation</h1>
+<p>The API documentation can be found at: <a href="https://allosphere-research-group.github.io/allolib-doc/">https://allosphere-research-group.github.io/allolib-doc/</a></p>
+<h1>Installing Allolib</h1>
+<h2>Dependencies</h2>
+<p>Allolib depends on Cmake version 3.8 (as the build tool), OpenGL and glew. See platform specific instructions below.</p>
+<h3>Windows</h3>
+<p>There are two paths for Windows installation. One through Visual Studio and one through the Chocolatey package manager.</p>
+<p>For installation through Visual Studio:</p>
+<ol type="1">
+<li>Install Visual Studio 2017 Community Edition from <a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a></li>
+<li><p class="startli">During installation options:</p>
+<p class="startli">a. Install "Desktop development with C++" workload</p>
+<p class="startli">b. Install Individual components: C++/CLI support, Git for Windows, Visual C++ Tools for Cmake</p>
+</li>
+</ol>
+<p>For installation through Chocolatey:</p>
+<ul>
+<li>Install Chocolatey: Aim your browser at <a href="https://chocolatey.org/install">https://chocolatey.org/install</a>. Follow the directions there to install Chocolatey. Wait for this to finish before moving on.</li>
+<li>Use the choco command to install a C++ compiler. Open cmd.exe (Command Prompt) as administrator and run this command: choco install -y visualstudio2017buildtools visualstudio2017-workload-vctools</li>
+<li>Use the choco command to install some software. Open cmd.exe (Command Prompt) as administrator and run this command: choco install -y git git-lfs cmake graphviz doxygen atom vscode</li>
+<li>Install libsndfile: Aim your browser at <a href="http://www.mega-nerd.com/libsndfile/#Download">http://www.mega-nerd.com/libsndfile/#Download</a>. Download and install the 64-bit version: libsndfile-1.0.xx-w64-setup.exe.</li>
+</ul>
+<h3>macOS</h3>
+<ul>
+<li>Install Xcode: Open the App Store app. Search for "xcode". Install the first result. Wait for this to finish before moving on.</li>
+<li>Install Homebrew: Open the Terminal app. Aim your browser at <a href="https://brew.sh">https://brew.sh</a>. Copy and paste the text of the install command into the Terminal app.</li>
+<li>Use the brew command to install some software. In the Terminal app, run this command: brew install git git-lfs cmake libsndfile</li>
+</ul>
+<h3>Ubuntu/Debian</h3>
+<pre class="fragment">sudo apt install build-essential git git-lfs cmake libsndfile1-dev libassimp-dev
+</pre><h2>Building library and running examples</h2>
+<p>On a bash shell on Windows, Linux and OS X do: </p><pre class="fragment">git clone https://github.com/AlloSphere-Research-Group/allolib
+cd allolib
+git submodule update --recursive --init
+mkdir build
+cd build
+cmake .. -DBUILD_EXAMPLES=1
+cmake . --build
+</pre><p>The library will be built in build/lib. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 11 2019 12:43:19 for Allolib by
+    <li class="footer">Generated on Mon Oct 14 2019 10:55:56 for Allolib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
