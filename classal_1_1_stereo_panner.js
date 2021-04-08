@@ -1,6 +1,6 @@
 var classal_1_1_stereo_panner =
 [
-    [ "StereoPanner", "classal_1_1_stereo_panner.html#ac9b2e69146f6bc131f693b52413e0425", null ],
+    [ "StereoPanner", "classal_1_1_stereo_panner.html#a5772c58468459d451822765369278303", null ],
     [ "compile", "classal_1_1_stereo_panner.html#a7b388f710cd2f32a9bec533cd5eb5fe9", null ],
     [ "finalize", "classal_1_1_stereo_panner.html#ab68cace389cbcd033eae41748c385df6", null ],
     [ "numFrames", "classal_1_1_stereo_panner.html#a81602a75dc91ba82ba0a90b0198163c9", null ],

@@ -1,30 +1,31 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "Allolib", "index.html", [
     [ "Allolib C/C++ Libraries", "index.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -57,35 +58,38 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"al___allo_sphere_speaker_layout_8hpp_source.html",
-"classal_1_1_app.html#a74f899ed9468161827c1bb2acb1e5864",
-"classal_1_1_audio_i_o.html#a9740704353b18238a7394b89b6bcd466",
-"classal_1_1_complex.html#aaec1ff9bf630d55df12b96a347a2ac3a",
-"classal_1_1_distributed_app_with_state.html#a45581ceed8d97701b50206b5969b9837",
-"classal_1_1_dynamic_scene.html#ac7086febea5b4a0fd7d88c4431dcb9fd",
-"classal_1_1_g_l_f_w_open_g_l_window_domain.html#adeaaa563ada2e93f336c40dfd9a52e67",
-"classal_1_1_hash_space.html#a09ef9d600c8a03b89339322b59ec332e",
-"classal_1_1_keyboard.html#a8d6fef479d4c5ced95a67f2fd692244ea7030a44d1ad90b1bcca357a2baf3c351",
-"classal_1_1_mesh.html#a2f828bce1414f34f4a5ad9cea5a3d0af",
-"classal_1_1_nav_input_control.html#ad97cdce17e212fa5155e3506b2dc5c14",
-"classal_1_1_parameter_choice.html#ad871ba9828093b7757f630a79d6e4556",
-"classal_1_1_parameter_server.html#a23eb0fc768a9ca0922c124645c216d1e",
-"classal_1_1_per_projection_render.html#af33adbab37c7c2894c8a907f5f3c5be8",
-"classal_1_1_positioned_voice.html#acabb52a7269c97251103b6ec825db5f6",
-"classal_1_1_quat.html#af2f6d228bbcd355684668dd074283dfe",
-"classal_1_1_sequence_recorder.html#a343fc0d1b4909e3bbef18e745614afaf",
-"classal_1_1_single_r_w_ring_buffer.html#a61a62f88f60c0b7e4afaed9724635b2e",
-"classal_1_1_state_send_domain.html#ae8a9ea446332038ba7c02d39990342dc",
-"classal_1_1_texture.html#a42c3d19fcd2f1f45fd096502665499c6a14915909e7756eb4e034a9c9defe8ec7",
-"classal_1_1_v_a_o_mesh.html#a353f884438e4649c99c093a556f1808e",
-"classal_1_1_voxels.html#abb7643b5ed68d8c7cf4c95fe8adfd26b",
-"classal_1_1osc_1_1_send.html#a1f4f5a2b5e9a093f4b31022176efbabd",
-"group___math.html#gad1fb93acd3513290b5c4ac8f402ba808",
-"structal_1_1_colori.html#a7ac281c2b842fedcccfe790b8c58728a",
-"structal_1_1_h_c_lab.html#a67ca2a02b60f33cb1f87bfdba3b98a0e",
-"structal_1_1_m_r_c_header.html#a879b7d088a7e336fa8fd9ac192812a75",
-"structal_1_1_pickable_rotate_handle.html#af3b2b89f7fa09abe04dfff37412b1e01",
-"structal_1_1_window_setup_properties.html#a29440cde78f69b6177d740747ee5221e"
+"",
+"classal_1_1_ambi_decode.html#aebe35906403ff3b25854a745ca8320f3",
+"classal_1_1_audio_domain.html#a16cea56923ab6e4be46f2c1d0beecbed",
+"classal_1_1_c_s_v_reader.html#ada619f3c26a045946ef5c0885ba773e6",
+"classal_1_1_console_domain.html#a781f9b3e3ab8e2a88439c8a8f894d944",
+"classal_1_1_distributed_app.html#ad19617a67054937b67d84bf171fcce4e",
+"classal_1_1_dynamic_scene.html#a55d53321bfdbf07e27a2a08baa689833",
+"classal_1_1_g_l_f_w_open_g_l_omni_renderer_domain.html#aa0f8211c251320c0eb4cdad6c5d3d3a3",
+"classal_1_1_graphics.html#afd5b54e03702b4692a5129b56ae2b82c",
+"classal_1_1_keyboard.html#a8d6fef479d4c5ced95a67f2fd692244ea726d8be84a2fbf30e2405a3b33e80590",
+"classal_1_1_mesh.html#a2f89ada48e014ea5e0012365d30bb15f",
+"classal_1_1_nav_input_control.html#a7abe55135fee7901063f11105832bff3",
+"classal_1_1_parameter_bundle.html#a58d7a8f8e050d6cc4fb4e3dc32bb7638",
+"classal_1_1_parameter_menu.html#a3d403c2392fde71db1da7cead24dfc67",
+"classal_1_1_parameter_vec3.html#a111d9384fda61d4b6525c7c61aa47b8d",
+"classal_1_1_pickable_manager.html#aca55922efb3aaca1f9bc03af4c5b0b7c",
+"classal_1_1_preset_handler.html#a793c76f905c910036fdf227e1bd96107",
+"classal_1_1_r_b_o.html#acfd97565585884fbcb8d82d15f27d729",
+"classal_1_1_sequence_server.html#ad41e7bde83d04abe584b7a7a65cb00d8",
+"classal_1_1_smooth_pose.html#a97ed69e4ad2e5de1aca191250d46bfe6",
+"classal_1_1_state_simulation_domain.html#a153bc08e0413dc6251fe5758eab47b3f",
+"classal_1_1_texture.html#a42c3d19fcd2f1f45fd096502665499c6a62d6af020ff67117887b653cc6db1f0f",
+"classal_1_1_v_a_o_mesh.html#a1d7927181a44f326e1015df6abd8b612",
+"classal_1_1_voxels.html#a903619446655d54fa31e39be9edd07ee",
+"classal_1_1osc_1_1_send.html",
+"group___math.html#ga5871238946c53c69bbe794b38ba8574e",
+"namespaceal.html#a467fc078ee7d93e988784c81d6fe14f3",
+"namespacemembers_func.html",
+"structal_1_1_easy_v_a_o.html#a25fe2d1e4984ee54b76cfb6451527aa8",
+"structal_1_1_image.html#a6c9f23ae2fc0175b7da32d4738c20921",
+"structal_1_1_pickable.html#ac3144d509ca36be6d8b1cb2ea37ffbda",
+"structal_1_1_synth_sequencer_event_1_1_param_fields.html#a4bc88188ca3fa50bdfc8341898435acf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

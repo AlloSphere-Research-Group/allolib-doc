@@ -79,6 +79,7 @@ var classal_1_1_texture =
     [ "create", "classal_1_1_texture.html#aa6e84ca968e9de7b832ddb4b7284ad9d", null ],
     [ "create1D", "classal_1_1_texture.html#a14f7b6c74ee421dec3418089bdbc66c6", null ],
     [ "create2D", "classal_1_1_texture.html#ad8d1c142f38f9cb0f0761457530fb6f8", null ],
+    [ "create2DArray", "classal_1_1_texture.html#a27a1a144398a06fea7bac2e6d8c97f13", null ],
     [ "createCubemap", "classal_1_1_texture.html#a3a411848899981db66389f7e82373213", null ],
     [ "created", "classal_1_1_texture.html#a65d5b927ec492366eaa76f0e30e1d1e9", null ],
     [ "depth", "classal_1_1_texture.html#af4e7b8583da8dfdd27dea7dc0c321245", null ],

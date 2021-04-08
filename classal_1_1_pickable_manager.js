@@ -12,16 +12,17 @@ var classal_1_1_pickable_manager =
     [ "onMouseDrag", "classal_1_1_pickable_manager.html#a072bd970be5c0e275339cc8470cf2d30", null ],
     [ "onMouseMove", "classal_1_1_pickable_manager.html#a19a8e16182ae7989ca79fd347b5a8b97", null ],
     [ "onMouseUp", "classal_1_1_pickable_manager.html#a4e0c6fcb00d904f25fbdcba0cb4a20a4", null ],
-    [ "operator+=", "classal_1_1_pickable_manager.html#aee7a596832591537706161bf7c4fadb5", null ],
-    [ "operator+=", "classal_1_1_pickable_manager.html#a2dbfb8632852dbcc84135e77df57b71d", null ],
     [ "operator<<", "classal_1_1_pickable_manager.html#ac2f1812da0854f0fdb61b3d3517005a2", null ],
     [ "operator<<", "classal_1_1_pickable_manager.html#a7b6f88532853b0cd9ffd3b534d0271cb", null ],
     [ "pickables", "classal_1_1_pickable_manager.html#a41ecc4c173a946ea2c13f12451ef0d25", null ],
     [ "registerPickable", "classal_1_1_pickable_manager.html#ab3ea5382dfe51b670b2b2a6f3497f290", null ],
     [ "unhighlightAll", "classal_1_1_pickable_manager.html#afb2844c8de81a42100b6ccb4605186f2", null ],
     [ "unproject", "classal_1_1_pickable_manager.html#a6701409a3d548c87658f01ef33dd3416", null ],
+    [ "ctrlKey", "classal_1_1_pickable_manager.html#a1423af108d230c4941d6818b113084fb", null ],
     [ "mLastPick", "classal_1_1_pickable_manager.html#ad537f28ed77b3fe8b01257afa54f6255", null ],
     [ "mLastPoint", "classal_1_1_pickable_manager.html#a332c7df05d01ada40215b9db54fc8616", null ],
     [ "mPickables", "classal_1_1_pickable_manager.html#a506a568560eda4e6c3488d2acadcba7f", null ],
-    [ "selectOffset", "classal_1_1_pickable_manager.html#ae2c4bc67e267965b539214182af5bcbb", null ]
+    [ "selectOffset", "classal_1_1_pickable_manager.html#ae2c4bc67e267965b539214182af5bcbb", null ],
+    [ "x", "classal_1_1_pickable_manager.html#aca55922efb3aaca1f9bc03af4c5b0b7c", null ],
+    [ "y", "classal_1_1_pickable_manager.html#a3da9100ad83355eed55387f3207f4945", null ]
 ];

@@ -14,8 +14,9 @@ var classal_1_1_ring_buffer =
     [ "readFrom", "classal_1_1_ring_buffer.html#a11016659db185251d6e9d7940721471d", null ],
     [ "reset", "classal_1_1_ring_buffer.html#a04762b98de0b59eb691425cba7c5e126", null ],
     [ "resize", "classal_1_1_ring_buffer.html#ae205f05d902ef9139c257b95b54d89cf", null ],
-    [ "size", "classal_1_1_ring_buffer.html#ab000947b1fc46741063085c52ac4309c", null ],
+    [ "size", "classal_1_1_ring_buffer.html#a7cd9e15642f8432ecfd0189ba70ac518", null ],
     [ "write", "classal_1_1_ring_buffer.html#a28403f3d869bafe2f21948ab8ea31d26", null ],
+    [ "elements", "classal_1_1_ring_buffer.html#a55f88dab1194d6b8a34e46017c4dfd79", null ],
     [ "mElems", "classal_1_1_ring_buffer.html#ab2a40cd8d0ef65a5f82f352fb0a595c1", null ],
     [ "mFill", "classal_1_1_ring_buffer.html#a113ebf43f6e695368fdcb69b0ffdbfb7", null ],
     [ "mPos", "classal_1_1_ring_buffer.html#a00d9758cd4c688c68634fcd9766ec8be", null ]

@@ -48,6 +48,7 @@ var classal_1_1_render_manager =
     [ "resetModelMatrixStack", "classal_1_1_render_manager.html#a136978a66a8ae0ffaf3f0f9c61790c41", null ],
     [ "resetProjMatrixStack", "classal_1_1_render_manager.html#a4ec3389beb1b9563879fe0fa5bb29334", null ],
     [ "resetViewMatrixStack", "classal_1_1_render_manager.html#a7b9a2f2f28a414cbc913512e91dd7f35", null ],
+    [ "rotate", "classal_1_1_render_manager.html#a49f24a68ee7625ada67d7e304d99a1a4", null ],
     [ "rotate", "classal_1_1_render_manager.html#ae6a7e8b81458aaf2306c22c50f26959e", null ],
     [ "rotate", "classal_1_1_render_manager.html#a1cdc3de78ce9a034d1f7ed1fde57954b", null ],
     [ "rotate", "classal_1_1_render_manager.html#a2fb48fab999fedd9cc42a678329a02e2", null ],

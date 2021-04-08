@@ -72,7 +72,8 @@ var group___sound =
       [ "mWeights", "classal_1_1_ambi_encode.html#a60704441f3c53e36a8ef96cd7a46c526", null ]
     ] ],
     [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html", [
-      [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a02e88f98e051648aa8000c78663c0c1a", null ],
+      [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a403a5cc27c774efecbfeab3afeb252e4", null ],
+      [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a2f67a05780b5858c5fc610a354258a9d", null ],
       [ "ambiChans", "classal_1_1_ambisonics_spatializer.html#a4d1058b160abd029eec32e7f52052e74", null ],
       [ "compile", "classal_1_1_ambisonics_spatializer.html#a74f4a603eff35013c27615066921234d", null ],
       [ "configure", "classal_1_1_ambisonics_spatializer.html#a8e5df9d302145a7128706f3edd531124", null ],
@@ -89,17 +90,6 @@ var group___sound =
       [ "mBuffer", "classal_1_1_ambisonics_spatializer.html#ad0803118eb05ec9b955cfa80c812801e", null ],
       [ "mNumFrames", "classal_1_1_ambisonics_spatializer.html#a76c9236538cc55677ed0cb0d37dd301b", null ],
       [ "mSpeakers", "classal_1_1_ambisonics_spatializer.html#a59745d3105d6a1dcbc88e0df6894265c", null ]
-    ] ],
-    [ "AudioSceneObject", "classal_1_1_audio_scene_object.html", [
-      [ "pos", "classal_1_1_audio_scene_object.html#a09e7fcfe7b687713efab6b61344a3ad8", null ],
-      [ "pos", "classal_1_1_audio_scene_object.html#adeb2cd931d0f4cb87558d13c3e3063e0", null ],
-      [ "pose", "classal_1_1_audio_scene_object.html#a33f9612a69ee2e71710cbf080f80eec1", null ],
-      [ "pose", "classal_1_1_audio_scene_object.html#aea83e1e1ec94803b2c3404a364f1f88d", null ],
-      [ "pose", "classal_1_1_audio_scene_object.html#a78df75a21ea585f6818bd381c90594c8", null ],
-      [ "posHistory", "classal_1_1_audio_scene_object.html#a9a08a9a9db15aa953f3411c05c14484d", null ],
-      [ "updateHistory", "classal_1_1_audio_scene_object.html#aac95695170eca031800edc49eefe2ab0", null ],
-      [ "mPose", "classal_1_1_audio_scene_object.html#a6fc1fb1a95ab2997d2665c6c6f2074ca", null ],
-      [ "mPosHistory", "classal_1_1_audio_scene_object.html#a9a2e942194ce0728a98a45a790d1ebf0", null ]
     ] ],
     [ "BiQuad", "classal_1_1_bi_quad.html", [
       [ "BiQuad", "classal_1_1_bi_quad.html#aedb236595c895d701f985eaf3db500ce", null ],
@@ -122,11 +112,11 @@ var group___sound =
     [ "Crossover", "classal_1_1_crossover.html", [
       [ "Crossover", "classal_1_1_crossover.html#aedfe965a40bd5a0dd3941b632a84c93b", null ],
       [ "clear", "classal_1_1_crossover.html#af7aee08f4bd9a99bb6c6f20615519db3", null ],
-      [ "freq", "classal_1_1_crossover.html#a44181a31f67115c39f3b55d5d2830720", null ],
-      [ "freq", "classal_1_1_crossover.html#afc729d0b48b8b6108f58d9586814ed30", null ],
+      [ "freq", "classal_1_1_crossover.html#a423ad440a9fdc539f98875b53ec23494", null ],
+      [ "freq", "classal_1_1_crossover.html#a4a80ed23532a4fd1dd57776ed44ddd07", null ],
       [ "freq", "classal_1_1_crossover.html#a01edbae67e980cc974aa4d8e59fe5f15", null ],
-      [ "next", "classal_1_1_crossover.html#a05ac5f1b98d1b245524885fad82defce", null ],
-      [ "next", "classal_1_1_crossover.html#a00b7098ddb5d47766992f09031fecb1c", null ],
+      [ "next", "classal_1_1_crossover.html#acac7d29393ac995c463e3c768103ad72", null ],
+      [ "next", "classal_1_1_crossover.html#a4fd4e1e2fc2afc6641bca6780129e51c", null ],
       [ "next", "classal_1_1_crossover.html#a45282cc4940c1a84125d49cc6b5b3182", null ],
       [ "mC0", "classal_1_1_crossover.html#a73cb070842fd021491d0c6b93620d565", null ],
       [ "mC1", "classal_1_1_crossover.html#a63d1db574595328f094ee8926a81e37c", null ],
@@ -135,7 +125,7 @@ var group___sound =
       [ "mZ2", "classal_1_1_crossover.html#a5739c7ddbe17a7daa3ac9279f7559313", null ]
     ] ],
     [ "Dbap", "classal_1_1_dbap.html", [
-      [ "Dbap", "classal_1_1_dbap.html#a9a541e0d577b365b269af5f569c87a54", null ],
+      [ "Dbap", "classal_1_1_dbap.html#a4531e69adaa09412d4356fbbdfff6dd4", null ],
       [ "compile", "classal_1_1_dbap.html#a7b388f710cd2f32a9bec533cd5eb5fe9", null ],
       [ "finalize", "classal_1_1_dbap.html#ab68cace389cbcd033eae41748c385df6", null ],
       [ "numFrames", "classal_1_1_dbap.html#a81602a75dc91ba82ba0a90b0198163c9", null ],
@@ -153,7 +143,7 @@ var group___sound =
       [ "VbapOptions", "classal_1_1_lbap.html#ab3bdf5e19ffb20abf8f13c8043f7763f", [
         [ "KEEP_SAME_ELEVATION", "classal_1_1_lbap.html#ab3bdf5e19ffb20abf8f13c8043f7763fa87b0796e2b6c2171867648118807bcec", null ]
       ] ],
-      [ "Lbap", "classal_1_1_lbap.html#a8e28f4ca74edb07896774f1037e2fc95", null ],
+      [ "Lbap", "classal_1_1_lbap.html#a1fd01c10f51264dada3355141c0b0dff", null ],
       [ "~Lbap", "classal_1_1_lbap.html#a72a674692af981ee0a884f4ef23a9895", null ],
       [ "compile", "classal_1_1_lbap.html#a0123bfe0b4b53c0ec522527c88704037", null ],
       [ "finalize", "classal_1_1_lbap.html#ab68cace389cbcd033eae41748c385df6", null ],
@@ -235,7 +225,7 @@ var group___sound =
       [ "sampleRate", "structal_1_1_sound_file.html#a8a8959ea9daea1ef8b3bc529c14e3c5b", null ]
     ] ],
     [ "SoundFilePlayer", "structal_1_1_sound_file_player.html", [
-      [ "getFrames", "structal_1_1_sound_file_player.html#a7f492f8288d59895e61b742de14edd2c", null ],
+      [ "getFrames", "structal_1_1_sound_file_player.html#aff8b393d7fb47e27e3d32708696bfaf4", null ],
       [ "frame", "structal_1_1_sound_file_player.html#a33342b351f867396d3edce3f6754bac9", null ],
       [ "loop", "structal_1_1_sound_file_player.html#a6adf41f42fad4a4e6e38e6a1c4895e6d", null ],
       [ "pause", "structal_1_1_sound_file_player.html#a6ab505cb6510f5543d4f643d6cfaf81d", null ],
@@ -257,7 +247,7 @@ var group___sound =
       [ "soundFile", "structal_1_1_sound_file_player_t_s.html#a79c6844c65c01d59e160507c07b4d02a", null ]
     ] ],
     [ "Spatializer", "classal_1_1_spatializer.html", [
-      [ "Spatializer", "classal_1_1_spatializer.html#a7b7bf948b439f30625af56f159aaf210", null ],
+      [ "Spatializer", "classal_1_1_spatializer.html#adacac30b07b80a2db076299ab50e1c46", null ],
       [ "~Spatializer", "classal_1_1_spatializer.html#a8cee6cfcbadc3ca547c2490ed3ec5f99", null ],
       [ "compile", "classal_1_1_spatializer.html#a7b388f710cd2f32a9bec533cd5eb5fe9", null ],
       [ "finalize", "classal_1_1_spatializer.html#ab68cace389cbcd033eae41748c385df6", null ],
@@ -284,31 +274,8 @@ var group___sound =
       [ "group", "classal_1_1_speaker.html#a95d8e0be8ba41697997faef322290c24", null ],
       [ "radius", "classal_1_1_speaker.html#ac6662f7009d95a341d0bb77cdb1e43ba", null ]
     ] ],
-    [ "SpeakerLayout", "classal_1_1_speaker_layout.html", [
-      [ "addSpeaker", "classal_1_1_speaker_layout.html#aca55a790fa9177e772369ddeca02c5ed", null ],
-      [ "numSpeakers", "classal_1_1_speaker_layout.html#a01ee155bce3de0303c8c5ef2c973873d", null ],
-      [ "speakers", "classal_1_1_speaker_layout.html#aefc7873c20db1adec7ebc5e6cc14f026", null ],
-      [ "speakers", "classal_1_1_speaker_layout.html#abc9a12487fa76aafbb41dbaedc755f4b", null ],
-      [ "mSpeakers", "classal_1_1_speaker_layout.html#ac312ad865c4cfa3d25786153dbacd573", null ]
-    ] ],
-    [ "SpeakerRingLayout", "classal_1_1_speaker_ring_layout.html", [
-      [ "SpeakerRingLayout", "classal_1_1_speaker_ring_layout.html#aae9ad1f43d0826e8af9d09df56070ffe", null ],
-      [ "addSpeaker", "classal_1_1_speaker_ring_layout.html#aca55a790fa9177e772369ddeca02c5ed", null ],
-      [ "numSpeakers", "classal_1_1_speaker_ring_layout.html#a01ee155bce3de0303c8c5ef2c973873d", null ],
-      [ "speakers", "classal_1_1_speaker_ring_layout.html#aefc7873c20db1adec7ebc5e6cc14f026", null ],
-      [ "speakers", "classal_1_1_speaker_ring_layout.html#abc9a12487fa76aafbb41dbaedc755f4b", null ],
-      [ "mSpeakers", "classal_1_1_speaker_ring_layout.html#ac312ad865c4cfa3d25786153dbacd573", null ]
-    ] ],
-    [ "StereoSpeakerLayout", "classal_1_1_stereo_speaker_layout.html", [
-      [ "StereoSpeakerLayout", "classal_1_1_stereo_speaker_layout.html#a837aff376b306c5741b3053d96bb0ce5", null ],
-      [ "addSpeaker", "classal_1_1_stereo_speaker_layout.html#aca55a790fa9177e772369ddeca02c5ed", null ],
-      [ "numSpeakers", "classal_1_1_stereo_speaker_layout.html#a01ee155bce3de0303c8c5ef2c973873d", null ],
-      [ "speakers", "classal_1_1_stereo_speaker_layout.html#aefc7873c20db1adec7ebc5e6cc14f026", null ],
-      [ "speakers", "classal_1_1_stereo_speaker_layout.html#abc9a12487fa76aafbb41dbaedc755f4b", null ],
-      [ "mSpeakers", "classal_1_1_stereo_speaker_layout.html#ac312ad865c4cfa3d25786153dbacd573", null ]
-    ] ],
     [ "StereoPanner", "classal_1_1_stereo_panner.html", [
-      [ "StereoPanner", "classal_1_1_stereo_panner.html#ac9b2e69146f6bc131f693b52413e0425", null ],
+      [ "StereoPanner", "classal_1_1_stereo_panner.html#a5772c58468459d451822765369278303", null ],
       [ "compile", "classal_1_1_stereo_panner.html#a7b388f710cd2f32a9bec533cd5eb5fe9", null ],
       [ "finalize", "classal_1_1_stereo_panner.html#ab68cace389cbcd033eae41748c385df6", null ],
       [ "numFrames", "classal_1_1_stereo_panner.html#a81602a75dc91ba82ba0a90b0198163c9", null ],
@@ -325,10 +292,10 @@ var group___sound =
       [ "VbapOptions", "classal_1_1_vbap.html#a10855f000736f0c6b72b9edc6a9dc357", [
         [ "KEEP_SAME_ELEVATION", "classal_1_1_vbap.html#a10855f000736f0c6b72b9edc6a9dc357a8652b4b827de0190133bec7a780448a9", null ]
       ] ],
-      [ "Vbap", "classal_1_1_vbap.html#af45008694324182e531492b059a91e6d", null ],
+      [ "Vbap", "classal_1_1_vbap.html#acaafbd7db1d00ec4c898735d117938d3", null ],
       [ "compile", "classal_1_1_vbap.html#ac6a2b374ed3e501730c4579f7b272973", null ],
       [ "finalize", "classal_1_1_vbap.html#ab68cace389cbcd033eae41748c385df6", null ],
-      [ "makePhantomChannel", "classal_1_1_vbap.html#ae09c55d6c74b7ff069b1651a7badee93", null ],
+      [ "makePhantomChannel", "classal_1_1_vbap.html#a72cfc666adf2c9310dd42534788f7b20", null ],
       [ "makeTriple", "classal_1_1_vbap.html#a45d7ecbb08bdc2fe3fb4436babfdf64d", null ],
       [ "numFrames", "classal_1_1_vbap.html#a81602a75dc91ba82ba0a90b0198163c9", null ],
       [ "numSpeakers", "classal_1_1_vbap.html#aa7d2688b85d9bbf1cc1246d27cc2d8cc", null ],
@@ -343,5 +310,7 @@ var group___sound =
       [ "mNumFrames", "classal_1_1_vbap.html#a76c9236538cc55677ed0cb0d37dd301b", null ],
       [ "mSpeakers", "classal_1_1_vbap.html#a59745d3105d6a1dcbc88e0df6894265c", null ]
     ] ],
-    [ "OctalSpeakerLayout", "group___sound.html#ga5dfa2921e5987fc7c1b677f28a5cd539", null ]
+    [ "OctalSpeakerLayout", "group___sound.html#gae2d4c207585d099eb747963a4b2deb2c", null ],
+    [ "SpeakerRingLayout", "group___sound.html#ga265e167a18668229b88e2e5fd74bb6aa", null ],
+    [ "StereoSpeakerLayout", "group___sound.html#ga3a9c9f177c89961e1866d38065d7a99f", null ]
 ];

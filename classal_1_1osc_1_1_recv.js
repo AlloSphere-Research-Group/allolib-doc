@@ -20,7 +20,7 @@ var classal_1_1osc_1_1_recv =
     [ "mAddress", "classal_1_1osc_1_1_recv.html#a6e8f283ef81d2f4ab12596249e4cf1f1", null ],
     [ "mBackground", "classal_1_1osc_1_1_recv.html#a9f6a40f81802544ddcff4ef3ce85d5ac", null ],
     [ "mBuffer", "classal_1_1osc_1_1_recv.html#a4ff6831b4702ce83518239ffb855d713", null ],
-    [ "mHandlers", "classal_1_1osc_1_1_recv.html#a2e62a15951a3d4180b9f0ea409d1b535", null ],
+    [ "mHandlers", "classal_1_1osc_1_1_recv.html#a96977f251d464a4ae0d8604521fd47a6", null ],
     [ "mOpen", "classal_1_1osc_1_1_recv.html#aae8683028d9d3a89681d2e26d0aa4207", null ],
     [ "mPort", "classal_1_1osc_1_1_recv.html#a51aacf3c640740aced97315767800774", null ],
     [ "mThread", "classal_1_1osc_1_1_recv.html#a51234952ec5855a61eac210c15249560", null ]

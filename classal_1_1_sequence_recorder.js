@@ -11,6 +11,7 @@ var classal_1_1_sequence_recorder =
     [ "recording", "classal_1_1_sequence_recorder.html#a1abd81fecd5c7fe0bf53fe9dc98119e8", null ],
     [ "registerParameter", "classal_1_1_sequence_recorder.html#a180c560cb337477e687d0584d110f153", null ],
     [ "registerPresetHandler", "classal_1_1_sequence_recorder.html#afb7b7cdedb485321a77cde1502f63d74", null ],
+    [ "setDirectory", "classal_1_1_sequence_recorder.html#adeefdae10324d9a8dc9947b09d9d6e52", null ],
     [ "setMaxRecordTime", "classal_1_1_sequence_recorder.html#afaff60e960f654b21b3e136474d4252a", null ],
     [ "startRecord", "classal_1_1_sequence_recorder.html#a23b4fc7fdeb31aa2ea3c013ea855fbbb", null ],
     [ "stopRecord", "classal_1_1_sequence_recorder.html#a42514084a2cdcab6452947f2b316cca2", null ]

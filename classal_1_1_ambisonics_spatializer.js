@@ -1,6 +1,7 @@
 var classal_1_1_ambisonics_spatializer =
 [
-    [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a02e88f98e051648aa8000c78663c0c1a", null ],
+    [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a403a5cc27c774efecbfeab3afeb252e4", null ],
+    [ "AmbisonicsSpatializer", "classal_1_1_ambisonics_spatializer.html#a2f67a05780b5858c5fc610a354258a9d", null ],
     [ "ambiChans", "classal_1_1_ambisonics_spatializer.html#a4d1058b160abd029eec32e7f52052e74", null ],
     [ "compile", "classal_1_1_ambisonics_spatializer.html#a74f4a603eff35013c27615066921234d", null ],
     [ "configure", "classal_1_1_ambisonics_spatializer.html#a8e5df9d302145a7128706f3edd531124", null ],

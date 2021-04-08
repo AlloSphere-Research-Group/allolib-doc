@@ -1,9 +1,5 @@
 var classal_1_1_mouse =
 [
-    [ "LEFT", "classal_1_1_mouse.html#a6da20e2a1a3eb4fd4fe389c4bd66dc8da455cc064dabaae1dde52d1d928f32fb7", null ],
-    [ "MIDDLE", "classal_1_1_mouse.html#a6da20e2a1a3eb4fd4fe389c4bd66dc8da70f31a71208afbeac9c811b95793cd15", null ],
-    [ "RIGHT", "classal_1_1_mouse.html#a6da20e2a1a3eb4fd4fe389c4bd66dc8daec736b688a1e8d3d46f37b2f600b86c6", null ],
-    [ "EXTRA", "classal_1_1_mouse.html#a6da20e2a1a3eb4fd4fe389c4bd66dc8da8f873e3ea6085930040f6a4d086b5545", null ],
     [ "Mouse", "classal_1_1_mouse.html#ae2f86c86e65dd2ad57d83fe66c6964cd", null ],
     [ "button", "classal_1_1_mouse.html#a654ff8fb41499c1ebe6a905fbab04b44", null ],
     [ "button", "classal_1_1_mouse.html#a72dcbbc0fdb9e03adb8dce8334b0935f", null ],

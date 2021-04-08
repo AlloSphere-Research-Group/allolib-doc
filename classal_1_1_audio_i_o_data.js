@@ -21,7 +21,7 @@ var classal_1_1_audio_i_o_data =
     [ "fps", "classal_1_1_audio_i_o_data.html#a21311f88356a8f1a089dd695f64eea68", null ],
     [ "frame", "classal_1_1_audio_i_o_data.html#acf2eb648a99956f436493ceb371129e1", null ],
     [ "frame", "classal_1_1_audio_i_o_data.html#a4a02fd547fc05db0ae196b50ad5e21f7", null ],
-    [ "framesPerBuffer", "classal_1_1_audio_i_o_data.html#a32e1b1c5cbc8a5b503787269ca8ca5bd", null ],
+    [ "framesPerBuffer", "classal_1_1_audio_i_o_data.html#a1380ebbf44f7b304cfc5b845f659d1c6", null ],
     [ "framesPerBuffer", "classal_1_1_audio_i_o_data.html#a8f88d2c71dcd746f9b61e59e7c0d0246", null ],
     [ "framesPerSecond", "classal_1_1_audio_i_o_data.html#a9740704353b18238a7394b89b6bcd466", null ],
     [ "framesPerSecond", "classal_1_1_audio_i_o_data.html#a8690e4e0671d7379608fabcad0bffb1d", null ],

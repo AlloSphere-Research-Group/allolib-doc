@@ -6,7 +6,7 @@ var classal_1_1_preset_m_i_d_i =
     [ "PresetMIDI", "classal_1_1_preset_m_i_d_i.html#a46ad48d32c9014bb9f0ab7d2bf7148a7", null ],
     [ "PresetMIDI", "classal_1_1_preset_m_i_d_i.html#a31ad4dfc70b525a3243263f585a3a443", null ],
     [ "PresetMIDI", "classal_1_1_preset_m_i_d_i.html#afc2b88cabc6a55f1db2711f3561bc3df", null ],
-    [ "bindTo", "classal_1_1_preset_m_i_d_i.html#a642e71ebb9aa8258524358ef0c7fdc62", null ],
+    [ "bindTo", "classal_1_1_preset_m_i_d_i.html#a12e188f1507fc7c6a22fffce9a553fa1", null ],
     [ "clearBindings", "classal_1_1_preset_m_i_d_i.html#ad99b0da60968216db73aebc4d147f4c7", null ],
     [ "close", "classal_1_1_preset_m_i_d_i.html#a9b1074d68406ecb71ecf3422f13e5fb8", null ],
     [ "connectNoteToPreset", "classal_1_1_preset_m_i_d_i.html#aa4c3055140903270d790823af34775c5", null ],

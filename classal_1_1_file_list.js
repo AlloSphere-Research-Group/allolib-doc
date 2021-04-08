@@ -14,6 +14,7 @@ var classal_1_1_file_list =
     [ "prev", "classal_1_1_file_list.html#a086567bbb4e0be35aa146edc2c3eee48", null ],
     [ "print", "classal_1_1_file_list.html#af9b5f4c36a07ed7f0f2a2cf70eb489d8", null ],
     [ "select", "classal_1_1_file_list.html#a60bb8e41dafe0574ea95d1e9211c9cdf", null ],
+    [ "sort", "classal_1_1_file_list.html#a570c2409036badf9ff50e2c8197d93e9", null ],
     [ "sort", "classal_1_1_file_list.html#a42a0a6474099fdc45f97735456fe71cb", null ],
     [ "indx", "classal_1_1_file_list.html#a085db7f80d71ada20ee7141924accba7", null ],
     [ "mFiles", "classal_1_1_file_list.html#a508a214fb79d7d94a049f060da670412", null ]

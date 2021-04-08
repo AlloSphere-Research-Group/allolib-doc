@@ -1,14 +1,5 @@
 var classal_1_1_frustum =
 [
-    [ "TOP", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17dab390fbba0c8d42ac322a173da0488785", null ],
-    [ "BOTTOM", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17dad36ace7938e6d0106d5a7a2f5a3df2c7", null ],
-    [ "LEFT", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17daca54affca5dc8955df29e161b4863819", null ],
-    [ "RIGHT", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17daddd7036ea11e2a82bb41d1d7283a04dc", null ],
-    [ "NEARP", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17da7d489d98701d4d3a4dbe121d445044f0", null ],
-    [ "FARP", "classal_1_1_frustum.html#a4f4cd07071d2b1c1da121bafd58bf17da16a6f6fe87af6bfcf4057a099e2dde45", null ],
-    [ "OUTSIDE", "classal_1_1_frustum.html#a8f106ff9d5fc4af556b40b2a37c9e96ca20b7fdc17ca683b5a704f4c09169e357", null ],
-    [ "INTERSECT", "classal_1_1_frustum.html#a8f106ff9d5fc4af556b40b2a37c9e96cab1924027fe67709619ac57723b5a58f7", null ],
-    [ "INSIDE", "classal_1_1_frustum.html#a8f106ff9d5fc4af556b40b2a37c9e96ca2f494ebee15af5d47c2f4949b0f41dfa", null ],
     [ "boundingBox", "classal_1_1_frustum.html#a968d5f5ef75743ad645fb721b3842d6c", null ],
     [ "center", "classal_1_1_frustum.html#ad3925bb8249f111acf9399c81d776f81", null ],
     [ "computePlanes", "classal_1_1_frustum.html#adf8d2c497b0f44da1837ab00262a85a4", null ],

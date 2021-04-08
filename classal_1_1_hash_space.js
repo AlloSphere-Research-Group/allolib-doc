@@ -1,7 +1,6 @@
 var classal_1_1_hash_space =
 [
     [ "Object", "structal_1_1_hash_space_1_1_object.html", "structal_1_1_hash_space_1_1_object" ],
-    [ "Query", "structal_1_1_hash_space_1_1_query.html", "structal_1_1_hash_space_1_1_query" ],
     [ "Voxel", "structal_1_1_hash_space_1_1_voxel.html", "structal_1_1_hash_space_1_1_voxel" ],
     [ "HashSpace", "classal_1_1_hash_space.html#ad89f2a32879c403e8d24766b1edd4e66", null ],
     [ "~HashSpace", "classal_1_1_hash_space.html#ac48a4a50b649f5ef3af7ae1ce095a74e", null ],

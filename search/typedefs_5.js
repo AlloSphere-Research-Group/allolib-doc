@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['quatd_2736',['Quatd',['../namespaceal.html#a82dabef78d597a60bb2bd513ea1d5de6',1,'al']]],
-  ['quatf_2737',['Quatf',['../namespaceal.html#a84c95515dffffd837378041fad58da91',1,'al']]]
+  ['speakers_2827',['Speakers',['../namespaceal.html#a2b52b41b41b11fd1aeb45bf63e066929',1,'al']]],
+  ['spherecoordd_2828',['SphereCoordd',['../namespaceal.html#a32d0f93995139873477fc06790ca94bd',1,'al']]],
+  ['spherecoordf_2829',['SphereCoordf',['../namespaceal.html#aa467f271c1920396630560bfdc646d57',1,'al']]]
 ];

@@ -16,6 +16,7 @@ var classal_1_1_smooth_pose =
     [ "operator()", "classal_1_1_smooth_pose.html#ab28d977ebd1df7c7df3e160753ddb505", null ],
     [ "operator*", "classal_1_1_smooth_pose.html#ac212cdb885dd005e921a364086460db5", null ],
     [ "operator*=", "classal_1_1_smooth_pose.html#a9ac4b166981220a1a5748c5b6cf712c6", null ],
+    [ "operator==", "classal_1_1_smooth_pose.html#a97ed69e4ad2e5de1aca191250d46bfe6", null ],
     [ "pos", "classal_1_1_smooth_pose.html#a9553a50b8eaee80cd36d355daffe2a15", null ],
     [ "pos", "classal_1_1_smooth_pose.html#a181ba736bf3ab0fb330bcd405008e1d5", null ],
     [ "pos", "classal_1_1_smooth_pose.html#a3f2c1292282cb09b83cf286664ce65f8", null ],

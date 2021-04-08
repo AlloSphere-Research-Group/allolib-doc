@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['octalspeakerlayout_2735',['OctalSpeakerLayout',['../group___sound.html#ga5dfa2921e5987fc7c1b677f28a5cd539',1,'al']]]
+  ['quatd_2825',['Quatd',['../namespaceal.html#a82dabef78d597a60bb2bd513ea1d5de6',1,'al']]],
+  ['quatf_2826',['Quatf',['../namespaceal.html#a84c95515dffffd837378041fad58da91',1,'al']]]
 ];

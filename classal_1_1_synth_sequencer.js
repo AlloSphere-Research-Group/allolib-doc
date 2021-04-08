@@ -1,7 +1,8 @@
 var classal_1_1_synth_sequencer =
 [
-    [ "SynthSequencer", "classal_1_1_synth_sequencer.html#a4cb6435af54151b99157a013092b3499", null ],
+    [ "SynthSequencer", "classal_1_1_synth_sequencer.html#a3ba2bd0badbd7572d83589bed27fbc2a", null ],
     [ "SynthSequencer", "classal_1_1_synth_sequencer.html#a3750f1900995c2a7461b3b87bb6625c9", null ],
+    [ "~SynthSequencer", "classal_1_1_synth_sequencer.html#a0e22d8f83705a74b990f9e6ff6da5f4a", null ],
     [ "add", "classal_1_1_synth_sequencer.html#a7fccff8bba4a39b31d5bfccd8f76907a", null ],
     [ "addVoice", "classal_1_1_synth_sequencer.html#a3598a29a6eb22276c8d64d75e3b53759", null ],
     [ "addVoiceFromNow", "classal_1_1_synth_sequencer.html#aea751e11c19cc21e1081b6bcd94db6e6", null ],
@@ -10,8 +11,9 @@ var classal_1_1_synth_sequencer =
     [ "getSequenceList", "classal_1_1_synth_sequencer.html#ac2fec87994019377ba3d4b54dbe1d52b", null ],
     [ "loadSequence", "classal_1_1_synth_sequencer.html#a67ddddcae45662ba8b9ecfa41e9d683a", null ],
     [ "operator<<", "classal_1_1_synth_sequencer.html#afc34ecc1aa2078dce68f56269f603051", null ],
+    [ "playEvents", "classal_1_1_synth_sequencer.html#a563f514f378b48dd739100532edfb69d", null ],
     [ "playing", "classal_1_1_synth_sequencer.html#a4871c89a65b44407e3d78152ed0ade0f", null ],
-    [ "playSequence", "classal_1_1_synth_sequencer.html#a78a07f77fcf25ad4b6b87be9d9732782", null ],
+    [ "playSequence", "classal_1_1_synth_sequencer.html#af838913e84f4ef8841fa2e7883b1fbcd", null ],
     [ "print", "classal_1_1_synth_sequencer.html#af3a68fa03b2fea458edac864d5f20a70", null ],
     [ "registerSequenceBeginCallback", "classal_1_1_synth_sequencer.html#ad5007a4863417cfab38dc7cc8a897e0a", null ],
     [ "registerSequenceEndCallback", "classal_1_1_synth_sequencer.html#a747a4791e0958e66660b5330d7380710", null ],
@@ -25,6 +27,7 @@ var classal_1_1_synth_sequencer =
     [ "setTime", "classal_1_1_synth_sequencer.html#a32df0f7903e6108ec7585ecb0dda7b8f", null ],
     [ "stopSequence", "classal_1_1_synth_sequencer.html#a381513ffaa47a3a658c7749d3f620aae", null ],
     [ "synth", "classal_1_1_synth_sequencer.html#a50f3a62d6550330707d6c400e7ac02dc", null ],
+    [ "update", "classal_1_1_synth_sequencer.html#aaf848469b6f94eb45bbf7614663e09e2", null ],
     [ "verbose", "classal_1_1_synth_sequencer.html#a61b4afe9d2b4dc3fa33f897d56c18730", null ],
     [ "verbose", "classal_1_1_synth_sequencer.html#a43e34fb4bfc42bc2e373b6a55d9443eb", null ]
 ];

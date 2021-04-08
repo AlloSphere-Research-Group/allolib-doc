@@ -2,7 +2,6 @@ var classal_1_1_composition =
 [
     [ "Composition", "classal_1_1_composition.html#a8f5af0026dc988fb3ccaca17485ed8e7", null ],
     [ "~Composition", "classal_1_1_composition.html#af0169a21405583d0580d4451509f9c21", null ],
-    [ "archiveComposition", "classal_1_1_composition.html#aa319be70bfb9ad0210611254bd9f5417", null ],
     [ "consumeMessage", "classal_1_1_composition.html#ae2085d21ad2f1e8ca311276b12bd1920", null ],
     [ "deleteStep", "classal_1_1_composition.html#acc494bd0471032295f0c5fc52ff73d90", null ],
     [ "enableBeginCallback", "classal_1_1_composition.html#a1505fd3c406deacaef85b80abc75ac75", null ],
